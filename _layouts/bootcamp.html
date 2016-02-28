@@ -1,0 +1,232 @@
+{% include header.html %}
+
+<!-- upskilling carousel -->
+	<h1 class="text-center gotham-rounded-bok heading hw-font-heading"> Bootcamps </h1>
+
+   		<div class="carousel-padding">
+		   	<div class="line"></div>
+			<div id="hw-upskilling" class="carousel slide" data-ride="carousel" data-interval="false">
+
+		   		<div class="container heading-caro-padd">
+				    <!-- Wrapper for slides -->
+				    <div class="carousel-inner" role="listbox">
+				    	 <h2 class="gotham-rounded-light hw-heading h2-color text-center hw-line-height">{{site.data.upskilling-carousel.content}}</h2> 
+				    </div>
+				</div>
+			</div>
+	 	</div>
+	<!-- end of carousel-->
+	
+<!-- End of upskilling carousel -->
+	<div class="bootcamp-filter-contents">
+
+		<div class="hr-display"  id="bootcamp-filter-total">
+			<p class="hw-carousel-heading gotham-rounded-bok text-center" id="bootcamp-filter-total-no">24</p>
+			<h2 class="hw-copyright gotham-rounded-light">COURSES</h2>
+		</div>
+		<div class="hr-display" id="bootcamp-filter-controls">
+			<label class="gotham-rounded-light hw-socialshare"> 
+			<input checked="" type="checkbox" id="bootcamp-dataops-checkbox" value="DataOps">
+			<span class="case-studies-label-text font-weight-lighter">DataOps</span> 
+			</label> 
+			<label class="gotham-rounded-light hw-socialshare"> 
+			<input checked="" type="checkbox" value="DevOps" id="bootcamp-devops-checkbox">
+			<span class="case-studies-label-text font-weight-lighter">DevOps</span> 
+			</label>
+			<label class="gotham-rounded-light hw-socialshare checkbox-border-left-padding checkbox-border-right-padding"> 
+			<input checked="" type="checkbox" value="Data Science" id="bootcamp-datascie-checkbox">
+			<span class="case-studies-label-text font-weight-lighter">Data Science</span> 
+			</label>
+			<label class="gotham-rounded-light hw-socialshare"> 
+			<input checked="" type="checkbox" value="DataOps" id="bootcamp-ui-ux-checkbox">
+			<span class="case-studies-label-text font-weight-lighter">UI/UX</span> 
+			</label>
+			<label class="gotham-rounded-light hw-socialshare"> 
+			<input checked="" type="checkbox" value="DataOps" id="bootcamp-mobility-checkbox">
+			<span class="case-studies-label-text font-weight-lighter">Mobility</span> 
+			</label>
+		</div>
+	</div>
+
+
+
+<!-- upskilling details -->
+	<div class="hw-upskilling-details">
+
+		<!-- container -->
+			<div class="container">
+
+				<!-- row -->
+					<div class="row">
+
+						<!-- col -->
+							{% for cont in site.upskilling_cs %}
+
+
+								<div class="col-lg-4 upskill-cont-filter  all {{ cont.topic | downcase }}">
+									<a href="{{cont.url}}">
+									<h2 class="gotham-rounded-bok hw-heading heading text-center">{{ cont.topic }}</h2>
+									<!-- hw-upskill-cont -->
+										<div class="hw-upskill-cont">	
+											<h3 class="gotham-rounded-bold text-uppercase hw-tab-heading text-center">{{ cont.title }}</h3>
+											<p class="gotham-rounded-light text-justify">{{ cont.desc }}</p>
+
+											<!-- row -->
+												<div class="row">
+													<div class="col-lg-6">
+														<div class="clearfix hw-upskill-time">
+															<span class="gotham-rounded-light hw-contact-no2 span-right">OnCampus</span>
+															<span class="gotham-rounded-light hw-contact-no2">Full-Time</span>
+														</div>
+													</div>
+													<div class="col-lg-6">
+														<ul class="clearfix pull-right">
+															<li><svg version="1.1" id="Layer_1" x="0px" y="0px"
+															 width="28px" height="38px" viewBox="0 0 28 38" enable-background="new 0 0 28 38" xml:space="preserve">
+																<g>
+																	<path fill="none" stroke="#C9443C" stroke-miterlimit="10" d="M14.117,16.041c4.217,0,7.637-3.426,7.637-7.654
+																		s-3.42-7.654-7.637-7.654c-4.218,0-7.641,3.426-7.641,7.654S9.899,16.041,14.117,16.041L14.117,16.041z M17.356,16.563h-6.481
+																		c-5.391,0-9.779,4.399-9.779,9.802v7.945l0.022,0.121l0.545,0.171c5.144,1.613,9.616,2.152,13.295,2.152
+																		c7.189,0,11.355-2.055,11.61-2.187l0.512-0.258h0.054v-7.945C27.134,20.962,22.748,16.563,17.356,16.563L17.356,16.563z
+																		 M7.573,15.234"/>
+																</g>
+																</svg>
+															</li>
+															<li class="gotham-rounded-light hw-contact-no2">{{ cont.count }}</li>
+														</ul>
+													</div>
+												</div>
+											<!-- End of row -->
+										</div>
+									<!-- End of hw-upskill-cont -->
+									</a>
+								</div>
+							{% endfor %}
+						<!-- End of col -->
+
+
+						
+
+					</div>
+				<!-- End of row -->
+
+			</div>
+		<!-- End of container -->
+	</div>
+<!-- End of upskilling details -->
+		
+
+
+<!-- hw-started -->
+	<div class="hw-started log-clr-backgrnd container-fluid" >
+		<div class="row p-flex">
+			<div class="col-lg-8 c-flex">
+				<h2 class="gotham-rounded-light hw-main-heading clr-white h-approch">WE'RE HERE TO HELP YOU OUT</h2>
+			</div>
+			<div class="col-lg-4 upskill-filter all c-flex clearfix">
+				<button class="text-uppercase custom-btn heading-custom-btn talk-to-us" data-toggle="collapse" data-target="#upskilling">get started</button>
+			</div>
+		</div>
+	</div>
+<!-- End of hw-started -->
+
+
+
+		<!-- layout for map and form-->
+			<div class="container ms-form-mar collapse" id="upskilling">
+				<div class="row">
+					<div class="col-lg-6 ">
+						<!-- google map -->
+      					<div id="map"></div>
+   					 <!-- End of google map -->
+						<div>
+							
+						</div>	
+					</div>
+					<div class="col-lg-6">
+						<div class="post-resume">
+							<form class="form-signin" onSubmit="submitForm(event)" >  <!-- start of form -->
+							<div class="row ">
+									<div class="col-lg-6"> 
+										<div class="text-border">
+											<div class="input-group">
+					      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/name-img.png"></div>
+					      						
+												<input type="text" class="form-control placeholder-pro mainLoginInput input_name" id="name" placeholder="NAME" >
+											</div>
+										</div>		
+									</div>
+								
+								<div class="col-lg-6"> 
+									<div class="text-border">
+										<div class="input-group">
+				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/email-img.png"></div>
+											<input type="text" class="form-control placeholder-pro mainLoginInput input_email" id="email" placeholder="EMAIL">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row ms-row-mar">
+								<div class="col-lg-6"> 
+									<div class="text-border">
+										<div class="input-group">
+				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
+											<input type="text" class="form-control placeholder-pro mainLoginInput gotham-rounded-light input_subject" id="subject" placeholder="Subject">
+										</div>	
+									</div>	
+								</div>
+								<div class="col-lg-6"> 
+									<div class="text-border">
+										<div class="input-group">
+				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/phone-img.png"></div>
+											<input type="text" class="form-control placeholder-pro mainLoginInput input_phone" id="phone" placeholder="PHONE">
+										</div>
+									</div>	
+								</div>
+							</div>
+
+							<div class="row ms-row-mar">
+								<div class="col-lg-12">
+									<div class="text-border">
+									<div class="input-group">
+				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
+				      						<textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" class="form-control placeholder-pro mainLoginInput input_message"  id="message" rows="3"></textarea>
+				      					</div>	
+				      					
+									</div>
+								</div>
+							</div><!-- end of text-area row-->
+
+							<div class="attach-file">
+				      			<div class="col-lg-9">
+				      				<input type="file" class="gotham-book input_file-upload" id="file-upload">
+				      				<br/><br/>
+				      				<span class="attach-text"><span><img src="/assets/img/talent_acquisition/attach.png"></span><span class="gotham-rounded-bok attach-span">Attach File</span></span>
+				      				<input type="text"  class="input_file-detail form-control placeholder-pro mainLoginInput"  id="file-detail" readonly="readonly"/>
+				      			</div>
+				      			<div class="col-lg-3 submit-background">
+<button id="submit-btn" type="submit" class="btn">
+              <br>
+              <div class="submit-resume hr-display" style="margin: 0px auto;">
+               <img src="/assets/img/talent_acquisition/submit.png" class="img-submit" >
+               <p class="gotham-rounded-bok submit-text placeholder-pro img-para">SUBMIT</p>
+              </div>
+                      </button>
+				      				
+				      			</div>
+				      		</div><!-- end of attach-file-->
+							</form> <!-- end of form -->
+						</div><!-- end of postresume -->
+					</div><!--end of col-lg-8-->
+				</div>
+			</div>	
+	<!-- end of layout for map and form-->
+<!-- for the bottom up button-->
+						<div style="position: relative">
+							<div class="bootcamp-apst-wrapper nav-scroll-up">
+							<div class="apst-button"></div>
+							</div>
+						</div>
+
+
+{% include footer.html %}

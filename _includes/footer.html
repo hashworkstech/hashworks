@@ -1,0 +1,81 @@
+
+
+    {% if page.layout == "default" %}
+      <footer class="hw-home-footer">
+      {% else %}    
+      <footer>
+    {% endif %}
+        <div class="container-fluid">
+            <div class="row footer">
+                <div class="col-md-9 hw-copyright">
+                    <p class="gotham-rounded-light">{{ site.data.global.footer_text }}</p>
+                </div>
+                <div class="col-md-3 ">
+                  <a href="https://www.facebook.com/hashworks/" class="fa-stack hw-socialshare social-icons"  target="new">
+                  <!-- <span > -->
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <i class="fa fa-facebook fa-stack-1x"></i>
+                  <!-- </span> -->
+                  </a>
+                  <a href="https://twitter.com/hashworksco" class="fa-stack hw-socialshare social-icons" target="new">
+                  <!-- <span > -->
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <i class="fa fa-twitter fa-stack-1x"></i>
+                  <!-- </span> -->
+                  </a>
+                  <a href="https://www.linkedin.com/company/9228490" class="fa-stack hw-socialshare social-icons" target="new">
+                  <!-- <span > -->
+                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+                    <i class="fa fa-linkedin fa-stack-1x"></i>
+                  <!-- </span> -->
+                     </a>
+                </div>
+            </div>
+        </div>
+      </footer>
+ 
+</div>
+
+
+    <!-- JavaScript -->
+<script src="/assets/js/jquery-2.1.4.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/custom.js"></script>
+
+{% if page.layout == "default" %}
+  <script src="/assets/js/homepage_scroll/mousewheel_scroll.js"></script>
+{% endif %}
+
+<script src="/assets/js/form/email.js"></script>
+<script src="/assets/js/form/email2.js"></script>
+<script src="/assets/js/form/email3.js"></script>
+
+<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script src="/assets/js/googlemap.js"></script>
+<!-- {% if page.url == "/service_delivery/" %}
+  <script>
+    $(document).ready(function(){
+     $(document).scroll(function(){
+        var main = $(this).scrollTop();
+        var divsize = $('.service-tab').offset().top + 215;
+        var servht = $('.hw-tools').offset().top - 550;
+
+        if(main >= divsize) {
+            $('.service-li').addClass('service-fixed');
+          }
+          else {
+            $('.service-li').removeClass('service-fixed');
+          }
+
+          if(main >= servht){
+            $('.service-li').removeClass('service-fixed');
+          } 
+      });
+
+  });
+  </script>
+{% endif %} -->
+
+
+    </body>
+</html>
