@@ -1,0 +1,421 @@
+{% include header.html %}
+
+<!-- ups-devops carousel -->
+	<h1 class="text-center gotham-rounded-bok heading hw-carousel-heading"> Devops</h1>
+
+   		<div class="carousel-padding">
+		   	<div class="line"></div>
+			<div id="hw-upskilling" class="carousel slide upskilling-carousel" data-ride="carousel" data-interval="false">
+
+		   		<div class="container heading-caro-padd">
+				    <!-- Wrapper for slides -->
+				    <div class="carousel-inner" role="listbox">
+				    	 {% for cont in site.data.Portfolio.carousel.carousel_content%}
+					       {% if forloop.first %}
+					  	<div class="item active">
+					      <p class=" gotham-rounded-bok hw-para">
+					       {{ cont.content}}
+					      </p>
+					      <!-- <div class="hr-display">
+					      	<button class="custom-btn text-uppercase">Casestudies</button>
+					      	<button class="custom-btn text-uppercase">Blogs</button>
+					      </div> -->
+					    </div>
+						{% else %}
+					   <div class="item">
+					       <p class=" gotham-rounded-bok hw-para">
+					       		 {{ cont.content}}
+					      	</p>
+					      	<div class="hr-display">
+					      	<button class="custom-btn text-uppercase">Casestudies</button>
+					      	<button class="custom-btn text-uppercase">Blogs</button>
+					      </div>
+					    </div>
+						{% endif %}
+					    {% endfor %}
+				    </div>
+				</div>
+			</div>
+	 	</div>
+	<!-- end of carousel-->
+<!-- End of upskilling carousel -->
+
+<!--tabs-->
+	<div class="bs-example line-padding">
+			<div class="container">
+
+		    <ul class="nav nav-tabs p-flex">
+		    	
+		        <li class="active c-flex"><a class="hr-display"  data-toggle="tab" href="#introduction" >
+		        	<ul class="tab-img">
+		        		<li  class="li-tab-mar"><img src="/assets/img/upskilling/upskilling-tabs/Introduction.svg"></li>
+		        		<li class="gotham-rounded-light text-center"><p class="text-center">Introduction</p></li>
+					</ul></a>
+				</li>
+		        
+		        <li class="c-flex"><a  class="hr-display" data-toggle="tab" href="#objectives" >
+		        	<ul class="tab-img">
+		        		<li class="li-tab-mar"><img src="/assets/img/upskilling/upskilling-tabs/Objective.svg"></li>
+		        		<li class="gotham-rounded-light text-center"><p>Objectives</p></li>
+					</ul></a>
+		        </li>
+
+		        <li class="c-flex"><a  class="hr-display" data-toggle="tab" href="#audience" >
+		        	<ul class="tab-img" >
+		        		<li class="li-tab-mar"><img src="/assets/img/upskilling/upskilling-tabs/Audience.svg"></li>
+		        		<li class="gotham-rounded-light text-center"><p>Audience</p></li>
+					</ul></a>
+		        </li>
+		    </ul>
+
+		</div> <!--end of contaier-fuild of tab heading-->
+
+
+	    <div class="tab-content">
+
+	    	<!-- introduction -->
+
+		        <div id="introduction" class="tab-pane fade in active">
+
+		        	<!-- container -->
+	    			<div class="container">
+			        	<div class="devops-cont">
+			        		<h3 class="hw-tab-heading gotham-rounded-bok">Course Description</h3>
+			        		<p class="gotham-rounded-light hw-para">{{page.course_description}}
+							</p>
+			        	</div>
+			        </div>
+			        <!-- End of container -->
+				
+				</div>
+			<!-- End of introduction -->
+
+
+			<!-- objectives -->
+
+				<div id="objectives" class="tab-pane fade">
+
+					<!-- container -->
+						<div class="container">
+				        	<div class="devops-cont">
+				        		<h3 class="hw-tab-heading gotham-rounded-bok">Learning Obectives1</h3>
+				        		
+
+	<p class="gotham-rounded-light hw-para">{{page.learning_objective.description}}</p>
+       <ul>
+	{%for point in  {{page.learning_objective.points}} %}
+	         
+				        			<li><p class="gotham-rounded-light hw-para">
+                {{point}}
+            </p>
+        </li>
+	    {%endfor%}
+
+</ul>
+    
+
+				        		
+				        	</div>
+				        </div>
+			        <!-- End of container -->
+				
+				</div>
+
+			<!-- End of objectives -->
+
+
+			<!-- objectives -->
+
+				<div id="audience" class="tab-pane fade">
+
+					<!-- audience -->
+						<div class="container">
+				        	<div class="devops-cont">
+				        		<h3 class="hw-tab-heading gotham-rounded-bok">Audience</h3>
+				        		<ul>
+				        			{%for audience in page.audience%}
+				        			<li><p class="gotham-rounded-light hw-para">{{audience}}</p></li>
+				        			{%endfor%}
+				        		</ul>
+				        	</div>
+				        </div>
+			        <!-- End of container -->
+				
+				</div>
+
+			<!-- End of audience -->
+
+
+		</div>
+	   	<!-- end of tab1 -->
+
+	   		
+	</div>
+	<!-- end of tabs-->
+
+
+<!-- Course Details -->
+	<div class="client-backgrnd hw-works">
+		<h2 class="gotham-rounded-bok hw-heading text-center h2-color">Course Details</h2>
+		
+		<!-- container -->
+			<div class="container">
+				<div class="panel-group " id="upskill-accordion">
+				  <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+				    <div class="panel-heading">
+				      <h4 class="panel-title clearfix header-links upskilling-ani">
+				        <a class=" pull-left gotham-rounded-bok">
+				          {{page.topic}} Introduction & Overview
+				        </a><i class="indicator pull-right">
+				        <span><i class="fa fa-caret-right"></i></span>
+						</i>
+				      </h4>
+				    </div>
+				    <div id="collapseOne" class="panel-collapse collapse">
+				      <div class="panel-body">
+				        <ul>
+				        	{%for course_description in page.Course_Details.Introduction_Overview%}
+		        			<li><p class="gotham-rounded-light hw-para">{{course_description}}</li>
+		        			{%endfor%}
+		        		</ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+				    <div class="panel-heading">
+				      <h4 class="panel-title clearfix header-links upskilling-ani">
+				        <a class=" pull-left gotham-rounded-bok">
+				           DevOps Challenges
+				        </a>
+				        <i class="indicator pull-right">
+				        <span><i class="fa fa-caret-right"></i></span>
+						</i>
+				      </h4>
+				    </div>
+				    <div id="collapseTwo" class="panel-collapse collapse">
+				      <div class="panel-body">
+				        <ul>
+				        	{%for challenges in page.Course_Details.challenges%}
+		        			<li><p class="gotham-rounded-light hw-para">{{challenges}}</p></li>
+		        			{%endfor%}
+		        		</ul>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+				    <div class="panel-heading">
+				      <h4 class="panel-title clearfix header-links upskilling-ani">
+				        <a class=" pull-left gotham-rounded-bok" >
+				          Methods & Tools to Principles & Mind-set
+				        </a><i class="indicator pull-right"><span><i class="fa fa-caret-right"></i></span>
+						</i>
+				      </h4>
+				    </div>
+				    <div id="collapseThree" class="panel-collapse collapse">
+				      <div class="panel-body">
+				        <ul>
+				        	{%for methods in page.Course_Details.methods_tools%}
+		        			<li><p class="gotham-rounded-light hw-para">{{methods}}</p></li>
+		        			{%endfor%}
+		        		</ul>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+			</div>
+			<!-- End of container -->
+
+				
+			</div>
+		<!-- End of course-details -->
+
+
+		<!-- Testimonial -->
+			<section id="testimonial">
+				<div class="container">
+					<center>
+						<!--Testimonial quotes icon-->
+						<span class="hw-sprite hw-test-quotes">
+							<svg version="1.1" id="Layer_1" x="0px" y="0px"
+								 width="60px" height="60px" viewBox="0 0 60 60" enable-background="new 0 0 60 60" xml:space="preserve">
+							<g>
+								<path fill="#4EACDB" d="M18.743-0.026c0,0-8.616,4.209-18.092,29.462L0.451,60l23.173-0.822l-0.287-29.181l-11.198-0.281
+									c0,0,0.574-13.749,12.06-24.69L18.743-0.026z"/>
+								<path fill="#4EACDB" d="M54.55-0.026c0,0-8.44,4.209-17.722,29.462L36.631,60l22.7-0.822l-0.279-29.181L48.08,29.716
+									c0,0,0.563-13.749,11.814-24.69L54.55-0.026z"/>
+							</g>
+							</svg>
+						</span>
+					</center>
+						
+					<!-- Testimonial Carousel -->
+					<div class="test-carousel">
+						<div id="tCarousel" class="carousel slide" data-interval="8000" data-ride="carousel" style="display:block">
+							<div class="carousel-inner">
+								<div class="active item">
+									<p class="hw-test-txt">&ldquo;Hashworks team has been helping us in our web development needs and we are very excited that we found the right development partner. They have expert web development team who are great fun to work with. We are currently building few amazing products together and see good partnership ahead.&rdquo;</p>
+									<div class="hw-test-img hr-display clearfix">
+										<span class="img-outer"><img class="usr-pic" src="/assets/img/upskilling/testimonial/suman.jpg" alt="Suman Varanasi"></span>
+										<ul>
+											<li><p class="hw-usr-name">Suman <span>Varanasi</span></p></li>
+											<li><p class="hw-usr-des">COO - <span><a href="http://www.mobileways.in" target="_blank">MobileWays</a></span></p></li>
+										</ul>
+									</div>
+									
+								</div>
+								<div class="item">
+									<p class="hw-test-txt">&ldquo;Pixel perfect websites are not a myth anymore, 
+									at least in case of Codetag who are also our development partners. They have 
+									a strong web development practice and their developers do a darn good job at converting our complex designs into a reality, that is why our designers love working with them.&rdquo;</p>
+									<div class="hw-test-img hr-display clearfix">
+										<span class="img-outer" ><img class="usr-pic" src="/assets/img/upskilling/testimonial/suman.jpg" alt="Suman Varanasi"></span>
+										<ul>
+											<li><p class="hw-usr-name">Suman <span>Varanasi</span></p></li>
+											<li><p class="hw-usr-des">COO - <span><a href="http://www.mobileways.in" target="_blank">MobileWays</a></span></p></li>
+										</ul>
+									</div>
+								</div>
+								<div class="item">
+									<p class="hw-test-txt">&ldquo;I have worked closely with the guys at Codetag 
+									for several projects.The best thing about Codetag is that it lives by it's values- customer first and perfect delivery.&rdquo;</p>
+									<div class="hw-test-img hr-display clearfix">
+										<span class="img-outer"><img class="usr-pic" src="/assets/img/upskilling/testimonial/suman.jpg" alt="Suman Varanasi"></span>
+										<ul>
+											<li><p class="hw-usr-name">Suman <span>Varanasi</span></p></li>
+											<li><p class="hw-usr-des">COO - <span><a href="http://www.mobileways.in" target="_blank">MobileWays</a></span></p></li>
+										</ul>
+									</div>  
+								</div>
+							</div>
+
+							<!-- Carousel nav -->
+							<a class="carousel-control left" href="#tCarousel" data-slide="prev">
+								<i class="fa fa-angle-left fa-3x"></i>
+							</a>
+							<a class="carousel-control right" href="#tCarousel" data-slide="next">
+								<i class="fa fa-angle-right fa-3x"></i>
+							</a>
+							<!-- Carousel nav -->
+
+						</div>
+					</div>
+					<!-- Testimonial Carousel -->
+
+				</div>
+			</section>
+		<!-- End of testimonial -->
+
+
+<!-- hw-started -->
+	<div class="hw-started log-clr-backgrnd container-fluid">
+		<div class="row p-flex">
+			<div class="col-lg-8 c-flex">
+				<h2 class="gotham-rounded-light hw-main-heading clr-white h-approch">WE'RE HERE TO HELP YOU OUT</h2>
+			</div>
+			<div class="col-lg-4 upskill-filter all c-flex clearfix">
+				<button class="text-uppercase custom-btn heading-custom-btn talk-to-us">get started</button>
+			</div>
+		</div>
+	</div>
+<!-- End of hw-started -->
+
+
+
+	<!-- layout for map and form-->
+			<div class="container ms-form-mar" id="form-map-div">
+				<div class="row">
+					<div class="col-lg-6 ">
+						<!-- google map -->
+      					<div id="map"></div>
+   					 <!-- End of google map -->
+						<div>
+							
+						</div>	
+					</div>
+					<div class="col-lg-6">
+						<div class="post-resume">
+							<form class="form-signin" onSubmit="submitForm(event)" >  <!-- start of form -->
+							<div class="row ">
+									<div class="col-lg-6"> 
+										<div class="text-border">
+											<div class="input-group">
+					      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/name-img.png"></div>
+					      						
+												<input type="text" class="form-control placeholder-pro mainLoginInput input_name" id="name" placeholder="NAME" >
+											</div>
+										</div>		
+									</div>
+								
+								<div class="col-lg-6"> 
+									<div class="text-border">
+										<div class="input-group">
+				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/email-img.png"></div>
+											<input type="text" class="form-control placeholder-pro mainLoginInput input_email" id="email" placeholder="EMAIL">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row ms-row-mar">
+								<div class="col-lg-6"> 
+									<div class="text-border">
+										<div class="input-group">
+				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
+											<input type="text" class="form-control placeholder-pro mainLoginInput gotham-rounded-light input_subject" id="subject" placeholder="Subject">
+										</div>	
+									</div>	
+								</div>
+								<div class="col-lg-6"> 
+									<div class="text-border">
+										<div class="input-group">
+				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/phone-img.png"></div>
+											<input type="text" class="form-control placeholder-pro mainLoginInput input_phone" id="phone" placeholder="PHONE">
+										</div>
+									</div>	
+								</div>
+							</div>
+
+							<div class="row ms-row-mar">
+								<div class="col-lg-12">
+									<div class="text-border">
+									<div class="input-group">
+				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
+				      						<textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" class="form-control placeholder-pro mainLoginInput input_message"  id="message" rows="3"></textarea>
+				      					</div>	
+				      					
+									</div>
+								</div>
+							</div><!-- end of text-area row-->
+
+							<div class="attach-file">
+				      			<div class="col-lg-9">
+				      				<input type="file" class="gotham-book input_file-upload" id="file-upload">
+				      				<br/><br/>
+				      				<span class="attach-text"><span><img src="/assets/img/talent_acquisition/attach.png"></span><span class="gotham-rounded-bok attach-span">Attach File</span></span>
+				      				<input type="text"  class="input_file-detail form-control placeholder-pro mainLoginInput"  id="file-detail" readonly="readonly"/>
+				      			</div>
+				      			<div class="col-lg-3 submit-background">
+<button id="submit-btn" type="submit" class="btn">
+              <br>
+              <div class="submit-resume hr-display" style="margin: 0px auto;">
+               <img src="/assets/img/talent_acquisition/submit.png" class="img-submit" >
+               <p class="gotham-rounded-bok submit-text placeholder-pro img-para">SUBMIT</p>
+              </div>
+                      </button>
+				      				
+				      			</div>
+				      		</div><!-- end of attach-file-->
+							</form> <!-- end of form -->
+						</div><!-- end of postresume -->
+					</div><!--end of col-lg-8-->
+				</div>
+			</div>	
+	<!-- end of layout for map and form-->
+
+
+
+
+
+
+
+{% include footer.html %}

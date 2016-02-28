@@ -1,0 +1,141 @@
+{% include header.html %}
+<main>
+	<section class="banner section_casestudy">
+		<div class="for-blog-back-color">
+			<img src="{{page.ribbon-img}}">
+			<img class="blog-profile-pic" src="{{page.profile_img}}">
+		    <h1 class="clr-white gotham-rounded-bok blog-main-title">{{ page.category }}</h1>
+		</div>
+
+
+		
+		
+			<div class="container">
+
+				<div class="row">
+					<div class="col-lg-8  col-lg-offset-2 ">
+						
+						<div class="hr-display">
+							<!-- <h3 class="text-uppercase hw-socialshare cs-li-margin">The New User Experience</h3> -->
+							<br/>
+							<p class="ribon-font gotham-rounded-bok">{{page.blog_title}}</p>
+							<hr/>
+						
+							<!-- <img  class="blog-ref-img" src="{{page.imgsrc1}}"> -->
+						
+							<p class="hw-para text-justify gotham-rounded-light">{{page.para}}</p>
+							
+							<!-- <img class="blog-ref-img" src="{{page.imgsrc}}"> -->
+							{% if {{page.imgsrc0}} == %}
+							{% else %}
+							<img  class="blog-ref-img blog-ref-img2" src="{{page.imgsrc0}}">
+							<span class="blog-source">Picture source from: {{page.blog_source}}</span>
+							{% endif %}
+						
+							{% if {{page.para1}} == %}
+							{% else %}
+							<p class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para1}}</p>
+							{% endif %}
+
+							{% if {{page.para2}} == %}
+							{% else %}
+							<p class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para2}}</p>
+							{% endif %}
+
+							{% if {{page.para3}} == %}
+							{% else %}
+							<p class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para3}}</p>
+							{% endif %}
+
+							{% if {{page.para4}} == %}
+							{% else %}
+							<p class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para4}}</p>
+							{% endif %}
+
+							{% if {{page.para5}} == %}
+							{% else %}
+							<p class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para5}}</p>
+							{% endif %}
+
+							{% if {{page.imgsrc1}} == %}
+							{% else %}
+							<img  class="blog-ref-img blog-ref-img2" src="{{page.imgsrc1}}">
+							{% endif %}
+
+
+							{% if {{page.para6}} == %}
+							{% else %}
+							<p class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para6}}</p>
+							{% endif %}
+
+							{% if {{page.para7}} == %}
+							{% else %}
+							<p class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para7}}</p>
+							{% endif %}
+
+							{% if {{page.para8}} == %}
+							{% else %}
+							<p class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para8}}</p>
+							{% endif %}
+
+							{% if {{page.para9}} == %}
+							{% else %}
+							<p class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para9}}</p>
+							{% endif %}
+
+
+							{% if {{page.imgsrc2}} == %}
+							{% else %}
+							<img  class="blog-ref-img blog-ref-img2" src="{{page.imgsrc2}}">
+							{% endif %}
+							
+
+						</div>
+
+<!-- 						<div class="hr-display">
+							<h3 class="text-uppercase hw-heading cs-li-margin">Using the Universal Windows Platform</h3>
+							<hr/>
+							{% for para in page.universal %}
+							<p class="hw-para gotham-rounded-bok">{{page.para}}</p>
+							{% endfor %}
+						</div>
+
+						<div class="hr-display">
+							<h3 class="text-uppercase hw-heading cs-li-margin">Our Focus</h3>
+							<hr/>
+							<p class="hw-para gotham-rounded-bok">{{page.focus}}{{page.focus}}{{page.focus}}{{page.focus}}</p>
+							<p class="hw-para gotham-rounded-bok">{{page.focus}}{{page.focus}}{{page.focus}}</p>
+						
+							
+						
+							
+							<p class="hw-para gotham-rounded-bok">{{page.focus}}{{page.focus}}</p>
+						</div> -->
+					    <div class="comments col-testimoni">
+						     {%include disqus.html%}
+					    </div>
+
+					</div>
+				</div>
+
+			</div>
+		
+
+
+	</section>
+</main>	
+	<script type="text/javascript">
+      /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+      var disqus_shortname = 'hashworks'; // required: replace example with your forum shortname
+      // var disqus_developer = 1; // Comment out when the site is live
+
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = 'http://' + disqus_shortname+'.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+      }());
+    </script>
+
+{% include footer.html %}

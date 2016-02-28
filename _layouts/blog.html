@@ -1,0 +1,118 @@
+{% include header.html %}
+<main>
+
+	<h1 class="text-center gotham-rounded-bok heading hw-font-heading"> Blog </h1>
+	<!-- carousel-->
+
+   		<div class="carousel-padding"> 
+		   	<div class="line"></div>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+
+		   		<div class="container heading-caro-padd">
+				    <!-- Wrapper for slides -->
+				    <div class="carousel-inner" role="listbox">
+				    	<h2 class="gotham-rounded-light hw-heading h2-color text-center hw-line-height">{{site.data.blog-carousel.content}}</h2> 
+				    </div>
+				</div>
+			</div>
+	 	</div>
+
+  <section class="banner">
+		<!-- <div class="casestudy-img">
+			<div class="banner-inner">
+				<h1 class="clr-white">Blog</h1>
+			</div>
+		</div> -->
+	</section>
+	<div class="blog-margin">
+	<ul class="blog-grid clearfix blog-main">
+
+		<li class="intro-wrapper">
+			<h2 class="tagline gotham-rounded-bold margin-zero hw-font-heading1">Sharing experience, Opinions & Thoughts</h2>
+			<h3 class="subtitle gotham-rounded-light ">Read our Chronicles</h3>
+			<p class="gotham-rounded-light">We take our work seriously. We express our thoughts and share our passion. We also have fun at work.
+Come share our thinking; know more about our team and the work we do…</p>
+
+			<div class="row filters cs-li-margin">
+				<div class="col-md-6 col-sm-6 col-xs-12">
+					<form method="get" action="" class="blog-cat-form">
+						<select class="postform gotham-rounded-bok" id="cat" name="cat">
+							<option selected="selected" value="0">Categories</option>
+							<option value="1" class="level-0">DataOps</option>
+							<option value="2" class="level-0">DevOps</option>
+							<option value="3" class="level-0">Data Science</option>
+							<option value="4" class="level-0">Ui/Ux</option>
+							<option value="5" class="level-0">Mobility</option>
+						</select>
+					</form>
+				</div>
+				<div class="col-md-6 col-sm-6 col-xs-12">
+
+					<form class="blog-author-form">
+						<div class="styled-select">
+							<select class="gotham-rounded-bok" id="author" name="author">
+								<option value="0">Authors</option>          
+								<option value="1">Gopi</option>
+								<option value="2">Mohit</option>
+								<option value="3">Rajesh</option>
+								<option value="4">Shilpa</option>
+								<option value="5">Stanely</option>
+
+							</select>
+						</div>											
+					</form>
+				</div>
+			</div>
+		</li>
+
+		<!-- for 2nd li we used different color, so we hide this li -->
+		<li class="hide"></li>
+
+		<!-- We need to add the option value attr name in li for filter -->
+
+	{% for post in site.posts | sort: 'date'   %}
+	
+		<li class="hw-filter-li Social blog-content ">
+			<div class="image-wrapper">
+				<img width="" height="" alt="" src="{{post.landing_image}}">
+				<div class="blog-post-meta">
+					<a href="{{ post.url }}" class="button" target="new">View Article</a>
+				</div>
+			</div>
+ 
+			<div class="blog-content-wrapper">
+				<h4><span class="month gotham-rounded-bok">{{ post.published-date }}</span>  <span class="categories-list gotham-rounded-bok"><a rel="category tag" href="{{ post.url }}"  target="new">{{ post.category}}</a></span></h4>
+				<h3><a href="{{ post.url }}" class="gotham-rounded-light hw-para"   target="new">{{post.top-tweets}}</a></h3>
+				<p>
+				<img class="nav-bp-author" alt="" src="{{post.author_image}}">
+				<a rel="category tag" class="categories-list gotham-rounded-light" href="{{ post.url }}"  target="new">{{ post.author}}</a>
+				<span style="float:right;"><span class="nov-blog-like-icon fa fa-heart-o"></span>
+				<span class="gotham-rounded-bok month">{{post.like_no}}</span></span>
+				</p>
+			</div>
+		</li>
+	{% endfor %}
+
+
+	</ul>
+	</div>
+
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script>
+		$(document).ready(function(){
+
+			//filter only for category
+			$("#cat").change(function() {
+				//option value attribute 
+				var val = $(this).attr('value');				
+			    $(".hw-filter-li." + val).show();
+			    //option value is not present in .hw-filter-li.(option value) then that li will hide
+			    $(".blog-grid > .hw-filter-li:not(." + val + ")").hide();
+			});
+
+		});
+	</script>
+
+
+</main>
+{% include footer.html %}

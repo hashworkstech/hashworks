@@ -1,0 +1,251 @@
+{% include header.html %}
+
+<main>
+
+  <div class="super-job">
+    <img src="/assets/img/talent_acquisition/Super_Job_Banner.svg" id="super-job-img">
+                {% assign my_variable = 0 %}
+                {% for job in  site.jobboard | sort: 'date'| date: "%d-%m-%y" %}
+
+                {% if my_variable == 0 %}
+    <div id="latest1" class="common-position" >
+      <div class="hr-display latest-job">
+        <div class="job-date gotham-rounded-light clr-white">{{job.date | date: '%B %d, %Y'}}</div>
+        <div class="job-board-title gotham-rounded-bold hw-heading  clr-white">{{job.job_title}}</div>
+        <div class="job-exp gotham-rounded-bold hw-heading  clr-white">{{job.experience}} exp</div>
+        <div class="job-location gotham-rounded-light clr-white"><span><img src="/assets/img/talent_acquisition/location.png" id="job-location-img"></span>{{job.location}}</div>
+      </div>
+    </div>
+    {% elsif my_variable == 1 %}
+    <div  id="latest2" class="common-position" >
+      <div class="hr-display latest-job">
+        <div class="job-date gotham-rounded-light clr-white">{{job.date | date: '%B %d, %Y'}}</div>
+        <div class="job-board-title gotham-rounded-bold hw-heading  clr-white">{{job.job_title}}</div>
+        <div class="job-exp gotham-rounded-bold hw-heading  clr-white">{{job.experience}} exp</div>
+        <div class="job-location gotham-rounded-light clr-white"><span><img src="/assets/img/talent_acquisition/location.png" id="job-location-img"></span>{{job.location}}</div>
+      </div>
+    </div>
+    {% elsif my_variable == 2 %}
+    <div id="latest3" class="common-position" >
+      <div class="hr-display latest-job">
+        <div class="job-date gotham-rounded-light clr-white">{{job.date | date: '%B %d, %Y'}}</div>
+        <div class="job-board-title gotham-rounded-bold hw-heading  clr-white">{{job.job_title}}</div>
+        <div class="job-exp gotham-rounded-bold hw-heading  clr-white">{{job.experience}} exp</div>
+        <div class="job-location gotham-rounded-light clr-white"><span><img src="/assets/img/talent_acquisition/location.png" id="job-location-img"></span>{{job.location}}</div>
+      </div>
+    </div>
+    {% elsif my_variable == 3 %}
+    <div id="latest4" class="common-position">
+      <div class="hr-display latest-job">
+        <div class="job-date gotham-rounded-light clr-white">{{job.date | date: '%B %d, %Y'}}</div>
+        <div class="job-board-title gotham-rounded-bold hw-heading  clr-white">{{job.job_title}}</div>
+        <div class="job-exp gotham-rounded-bold hw-heading  clr-white">{{job.experience}} exp</div>
+        <div class="job-location gotham-rounded-light clr-white"><span><img src="/assets/img/talent_acquisition/location.png" id="job-location-img"></span>{{job.location}}</div>
+      </div>
+    </div>
+                    {% endif %}
+
+                {% assign assign my_variable = my_variable | plus:1  %}
+                {% endfor %}
+  </div>
+
+  <div class="container">
+    <h2 class="gotham-rounded-bok h2-color hw-heading">Search for a job</h2>
+    <div class="job-list-btn">
+      <span class="span-padding-rite">
+        <input type="text" class=" placeholder-pro keyword gotham-rounded-light  " placeholder="keyword eg.(job-title)" id="job-title">
+      </span>
+      <span class="span-padding-rite">
+        <input type="text" class=" placeholder-pro keyword gotham-rounded-light" placeholder="location eg.(city)" id="job-location">
+      </span>
+      <span class="span-padding-rite"><button class="job-search serch-the-job">SEARCH FOR JOB</button></span>
+    </div>
+
+    <!-- table-wrapper -->
+    <div class="table-wrapper">
+  <table class="table   job-table" >
+    <thead>
+      <tr  data-value= "tr2">
+        <th class="gotham-rounded-bold hw-para">Job Title</th>
+        <th class="gotham-rounded-bold hw-para">Location</th>
+        <th class="gotham-rounded-bold hw-para">Posted On</th>
+        <th class="gotham-rounded-bold hw-para">Experience</th>
+        <th class="gotham-rounded-bold hw-para">Type</th>
+      </tr>
+    </thead>
+
+ 
+
+    <tbody>
+       
+{% for job in  site.jobboard | sort: 'date'| date: "%d-%m-%y" | reverse %}
+        <tr class="job-list-item "  data-value= "tr2">
+            <td class="gotham-rounded-bok  hw-contact-no "> {{job.job_title}} </td>
+            <td class="gotham-rounded-bok  hw-contact-no log-color-blue">{{job.location}}</td>
+            <td class="gotham-rounded-bok  hw-contact-no">{{job.date | date: '%B %d, %Y'}}</td>
+            <td class="gotham-rounded-bok  hw-contact-no">{{job.experience}}</td>
+            <td class="gotham-rounded-bok  hw-contact-no">{{job.type}}</td>
+            <td class="gotham-rounded-bok hw-contact-no hw-job1" ><span><i class="fa fa-search"></i></span><span class="view-act view-mar">View</span></td>
+          </tr>
+
+
+
+      <tr class=" hide view1">
+
+        <td class= "job-coll" colspan="8">
+
+          <div class="view">
+
+            <span class="view1-close view-close"><i class="fa fa-times"></i></span>
+            <h5 class="gotham-rounded-bold clr-black hw-copyright job-title-mar">Job Description</h5>
+            {% for  job_descr in job.job_description %}
+              <li class="gotham-rounded-bok vw-coll-line-height hw-contact-no hw-contact-no job-margin ">{{job_descr}}</li>
+            {% endfor %}
+
+            <h5 class="gotham-rounded-bold clr-black hw-copyright job-title-mar"> Responsibilities of Visual Designer</h5>
+            {% for  job_res in job.responsibilities %}
+              <li class="gotham-rounded-bok vw-coll-line-height hw-contact-no hw-contact-no job-margin ">{{job_res}}</li>
+            {% endfor %}
+            
+
+            <h5 class="gotham-rounded-bold clr-black hw-copyright job-title-mar">Skills</h5>
+            {% for  job_skill in job.skills %}
+              <li class="gotham-rounded-bok vw-coll-line-height hw-contact-no hw-contact-no job-margin ">{{job_skill}}</li>
+            {% endfor %}
+            
+            <button class="apply gotham-rounded-bold" data-toggle="modal" data-target="#start-project">Apply Now</button>
+
+          </div> <!-- end of view --> 
+
+        </td><!-- end of td-->
+
+      </tr><!-- end of tr -->
+    {% endfor %}
+
+
+
+  </tbody>
+
+  </table>
+</div>
+
+    <div id="start-project" class="modal fade">
+          <div class="modal-dialog contact-modal">
+              <div class="modal-content">
+              <div class="container form-container">
+                    <span class="hm-contact"><i class="fa fa-mobile"></i><span class="hm-num gotham-rounded-light">+8861162420</span></span>
+          <img class="close-pop view1-close form-close" data-dismiss="modal" src="/assets/svg/close-pop.svg" alt="close">
+                    <h1 class="gotham-rounded-bold">Let's work together</h1>
+                    <hr>
+                    <div class="post-resume">
+                <form class="form-signin" onSubmit="submitForm(event)" >  <!-- start of form -->
+              <div class="row ">
+                  <div class="col-lg-6"> 
+                    <div class="text-border">
+                      <div class="input-group">
+                            <div class="input-group-addon"><img src="/assets/img/talent_acquisition/name-img.png"></div>
+                            
+                        <input type="text" class="form-control placeholder-pro mainLoginInput input_name" id="name" placeholder="NAME" >
+                      </div>
+                    </div>    
+                  </div>
+                
+                <div class="col-lg-6"> 
+                  <div class="text-border">
+                    <div class="input-group">
+                          <div class="input-group-addon"><img src="/assets/img/talent_acquisition/email-img.png"></div>
+                      <input type="email" class="form-control placeholder-pro mainLoginInput input_email" id="email" placeholder="EMAIL">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row ms-row-mar">
+                <div class="col-lg-6"> 
+                  <div class="text-border">
+                    <div class="input-group">
+                    <div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
+                      <input type="text" class="form-control placeholder-pro mainLoginInput gotham-rounded-light input_subject" id="subject" placeholder="Subject">
+                    </div> 
+                  </div>  
+                </div>
+                
+                <div class="col-lg-6"> 
+                  <div class="text-border">
+                    <div class="input-group">
+                          <div class="input-group-addon"><img src="/assets/img/talent_acquisition/phone-img.png"></div>
+                      <input type="text" class="form-control placeholder-pro mainLoginInput input_phone" id="phone" placeholder="PHONE">
+                    </div>
+                  </div>  
+                </div>
+              </div>
+
+              <div class="row ms-row-mar">
+                <div class="col-lg-12">
+                  <div class="text-border">
+                  <div class="input-group">
+                          <div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
+                          
+                          <textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" class="form-control placeholder-pro mainLoginInput input_message"  id="message" rows="3"></textarea>
+                        </div>  
+                  </div>
+                </div>
+              </div><!-- end of text-area row-->
+
+              <div class="attach-file">
+                    <div class="col-lg-9">
+                      <input type="file" class="gotham-book input_file-upload" id="file-upload">
+                      <br/><br/>
+                      <span class="attach-text"><span><img src="/assets/img/talent_acquisition/attach.png"></span><span class="gotham-rounded-bok attach-span clr-white">Attach File</span></span>
+                      <input type="text"  class="input_file-detail form-control placeholder-pro mainLoginInput"  id="file-detail" readonly="readonly"/>
+                    </div>
+                    <div class="col-lg-3 submit-background">
+                     
+                      <button id="submit-btn" type="submit" class="btn">
+              <br>
+              <div class="submit-resume hr-display" style="margin: 0px auto;">
+               <img src="/assets/img/talent_acquisition/submit.png" class="img-submit" >
+               <p class="gotham-rounded-bok submit-text placeholder-pro img-para">SUBMIT</p>
+              </div>
+                      </button>
+                    </div>
+                  </div><!-- end of attach-file-->
+            </form> <!-- end of form -->
+            </div><!-- end of postresume -->
+            <div class="show-as-love"><!-- hm social icon-->
+          <div class="row">
+            <div class=" col-lg-offset-7 col-lg-5">
+              <div class="hm-shows-love">
+                <h1 class="gotham-rounded-bold hm-show-text hw-heading show-text1">Show us your <i class="fa fa-heart hm-show-heart"></i> </h1>
+                <div class= "hm-icons hm-form-val">
+                            <a href="https://www.facebook.com/hashworks/" class="fa-stack hw-socialshare social-icons" target="new">
+                              <i class="fa fa-circle-thin fa-stack-2x"></i>
+                              <i class="fa fa-facebook fa-stack-1x"></i>
+                            </a>
+                            <a href="https://twitter.com/hashworksco" class="fa-stack hw-socialshare social-icons" target="new">
+                              <i class="fa fa-circle-thin fa-stack-2x"></i>
+                              <i class="fa fa-twitter fa-stack-1x"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/9228490" class="fa-stack hw-socialshare social-icons" target="new">
+                              <i class="fa fa-circle-thin fa-stack-2x"></i>
+                              <i class="fa fa-linkedin fa-stack-1x"></i>
+                           </a>
+                </div>
+                        </div>
+                    </div>
+              </div><!--end of hm-socia-icn-->
+          </div>
+      </div>
+     </div>
+   </div>
+ </div>
+    <!-- End of work-together popup -->
+
+ 
+</div>
+  
+
+
+</main> 
+
+{% include footer.html %} 
+

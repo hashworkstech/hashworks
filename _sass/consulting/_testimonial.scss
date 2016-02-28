@@ -1,0 +1,86 @@
+/*carousel*/
+.testimonial
+{
+
+display:block;
+background-color:rgb(105,180,219);
+font-family:'gotham-rounded-book';
+font-size:20px;
+color:white;
+padding:15px 33px 15px 33px;
+    border-radius: 5px;
+
+}
+
+.testimonial-ol
+{
+border-radius: 5px;
+    font-size: 0px;
+    position: absolute;
+    top: -22px;
+    left: auto;
+    border: 1px solid;
+    bottom: auto;
+    right: 0;
+    width: auto;
+    margin: 0;
+    padding: 3px;
+    padding-right: 3px;
+    padding-left: 3px;
+    border-color: rgb(199,199,199);
+}
+
+
+
+  .testimonial .carousel-indicators li {
+     background-color: rgb(199,199,199);
+     width: 12px;
+    height: 12px;
+}
+ .testimonial .carousel-indicators .active {
+   background-color: #69B4DB;
+   width: 12px;
+    height: 12px;
+    margin:1px;
+}
+
+.carosel-pos
+{
+    margin-top: 80px;
+}
+
+.arrow-down {
+       left: 365px;
+    width: 0px;
+    height: 0;
+    border-right: 32px solid transparent;
+    border-top: 37px solid #69B4DB;
+    position: absolute;
+}
+.arrow-down-left {
+       left: 70px;
+    width: 0px;
+    height: 0;
+    border-left: 32px solid transparent;
+    border-top: 37px solid #69B4DB;
+    position: absolute;
+}
+.name-align
+{
+       margin-top: 30px;
+        margin-left: 200px;
+
+}
+.name-align2 {
+    margin-top: 30px;
+    margin-left: 90px;
+}
+
+
+.textvalignmiddle {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+/*carousel*/

@@ -1,0 +1,58 @@
+<!doctype html>
+    <title>{% if page.title %}{{ page.title }}{% endif %}</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+     <!-- Styles -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/chan.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="/assets/js/modernizr/modernizr.js"></script>
+    <link rel="shortcut icon" type="image/ico" href="/favicon.ico">
+  </head>
+
+{% if page.layout == "default" %}
+<body class="hw-home-body">
+{% else %}
+<body class="hidden-xs hidden-sm">  
+{% endif %}
+
+  {% if page.layout == "default" %}
+  <header class="hw-home">
+    {% else %}
+    <header>
+  
+{% endif %}
+
+
+    <!-- logo -->
+                <div class="logo" id="log-fixed" >
+                  <a href="/"></a>
+                </div>
+              <!-- End of logo -->
+
+
+
+             <!--  <div class="triangle top slide"></div> -->
+<!-- <div class="triangle bottom slide"></div>
+ -->
+
+
+  <!-- navigation-bar -->
+          <nav class="navbar navbar-default" style="display: none;">
+            <ul class="nav navbar-nav navbar-right">
+                  {% for item in site.data.nav.main-right %}
+                    <li class="gotham-rounded-light header-links">
+                      <a href="{{ item.url }}">{{ item.text }}</a>
+                    </li>
+                  {% endfor %}
+            </ul>
+                  
+             
+
+            
+          </nav>
+        <!-- navigation-bar -->
+
+</header>
