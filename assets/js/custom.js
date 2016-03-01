@@ -5,7 +5,7 @@
 $(document).ready(function(){
 
 
-    $('.toggle').click(function (event) {
+    $('.toggle').click(function (event) { 
         event.preventDefault();
         var target = $(this).attr('href');
         $(target).toggleClass('hidden show');
@@ -42,7 +42,52 @@ $(document).ready(function(){
 });
 
 
+//filter for the blog
+     $('#author,#cat').change(function() {
+         var  val1 = $("#cat").children('option:selected').data('value');
+         var  val2 = $("#author").children('option:selected').data('value');
+         
+         if(val1=='Categories' && val2=='Authors'){
+          $(".hw-filter-li").each(function(){
+                 $(this).show();
+             });
+          }
 
+          else if(val1!='Categories' && val2=='Authors'){
+          $(".hw-filter-li").each(function(){
+           if($(this).hasClass(val1)){
+             $(this).show();
+             
+           }
+           else{
+             $(this).hide();
+           }
+         });
+          }
+
+           else if(val1=='Categories' && val2!='Authors'){
+          $(".hw-filter-li").each(function(){
+           if($(this).hasClass(val2)){
+             $(this).show();
+             
+           }
+           else{
+             $(this).hide();
+           }
+         });
+          }
+
+          else if(val1!='Categories' && val2!='Authors'){
+          $(".hw-filter-li").each(function(){
+           if($(this).hasClass(val2) && $(this).hasClass(val1))
+           {
+                 $(this).show();}
+               else{
+                 $(this).hide();
+               }
+         });
+          }
+     });
 
     /* we love parter */
     $('.home-hr').addClass("anim");
@@ -954,7 +999,7 @@ var which_one_clicked = 0;
       $("#div-top-right").animate({'width' : '0%','height' : '0vh'},844); 
       $("#div-bottom-right").animate({'width' : '0%','height' : '0vh'},844); 
       $("#div-bottom-left").animate({'width' : '0%','height' : '0vh'},844);
-      $(this).animate({'height' : '240vh'},4); 
+      setTimeout(function () {$("#div-top-left").addClass("ot-werelve-wepractice"); },800);
       $("#collapse-image-1").css("display","block");
       $("#collapse-image-1").animate({"opacity":"1"},844);
       $(".main-contentt h1.text-center.gotham-rounded-light.heading.hw-copyright").animate({"margin-bottom":"7%"},844);
@@ -970,7 +1015,7 @@ var which_one_clicked = 0;
       $("#div-top-left").animate({'width' : '0%','height' : '0vh'},844); 
       $("#div-bottom-right").animate({'width' : '0%','height' : '0vh'},844); 
       $("#div-bottom-left").animate({'width' : '0%','height' : '0vh'},844);
-      $(this).animate({'height' : '260vh'},4); 
+      setTimeout(function () {$("#div-top-right").addClass("ot-werelve-wepractice"); },800);
       $("#collapse-image-2").css("display","block");
       $("#collapse-image-2").animate({"opacity":"1"},844);
       $(".main-contentt h1.text-center.gotham-rounded-light.heading.hw-copyright").animate({"margin-bottom":"7%"},844);
@@ -986,7 +1031,8 @@ var which_one_clicked = 0;
       $("#div-bottom-right").animate({'width' : '0%','height' : '0vh'},844);
       $("#div-top-right").animate({'width' : '0%','height' : '0vh'},844); 
       $("#div-top-left").animate({'width' : '0%','height' : '0vh'},844);  
-      $(this).animate({'height' : '210vh',"bottom":"-171%"},4); 
+      setTimeout(function () {$("#div-bottom-left").addClass("ot-wepartner-weaccelrte");
+      $("#buisness-tab").removeClass("thinking-height2"); },800);
       $("#collapse-image-3").css("display","block");
       $("#collapse-image-3").animate({"opacity":"1"},844);
       $(".main-contentt h1.text-center.gotham-rounded-light.heading.hw-copyright").animate({"margin-bottom":"7%"},944);
@@ -1002,7 +1048,9 @@ var which_one_clicked = 0;
       $("#div-bottom-left").animate({'width' : '0%','height' : '0vh'},844); 
       $("#div-top-right").animate({'width' : '0%','height' : '0vh'},844); 
       $("#div-top-left").animate({'width' : '0%','height' : '0vh'},844); 
-      $(this).animate({'height' : '160vh',"bottom":"-107%"},0); 
+      setTimeout(function () {$("#div-bottom-right").addClass("ot-wepartner-weaccelrte");
+      $("#buisness-tab").removeClass("thinking-height2"); },800);
+      
       $("#collapse-image-4").css("display","block");
       $("#collapse-image-4").animate({"opacity":"1"},844);
       $(".main-contentt h1.text-center.gotham-rounded-light.heading.hw-copyright").animate({"margin-bottom":"7%"},844);
@@ -1015,6 +1063,8 @@ var which_one_clicked = 0;
             scrollTop: navtab}, 500, 'linear');
         if(which_one_clicked == 4){
           which_one_clicked = 0;
+          $("#div-bottom-right").removeClass("ot-wepartner-weaccelrte");
+          $("#buisness-tab").addClass("thinking-height2"); 
           $("#collapse-image-4").css("display","none");
           $("#collapse-image-4").animate({"opacity":"0"},844);
           $("#div-bottom-right").addClass("thinking-height");
@@ -1023,6 +1073,8 @@ var which_one_clicked = 0;
         }
         else if(which_one_clicked == 3){
           which_one_clicked = 0;
+          $("#div-bottom-left").removeClass("ot-wepartner-weaccelrte");
+          $("#buisness-tab").addClass("thinking-height2"); 
           $("#collapse-image-3").css("display","none");
           $("#collapse-image-3").animate({"opacity":"0"},844);
           $("#div-bottom-left").addClass("thinking-height");
@@ -1031,14 +1083,15 @@ var which_one_clicked = 0;
         }
         else if(which_one_clicked == 2){
           which_one_clicked = 0;
+          $("#div-top-right").removeClass("ot-werelve-wepractice");
           $("#collapse-image-2").css("display","none");
           $("#collapse-image-2").animate({"opacity":"0"},844);
           $("#div-top-right").addClass("thinking-height");
-          // $("#tools-using").css("margin-top","0%");
           $("#div-top-right").animate({'height' : '77.4vh'},0); 
         }
         else if(which_one_clicked == 1){
           which_one_clicked = 0;
+          $("#div-top-left").removeClass("ot-werelve-wepractice"); 
           $("#collapse-image-1").css("display","none");
           $("#collapse-image-1").animate({"opacity":"0"},844);
           $("#div-top-left").addClass("thinking-height");
@@ -1076,7 +1129,6 @@ var which_one_clicked = 0;
           $("#collapse-image-2").css("display","none");
           $("#collapse-image-2").animate({"opacity":"0"},0);
           $("#div-top-right").addClass("thinking-height");
-          // $("#tools-using").css("margin-top","0%");
           $("#div-top-right").animate({'height' : '77.4vh'},0); 
         }
         else if(which_one_clicked == 1){
@@ -1094,29 +1146,48 @@ var which_one_clicked = 0;
       $("#div-top-right").animate({'width' : '50%','height' : '38.7vh'},0); 
       $("#div-top-left").animate({'width' : '50%','height' : '38.7vh'},0); 
     });
-  
-     $('#nav-icon1').click(function(){
-    if($("#toc").css("width")=="0px")
-      {
-        $("#toc").animate({'width':'142px'},700);
-        $(".hide-scroll").hide();
-    $(this).toggleClass('open');
-    }
-    else{
-      $("#toc").animate({'width':'0px'},500);
-      $(".hide-scroll").show();
-      $(this).toggleClass('open');
-    }
-      });
 
-    $("section").click(function(){
-       if($("#toc").css("width")=="142px")
-      {
-      $("#nav-icon1").toggleClass('open');
-      $("#toc").animate({'width':'0px'},500);
-       $(".hide-scroll").show();
-     }
-    });
+
+
+/*for burger menu*/
+ $('#nav-icon1').click(function(){
+   if($("#toc").css("width")=="0px")
+     {
+       $("#toc").animate({'width':'142px'},700);
+       $(".hide-scroll").hide();
+       $("#nav-icon1").hide();
+   // $(this).toggleClass('open');
+   }
+   else{
+     $("#toc").animate({'width':'0px'},500);
+     $(".hide-scroll").show();
+     $("#nav-icon1").show();
+     // $(this).toggleClass('open');
+   }
+     });
+
+   $("section").click(function(){
+      if($("#toc").css("width")=="142px")
+     {
+     // $("#nav-icon1").toggleClass('open');
+     $("#toc").animate({'width':'0px'},500);
+      $(".hide-scroll").show();
+     $("#nav-icon1").show();
+
+    }
+  });
+
+     $("#button1").click(function(){
+      if($("#toc").css("width")=="142px")
+     {
+     // $("#nav-icon1").toggleClass('open');
+     $("#toc").animate({'width':'0px'},500);
+      $(".hide-scroll").show();
+     $("#nav-icon1").show();
+
+    }
+   });
+   /*end*/
 
 
 
@@ -1512,11 +1583,17 @@ bootcamp_filter_function();
 /*end filtering in bootcamp*/ 
 
 /*start of company page animation banner*/
+$("#xmlid_company_date")
 
-$('g[id="XMLID_2_"]').mouseenter(function(){
+
+$('g[id="XMLID_2_"],#xmlid_company_date').mouseenter(function(){
   $("#xmlid_company_date").text("2014");
   $("#xmlid2_circle_desc").show();
   $(this).children('g:last-child').find("path").attr("class", "XMLID_2_-rotate");
+});
+
+$('#xmlid_company_date').mouseenter(function(){
+  $("#xmlid2_circle_desc").show();
 });
 
 $('g[id="XMLID_3_"]').mouseenter(function(){

@@ -5,7 +5,8 @@
   <div class="super-job">
     <img src="/assets/img/talent_acquisition/Super_Job_Banner.svg" id="super-job-img">
                 {% assign my_variable = 0 %}
-                {% for job in  site.jobboard | sort: 'date'| date: "%d-%m-%y" %}
+                {% assign items = site.jobboard | sort: 'date'| date: "%d-%m-%y"| reverse %}
+                {% for job in  items %}
 
                 {% if my_variable == 0 %}
     <div id="latest1" class="common-position" >
@@ -77,8 +78,8 @@
  
 
     <tbody>
-       
-{% for job in  site.jobboard | sort: 'date'| date: "%d-%m-%y" | reverse %}
+{% assign items = site.jobboard | sort: 'date'| date: "%d-%m-%y"| reverse %}    
+{% for job in  items %}
         <tr class="job-list-item "  data-value= "tr2">
             <td class="gotham-rounded-bok  hw-contact-no "> {{job.job_title}} </td>
             <td class="gotham-rounded-bok  hw-contact-no log-color-blue">{{job.location}}</td>

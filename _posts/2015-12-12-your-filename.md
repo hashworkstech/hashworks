@@ -33,6 +33,6 @@ para3: Enabling a strong mobility driven business model will help organizations 
 
 
 author: Rajesh
-title: UI/UX
+title: Mobility
 ---
 
