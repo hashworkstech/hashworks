@@ -536,9 +536,9 @@
         bottom: 48%;
         margin-left: -20px;
     }
-    .product-carousel {
-        width: 300px;
-   
+     .product-carousel {
+        width: 365px;
+            height: 110px;
     }
     .product-quote {
         margin-top: -20px;
@@ -561,6 +561,25 @@
         height: 100%;
         
     }
+        .product-desc{
+        position: absolute;
+        background-color: #fff;
+        opacity: 0;
+        height: 100%;
+    width: 80%;
+    top: 6%;
+    left: 15%;
+        
+    }
+    .product-desc1 {
+    position: absolute;
+    background-color: #fff;
+    width: 90%;
+    opacity: 0;
+    top: -5%;
+    left: 7%;
+    height: 100%;
+}
     
     .product-carousel .item:hover  .product-desc{
         opacity: 1;
