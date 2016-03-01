@@ -21,14 +21,14 @@
     }
 
     function resetTheForm(){
-                $(".input_name").val('');
-                $(".input_email").val(''); 
-                $(".input_subject").val('');
-                $(".input_phone").val('');
-                $(".input_message").val('');
+                $(".input_name").attr("placeholder", "Name");
+                $(".input_email").attr("placeholder", "Email"); 
+                $(".input_subject").attr("placeholder", "Subject");
+                $(".input_phone").attr("placeholder", "Phone no");
+                $(".input_message").attr("placeholder", "Message");
                 $(".sub-width").val('Subject');
                 $('.input_file-upload').val('');
-                $('.input_file-detail').val('');
+                $('.input_file-detail').val(' ');
 
                 $(".input_name").parent().parent().css('border', '1px solid #0AB4C5');
                 $(".input_email").parent().parent().css('border', '1px solid #0AB4C5');
