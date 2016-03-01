@@ -67,6 +67,56 @@ Course_Details:
     - Visualization
     - Feedback loops
     - Continuous Improvement
+    
+   Prescriptive_Adaptive_process: 
+    - Overstating & Underfinishing
+    - Best of both the world Scrum & Kanban
+    - Scrum & XP
+    - Test Driven Development
+    - Actionable Metrics
+   
+   Level_of_Abstraction:
+    - Build & Test applications faster
+    - Why PaaS
+    - Few players in the market
+    - New trends
+
+   Project_Management:
+    - Introduction to a team collaboration software like Confluence
+    - Capturing requirements
+    - Create issues
+    - Track releases
+    - Enabling Agile development with a tool oriented approach
+
+   Version_Control:
+    - Git working session with multiple use cases
+    - VSS/SVN/CVS migration to Git working session with use cases
+   
+   Continuous_Integration:
+    -  CI server Working session - Jenkins
+    -   Implementing CI & CD using cloudbees
+    -     How to write an automated Build scripts
+   
+   Infrastructure_Automation:
+    -  Infrastructure as a code
+    -  Overview of Chef as a case study with working session
+    -  Automate Build, deploy and management of infrastructure using Chef - Use cases
+
+   Deployment_Automation:
+    -   Automated Release/Deploy
+    -   Automated Verification
+    -   Automated Promote
+    -   Passive monitoring
+    -    Scripted rollback
+   
+   Monitoring:
+    -  Monitor infrastructure resources
+    -  Log monitoring
+    -  Visibility into resource utilization, operational performance and overall demand patterns
+    -   Metrics, including CPU utilization, disk I/O and network traffic
+    -   Custom Metrics
+
+   
 
 
 

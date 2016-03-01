@@ -1440,7 +1440,7 @@
 									<div class="hw-ui-ux-carousel test-left">
 
 										<!-- carousel -->
-										<div id="ui-ux-carousel" class="carousel slide" data-ride="carousel">
+										<div id="ui-ux-carousel" class="carousel ux-ui-carousel-inerval slide" data-ride="carousel">
 
 										  <!-- Wrapper for slides -->
 										  <div class="carousel-inner" role="listbox">
@@ -1507,7 +1507,7 @@
 									<div class="hw-ui-ux-carousel test-right">
 
 										<!-- carousel -->
-										<div id="ui-ux-carousel2" class="carousel slide" data-ride="carousel">
+										<div id="ui-ux-carousel2" class="carousel ux-ui-carousel-inerval slide" data-ride="carousel">
 
 										  <!-- Wrapper for slides -->
 										  <div class="carousel-inner" role="listbox">
@@ -1591,7 +1591,7 @@
 									<div class="hw-ui-ux-carousel test-left">
 
 										<!-- carousel -->
-										<div id="ui-ux-carousel3" class="carousel slide" data-ride="carousel">
+										<div id="ui-ux-carousel3" class="carousel ux-ui-carousel-inerval slide" data-ride="carousel">
 
 										  <!-- Wrapper for slides -->
 										  <div class="carousel-inner" role="listbox">
@@ -1659,7 +1659,7 @@
 										<div class="hw-ui-ux-carousel test-right">
 
 											<!-- carousel -->
-											<div id="ui-ux-carousel4" class="carousel slide" data-ride="carousel">
+											<div id="ui-ux-carousel4" class="carousel ux-ui-carousel-inerval slide" data-ride="carousel">
 
 											  <!-- Wrapper for slides -->
 											  <div class="carousel-inner" role="listbox">
@@ -2103,3 +2103,9 @@
 
 
 {% include footer.html %}
+
+<script type="text/javascript">
+  $('.ux-ui-carousel-inerval').carousel({
+  interval:500
+})
+</script>
