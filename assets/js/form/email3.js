@@ -26,11 +26,11 @@
                 $(".input_subject").val('');
                 $(".input_phone").val('');
                 $(".input_message").val('');
-                $(".input_name").attr("placeholder", "Name");
-                $(".input_email").attr("placeholder", "Email"); 
+                $(".input_name").attr("placeholder", "NAME");
+                $(".input_email").attr("placeholder", "EMAIL"); 
                 $(".input_subject").attr("placeholder", "Subject");
-                $(".input_phone").attr("placeholder", "Phone no");
-                $(".input_message").attr("placeholder", "Message");
+                $(".input_phone").attr("placeholder", "PHONE");
+                $(".input_message").attr("placeholder", "MESSAGE/FEEDBACK/REQUEST");
                 $(".sub-width").val('Subject');
                 $('.input_file-upload').val('');
                 $('.input_file-detail').val(' ');
