@@ -308,6 +308,9 @@ div#mb4-testimonial-first {
         visibility: visible;
         background-color: rgba(12, 200, 219, 1);
     }
+    .hw-header-eu-width{
+        width:  200px !important;
+    }
 
    
   
