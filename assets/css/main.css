@@ -118,12 +118,6 @@ html {
     	cursor: pointer;
     	/*margin-top: 30px;*/
 	}
-	#log-fixed {
-		position: fixed;
-		top: 0;
-  		z-index: 5;
-	}
-	
 	.gotham-rounded-bold {
 		font-family: "gotham-rounded-bold";
 	}
@@ -515,9 +509,6 @@ html {
 	padding: 0 25px;
 	}
 
-	.hw-fixed-header #Hashworks-Nav {
-	   background: #EC297B;
-	}
 
 	nav.navbar-default.hw-fixed-header {
 	position: fixed;
@@ -552,7 +543,7 @@ html {
 	background: #fff;
 	}
 	/* hover */
-	.hw-hover-header #Hashworks-Nav {
+	.hw-hover-header #hw-header-Nav,.hw-fixed-header #hw-header-Nav{
 	   background: #EC297B;
 	}
 
@@ -2488,7 +2479,7 @@ width: 100%;
   right: -240px;
   top: 0;
 width: 0px; 
-z-index: 5;
+z-index: 7;
 }
   nav#toc ul {
     list-style: none;
@@ -2533,7 +2524,7 @@ nav#toc ul {
 	float: right;
 	position: fixed;
     right: 0px;
-    z-index: 1;
+    z-index: 6;
   width: 23px;
   height: 45px;
   top: 0;
