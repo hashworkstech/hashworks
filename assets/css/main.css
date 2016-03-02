@@ -365,10 +365,7 @@ html {
 	.hw-fixed-heading .heading-custom-btn:hover a {
 		color: #fff;
 	}
-	.hr-display {
-		display: table;
-		margin: 0 auto;
-	}
+	
 	.p-flex {
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -746,7 +743,7 @@ html {
 			cursor: hand;
 		}
 
-		#carousel_ul .hr-display {
+		.hr-display {
 			display: table;
 			margin: 0 auto;
 		}
@@ -930,7 +927,7 @@ html {
 
 /* end of it services*/	
 	  
-	.hw-carousel-underline {
+	.hw-header-underline {
 		height: 2px;
 		width: 10%;
 		background-color: #0ab4c5;
@@ -950,7 +947,7 @@ html {
 	.line-padding {
 		padding-top: 50px;
 	}
-	.carousel-padding {
+	.hw-header-padding {
 		position: relative;
 		padding: 0px 60px 24px;
 	}
@@ -1041,8 +1038,7 @@ div#case-studies-total{
 div#case-studies-filter-controls {
 	    padding-top: 40px;
 }
-p#case-studies-total-no {
-}
+
 div#case-studies-filter-controls input{
 	zoom:1.2;
 }
@@ -2347,13 +2343,13 @@ width: 100%;
     width: 100%;
     border-bottom: 1px solid #37b5c4;
   	}
-  	.nav-tabs>li>a, .nav-tabs>li>a, .nav-tabs>li>a {
+/*  	.nav-tabs>li>a, .nav-tabs>li>a, .nav-tabs>li>a {
     border-bottom: 3px solid transparent;
     color: #5f5f5f;
     border-top: none;
     border-right: none;
     border-left: none;
-	}
+	}*/
   .block-grid {
   	font-family:'gotham-rounded-light';
   	float: left;
