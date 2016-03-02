@@ -4,7 +4,7 @@
 	<h1 class="text-center gotham-rounded-bok heading hw-font-heading"> Bootcamps </h1>
 
    		<div class="carousel-padding">
-		   	<div class="line"></div>
+		   	<div class="hw-carousel-underline"></div>
 			<div id="hw-upskilling" class="carousel slide" data-ride="carousel" data-interval="false">
 
 		   		<div class="container heading-caro-padd">
@@ -27,23 +27,23 @@
 		<div class="hr-display" id="bootcamp-filter-controls">
 			<label class="gotham-rounded-light hw-socialshare"> 
 			<input checked="" type="checkbox" id="bootcamp-dataops-checkbox" value="DataOps">
-			<span class="case-studies-label-text font-weight-lighter">DataOps</span> 
+			<span class="custom-checkbox-label font-weight-lighter">DataOps</span> 
 			</label> 
 			<label class="gotham-rounded-light hw-socialshare"> 
 			<input checked="" type="checkbox" value="DevOps" id="bootcamp-devops-checkbox">
-			<span class="case-studies-label-text font-weight-lighter">DevOps</span> 
+			<span class="custom-checkbox-label font-weight-lighter">DevOps</span> 
 			</label>
 			<label class="gotham-rounded-light hw-socialshare checkbox-border-left-padding checkbox-border-right-padding"> 
 			<input checked="" type="checkbox" value="Data Science" id="bootcamp-datascie-checkbox">
-			<span class="case-studies-label-text font-weight-lighter">Data Science</span> 
+			<span class="custom-checkbox-label font-weight-lighter">Data Science</span> 
 			</label>
 			<label class="gotham-rounded-light hw-socialshare"> 
 			<input checked="" type="checkbox" value="DataOps" id="bootcamp-ui-ux-checkbox">
-			<span class="case-studies-label-text font-weight-lighter">UI/UX</span> 
+			<span class="custom-checkbox-label font-weight-lighter">UI/UX</span> 
 			</label>
 			<label class="gotham-rounded-light hw-socialshare"> 
 			<input checked="" type="checkbox" value="DataOps" id="bootcamp-mobility-checkbox">
-			<span class="case-studies-label-text font-weight-lighter">Mobility</span> 
+			<span class="custom-checkbox-label font-weight-lighter">Mobility</span> 
 			</label>
 		</div>
 	</div>
@@ -63,9 +63,9 @@
 							{% for cont in site.upskilling_cs %}
 
 
-								<div class="col-lg-4 upskill-cont-filter  all {{ cont.topic | downcase }}">
+								<div class="col-lg-4 upskill-cont-filter {{ cont.topic | downcase }}">
 									<a href="{{cont.url}}">
-									<h2 class="gotham-rounded-bok hw-heading heading text-center">{{ cont.topic }}</h2>
+									<h2 class="gotham-rounded-bok hw-heading text-center">{{ cont.topic }}</h2>
 									<!-- hw-upskill-cont -->
 										<div class="hw-upskill-cont">	
 											<h3 class="gotham-rounded-bold text-uppercase hw-tab-heading text-center">{{ cont.title }}</h3>
@@ -75,7 +75,7 @@
 												<div class="row">
 													<div class="col-lg-6">
 														<div class="clearfix hw-upskill-time">
-															<span class="gotham-rounded-light hw-contact-no2 span-right">OnCampus</span>
+															<span class="gotham-rounded-light hw-contact-no2 oncampus-span-right-border">OnCampus</span>
 															<span class="gotham-rounded-light hw-contact-no2">Full-Time</span>
 														</div>
 													</div>
@@ -121,7 +121,7 @@
 	<div class="hw-started log-clr-backgrnd container-fluid" >
 		<div class="row p-flex">
 			<div class="col-lg-8 c-flex">
-				<h2 class="gotham-rounded-light hw-main-heading clr-white h-approch">WE'RE HERE TO HELP YOU OUT</h2>
+				<h2 class="gotham-rounded-light hw-main-heading clr-white hw-contact-us-ribbon">WE'RE HERE TO HELP YOU OUT</h2>
 			</div>
 			<div class="col-lg-4 upskill-filter all c-flex clearfix">
 				<button class="text-uppercase custom-btn heading-custom-btn talk-to-us" data-toggle="collapse" data-target="#upskilling">get started</button>
@@ -205,15 +205,15 @@
 				      				<input type="text"  class="input_file-detail form-control placeholder-pro mainLoginInput"  id="file-detail" readonly="readonly"/>
 				      			</div>
 				      			<div class="col-lg-3 submit-background">
-<button id="submit-btn" type="submit" class="btn">
-              <br>
-              <div class="submit-resume hr-display" style="margin: 0px auto;">
-               <img src="/assets/img/talent_acquisition/submit.png" class="img-submit" >
-               <p class="gotham-rounded-bok submit-text placeholder-pro img-para">SUBMIT</p>
-              </div>
-                      </button>
+							<button id="submit-btn" type="submit" class="btn">
+				              <br>
+				              <div class="submit-resume hr-display" style="margin: 0px auto;">
+				               <img src="/assets/img/talent_acquisition/submit.png" class="img-submit" >
+				               <p class="gotham-rounded-bok submit-text placeholder-pro img-para">SUBMIT</p>
+				              </div>
+                      		</button>
 				      				
-				      			</div>
+				      		</div>
 				      		</div><!-- end of attach-file-->
 							</form> <!-- end of form -->
 						</div><!-- end of postresume -->
