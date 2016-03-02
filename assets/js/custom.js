@@ -43,9 +43,9 @@ $(document).ready(function(){
 
 
 //filter for the blog
-     $('#author,#cat').change(function() {
-         var  val1 = $("#cat").children('option:selected').data('value');
-         var  val2 = $("#author").children('option:selected').data('value');
+     $('#blog-author,#blog-category').change(function() {
+         var  val1 = $("#blog-category").children('option:selected').data('value');
+         var  val2 = $("#blog-author").children('option:selected').data('value');
          
          if(val1=='Categories' && val2=='Authors'){
           $(".hw-filter-li").each(function(){
@@ -315,13 +315,13 @@ $(".apst-wrapper").hide();
         }
 
         $(window).load(function() {
-          equalheight('.blog-main .blog-content');
+          equalheight('.blog-grid .blog-content');
           $('.home-hr').addClass('anim');
         });
 
 
         $(window).resize(function(){
-          equalheight('.blog-main .blog-content');
+          equalheight('.blog-grid .blog-content');
         });
       // End of equal height js
 
