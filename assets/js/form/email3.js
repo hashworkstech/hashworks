@@ -21,6 +21,11 @@
     }
 
     function resetTheForm(){
+                $(".input_name").val('');
+                $(".input_email").val('');
+                $(".input_subject").val('');
+                $(".input_phone").val('');
+                $(".input_message").val('');
                 $(".input_name").attr("placeholder", "Name");
                 $(".input_email").attr("placeholder", "Email"); 
                 $(".input_subject").attr("placeholder", "Subject");
