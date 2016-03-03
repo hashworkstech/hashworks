@@ -99,10 +99,10 @@ div#company-anime-banner svg{
 .company-abt {
 	margin: 76px 0px 42px;
 }
-.drop-line {
+.company-drop-line {
     margin: 60px 0px 28px;
 }
-.drop-text {
+.company-drop-text {
 	padding:0px 0px 20px;
 }
 .company-carousel .carousel-indicators {
@@ -112,8 +112,11 @@ div#company-anime-banner svg{
 	background-color: #474e5d;
 	border: none;
 }
-.company-value {
+.company-about-us-margin {
 	margin-top: 40px;
+}
+.company-para + p{
+	padding-bottom: 30px;
 }
 
 
