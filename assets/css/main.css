@@ -645,7 +645,7 @@ html {
 			margin-right: 100px;
 		}
 
-		.para{
+		.hw-para-color-margin{
 			color: #7e7e7e;
 			margin-left: 35px;
 		}
@@ -2467,34 +2467,35 @@ width: 100%;
 }*/
 
 /* menu for header */
-	nav#toc {
+	nav#hw-right-nav-menu {
   background-color: #212328;
   height: 100%;
   position: fixed;
-  right: -240px;
+  right: 0px;
   top: 0;
 width: 0px; 
 z-index: 7;
+
 }
-  nav#toc ul {
+  nav#hw-right-nav-menu ul {
     list-style: none;
     padding: 60px 40px 0; 
 }
-    nav#toc ul li {
+    nav#hw-right-nav-menu ul li {
       /*border-top: 1px solid #424650;*/
       padding: 10px 0 5px;}
 
-      nav#toc ul li a {
+      nav#hw-right-nav-menu ul li a {
         color: white;
         font: 300 15px/2em museo-sans, sans-serif;
         text-decoration: none; }
 
-      nav#toc ul li a:hover, nav#toc ul li a.active {
+      nav#hw-right-nav-menu ul li a:hover, nav#hw-right-nav-menu ul li a.active {
         color: #ee2b7b; }
-    nav#toc ul li:first-child {
+    nav#hw-right-nav-menu ul li:first-child {
       border-top: none; }
 
-  nav#toc a#toc-actuator {
+  nav#hw-right-nav-menu a#hw-right-nav-menu-actuator {
     background: #f8f8f8 url(images/pfd-sprites.png) no-repeat left top;
     cursor: pointer;
     display: block;
@@ -2505,9 +2506,9 @@ z-index: 7;
     top: 60px;
     width: 34px;
     z-index: 5000; }
-nav#toc ul {
+nav#hw-right-nav-menu ul {
   padding-top: 75px;}
-  nav#toc a#toc-actuator {
+  nav#hw-right-nav-menu a#hw-right-nav-menu-actuator {
     left: -64px;
     top: 30px; }
 
@@ -2515,7 +2516,7 @@ nav#toc ul {
 
 /* Icon 1 */
 
-#nav-icon1 {
+#nav-hamburger-icon {
 	float: right;
 	position: fixed;
     right: 0px;
@@ -2536,7 +2537,7 @@ nav#toc ul {
   cursor: pointer;
 }
 
-#nav-icon1 span, #nav-icon3 span, #nav-icon4 span {
+#nav-hamburger-icon span, #nav-icon3 span, #nav-icon4 span {
   display: block;
   position: fixed;
   height: 4px;
@@ -2555,18 +2556,18 @@ nav#toc ul {
   transition: .5s ease-in-out;*/
 }
 
-#nav-icon1 span:nth-child(1) {
+#nav-hamburger-icon span:nth-child(1) {
   top:19px;
 }
 
-#nav-icon1 span:nth-child(2) {
+#nav-hamburger-icon span:nth-child(2) {
   top:27px;
 }
 
-#nav-icon1 span:nth-child(3) {
+#nav-hamburger-icon span:nth-child(3) {
  top: 35px;
 }
-#button1{
+#nav-cross-button{
      text-align:right;
      padding:10px;
     color: #EE2B7B;
@@ -2585,26 +2586,7 @@ nav#toc ul {
    {
    	color: #ababab !important;
    }*/
-/*#nav-icon1.open span:nth-child(1) {
-  top: 25px;
-  -webkit-transform: rotate(135deg);
-  -moz-transform: rotate(135deg);
-  -o-transform: rotate(135deg);
-  transform: rotate(135deg);
-}
 
-#nav-icon1.open span:nth-child(2) {
-  opacity: 0;
-  left: 0px;
-}
-
-#nav-icon1.open span:nth-child(3) {
-  top: 25px;
-  -webkit-transform: rotate(-135deg);
-  -moz-transform: rotate(-135deg);
-  -o-transform: rotate(-135deg);
-  transform: rotate(-135deg);
-}*/
 
 /* Icon 2 */
 

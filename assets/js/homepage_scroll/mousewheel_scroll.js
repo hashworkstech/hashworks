@@ -9,7 +9,7 @@ $(document).ready(function(){
 
 
 $('body, html').delay(1000).animate({
-        scrollTop: $('.we-on-banner').position().top
+        scrollTop: $('.hw-home-banner').position().top
         }, 'slow');
 
     /* handle the mousewheel event together with 

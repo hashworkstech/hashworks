@@ -1150,40 +1150,40 @@ var which_one_clicked = 0;
 
 
 /*for burger menu*/
- $('#nav-icon1').click(function(){
-   if($("#toc").css("width")=="0px")
+ $('#nav-hamburger-icon').click(function(){
+   if($("#hw-right-nav-menu").css("width")=="0px")
      {
-       $("#toc").animate({'width':'142px'},700);
+       $("#hw-right-nav-menu").animate({'width':'142px'},700);
        $(".hide-scroll").hide();
-       $("#nav-icon1").hide();
+       $("#nav-hamburger-icon").hide();
    // $(this).toggleClass('open');
    }
    else{
-     $("#toc").animate({'width':'0px'},500);
+     $("#hw-right-nav-menu").animate({'width':'0px'},500);
      $(".hide-scroll").show();
-     $("#nav-icon1").show();
+     $("#nav-hamburger-icon").show();
      // $(this).toggleClass('open');
    }
      });
 
    $("section").click(function(){
-      if($("#toc").css("width")=="142px")
+      if($("#hw-right-nav-menu").css("width")=="142px")
      {
-     // $("#nav-icon1").toggleClass('open');
-     $("#toc").animate({'width':'0px'},500);
+     // $("#nav-hamburger-icon").toggleClass('open');
+     $("#hw-right-nav-menu").animate({'width':'0px'},500);
       $(".hide-scroll").show();
-     $("#nav-icon1").show();
+     $("#nav-hamburger-icon").show();
 
     }
   });
 
-     $("#button1").click(function(){
-      if($("#toc").css("width")=="142px")
+     $("#nav-cross-button").click(function(){
+      if($("#hw-right-nav-menu").css("width")=="142px")
      {
-     // $("#nav-icon1").toggleClass('open');
-     $("#toc").animate({'width':'0px'},500);
+     // $("#nav-hamburger-icon").toggleClass('open');
+     $("#hw-right-nav-menu").animate({'width':'0px'},500);
       $(".hide-scroll").show();
-     $("#nav-icon1").show();
+     $("#nav-hamburger-icon").show();
 
     }
    });
