@@ -104,6 +104,9 @@ html {
 	.nav-tabs > li >a {
 		border:none;
 	}
+	.bs-example .nav-tabs > li >a {
+		border-bottom:3px solid transparent;
+	}
 	.form-control:focus {
 		border-color: #ccc;
 		box-shadow: none;
@@ -2499,6 +2502,9 @@ nav#hw-right-nav-menu ul {
     left: -64px;
     top: 30px; }
 
+.navbar-default .navbar-nav > li > a {
+    color: #040404;
+}
 
 
 /* Icon 1 */

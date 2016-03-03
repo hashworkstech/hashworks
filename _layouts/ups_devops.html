@@ -3,13 +3,13 @@
 <!-- ups-devops carousel -->
 	<h1 class="text-center gotham-rounded-bok heading hw-carousel-heading"> Devops</h1>
 
-   		<div class="carousel-padding">
-		   	<div class="hw-carousel-underline"></div>
-			<div id="hw-upskilling" class="carousel slide upskilling-carousel" data-ride="carousel" data-interval="false">
+   		<div class="hw-header-padding">
+		   	<div class="hw-header-underline"></div>
+			<!-- <div id="hw-upskilling" class="carousel slide upskilling-carousel" data-ride="carousel" data-interval="false"> -->
 
 		   		<div class="container heading-caro-padd">
 				    <!-- Wrapper for slides -->
-				    <div class="carousel-inner" role="listbox">
+				    <!-- <div class="carousel-inner" role="listbox"> -->
 				    	 {% for cont in site.data.Portfolio.carousel.carousel_content%}
 					       {% if forloop.first %}
 					  	<div class="item active">
@@ -33,8 +33,8 @@
 					    </div>
 						{% endif %}
 					    {% endfor %}
-				    </div>
-				</div>
+				    <!-- </div> -->
+				<!-- </div> -->
 			</div>
 	 	</div>
 	<!-- end of carousel-->

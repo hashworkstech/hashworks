@@ -75,6 +75,9 @@
         display: -o-flex;
         display: flex;
     }
+    .footer .hw-socialshare:last-child{
+        margin-right: 0px;
+    }
 
     .footer > div {
         display: -webkit-flex;
