@@ -783,40 +783,6 @@ s.parentNode.insertBefore(gcse, s);
 /* end for google search engine */
 
 
-
-/* start of blog landing page animation */
-
-//     $("#div-main-part2 #right-div-part1").click(function(){
-// $("#div-main-part2").css("display", "none");
-// $("#div2-right-div-part1").css("display", "block");
-//         });
-//         $("#right-div-part2 ").click(function(){
-// $("#div-main-part2").css("display", "none");
-// $("#div2-right-div-part2").css("display", "block");        
-//         });
-
-
-//         $("#right-div-part3").click(function(){
-// $("#div-main-part2").css("display", "none");
-// $("#div2-right-div-part3").css("display", "block");        
-//         });
-
-
-//         $("#right-div-part4").click(function(){
-// $("#div-main-part2").css("display", "none");
-// $("#div2-right-div-part4").css("display", "block");        
-//         });
-
-//         $("#div-main-part1").mouseleave(function(){
-// $("#div-main-part2").css("display", "block");
-// $("#div2-right-div-part1").css("display", "none");
-// $("#div2-right-div-part1").css("display", "none");  
-// $("#div2-right-div-part2").css("display", "none");  
-// $("#div2-right-div-part3").css("display", "none");  
-// $("#div2-right-div-part4").css("display", "none");         
-//         }); 
-/* end of blog landing page animation */   
-
 /* for portfolio page dropdown item click*/
    //   $(".header-dropdown-link .dropdown a").click( function() {
    //    var navtab = $(".line-padding.prot-img").offset().top - 50;

@@ -140,93 +140,41 @@ $('body, html').delay(1000).animate({
    });
 
 
-    // $('.idesktop').hide();
-    // $('.ipad').hide();
-    // $('.iphone').show();
 
-    // $('.res1').mouseover(function(){
-    //     $('.res1').attr('src','/assets/img/landingpage/hover-mobile.svg');
-    // });
-    // $('.res1').mouseleave(function(){
-    //     if(!$(this).parent().hasClass("active"))
-    //     {
-    //     $('.res1').attr('src','/assets/img/landingpage/Responsive_Mobile_Icon.svg');
-    //     }
-    // });
-    // $('.res1').click(function() {
-    //     if($(".res2").parent().hasClass("active"))
-    //     {
-    //         $(".res2").parent().removeClass("active");
-    //         $('.res2').attr('src','/assets/img/landingpage/Responsive_Desktop_Icon.svg');
-    //     }
-    //     if($(".res3").parent().hasClass("active"))
-    //     {
-    //         $(".res3").parent().removeClass("active");
-    //         $('.res3').attr('src','/assets/img/landingpage/Responsive_Tablet_Icon.svg');
-    //     }
-    //     $(this).parent().addClass("active");
-    //      $('.idesktop').hide();
-    //      $('.ipad').hide();
-    //      $('.iphone').show();
-    //      $('.res1').attr('src','/assets/img/landingpage/hover-mobile.svg');
-    // });
+/*for svg product banner*/
+  var index = 2;
+  setInterval(function(){
+    setTimeout(function(){
+      $('.device-anim').attr("class","device-anim svg_hide");
+      if(index==1) $('#desktop-box').attr("class","device-anim");
+      if(index==2) $('#tablet-box').attr("class","device-anim");
+      if(index==3) $('#mobile-box').attr("class","device-anim");
+      index++;
+      if(index>=4) index = 1;
+    }, 4000);
+  }, 6000);
 
-    //  $('.res2').mouseover(function(){
-    //     $('.res2').attr('src','/assets/img/landingpage/hover-desk.svg');
-    // });
-    //  $('.res2').mouseleave(function(){
-    //     if(!$(this).parent().hasClass("active"))
-    //     {
-    //     $('.res2').attr('src','/assets/img/landingpage/Responsive_Desktop_Icon.svg');
-    //     }
-    // });
-    // $('.res2').click(function() {
-    //     if($(".res1").parent().hasClass("active"))
-    //     {
-    //         $(".res1").parent().removeClass("active");
-    //         $('.res1').attr('src','/assets/img/landingpage/Responsive_Mobile_Icon.svg');
-    //     }
-    //     if($(".res3").parent().hasClass("active"))
-    //     {
-    //         $(".res3").parent().removeClass("active");
-    //         $('.res3').attr('src','/assets/img/landingpage/Responsive_Tablet_Icon.svg');
-    //     }
-    //     $(this).parent().addClass("active");
-    //      $('.idesktop').show();
-    //      $('.ipad').hide();
-    //      $('.iphone').hide();
-    //      $('.res2').attr('src','/assets/img/landingpage/hover-desk.svg');
-    // });
+  /*stopping up-down by keyboard key for mozilla */
+var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+  if (window.addEventListener) // older FF
+  window.addEventListener('DOMMouseScroll', preventDefault, false);
+  window.onwheel = preventDefault; // modern standard
+  window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
+  window.ontouchmove  = preventDefault; // mobile
+  document.onkeydown  = preventDefaultForScrollKeys;
+function preventDefault(e) {
+  e = e || window.event;
+  if (e.preventDefault)
+      e.preventDefault();
+  e.returnValue = false;  
+}
 
-
-    //  $('.res3').mouseover(function(){
-    //     $('.res3').attr('src','/assets/img/landingpage/hover-ipad.svg');
-    // });
-    //  $('.res3').mouseleave(function(){
-    //     if(!$(this).parent().hasClass("active"))
-    //     {
-    //     $('.res3').attr('src','/assets/img/landingpage/Responsive_Tablet_Icon.svg');
-    //     }
-    // });
-    // $('.res3').click(function() {
-    //     if($(".res1").parent().hasClass("active"))
-    //     {
-    //         $(".res1").parent().removeClass("active");
-    //         $('.res1').attr('src','/assets/img/landingpage/Responsive_Mobile_Icon.svg');
-    //     }
-    //     if($(".res2").parent().hasClass("active"))
-    //     {
-    //         $(".res2").parent().removeClass("active");
-    //         $('.res2').attr('src','/assets/img/landingpage/Responsive_Desktop_Icon.svg');
-    //     }
-    //     $(this).parent().addClass("active");
-    //      $('.idesktop').hide();
-    //      $('.ipad').show();
-    //      $('.iphone').hide();
-    //      $('.res3').attr('src','/assets/img/landingpage/hover-ipad.svg');
-    // });
-
-
+function preventDefaultForScrollKeys(e) {
+    if (keys[e.keyCode]) {
+        preventDefault(e);
+        return false;
+    }
+}
 
    
 

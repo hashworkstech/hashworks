@@ -1,9 +1,7 @@
 {% include home-header.html %}
 <main>
-
 	<!-- indicators -->
 		<ul class="scroll-indicators hide-scroll">
-
 			<li class="active" data-tab="1">
 				<a href="javascript:void(0)">
 					<span class="hw-dot"></span>
@@ -28,10 +26,9 @@
 					<span class="hw-label gotham-rounded-light ">Products</span>
 				</a>
 			</li>
-			
 		</ul>
 	<!-- End of indicators -->
-	<div id="nav-hamburger-icon">
+			<div id="nav-hamburger-icon">
 			  <span></span>
 			  <span></span>
 			  <span></span>
@@ -57,7 +54,6 @@
 	<div class="hw-scroll">
 
 		<!--section1-->
-	
 		<section class="hw-hm-scroll-anim hw-home-banner active" data-value="1">
 			<div class="hw-hm-banner-png">
 				<img src="assets/img/landingpage/Banner.png">
@@ -67,149 +63,134 @@
 				<hr class="home-hr hr-display">
 				<h2 class="clr-black1">DevOps<span class="hw-hr-pink-bullet">.</span>DataOps<span  class="hw-hr-pink-bullet">.</span class="hw-hr-pink-bullet">DataScience<span class="hw-hr-pink-bullet">.</span>UX/UI<span class="hw-hr-pink-bullet">.</span>Mobility</h2>
 			</div>
-			
-
-
-<!-- fixed div-->
-    <div class="hw-ribbon-heading log-clr-backgrnd">
-        <div class="row">
-			<div class="col-lg-12 hw-hm-rib-col">
-				<span class="gotham-rounded-light ribon-font clr-white hw-contact-us-ribbon">Delivering velocity & Agility for software driven business</span>
-				<span class="hm-talk-btn">
-					<span><button class="hw-talk-to-us-btn hm-vertical " data-toggle="modal" data-target="#start-project">TALK TO US</button></span>
-				</span>
-			</div>
-    	</div>
-   </div>
-<!-- end of fixed tab-->
-
-<!-- Work-together popup -->
-		<div id="start-project" class="modal fade">
-	        <div class="modal-dialog contact-modal">
-	            <div class="modal-content">
-	            	
-	                <div class="container form-container">
-	                	<span class="hm-contact"><i class="fa fa-mobile"></i><span class="hm-num gotham-rounded-light">+7259471785</span></span>
-					<img class="close-pop" data-dismiss="modal" src="/assets/svg/close-pop.svg" alt="close">
-	                	<h1 class="gotham-rounded-bold">Let's work together</h1>
-	                	<hr>
-	                	<div class="post-resume">
-	         			<form class="form-signin" onSubmit="submitForm(event)" >  <!-- start of form -->
-							<div class="row ">
+			<!-- fixed div-->
+			    <div class="hw-ribbon-heading log-clr-backgrnd">
+			        <div class="row">
+						<div class="col-lg-12 hw-hm-rib-col">
+							<span class="gotham-rounded-light ribon-font clr-white hw-contact-us-ribbon">Delivering velocity & Agility for software driven business</span>
+							<span class="hm-talk-btn">
+								<span><button class="hw-talk-to-us-btn hm-vertical " data-toggle="modal" data-target="#start-project">TALK TO US</button></span>
+							</span>
+						</div>
+			    	</div>
+			    </div>
+			<!-- end of fixed tab-->
+			<!-- Work-together popup -->
+			<div id="start-project" class="modal fade">
+		        <div class="modal-dialog contact-modal">
+		            <div class="modal-content">
+		                <div class="container form-container">
+		                	<span class="hm-contact"><i class="fa fa-mobile"></i><span class="hm-num gotham-rounded-light">+7259471785</span></span>
+						<img class="close-pop" data-dismiss="modal" src="/assets/svg/close-pop.svg" alt="close">
+		                	<h1 class="gotham-rounded-bold">Let's work together</h1>
+		                	<hr>
+		                	<div class="post-resume">
+		         			<form class="form-signin" onSubmit="submitForm(event)" >  <!-- start of form -->
+								<div class="row ">
+										<div class="col-lg-6"> 
+											<div class="text-border">
+												<div class="input-group">
+						      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/name-img.png"></div>
+						      						
+													<input type="text" class="form-control placeholder-pro mainLoginInput input_name" id="name" placeholder="NAME" >
+												</div>
+											</div>		
+										</div>
 									<div class="col-lg-6"> 
 										<div class="text-border">
 											<div class="input-group">
-					      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/name-img.png"></div>
-					      						
-												<input type="text" class="form-control placeholder-pro mainLoginInput input_name" id="name" placeholder="NAME" >
+					      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/email-img.png"></div>
+												<input type="text" class="form-control placeholder-pro mainLoginInput input_email" id="email" placeholder="EMAIL">
 											</div>
-										</div>		
-									</div>
-								
-								<div class="col-lg-6"> 
-									<div class="text-border">
-										<div class="input-group">
-				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/email-img.png"></div>
-											<input type="text" class="form-control placeholder-pro mainLoginInput input_email" id="email" placeholder="EMAIL">
 										</div>
 									</div>
 								</div>
-							</div>
-							<div class="row ms-row-mar">
-								<div class="col-lg-6"> 
-									<div class="text-border">
-										<div class="input-group">
-				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
-											<select class="form-control mainLoginInput gotham-rounded-light input_subject sub-width" id="subject">
-												<option value="Subject">Subject</option>
-												<option value="Marketing" class="level-0">Marketing</option>
-												<option value="Design" class="level-0">Design</option>
-												<option value="UX" class="level-0">UX</option>
-												<option value="WordPress" class="level-0">WordPress</option>
-												<option value="Strategy" class="level-0">Strategy</option>
-												<option value="Automations" class="level-0">Automations</option>
-												<option value="News" class="level-0">News</option>
-												<option value="Content" class="level-0">Content</option>
-												<option value="Social" class="level-0">Social Media</option>
-											</select>
+								<div class="row ms-row-mar">
+									<div class="col-lg-6"> 
+										<div class="text-border">
+											<div class="input-group">
+					      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
+												<select class="form-control mainLoginInput gotham-rounded-light input_subject sub-width" id="subject">
+													<option value="Subject">Subject</option>
+													<option value="Marketing" class="level-0">Marketing</option>
+													<option value="Design" class="level-0">Design</option>
+													<option value="UX" class="level-0">UX</option>
+													<option value="WordPress" class="level-0">WordPress</option>
+													<option value="Strategy" class="level-0">Strategy</option>
+													<option value="Automations" class="level-0">Automations</option>
+													<option value="News" class="level-0">News</option>
+													<option value="Content" class="level-0">Content</option>
+													<option value="Social" class="level-0">Social Media</option>
+												</select>
+											</div>	
 										</div>	
-									</div>	
-								</div>
-								
-								<div class="col-lg-6"> 
-									<div class="text-border">
-										<div class="input-group">
-				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/phone-img.png"></div>
-											<input type="text" class="form-control placeholder-pro mainLoginInput input_phone" id="phone" placeholder="PHONE">
-										</div>
-									</div>	
-								</div>
-							</div>
-
-							<div class="row ms-row-mar">
-								<div class="col-lg-12">
-									<div class="text-border">
-									<div class="input-group">
-				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
-				      						
-				      						<textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" class="form-control placeholder-pro mainLoginInput input_message"  id="message" rows="3"></textarea>
-				      					</div>	
+									</div>
+									<div class="col-lg-6"> 
+										<div class="text-border">
+											<div class="input-group">
+					      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/phone-img.png"></div>
+												<input type="text" class="form-control placeholder-pro mainLoginInput input_phone" id="phone" placeholder="PHONE">
+											</div>
+										</div>	
 									</div>
 								</div>
-							</div><!-- end of text-area row-->
-
-							<div class="attach-file">
-				      			<div class="col-lg-9">
-				      				<input type="file" class="gotham-book input_file-upload" id="file-upload">
-				      				<br/><br/>
-				      				<span class="attach-text"><span><img src="/assets/img/talent_acquisition/attach.png"></span><span class="gotham-rounded-bok attach-span clr-white">Attach File</span></span>
-				      				<input type="text"  class="input_file-detail form-control placeholder-pro mainLoginInput"  id="file-detail" readonly="readonly"/>
-				      			</div>
-				      			<div class="col-lg-3 submit-background">
-				      			<button id="submit-btn" type="submit" class="btn">
-					              <br>
-					              <div class="submit-resume hr-display" style="margin: 0px auto;">
-					               <img src="/assets/img/talent_acquisition/submit.png" class="img-submit" >
-					               <p class="gotham-rounded-bok submit-text placeholder-pro img-para">SUBMIT</p>
-					              </div>
-				      			</div>
-				      		</div><!-- end of attach-file-->
-						</form> <!-- end of form -->
-						</div><!-- end of postresume -->
-					<div class="show-as-love"><!-- hm social icon-->
-					<div class="row">
-						<div class=" col-lg-offset-7 col-lg-5">
-							<div class="hm-shows-love">
-								<h1 class="gotham-rounded-bold hm-show-text hw-heading show-text1">Show us your <i class="fa fa-heart hm-show-heart"></i> </h1>
-								<div class= "hm-icons hm-form-val">
-									
-			                    	<a href="https://www.facebook.com/hashworks/" class="fa-stack hw-socialshare social-icons" target="new">
-					                    <i class="fa fa-circle-thin fa-stack-2x"></i>
-					                    <i class="fa fa-facebook fa-stack-1x"></i>
-					                  </a>
-					                  <a href="https://twitter.com/hashworksco" class="fa-stack hw-socialshare social-icons" target="new">
-					                    <i class="fa fa-circle-thin fa-stack-2x"></i>
-					                    <i class="fa fa-twitter fa-stack-1x"></i>
-					                  </a>
-					                  <a href="https://www.linkedin.com/company/9228490" class="fa-stack hw-socialshare social-icons" target="new">
-					                    <i class="fa fa-circle-thin fa-stack-2x"></i>
-					                    <i class="fa fa-linkedin fa-stack-1x"></i>
-					                     </a>
-                  				</div>
-                  			</div>
-              			</div>
-			        </div><!--end of hm-socia-icn-->
-	            </div>
-	        </div>
-	    </div>
+								<div class="row ms-row-mar">
+									<div class="col-lg-12">
+										<div class="text-border">
+										<div class="input-group">
+					      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
+					      						
+					      						<textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" class="form-control placeholder-pro mainLoginInput input_message"  id="message" rows="3"></textarea>
+					      					</div>	
+										</div>
+									</div>
+								</div><!-- end of text-area row-->
+								<div class="attach-file">
+					      			<div class="col-lg-9">
+					      				<input type="file" class="gotham-book input_file-upload" id="file-upload">
+					      				<br/><br/>
+					      				<span class="attach-text"><span><img src="/assets/img/talent_acquisition/attach.png"></span><span class="gotham-rounded-bok attach-span clr-white">Attach File</span></span>
+					      				<input type="text"  class="input_file-detail form-control placeholder-pro mainLoginInput"  id="file-detail" readonly="readonly"/>
+					      			</div>
+					      			<div class="col-lg-3 submit-background">
+					      			<button id="submit-btn" type="submit" class="btn">
+						              <br>
+						              <div class="submit-resume hr-display" style="margin: 0px auto;">
+						               <img src="/assets/img/talent_acquisition/submit.png" class="img-submit" >
+						               <p class="gotham-rounded-bok submit-text placeholder-pro img-para">SUBMIT</p>
+						              </div>
+					      			</div>
+					      		</div><!-- end of attach-file-->
+							</form> <!-- end of form -->
+							</div><!-- end of postresume -->
+						<div class="show-as-love"><!-- hm social icon-->
+						<div class="row">
+							<div class=" col-lg-offset-7 col-lg-5">
+								<div class="hm-shows-love">
+									<h1 class="gotham-rounded-bold hm-show-text hw-heading show-text1">Show us your <i class="fa fa-heart hm-show-heart"></i> </h1>
+									<div class= "hm-icons hm-form-val">
+				                    	<a href="https://www.facebook.com/hashworks/" class="fa-stack hw-socialshare social-icons" target="new">
+						                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+						                    <i class="fa fa-facebook fa-stack-1x"></i>
+						                  </a>
+						                  <a href="https://twitter.com/hashworksco" class="fa-stack hw-socialshare social-icons" target="new">
+						                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+						                    <i class="fa fa-twitter fa-stack-1x"></i>
+						                  </a>
+						                  <a href="https://www.linkedin.com/company/9228490" class="fa-stack hw-socialshare social-icons" target="new">
+						                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+						                    <i class="fa fa-linkedin fa-stack-1x"></i>
+						                     </a>
+	                  				</div>
+	                  			</div>
+	              			</div>
+				        </div><!--end of hm-socia-icn-->
+		            </div>
+		        </div>
+		    </div>
     <!-- End of work-together popup -->
-	
-			
 		</section>
-			
-
 		<!-- end of section1-->
-
 		<!-- section4-->
 		<section class="hw-hm-scroll-anim" data-value="2">
 			<img id="gear-animate-medium" src="/assets/img/landingpage/icon_thinking/Gear.svg">	
@@ -11621,13 +11602,6 @@
 						<polygon fill="#E0DFE6" points="1418.459,878.5 1509.582,882.5 1511.5,893.5 1417.5,894.5 	"/>
 					</g>
 			</svg>
-
-
-
-
-		
-
-			
 			<div class="container-fluid">
 			<div id="hw-hm-ourthinking-div">
 			 	<h1 class="clr-black gotham-rounded-bold hw-main-heading">Our Thinking</h1>
@@ -11637,7 +11611,6 @@
 			 	<a href="/our_thinking"  target="new"><button class="explore-btn">EXPLORE</button></a>
 			 </div>
 			</div>
-
 			<div class="hw-ribbon-heading log-clr-backgrnd">
         <div class="row">
 			<div class="col-lg-12 hw-hm-rib-col">
@@ -11649,12 +11622,10 @@
     	</div>
    </div>
 <!-- end of fixed tab-->
-
 <!-- Work-together popup -->
 		<div id="start-project" class="modal fade">
 	        <div class="modal-dialog contact-modal">
 	            <div class="modal-content">
-	            	
 	                <div class="container form-container">
 	                	<span class="hm-contact"><i class="fa fa-mobile"></i><span class="hm-num gotham-rounded-light">+7259471785</span></span>
 					<img class="close-pop" data-dismiss="modal" src="/assets/svg/close-pop.svg" alt="close">
@@ -11672,7 +11643,6 @@
 											</div>
 										</div>		
 									</div>
-								
 								<div class="col-lg-6"> 
 									<div class="text-border">
 										<div class="input-group">
@@ -11702,7 +11672,6 @@
 										</div>	
 									</div>	
 								</div>
-								
 								<div class="col-lg-6"> 
 									<div class="text-border">
 										<div class="input-group">
@@ -11712,7 +11681,6 @@
 									</div>	
 								</div>
 							</div>
-
 							<div class="row ms-row-mar">
 								<div class="col-lg-12">
 									<div class="text-border">
@@ -11724,7 +11692,6 @@
 									</div>
 								</div>
 							</div><!-- end of text-area row-->
-
 							<div class="attach-file">
 				      			<div class="col-lg-9">
 				      				<input type="file" class="gotham-book input_file-upload" id="file-upload">
@@ -11734,11 +11701,11 @@
 				      			</div>
 				      			<div class="col-lg-3 submit-background">
 				      			<button id="submit-btn" type="submit" class="btn">
-              <br>
-              <div class="submit-resume hr-display" style="margin: 0px auto;">
-               <img src="/assets/img/talent_acquisition/submit.png" class="img-submit" >
-               <p class="gotham-rounded-bok submit-text placeholder-pro img-para">SUBMIT</p>
-              </div>
+					              <br>
+					              <div class="submit-resume hr-display" style="margin: 0px auto;">
+					               <img src="/assets/img/talent_acquisition/submit.png" class="img-submit" >
+					               <p class="gotham-rounded-bok submit-text placeholder-pro img-para">SUBMIT</p>
+					              </div>
 				      			</div>
 				      		</div><!-- end of attach-file-->
 						</form> <!-- end of form -->
@@ -11749,7 +11716,6 @@
 							<div class="hm-shows-love">
 								<h1 class="gotham-rounded-bold hm-show-text hw-heading show-text1">Show us your <i class="fa fa-heart hm-show-heart"></i> </h1>
 								<div class= "hm-icons hm-form-val">
-									
 			                    	<a href="https://www.facebook.com/hashworks/" class="fa-stack hw-socialshare social-icons">
 					                    <i class="fa fa-circle-thin fa-stack-2x"></i>
 					                    <i class="fa fa-facebook fa-stack-1x"></i>
@@ -11761,7 +11727,7 @@
 					                  <a href="https://www.linkedin.com/company/9228490" class="fa-stack hw-socialshare social-icons">
 					                    <i class="fa fa-circle-thin fa-stack-2x"></i>
 					                    <i class="fa fa-linkedin fa-stack-1x"></i>
-					                     </a>
+					                   </a>
                   				</div>
                   			</div>
               			</div>
@@ -11770,28 +11736,18 @@
 	        </div>
 	    </div>
     <!-- End of work-together popup -->
-              
 		</section>
 		<!-- end of section4-->
-
 		<!-- section2 -->
 			<section class="hw-hm-scroll-anim " data-value="3">
-				<!-- <div id="nav-icon1">
-  <span></span>
-  <span></span>
-  <span></span>
-</div> -->
-	
 		          <div class="container-fluid blog-banner">
 		          	{% assign my_variable = 0 %}
 		          	{% for post in site.posts | sort: 'date'  %}
-
 		          	{% if my_variable == 0 %}
 		            <div class="row " >
 		              	<div class="col-lg-4 blog-banner-init-height" >
-		              	
 			                <div class="blog-contents-half-height" id="blog-banner-data-ops">
-			                  <div  >
+			                  <div>
 			                    <img class="hw-blog-banner-img" src="/assets/img/landingpage/dev.svg">
 			                    <div class="hw-hm-animate-arrow">
 			                      <img class="hw-hm-animate-arrow-icon" src="/assets/img/landingpage/Arrow.png" alt="">
@@ -11809,14 +11765,10 @@
 			                    <a href="{{post.permalink}}" target="_blank" class="gotham-rounded-bok blog-a clr-white">Read more</a>      
 			                  </div>
 			                </div> 
-
 		                </div>
-
-
 		              <div class="col-lg-4 blog-banner-init-height">
-		              	
 		                <div class=" blog-contents-half-height " id="blog-banner-we-are-thinkers">
-		                  <div    >
+		                  <div>
 		                   <svg id="blog-pencil-liquid" class="hr-display" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10%" height="42%" viewBox="0 0 156 500" enable-background="new 0 0 156 500" xml:space="preserve">
 								<image display="none" overflow="visible" width="800" height="600" xlink:href="../../../../AppData/Roaming/Skype/live#3az3vigneshwar/media_messaging/media_cache_v2/^34740BF95C8C8AACA9CC393466AD43301712DC1C80F17EB8D1^pimgpsh_fullsize_distr.png"  transform="matrix(1 0 0 1 -322.9946 -56.9985)">
 								</image>
@@ -11867,10 +11819,7 @@
 		                    <a href="{{post.permalink}}" class="gotham-rounded-bok blog-a clr-white" target="_blank">Read more</a>    
 		                  </div>
 		                </div>    
-		                
 		              </div>
-
-
 		            </div>
 		              <div class="row " >
 		              <div class="col-lg-4 blog-banner-init-height" >
@@ -11892,9 +11841,7 @@
 		                    </p>  
 		                    <a href="{{post.permalink}}" class="gotham-rounded-bok blog-a clr-white" target="_blank">Read more</a>    
 		                  </div>
-		                  
 		                </div>    
-		                
 		              </div>
 		              <div class="col-lg-4 blog-banner-init-height">
 		              	{% elsif my_variable == 3 %}
@@ -11916,7 +11863,6 @@
 		                    <a href="{{post.permalink}}" class="gotham-rounded-bok blog-a clr-white" target="_blank">Read more</a>    
 		                  </div>
 		                </div>    
-		                
 		              </div>
 		              <div class="col-lg-4 blog-banner-init-height">
 		              	{% elsif my_variable == 4 %}
@@ -11938,27 +11884,17 @@
 		                    <a href="{{post.permalink}}" class="gotham-rounded-bok blog-a clr-white" target="_blank">Read more</a>   
 		                  </div>
 		                </div>    
-		                
 		              </div>
-
-
 		            </div>
 		            {% endif %}
 
 		            {% assign assign my_variable = my_variable | plus:1  %}
 		            {% endfor %}
 		          </div>    
-
-
-
-
-				
 			</section>
 		<!-- end of section2-->
-
 		<!-- section3 -->
 			<section class="hw-hm-scroll-anim app-banner" data-value="4" id="product-banner">
-		
 				<div class="product-outer-svg">
 					<div id="svg-wrapper">
 						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="3.233 0 1750 425.046" enable-background="new 3.233 0 1750 425.046" xml:space="preserve" class="machine-svg">
@@ -12169,299 +12105,243 @@
 							</g>
 						</svg>
 						<div id="meter"></div>
-
 					</div>
 				</div>
-
-
-
-			
-
-
-
 					<div class="row">
-					<div class="new-product-text col-lg-6 col-lg-offset-6">
-					<p class="gotham-rounded-bold hw-main-heading clr-black product-text">
-						<span class="proxima-regular"><img src="/assets/img/landingpage/Product_Title_LQM.svg" class="product-quote"></span> We handcraft solutions you love <span class="proxima-regular">
-						<img src="/assets/img/landingpage/Product_Title_RQM.svg" class="product-quote"></span>
-					</p>
+						<div class="new-product-text col-lg-6 col-lg-offset-6">
+							<p class="gotham-rounded-bold hw-main-heading clr-black product-text">
+								<span class="proxima-regular"><img src="/assets/img/landingpage/Product_Title_LQM.svg" class="product-quote"></span> We handcraft solutions you love <span class="proxima-regular">
+								<img src="/assets/img/landingpage/Product_Title_RQM.svg" class="product-quote"></span>
+							</p>
+							<div id="myCarousel" class="carousel slide carousel-position" data-ride="carousel">
+							    <div class="carousel-inner product-carousel" role="listbox">
+								    <div class="item active">
+								        <div>
+								            <div class="hr-display product-desc product-desc1 sourcecode-light">    
+								                <p class=" hw-copyright">Project= <span class="">Fortune100</span></p>
+								                <p class="hw-copyright">Category= <span class="">Large Computer Manufacturer</span></p>
+								                <h4 class="hw-copyright product-skill">Skill: Enterprise Mobility,Bigdata Analytics, Middleware, UX/UI</span></h4>
+								            </div>
+								        	<span class="hr-display"><img src="/assets/img/landingpage/fortune100.png" alt="Chania" width="135"style="margin-top: 15px;"></span>
+								        </div>
+								    </div>
+								    <div class="item">
+								        <div>
+								            <div class="hr-display product-desc sourcecode-light">  
+								                <p class=" hw-copyright">Project= <span class="">Bol</span></p>
+								                <p class="hw-copyright">Category= <span class="">Voice Messaging App</span></p>
+								                <h4 class="hw-copyright product-skill">Skill: <span class="">Windows 8.1 SDK, C#, XAML, PARSE</span></h4>
+								            </div>
+									        <span class="hr-display">
+									        	<span><img src="/assets/img/landingpage/Bol_Pb_logo.svg" alt="Chania" width="75" height="75"></span>
+									        	<span class="gotham-rounded-bok hw-heading product-span"><img src="/assets/img/landingpage/Bol_Letter_Logo.svg" alt="Chania" width="100" height="100"></span>
+									        </span>
+								        </div>
+								      </div>
+								    <div class="item">
+								        <div>
+								            <div class="hr-display product-desc sourcecode-light">  
+								                <p class=" hw-copyright">Project= <span class="">Latent View</span></p>
+								                <p class="hw-copyright">Category= <span class="">Website Development</span></p>
+								                <h4 class="hw-copyright product-skill">Skill: <span>HTML5, CSS3, Angularjs, Webservices</span></h4>
+								            </div>
+									        <span class="hr-display">
+									        	<span><img src="/assets/img/landingpage/latent_View_Logo.svg" alt="Chania" width="75" height="75"></span>
+									        	<span class="gotham-rounded-bok hw-heading product-span">
+									        		<img src="/assets/img/landingpage/latent_View_letter_Logo.svg" alt="Chania" width="100" height="100">
+									        	</span>
+									        </span>
+								        </div>
+								      </div>
+								      <div class="item">
+								            <div>
+									            <div class="hr-display product-desc sourcecode-light">  
+									                <p class="hw-copyright">Project= <span class="" >Dealer Next</span></p>
+									                <p class="hw-copyright">Category= <span class="" >Web Application</span></p>
+									                <h4 class="hw-copyright product-skill">Skill: <span>HTML5, CSS3, Angularjs, Webservices</span></h4>
+									            </div>
+										        <span class="hr-display">
+											        <span><img src="/assets/img/landingpage/Dealernext.svg" alt="Chania" width="75" height="75"></span>
+											        <span class="gotham-rounded-bok hw-heading product-span"><img src="/assets/img/landingpage/Dealer_Next_Letter_Logo.svg" alt="Chania" width="100" height="100"></span>
+										        </span>
+								        	</div>
+								      </div>
+								      <div class="item">  
+								            <div>
+									            <div class="product-desc hr-display product-desc-left-margin sourcecode-light"> 
+									                <p class="hw-copyright">Project= <span class=""  >Voler</span></p>
+									                <p class="hw-copyright">Category= <span class="" >UI Development</span></p>
+									                <h4 class="hw-copyright product-skill">Skill: <span>HTML5, CSS3, Angularjs, Webservices</span></h4>
+									            </div>                 
+											    <span class="hr-display"> 
+												       <span>
+												       <img src="/assets/img/landingpage/Voler_logo_Background.svg" alt="Flower" width="75" height="75"></span>
+												       <span class="gotham-rounded-bok hw-heading product-span">
+												       <img src="/assets/img/landingpage/Voler_Letter_Logo.svg" alt="Flower" width="100" height="100"></span>
+											    </span>
+										        </div>
+								    		</div>       
+								     </div>
+								    <!-- Left and right controls -->
+								    <a class="left carousel-control clr-black" href="#myCarousel" role="button" data-slide="prev">
+									    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"width="120px" height="175px" viewBox="0 0 120 260" enable-background="new 0 0 120 260" xml:space="preserve" class="hm-product-left-brace">
+											<g>
+											<path d="M46.971,197.248c0-4.5,0.3-17.7,0.3-22.8c0-22.8-7.5-35.7-34.2-36c-6.6-0.3-10.5-3.9-10.5-9c0-5.1,3.9-8.7,10.5-9
+												c26.7-0.3,34.2-13.2,34.2-36c0-5.1-0.3-18.3-0.3-22.8c0-30.3,10.5-49.201,59.701-59.401c5.4-1.2,10.2,2.1,10.2,7.5
+												c0,4.2-3,6.9-5.4,7.8c-38.1,10.5-42.6,21-42.6,47.101c0,6,0.3,16.2,0.3,22.5c0,25.2-12,36.3-31.2,42.3
+												c20.1,6.6,31.2,17.101,31.2,42.301c0,6.3-0.3,16.5-0.3,22.5c0,26.102,4.5,36.602,42.6,47.102c2.4,0.898,5.4,3.6,5.4,7.799
+												c0,5.4-4.8,8.701-10.2,7.5C57.471,246.449,46.971,227.549,46.971,197.248z"/>
+											</g>
+										</svg>
 
-					  <div id="myCarousel" class="carousel slide carousel-position" data-ride="carousel">
-					    <!-- Indicators -->
-					   
-					  <!-- Wrapper for slides -->
-					    <div class="carousel-inner product-carousel" role="listbox">
-
-
-					    <div class="item active">
-					        <div>
-					            <div class="hr-display product-desc product-desc1 sourcecode-light">    
-					                <p class=" hw-copyright">Project= <span class="">Fortune100</span></p>
-					                <p class="hw-copyright">Category= <span class="">Large Computer Manufacturer</span></p>
-					                <h4 class="hw-copyright product-skill">Skill: Enterprise Mobility,Bigdata Analytics, Middleware, UX/UI</span></h4>
-					            </div>
-					        	<span class="hr-display"><img src="/assets/img/landingpage/fortune100.png" alt="Chania" width="135"style="margin-top: 15px;"></span>
-					        </div>
-					      </div>
-					      <div class="item">
-					        <div>
-					            <div class="hr-display product-desc sourcecode-light">  
-					                <p class=" hw-copyright">Project= <span class="">Bol</span></p>
-					                <p class="hw-copyright">Category= <span class="">Voice Messaging App</span></p>
-					                <h4 class="hw-copyright product-skill">Skill: <span class="">Windows 8.1 SDK, C#, XAML, PARSE</span></h4>
-					            </div>
-						        <span class="hr-display">
-						        	<span><img src="/assets/img/landingpage/Bol_Pb_logo.svg" alt="Chania" width="75" height="75"></span>
-						        	<span class="gotham-rounded-bok hw-heading product-span"><img src="/assets/img/landingpage/Bol_Letter_Logo.svg" alt="Chania" width="100" height="100"></span>
-						        </span>
-					        </div>
-					      </div>
-					    <div class="item">
-					        <div>
-					            <div class="hr-display product-desc sourcecode-light">  
-					                <p class=" hw-copyright">Project= <span class="">Latent View</span></p>
-					                <p class="hw-copyright">Category= <span class="">Website Development</span></p>
-					                <h4 class="hw-copyright product-skill">Skill: <span>HTML5, CSS3, Angularjs, Webservices</span></h4>
-					            </div>
-						        <span class="hr-display">
-						        	<span><img src="/assets/img/landingpage/latent_View_Logo.svg" alt="Chania" width="75" height="75"></span>
-						        	<span class="gotham-rounded-bok hw-heading product-span">
-						        		<img src="/assets/img/landingpage/latent_View_letter_Logo.svg" alt="Chania" width="100" height="100">
-						        	</span>
-						        </span>
-					        </div>
-					      </div>
-
-					      <div class="item">
-					            <div>
-						            <div class="hr-display product-desc sourcecode-light">  
-						                <p class="hw-copyright">Project= <span class="" >Dealer Next</span></p>
-						                <p class="hw-copyright">Category= <span class="" >Web Application</span></p>
-						                <h4 class="hw-copyright product-skill">Skill: <span>HTML5, CSS3, Angularjs, Webservices</span></h4>
-						            </div>
-							        <span class="hr-display">
-								        <span><img src="/assets/img/landingpage/Dealernext.svg" alt="Chania" width="75" height="75"></span>
-								        <span class="gotham-rounded-bok hw-heading product-span"><img src="/assets/img/landingpage/Dealer_Next_Letter_Logo.svg" alt="Chania" width="100" height="100"></span>
-							        </span>
-					        	</div>
-					      </div>
-					    
-					      <div class="item">  
-					            <div>
-						            <div class="product-desc hr-display product-desc-left-margin sourcecode-light"> 
-						                <p class="hw-copyright">Project= <span class=""  >Voler</span></p>
-						                <p class="hw-copyright">Category= <span class="" >UI Development</span></p>
-						                <h4 class="hw-copyright product-skill">Skill: <span>HTML5, CSS3, Angularjs, Webservices</span></h4>
-						            </div>                 
-								    <span class="hr-display"> 
-									       <span>
-									       <img src="/assets/img/landingpage/Voler_logo_Background.svg" alt="Flower" width="75" height="75"></span>
-									       <span class="gotham-rounded-bok hw-heading product-span">
-									       <img src="/assets/img/landingpage/Voler_Letter_Logo.svg" alt="Flower" width="100" height="100"></span>
-								    </span>
-							        </div>
-					    		</div>       
-					     </div>
-
-
-					    <!-- Left and right controls -->
-					    <a class="left carousel-control clr-black" href="#myCarousel" role="button" data-slide="prev">
-					     <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"width="120px" height="175px" viewBox="0 0 120 260" enable-background="new 0 0 120 260" xml:space="preserve" class="hm-product-left-brace">
-							<g>
-							<path d="M46.971,197.248c0-4.5,0.3-17.7,0.3-22.8c0-22.8-7.5-35.7-34.2-36c-6.6-0.3-10.5-3.9-10.5-9c0-5.1,3.9-8.7,10.5-9
-								c26.7-0.3,34.2-13.2,34.2-36c0-5.1-0.3-18.3-0.3-22.8c0-30.3,10.5-49.201,59.701-59.401c5.4-1.2,10.2,2.1,10.2,7.5
-								c0,4.2-3,6.9-5.4,7.8c-38.1,10.5-42.6,21-42.6,47.101c0,6,0.3,16.2,0.3,22.5c0,25.2-12,36.3-31.2,42.3
-								c20.1,6.6,31.2,17.101,31.2,42.301c0,6.3-0.3,16.5-0.3,22.5c0,26.102,4.5,36.602,42.6,47.102c2.4,0.898,5.4,3.6,5.4,7.799
-								c0,5.4-4.8,8.701-10.2,7.5C57.471,246.449,46.971,227.549,46.971,197.248z"/>
-								</g>
-						 </svg>
-
-					    </a>
-					    <a class="right carousel-control clr-black" href="#myCarousel" role="button" data-slide="next">
-					    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"width="120px" height="175px" class="svg-rotate hm-product-right-brace" viewBox="0 0 120 260" enable-background="new 0 0 120 260" xml:space="preserve">
-					    	<g><path d="M46.971,197.248c0-4.5,0.3-17.7,0.3-22.8c0-22.8-7.5-35.7-34.2-36c-6.6-0.3-10.5-3.9-10.5-9c0-5.1,3.9-8.7,10.5-9
-							c26.7-0.3,34.2-13.2,34.2-36c0-5.1-0.3-18.3-0.3-22.8c0-30.3,10.5-49.201,59.701-59.401c5.4-1.2,10.2,2.1,10.2,7.5
-							c0,4.2-3,6.9-5.4,7.8c-38.1,10.5-42.6,21-42.6,47.101c0,6,0.3,16.2,0.3,22.5c0,25.2-12,36.3-31.2,42.3
-							c20.1,6.6,31.2,17.101,31.2,42.301c0,6.3-0.3,16.5-0.3,22.5c0,26.102,4.5,36.602,42.6,47.102c2.4,0.898,5.4,3.6,5.4,7.799
-							c0,5.4-4.8,8.701-10.2,7.5C57.471,246.449,46.971,227.549,46.971,197.248z"/>
-							</g>
-						</svg>
-					     </a>
-					  </div>
-					</div>
-					</div>
-
-				    <div class="hw-ribbon-heading log-clr-backgrnd">
-				        <div class="row">
-							<div class="col-lg-12 hw-hm-rib-col">
-								<span class="gotham-rounded-light ribon-font clr-white hw-contact-us-ribbon">We <i class="fa fa-heart  hm-heart"></i> to be your technology partners</span>
-								<span class="hm-talk-btn">
-									<span><button class="hw-talk-to-us-btn hm-vertical" data-toggle="modal" data-target="#start-project">TALK TO US</button></span>
-								</span>
+								    </a>
+								    <a class="right carousel-control clr-black" href="#myCarousel" role="button" data-slide="next">
+									    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"width="120px" height="175px" class="hm-product-svg-rotate hm-product-right-brace" viewBox="0 0 120 260" enable-background="new 0 0 120 260" xml:space="preserve">
+									    	<g><path d="M46.971,197.248c0-4.5,0.3-17.7,0.3-22.8c0-22.8-7.5-35.7-34.2-36c-6.6-0.3-10.5-3.9-10.5-9c0-5.1,3.9-8.7,10.5-9
+											c26.7-0.3,34.2-13.2,34.2-36c0-5.1-0.3-18.3-0.3-22.8c0-30.3,10.5-49.201,59.701-59.401c5.4-1.2,10.2,2.1,10.2,7.5
+											c0,4.2-3,6.9-5.4,7.8c-38.1,10.5-42.6,21-42.6,47.101c0,6,0.3,16.2,0.3,22.5c0,25.2-12,36.3-31.2,42.3
+											c20.1,6.6,31.2,17.101,31.2,42.301c0,6.3-0.3,16.5-0.3,22.5c0,26.102,4.5,36.602,42.6,47.102c2.4,0.898,5.4,3.6,5.4,7.799
+											c0,5.4-4.8,8.701-10.2,7.5C57.471,246.449,46.971,227.549,46.971,197.248z"/>
+											</g>
+										</svg>
+								    </a>
+								</div>
 							</div>
-				    	</div>
-				   </div>
-<!-- end of fixed tab-->
-
-			<!-- Work-together popup -->
-					<div id="start-project" class="modal fade">
-				        <div class="modal-dialog contact-modal">
-				            <div class="modal-content">
-				            	
-				                <div class="container form-container">
-				                	<span class="hm-contact"><i class="fa fa-mobile"></i><span class="hm-num gotham-rounded-light">+7259471785</span></span>
-								<img class="close-pop" data-dismiss="modal" src="/assets/svg/close-pop.svg" alt="close">
-				                	<h1 class="gotham-rounded-bold">Let's work together</h1>
-				                	<hr>
-				                	<div class="post-resume">
-				         			<form class="form-signin" onSubmit="submitForm(event)" >  <!-- start of form -->
-										<div class="row ">
+						</div>
+					    <div class="hw-ribbon-heading log-clr-backgrnd">
+					        <div class="row">
+								<div class="col-lg-12 hw-hm-rib-col">
+									<span class="gotham-rounded-light ribon-font clr-white hw-contact-us-ribbon">We <i class="fa fa-heart  hm-heart"></i> to be your technology partners</span>
+									<span class="hm-talk-btn">
+										<span><button class="hw-talk-to-us-btn hm-vertical" data-toggle="modal" data-target="#start-project">TALK TO US</button></span>
+									</span>
+								</div>
+					    	</div>
+					   </div>
+	<!-- end of fixed tab-->
+				<!-- Work-together popup -->
+						<div id="start-project" class="modal fade">
+					        <div class="modal-dialog contact-modal">
+					            <div class="modal-content">
+					            	
+					                <div class="container form-container">
+					                	<span class="hm-contact"><i class="fa fa-mobile"></i><span class="hm-num gotham-rounded-light">+7259471785</span></span>
+									<img class="close-pop" data-dismiss="modal" src="/assets/svg/close-pop.svg" alt="close">
+					                	<h1 class="gotham-rounded-bold">Let's work together</h1>
+					                	<hr>
+					                	<div class="post-resume">
+					         			<form class="form-signin" onSubmit="submitForm(event)" >  <!-- start of form -->
+											<div class="row ">
+													<div class="col-lg-6"> 
+														<div class="text-border">
+															<div class="input-group">
+									      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/name-img.png"></div>
+									      						
+																<input type="text" class="form-control placeholder-pro mainLoginInput input_name"placeholder="NAME" >
+															</div>
+														</div>		
+													</div>
+												
 												<div class="col-lg-6"> 
 													<div class="text-border">
 														<div class="input-group">
-								      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/name-img.png"></div>
-								      						
-															<input type="text" class="form-control placeholder-pro mainLoginInput input_name"placeholder="NAME" >
+								      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/email-img.png"></div>
+															<input type="text" class="form-control placeholder-pro mainLoginInput input_email"  placeholder="EMAIL">
 														</div>
-													</div>		
-												</div>
-											
-											<div class="col-lg-6"> 
-												<div class="text-border">
-													<div class="input-group">
-							      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/email-img.png"></div>
-														<input type="text" class="form-control placeholder-pro mainLoginInput input_email"  placeholder="EMAIL">
 													</div>
 												</div>
 											</div>
-										</div>
-										<div class="row ms-row-mar">
-											<div class="col-lg-6"> 
-												<div class="text-border">
-													<div class="input-group">
-							      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
-														<select class="form-control mainLoginInput gotham-rounded-light input_subject sub-width" >
-															<option value="Subject">Subject</option>
-															<option value="Marketing" class="level-0">Marketing</option>
-															<option value="Design" class="level-0">Design</option>
-															<option value="UX" class="level-0">UX</option>
-															<option value="WordPress" class="level-0">WordPress</option>
-															<option value="Strategy" class="level-0">Strategy</option>
-															<option value="Automations" class="level-0">Automations</option>
-															<option value="News" class="level-0">News</option>
-															<option value="Content" class="level-0">Content</option>
-															<option value="Social" class="level-0">Social Media</option>
-														</select>
+											<div class="row ms-row-mar">
+												<div class="col-lg-6"> 
+													<div class="text-border">
+														<div class="input-group">
+								      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
+															<select class="form-control mainLoginInput gotham-rounded-light input_subject sub-width" >
+																<option value="Subject">Subject</option>
+																<option value="Marketing" class="level-0">Marketing</option>
+																<option value="Design" class="level-0">Design</option>
+																<option value="UX" class="level-0">UX</option>
+																<option value="WordPress" class="level-0">WordPress</option>
+																<option value="Strategy" class="level-0">Strategy</option>
+																<option value="Automations" class="level-0">Automations</option>
+																<option value="News" class="level-0">News</option>
+																<option value="Content" class="level-0">Content</option>
+																<option value="Social" class="level-0">Social Media</option>
+															</select>
+														</div>	
 													</div>	
-												</div>	
-											</div>
-											
-											<div class="col-lg-6"> 
-												<div class="text-border">
-													<div class="input-group">
-							      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/phone-img.png"></div>
-														<input type="text" class="form-control placeholder-pro mainLoginInput input_phone" placeholder="PHONE">
-													</div>
-												</div>	
-											</div>
-										</div>
-
-										<div class="row ms-row-mar">
-											<div class="col-lg-12">
-												<div class="text-border">
-												<div class="input-group">
-							      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
-							      						
-							      						<textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" class="form-control placeholder-pro mainLoginInput input_message"  id="message" rows="3"></textarea>
-							      					</div>	
+												</div>
+												
+												<div class="col-lg-6"> 
+													<div class="text-border">
+														<div class="input-group">
+								      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/phone-img.png"></div>
+															<input type="text" class="form-control placeholder-pro mainLoginInput input_phone" placeholder="PHONE">
+														</div>
+													</div>	
 												</div>
 											</div>
-										</div><!-- end of text-area row-->
 
-										<div class="attach-file">
-							      			<div class="col-lg-9">
-							      				<input type="file" class="gotham-book input_file-upload" id="file-upload">
-							      				<br/><br/>
-							      				<span class="attach-text"><span><img src="/assets/img/talent_acquisition/attach.png"></span><span class="gotham-rounded-bok attach-span clr-white">Attach File</span></span>
-							      				<input type="text"  class="input_file-detail form-control placeholder-pro mainLoginInput"  id="file-detail" readonly="readonly"/>
-							      			</div>
-							      			<div class="col-lg-3 submit-background">
-							      			<button id="submit-btn" type="submit" class="btn">
-			              <br>
-			              <div class="submit-resume hr-display">
-			               <img src="/assets/img/talent_acquisition/submit.png" class="img-submit" >
-			               <p class="gotham-rounded-bok submit-text placeholder-pro img-para">SUBMIT</p>
-			              </div>
-							      			</div>
-							      		</div><!-- end of attach-file-->
-									</form> <!-- end of form -->
-									</div><!-- end of postresume -->
-								<div class="show-as-love"><!-- hm social icon-->
-								<div class="row">
-									<div class=" col-lg-offset-7 col-lg-5">
-										<div class="hm-shows-love">
-											<h1 class="gotham-rounded-bold hm-show-text hw-heading show-text1">Show us your <i class="fa fa-heart hm-show-heart"></i> </h1>
-											<div class= "hm-icons hm-form-val">
-												
-						                    	<a href="https://www.facebook.com/hashworks/" class="fa-stack hw-socialshare social-icons">
-								                    <i class="fa fa-circle-thin fa-stack-2x"></i>
-								                    <i class="fa fa-facebook fa-stack-1x"></i>
-								                  </a>
-								                  <a href="https://twitter.com/hashworksco" class="fa-stack hw-socialshare social-icons">
-								                    <i class="fa fa-circle-thin fa-stack-2x"></i>
-								                    <i class="fa fa-twitter fa-stack-1x"></i>
-								                  </a>
-								                  <a href="https://www.linkedin.com/company/9228490" class="fa-stack hw-socialshare social-icons">
-								                    <i class="fa fa-circle-thin fa-stack-2x"></i>
-								                    <i class="fa fa-linkedin fa-stack-1x"></i>
-								                     </a>
-			                  				</div>
-			                  			</div>
-			              			</div>
-						        </div><!--end of hm-socia-icn-->
-				            </div>
-				        </div>
+											<div class="row ms-row-mar">
+												<div class="col-lg-12">
+													<div class="text-border">
+													<div class="input-group">
+								      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
+								      						
+								      						<textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" class="form-control placeholder-pro mainLoginInput input_message"  id="message" rows="3"></textarea>
+								      					</div>	
+													</div>
+												</div>
+											</div><!-- end of text-area row-->
+
+											<div class="attach-file">
+								      			<div class="col-lg-9">
+								      				<input type="file" class="gotham-book input_file-upload" id="file-upload">
+								      				<br/><br/>
+								      				<span class="attach-text"><span><img src="/assets/img/talent_acquisition/attach.png"></span><span class="gotham-rounded-bok attach-span clr-white">Attach File</span></span>
+								      				<input type="text"  class="input_file-detail form-control placeholder-pro mainLoginInput"  id="file-detail" readonly="readonly"/>
+								      			</div>
+								      			<div class="col-lg-3 submit-background">
+								      			<button id="submit-btn" type="submit" class="btn">
+				              <br>
+				              <div class="submit-resume hr-display">
+				               <img src="/assets/img/talent_acquisition/submit.png" class="img-submit" >
+				               <p class="gotham-rounded-bok submit-text placeholder-pro img-para">SUBMIT</p>
+				              </div>
+								      			</div>
+								      		</div><!-- end of attach-file-->
+										</form> <!-- end of form -->
+										</div><!-- end of postresume -->
+									<div class="show-as-love"><!-- hm social icon-->
+									<div class="row">
+										<div class=" col-lg-offset-7 col-lg-5">
+											<div class="hm-shows-love">
+												<h1 class="gotham-rounded-bold hm-show-text hw-heading show-text1">Show us your <i class="fa fa-heart hm-show-heart"></i> </h1>
+												<div class= "hm-icons hm-form-val">
+													
+							                    	<a href="https://www.facebook.com/hashworks/" class="fa-stack hw-socialshare social-icons">
+									                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+									                    <i class="fa fa-facebook fa-stack-1x"></i>
+									                  </a>
+									                  <a href="https://twitter.com/hashworksco" class="fa-stack hw-socialshare social-icons">
+									                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+									                    <i class="fa fa-twitter fa-stack-1x"></i>
+									                  </a>
+									                  <a href="https://www.linkedin.com/company/9228490" class="fa-stack hw-socialshare social-icons">
+									                    <i class="fa fa-circle-thin fa-stack-2x"></i>
+									                    <i class="fa fa-linkedin fa-stack-1x"></i>
+									                     </a>
+				                  				</div>
+				                  			</div>
+				              			</div>
+							        </div><!--end of hm-socia-icn-->
+					            </div>
+					        </div>
+					    </div>
 				    </div>
 			    <!-- End of work-together popup -->
-
-
-
-
-
 			</section>
 		<!-- end of section3-->
-		
-		
-		
-
 	</div>
 </main>	
-
-
-
 <!-- {% include footer.html %} -->
-<script type="text/javascript">
-/*stopping up-down by keyboard key for mozilla */
-var keys = {37: 1, 38: 1, 39: 1, 40: 1};
-
-function preventDefault(e) {
-  e = e || window.event;
-  if (e.preventDefault)
-      e.preventDefault();
-  e.returnValue = false;  
-}
-
-function preventDefaultForScrollKeys(e) {
-    if (keys[e.keyCode]) {
-        preventDefault(e);
-        return false;
-    }
-}
-      if (window.addEventListener) // older FF
-      window.addEventListener('DOMMouseScroll', preventDefault, false);
-  window.onwheel = preventDefault; // modern standard
-  window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
-  window.ontouchmove  = preventDefault; // mobile
-  document.onkeydown  = preventDefaultForScrollKeys;
-
-        </script>  
