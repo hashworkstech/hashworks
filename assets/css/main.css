@@ -378,10 +378,6 @@ html {
   	.job-title-mar {
   		margin-left: 32px;
   	}
-  	.job-margin {
-  		margin-left: 48px;
-  		margin-right: 48px;
-  	}
 	.c-flex {
 		display: -webkit-flex;
 		display: -moz-flex;
@@ -590,9 +586,7 @@ html {
 		    /*margin-left: 20px;*/
 		    margin-top: 12px;
 		}
-		.view1 .view-close{
-			right: 30px;
-		}
+		
 		.keyword {
 		    background-color: #dcdfe4;
 		    padding: 14px 20px;
@@ -606,6 +600,7 @@ html {
 		    border: none;
 		    color: #fff;
 		    font-size: 13px;
+		    border: 1px solid transparent;
 		    font-family: "gotham-rounded-light";
 		    -webkit-transition: all .5s ease 0s;
 		-moz-transition: all .5s ease 0s;

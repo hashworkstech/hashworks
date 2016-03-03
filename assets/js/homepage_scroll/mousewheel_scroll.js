@@ -2,21 +2,21 @@ $(document).ready(function(){
 
 
     //Set each section's height equals to the window height
-    // $('.hw-hm-scroll-anim').height($(window).height());
+    // $('.scroll-anim').height($(window).height());
     /*set the class 'active' to the first element 
      this will serve as our indicator*/
-    $('.hw-hm-scroll-anim').first().addClass('active');
+    $('.scroll-anim').first().addClass('active');
 
 
 $('body, html').delay(1000).animate({
-        scrollTop: $('.hw-home-banner').position().top
+        scrollTop: $('.we-on-banner').position().top
         }, 'slow');
 
     /* handle the mousewheel event together with 
      DOMMouseScroll to work on cross browser */
     $(document).on('mousewheel DOMMouseScroll', function (e) {
         e.preventDefault();//prevent the default mousewheel scrolling
-        var active = $('.hw-hm-scroll-anim.active');
+        var active = $('.scroll-anim.active');
         var indactive = $('.scroll-indicators li.active');
         //get the delta to determine the mousewheel scrol UP and DOWN
         var delta = e.originalEvent.detail < 0 || e.originalEvent.wheelDelta > 0 ? 1 : -1;
@@ -24,7 +24,7 @@ $('body, html').delay(1000).animate({
         //if the delta value is negative, the user is scrolling down
         if (delta < 0) {
             //mousewheel down handler
-            next = active.next('.hw-hm-scroll-anim');
+            next = active.next('.scroll-anim');
 
             //indicator
             nextind = indactive.next('li');
@@ -56,7 +56,7 @@ $('body, html').delay(1000).animate({
             /*similar logic to the mousewheel down handler 
             except that we are animate the anchoring 
             to the previous sibling element*/
-            prev = active.prev('.hw-hm-scroll-anim');
+            prev = active.prev('.scroll-anim');
 
             //indicator
             prevind = indactive.prev('li');
@@ -86,7 +86,7 @@ $('body, html').delay(1000).animate({
         $(this).addClass('active');
         var dval = $(this).data('tab');
 
-        $('.hw-hm-scroll-anim').each(function(){
+        $('.scroll-anim').each(function(){
             // alert( $('body, html').offset().top);
             var scrolldval = $(this).data('value');
             //for the product svg line animation
@@ -98,7 +98,7 @@ $('body, html').delay(1000).animate({
                  $("#product-boundary-line").attr("class","");
             }
             if(dval == scrolldval) {
-              $(".hw-hm-scroll-anim").removeClass('active');
+              $(".scroll-anim").removeClass('active');
               $(this).addClass('active');
               console.log($(this).offset().top);
               $('body, html').animate({
@@ -116,7 +116,7 @@ $('body, html').delay(1000).animate({
 
     //homepage mousescroll animation
   $('#headerscroll').click(function(){
-      var scrollsec = $(this).parents('.hw-hm-scroll-anim');
+      var scrollsec = $(this).parents('.scroll-anim');
       $('body, html').animate({scrollTop: scrollsec.next().offset().top}, 'slow');
       scrollsec.removeClass('active');
       scrollsec.next().addClass('active');

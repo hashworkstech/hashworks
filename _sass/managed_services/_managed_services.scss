@@ -2,10 +2,10 @@
 .latest-job {
 	padding-top:19%;
 }
-#super-job-img {
+#hw-super-job-img{
 	width: 100%;
 }
-.super-job {
+.hw-super-job {
 	position: relative;
 	margin-bottom: 10px;
 	margin-top: -21px;
@@ -13,11 +13,11 @@
 .job-board-title {
 	margin-top: 5px;
 }
-#job-location-img {
+.job-location-img {
 	width: 15px;
 	margin-right: 12px;
 }
-.job-location{
+.job-location-icon{
 	margin-top:15px;
 }
 .hw-talk-to-us-btn {
@@ -41,27 +41,27 @@
 .talk-to-us{
 	margin-right: 28px;
 }
-#latest1 {
+.latest-job1-bg-color{
 	background-color: #3e6936;
 	/* margin-left: 20px;*/
 	left:4%
 }
-#latest2 {
+.latest-job2-bg-color {
 	background-color: #334158;
 	/* margin-left: 20px; */
 	left: 28%
 }
-#latest3{
+.latest-job3-bg-color{
 	background-color: #95dbaf;
    /*	margin-left: 20px; */
 	left: 52%;
 }
-#latest4{
+.latest-job4-bg-color{
 	background-color: #f17937;
 	/* margin-left: 20px; */
 	right: 4%;
 }
-.common-position {
+.hw-latest-job {
 	position: absolute;
 	bottom: 0px;
 	width: 20%;
@@ -110,7 +110,7 @@ input {
 	font: 14px !important;
 	font-family: "gotham-rounded-light !important"; 
 }
-.hw-job1:hover {
+.hw-job-view-btn:hover {
 	color: #ee2b7b;
 }
 /*Placeholder*/
@@ -229,19 +229,19 @@ input {
   -moz-transition: all .9s ease 0s;
   transition: all .9s ease 0s;
 	}
-	.apply {
+	.job-apply-btn {
 		padding:10px 10px;
 		background-color: #ee2b7b;
+		border:1px solid transparent;
 		color: #fff;
 		font-size: 12px;
-		border:none;
 		margin-top: 18px;
 		margin-left: 48px;
 	}
-	.apply:focus {
+	.job-apply-btn:focus {
 		outline:none;
 	}
-	.apply:hover {
+	.job-apply-btn:hover {
 	background-color: transparent;
 	border: 1px solid #ee2b7b;
 	color: #ee2b7b;
@@ -253,6 +253,7 @@ input {
   -o-transition: all .9s ease 0s;
   -moz-transition: all .9s ease 0s;
   transition: all .9s ease 0s;
+  right: 30px;
 	}
 	.keyword {
 		background-color: #dcdfe4;
@@ -260,7 +261,7 @@ input {
 		border: none;
 	}
 
-	h5, .view1-close {
+	h5, .view-close-color {
 		color: #33363f;
 	}
 	.job-list-btn {
@@ -282,6 +283,8 @@ input {
 	}
 	.vw-coll-line-height {
 		line-height: 2.5;
+		margin-left: 48px;
+  		margin-right: 48px;
 	}
 	#file-upload {
 		opacity: 0;
@@ -301,7 +304,7 @@ input {
 		padding-bottom:  15px;
 		padding-top: 5px;
 	}
-	.apply-div {
+	.job-apply-btn-div {
 	 position: relative;
 	}
 /* for pagination column below post and div  */

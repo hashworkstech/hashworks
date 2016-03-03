@@ -2,46 +2,46 @@
 
 <main>
 
-  <div class="super-job">
-    <img src="/assets/img/talent_acquisition/Super_Job_Banner.svg" id="super-job-img">
+  <div class="hw-super-job">
+    <img src="/assets/img/talent_acquisition/Super_Job_Banner.svg" id="hw-super-job-img">
                 {% assign my_variable = 0 %}
                 {% assign items = site.jobboard | sort: 'date'| date: "%d-%m-%y"| reverse %}
                 {% for job in  items %}
 
                 {% if my_variable == 0 %}
-    <div id="latest1" class="common-position" >
+    <div class="hw-latest-job latest-job1-bg-color" >
       <div class="hr-display latest-job">
         <div class="job-date gotham-rounded-light clr-white">{{job.date | date: '%B %d, %Y'}}</div>
         <div class="job-board-title gotham-rounded-bold hw-heading  clr-white">{{job.job_title}}</div>
-        <div class="job-exp gotham-rounded-bold hw-heading  clr-white">{{job.experience}} exp</div>
-        <div class="job-location gotham-rounded-light clr-white"><span><img src="/assets/img/talent_acquisition/location.png" id="job-location-img"></span>{{job.location}}</div>
+        <div class="gotham-rounded-bold hw-heading  clr-white">{{job.experience}} exp</div>
+        <div class="job-location-icon gotham-rounded-light clr-white"><span><img src="/assets/img/talent_acquisition/location.png" class="job-location-img"></span>{{job.location}}</div>
       </div>
     </div>
     {% elsif my_variable == 1 %}
-    <div  id="latest2" class="common-position" >
+    <div class="hw-latest-job latest-job2-bg-color" >
       <div class="hr-display latest-job">
         <div class="job-date gotham-rounded-light clr-white">{{job.date | date: '%B %d, %Y'}}</div>
         <div class="job-board-title gotham-rounded-bold hw-heading  clr-white">{{job.job_title}}</div>
-        <div class="job-exp gotham-rounded-bold hw-heading  clr-white">{{job.experience}} exp</div>
-        <div class="job-location gotham-rounded-light clr-white"><span><img src="/assets/img/talent_acquisition/location.png" id="job-location-img"></span>{{job.location}}</div>
+        <div class="gotham-rounded-bold hw-heading  clr-white">{{job.experience}} exp</div>
+        <div class="job-location-icon gotham-rounded-light clr-white"><span><img src="/assets/img/talent_acquisition/location.png" class="job-location-img"></span>{{job.location}}</div>
       </div>
     </div>
     {% elsif my_variable == 2 %}
-    <div id="latest3" class="common-position" >
+    <div class="hw-latest-job latest-job3-bg-color">
       <div class="hr-display latest-job">
         <div class="job-date gotham-rounded-light clr-white">{{job.date | date: '%B %d, %Y'}}</div>
         <div class="job-board-title gotham-rounded-bold hw-heading  clr-white">{{job.job_title}}</div>
-        <div class="job-exp gotham-rounded-bold hw-heading  clr-white">{{job.experience}} exp</div>
-        <div class="job-location gotham-rounded-light clr-white"><span><img src="/assets/img/talent_acquisition/location.png" id="job-location-img"></span>{{job.location}}</div>
+        <div class="gotham-rounded-bold hw-heading  clr-white">{{job.experience}} exp</div>
+        <div class="job-location-icon gotham-rounded-light clr-white"><span><img src="/assets/img/talent_acquisition/location.png" class="job-location-img"></span>{{job.location}}</div>
       </div>
     </div>
     {% elsif my_variable == 3 %}
-    <div id="latest4" class="common-position">
+    <div class="hw-latest-job latest-job4-bg-color">
       <div class="hr-display latest-job">
         <div class="job-date gotham-rounded-light clr-white">{{job.date | date: '%B %d, %Y'}}</div>
         <div class="job-board-title gotham-rounded-bold hw-heading  clr-white">{{job.job_title}}</div>
-        <div class="job-exp gotham-rounded-bold hw-heading  clr-white">{{job.experience}} exp</div>
-        <div class="job-location gotham-rounded-light clr-white"><span><img src="/assets/img/talent_acquisition/location.png" id="job-location-img"></span>{{job.location}}</div>
+        <div class="gotham-rounded-bold hw-heading  clr-white">{{job.experience}} exp</div>
+        <div class="job-location-icon gotham-rounded-light clr-white"><span><img src="/assets/img/talent_acquisition/location.png" class="job-location-img"></span>{{job.location}}</div>
       </div>
     </div>
                     {% endif %}
@@ -54,7 +54,7 @@
     <h2 class="gotham-rounded-bok h2-color hw-heading">Search for a job</h2>
     <div class="job-list-btn">
       <span class="span-padding-rite">
-        <input type="text" class=" placeholder-pro keyword gotham-rounded-light  " placeholder="keyword eg.(job-title)" id="job-title">
+        <input type="text" class="placeholder-pro keyword gotham-rounded-light" placeholder="keyword eg.(job-title)" id="job-title">
       </span>
       <span class="span-padding-rite">
         <input type="text" class=" placeholder-pro keyword gotham-rounded-light" placeholder="location eg.(city)" id="job-location">
@@ -64,9 +64,9 @@
 
     <!-- table-wrapper -->
     <div class="table-wrapper">
-  <table class="table   job-table" >
+  <table class="table job-table" >
     <thead>
-      <tr  data-value= "tr2">
+      <tr  data-value="tr2">
         <th class="gotham-rounded-bold hw-para">Job Title</th>
         <th class="gotham-rounded-bold hw-para">Location</th>
         <th class="gotham-rounded-bold hw-para">Posted On</th>
@@ -80,41 +80,41 @@
     <tbody>
 {% assign items = site.jobboard | sort: 'date'| date: "%d-%m-%y"| reverse %}    
 {% for job in  items %}
-        <tr class="job-list-item "  data-value= "tr2">
+        <tr class="job-list-item"  data-value= "tr2">
             <td class="gotham-rounded-bok  hw-contact-no "> {{job.job_title}} </td>
             <td class="gotham-rounded-bok  hw-contact-no log-color-blue">{{job.location}}</td>
             <td class="gotham-rounded-bok  hw-contact-no">{{job.date | date: '%B %d, %Y'}}</td>
             <td class="gotham-rounded-bok  hw-contact-no">{{job.experience}}</td>
             <td class="gotham-rounded-bok  hw-contact-no">{{job.type}}</td>
-            <td class="gotham-rounded-bok hw-contact-no hw-job1" ><span><i class="fa fa-search"></i></span><span class="view-act view-mar">View</span></td>
+            <td class="gotham-rounded-bok hw-contact-no hw-job-view-btn" ><span><i class="fa fa-search"></i></span><span class="view-mar">View</span></td>
           </tr>
 
 
 
-      <tr class=" hide view1">
+      <tr class="hide hw-jboard-view">
 
         <td class= "job-coll" colspan="8">
 
           <div class="view">
 
-            <span class="view1-close view-close"><i class="fa fa-times"></i></span>
+            <span class="view-close-color view-close"><i class="fa fa-times"></i></span>
             <h5 class="gotham-rounded-bold clr-black hw-copyright job-title-mar">Job Description</h5>
             {% for  job_descr in job.job_description %}
-              <li class="gotham-rounded-bok vw-coll-line-height hw-contact-no hw-contact-no job-margin ">{{job_descr}}</li>
+              <li class="gotham-rounded-bok vw-coll-line-height hw-contact-no">{{job_descr}}</li>
             {% endfor %}
 
             <h5 class="gotham-rounded-bold clr-black hw-copyright job-title-mar"> Responsibilities of Visual Designer</h5>
             {% for  job_res in job.responsibilities %}
-              <li class="gotham-rounded-bok vw-coll-line-height hw-contact-no hw-contact-no job-margin ">{{job_res}}</li>
+              <li class="gotham-rounded-bok vw-coll-line-height hw-contact-no">{{job_res}}</li>
             {% endfor %}
             
 
             <h5 class="gotham-rounded-bold clr-black hw-copyright job-title-mar">Skills</h5>
             {% for  job_skill in job.skills %}
-              <li class="gotham-rounded-bok vw-coll-line-height hw-contact-no hw-contact-no job-margin ">{{job_skill}}</li>
+              <li class="gotham-rounded-bok vw-coll-line-height hw-contact-no">{{job_skill}}</li>
             {% endfor %}
             
-            <button class="apply gotham-rounded-bold" data-toggle="modal" data-target="#start-project">Apply Now</button>
+            <button class="job-apply-btn gotham-rounded-bold" data-toggle="modal" data-target="#start-project">Apply Now</button>
 
           </div> <!-- end of view --> 
 
@@ -135,7 +135,7 @@
               <div class="modal-content">
               <div class="container form-container">
                     <span class="hm-contact"><i class="fa fa-mobile"></i><span class="hm-num gotham-rounded-light">+8861162420</span></span>
-          <img class="close-pop view1-close form-close" data-dismiss="modal" src="/assets/svg/close-pop.svg" alt="close">
+          <img class="close-pop view-close-color form-close" data-dismiss="modal" src="/assets/svg/close-pop.svg" alt="close">
                     <h1 class="gotham-rounded-bold">Let's work together</h1>
                     <hr>
                     <div class="post-resume">
@@ -202,11 +202,11 @@
                     <div class="col-lg-3 submit-background">
                      
                       <button id="submit-btn" type="submit" class="btn">
-              <br>
-              <div class="submit-resume hr-display" >
-               <img src="/assets/img/talent_acquisition/submit.png" class="img-submit" >
-               <p class="gotham-rounded-bok submit-text placeholder-pro img-para">SUBMIT</p>
-              </div>
+                        <br>
+                        <div class="submit-resume hr-display" >
+                         <img src="/assets/img/talent_acquisition/submit.png" class="img-submit" >
+                         <p class="gotham-rounded-bok submit-text placeholder-pro img-para">SUBMIT</p>
+                        </div>
                       </button>
                     </div>
                   </div><!-- end of attach-file-->
@@ -218,15 +218,15 @@
               <div class="hm-shows-love">
                 <h1 class="gotham-rounded-bold hm-show-text hw-heading show-text1">Show us your <i class="fa fa-heart hm-show-heart"></i> </h1>
                 <div class= "hm-icons hm-form-val">
-                            <a href="https://www.facebook.com/hashworks/" class="fa-stack hw-socialshare social-icons" target="new">
+                            <a href="https://www.facebook.com/hashworks/" class="fa-stack hw-socialshare social-icons" target="_blank">
                               <i class="fa fa-circle-thin fa-stack-2x"></i>
                               <i class="fa fa-facebook fa-stack-1x"></i>
                             </a>
-                            <a href="https://twitter.com/hashworksco" class="fa-stack hw-socialshare social-icons" target="new">
+                            <a href="https://twitter.com/hashworksco" class="fa-stack hw-socialshare social-icons" target="_blank">
                               <i class="fa fa-circle-thin fa-stack-2x"></i>
                               <i class="fa fa-twitter fa-stack-1x"></i>
                             </a>
-                            <a href="https://www.linkedin.com/company/9228490" class="fa-stack hw-socialshare social-icons" target="new">
+                            <a href="https://www.linkedin.com/company/9228490" class="fa-stack hw-socialshare social-icons" target="_blank">
                               <i class="fa fa-circle-thin fa-stack-2x"></i>
                               <i class="fa fa-linkedin fa-stack-1x"></i>
                            </a>

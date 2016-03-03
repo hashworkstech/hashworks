@@ -392,13 +392,13 @@ $(".apst-wrapper").hide();
       // End of casestudy
 
       /* job board*/
-      $('.hw-job1').click(function() {
+      $('.hw-job-view-btn').click(function() {
         $(this).addClass('view-color');
         $(this).parent('tr').next().removeClass('hide');
      });
 
-       $('.view1-close').click(function() {
-         $(this).parents('tr').prev().find('.hw-job1').removeClass('view-color');
+       $('.view-close').click(function() {
+         $(this).parents('tr').prev().find('.hw-job-view-btn').removeClass('view-color');
           
            $(this).parents('tr').addClass('hide');
        }); 
@@ -406,8 +406,8 @@ $(".apst-wrapper").hide();
 
  
  $(document).on('click', '.pager', function(){
-         $(".view1").prev().find('.hw-job1').removeClass('view-color');
-           $(".view1").addClass('hide');
+         $(".hw-jboard-view").prev().find('.hw-job-view-btn').removeClass('view-color');
+           $(".hw-jboard-view").addClass('hide');
 });
 
 /* google search */
@@ -422,25 +422,23 @@ $(".apst-wrapper").hide();
       $("#hw-google-search").removeClass("show");
       $("#hw-google-search").addClass("hidden");     
       }
-      
     });
    
 /* end google search */
 
 
-        $('.apply').click(function () {
-          var job_title = $(this).parents('.view1').prev().find("td").first().text(); // for setting the job-title value to form
+        $('.job-apply-btn').click(function () {
+          var job_title = $(this).parents('.hw-jboard-view').prev().find("td").first().text(); // for setting the job-title value to form
           $(".input_subject").val(job_title);
-          $('.view1').addClass('hide');
-          $('.apply-div').addClass('show');
-           
+          $('.hw-jboard-view').addClass('hide');
+          $('.apply-div').addClass('show'); 
         });
 
         $('.form-close').click(function() {
 
           $('.apply-div').removeClass('show');
            $('.view-act').removeClass('view-color');
-           $('.hw-job1').removeClass('view-color');
+           $('.hw-job-view-btn').removeClass('view-color');
         }); 
 
     /* end of job board*/
@@ -1175,160 +1173,6 @@ var which_one_clicked = 0;
    });
    /*end*/
 
-
-
-  /* menu two */
-
-  /*for the second banner*/
-//   function hiddingAllElements(){
-//   $("#We_partner").hide();
-//   $("#We_resolve").hide();
-//   $("#We_practice").hide();
-//   $("#We_accelerate").hide();
-//   $('#middle-div-part1').css("height","120px");
-//   $('#middle-div-part1').find("i.fa.fa-chevron-down.down-arrow").hide();
-//   $('#middle-div-part2').css("height","120px");
-//   $('#middle-div-part2').find("i.fa.fa-chevron-down.down-arrow").hide();
-//   $('#middle-div-part3').css("height","120px");
-//   $('#middle-div-part3').find("i.fa.fa-chevron-down.down-arrow").hide();
-//   $('#middle-div-part4').css("height","120px");
-//   $('#middle-div-part4').find("i.fa.fa-chevron-down.down-arrow").hide();
-//   $(".hw-fixed-heading").show();
-//   }
-// $('#middle-div-part1').click(function(){
-//   if($('#We_partner').css("display")=="none"){
-//   hiddingAllElements();
-//   $("#We_partner").show();
-//   $(this).find("i.fa.fa-chevron-down.down-arrow").show();
-//   $(this).css("height","140px");
-//   $(".hw-fixed-heading").hide();
-// }
-// else{
-//   $("#We_partner").hide();
-//   $(this).find("i.fa.fa-chevron-down.down-arrow").hide();
-//   $(this).css("height","120px");
-//   $(".hw-fixed-heading").show();
-//   }
-//   });  
-
-// $('#middle-div-part2').click(function(){
-//   if($('#We_resolve').css("display")=="none"){
-//     hiddingAllElements();
-//     $(this).find("i.fa.fa-chevron-down.down-arrow").show();
-//   $("#We_resolve").show();
-//   $(this).css("height","140px");
-//   $(".hw-fixed-heading").hide();
-// }
-// else{
-//   $("#We_resolve").hide();
-//   $(this).css("height","120px");
-//   $(this).find("i.fa.fa-chevron-down.down-arrow").hide();
-//   $(".hw-fixed-heading").show();
-//   }
-//   });  
-// $('#middle-div-part3').click(function(){
-//   if($('#We_practice').css("display")=="none"){
-//     hiddingAllElements();
-//   $(this).find("i.fa.fa-chevron-down.down-arrow").show();
-//   $("#We_practice").show();
-//   $(this).css("height","140px");
-//   $(".hw-fixed-heading").hide();
-// }
-// else{
-//   $("#We_practice").hide();
-//   $(this).css("height","120px");
-//   $(this).find("i.fa.fa-chevron-down.down-arrow").hide();
-//   $(".hw-fixed-heading").show();
-//   }    
-//   }); 
-// $('#middle-div-part4').click(function(){
-//   if($('#We_accelerate').css("display")=="none"){
-//     hiddingAllElements();
-//   $("#We_accelerate").show();
-//   $(this).find("i.fa.fa-chevron-down.down-arrow").show();
-//   $(this).css("height","140px");
-//   $(".hw-fixed-heading").hide();
-// }
-// else{
-//   $("#We_accelerate").hide();
-//   $(this).css("height","120px");
-//   $(this).find("i.fa.fa-chevron-down.down-arrow").hide();
-//   $(".hw-fixed-heading").show();
-//   }   
-//   }); 
-
-// $("#top-div").mouseenter(function() {
-//   hiddingAllElements();
-// });
-
-// $('#middle-div-part1').mouseenter(function() {
-//   if($('#We_partner').css("display")=="none"){
-//     $(this).animate({"height":"140px"},244);
-//     $(this).find("i.fa.fa-chevron-down.down-arrow").show();
-//   }
-// });
-// $('#middle-div-part1').mouseleave(function() {
-//   if($('#We_partner').css("display")=="block"){
-//     $(this).animate({"height":"140px"},244);
-//     $(this).find("i.fa.fa-chevron-down.down-arrow").show();
-//   }
-//   else{
-//     $(this).animate({"height":"120px"},244);
-//     $(this).find("i.fa.fa-chevron-down.down-arrow").hide();
-//   }
-// });
-
-
-// $('#middle-div-part2').mouseenter(function() {
-//   if($('#We_resolve').css("display")=="none"){
-//     $(this).animate({"height":"140px"},244);
-//     $(this).find("i.fa.fa-chevron-down.down-arrow").show();
-//   }
-// });
-// $('#middle-div-part2').mouseleave(function() {
-//   if($('#We_resolve').css("display")=="block"){
-//     $(this).animate({"height":"140px"},244);
-//     $(this).find("i.fa.fa-chevron-down.down-arrow").show();
-//   }
-//   else{
-//     $(this).animate({"height":"120px"},244);
-//     $(this).find("i.fa.fa-chevron-down.down-arrow").hide();
-//   }
-// });$('#middle-div-part3').mouseenter(function() {
-//   if($('#We_practice').css("display")=="none"){
-//     $(this).animate({"height":"140px"},244);
-//     $(this).find("i.fa.fa-chevron-down.down-arrow").show();
-//   }
-// });
-// $('#middle-div-part3').mouseleave(function() {
-//   if($('#We_practice').css("display")=="block"){
-//     $(this).animate({"height":"140px"},244);
-//     $(this).find("i.fa.fa-chevron-down.down-arrow").show();
-//   }
-//   else{
-//     $(this).animate({"height":"120px"},244);
-//     $(this).find("i.fa.fa-chevron-down.down-arrow").hide();
-//   }
-// });
-// $('#middle-div-part4').mouseenter(function() {
-//   if($('#We_accelerate').css("display")=="none"){
-//     $(this).animate({"height":"140px"},244);
-//     $(this).find("i.fa.fa-chevron-down.down-arrow").show();
-//   }
-// });
-// $('#middle-div-part4').mouseleave(function() {
-//   if($('#We_accelerate').css("display")=="block"){
-//     $(this).animate({"height":"140px"},244);
-//     $(this).find("i.fa.fa-chevron-down.down-arrow").show();
-//   }
-//   else{
-//     $(this).animate({"height":"120px"},244);
-//     $(this).find("i.fa.fa-chevron-down.down-arrow").hide();
-//   }
-// });
-
-
-
 /*for filtering in case study*/
 var no_of_total_case_study_item=0;
 $(".casestudy-category-init").each(function(){
@@ -1804,20 +1648,4 @@ $('.xmlid4-hover-small-circle,.xmlid5-hover-small-circle').next().children().att
 $("#company-anime-banner path").animate({"opacity":"1"},5000);
 
 /*end company banner anime*/
-
-
-
-/*for svg product banner*/
-  var index = 2;
-  setInterval(function(){
-    setTimeout(function(){
-      $('.device-anim').attr("class","device-anim svg_hide");
-      if(index==1) $('#desktop-box').attr("class","device-anim");
-      if(index==2) $('#tablet-box').attr("class","device-anim");
-      if(index==3) $('#mobile-box').attr("class","device-anim");
-      index++;
-      if(index>=4) index = 1;
-    }, 4000);
-  }, 6000);
-
 });
