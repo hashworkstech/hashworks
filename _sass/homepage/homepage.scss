@@ -407,7 +407,7 @@
 
 /* blue line animation */
 
-    .scroll-anim {
+    .hw-hm-scroll-anim {
      height: 100vh; 
       background-size: 100%;
       position: relative;
@@ -417,15 +417,8 @@
        background: #e9e8e3; 
     }
     
-     /* .banner-png {
-    background: url("/assets/img/landingpage/Banner.png");
-    height: 70vh;
-    width: 95%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    }*/
 
-    .banner-png img {
+    .hw-hm-banner-png img {
     width: 1000px;
     position: absolute;
     left: 50%;
@@ -434,20 +427,20 @@
     margin-left: -485px;
 }
 
-    .scroll-anim #ban-text p , .scroll-anim #ban-text h1{
+    .hw-hm-scroll-anim #ban-text p , .hw-hm-scroll-anim #ban-text h1{
         animation: fadein 8s;
         -moz-animation: fadein 8s; /* Firefox */
         -webkit-animation: fadein 8s; /* Safari and Chrome */
         -o-animation: fadein 8s; /* Opera */
     }
-.banner1-text {
+.hw-hm-banner-text {
     position: absolute;
     top: 36%;
     left: 50%;
     margin-top: -175px;
     margin-left: -294px;
 }
-    .banner1-text h1{
+    .hw-hm-banner-text h1{
        font-size: 46px;
         line-height: 26px;
         font-weight: 800;
@@ -468,7 +461,7 @@
         -moz-transition: width 1s ease 0s;
 
     }
-    .banner1-text h2 {
+    .hw-hm-banner-text h2 {
         font-size: 24px;
         font-weight: 500;
         text-align: center;
@@ -477,7 +470,7 @@
     .clr-black1 {
         color: #384149; 
     }
-    .pink-bullet {
+    .hw-hr-pink-bullet {
     color: #ee3b7b;
     font-size: 40px;
     margin: 0px 2px;
@@ -984,7 +977,7 @@ div#carousel_inner2 {
       .form-container .post-resume {
           margin-top:30px;
       }
-      .col-padding {
+      .hw-hm-rib-col {
         padding: 10px;
         text-align: center;
       }
@@ -993,8 +986,9 @@ div#carousel_inner2 {
       }
       .hm-vertical {
         vertical-align: top;
-        margin-top: 8px;
-      }
+        margin-right:28px;
+        margin-top: 3px !important;
+     }
       
 
     /*End of active and hover*/

@@ -91,13 +91,6 @@ html {
     width: 100%;
     z-index: 5;
 	}
-	.hw-ribbon-heading1 {
-		position: absolute;
-    /* bottom: 0; */
-    bottom: 0;
-    width: 100%;
-    z-index: 5;
-	}
 	
 
 
@@ -107,6 +100,9 @@ html {
 	}
 	.nav-tabs > li {
 		margin-bottom: -2px;
+	}
+	.nav-tabs > li >a {
+		border:none;
 	}
 	.form-control:focus {
 		border-color: #ccc;
@@ -166,9 +162,9 @@ html {
 	.hw-heading {
 		font-size: 1.125rem;  /*24px*/ /* 18px */
 	}
-	.hm-vertical1 {
+	/*.hm-vertical1 {
 		margin-top: 3px !important;
-	}
+	}*/
 	.hw-para,
 	.header-links {
 		font-size: 1.13rem;  /*18px*/
@@ -1599,7 +1595,7 @@ width: 100%;
 		opacity: 0;
 	}
 }
-#animate-icons-21{
+#gear-animate-medium{
     position: absolute;
 	bottom: 42%;
     left: 17%;
@@ -1608,7 +1604,7 @@ width: 100%;
     animation: rotate-anim   6s linear infinite; 
 }
 
-#animate-icons-22{
+#gear-animate-small{
     position: absolute;
     bottom: 47%;
     right: 15%;
@@ -1616,7 +1612,7 @@ width: 100%;
     width: 2.9%;
     animation: rotate-anim   5s linear infinite; 
 }
-#animate-icons-23{
+#gear-animate-large{
 	position: absolute;
     bottom: 40%;
     right: 34%;
@@ -2594,9 +2590,10 @@ nav#hw-right-nav-menu ul {
 
 
 /* Start of end of our thinking banner*/ 
-#top-div{
+#hw-hm-ourthinking-div{
 	position: relative;
 	margin-top: 45px;
+	text-align: center;
 }
 #middle-div{
 	position: relative;
