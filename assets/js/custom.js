@@ -788,35 +788,35 @@ s.parentNode.insertBefore(gcse, s);
 
 /* start of blog landing page animation */
 
-    $("#div-main-part2 #right-div-part1").click(function(){
-$("#div-main-part2").css("display", "none");
-$("#div2-right-div-part1").css("display", "block");
-        });
-        $("#right-div-part2 ").click(function(){
-$("#div-main-part2").css("display", "none");
-$("#div2-right-div-part2").css("display", "block");        
-        });
+//     $("#div-main-part2 #right-div-part1").click(function(){
+// $("#div-main-part2").css("display", "none");
+// $("#div2-right-div-part1").css("display", "block");
+//         });
+//         $("#right-div-part2 ").click(function(){
+// $("#div-main-part2").css("display", "none");
+// $("#div2-right-div-part2").css("display", "block");        
+//         });
 
 
-        $("#right-div-part3").click(function(){
-$("#div-main-part2").css("display", "none");
-$("#div2-right-div-part3").css("display", "block");        
-        });
+//         $("#right-div-part3").click(function(){
+// $("#div-main-part2").css("display", "none");
+// $("#div2-right-div-part3").css("display", "block");        
+//         });
 
 
-        $("#right-div-part4").click(function(){
-$("#div-main-part2").css("display", "none");
-$("#div2-right-div-part4").css("display", "block");        
-        });
+//         $("#right-div-part4").click(function(){
+// $("#div-main-part2").css("display", "none");
+// $("#div2-right-div-part4").css("display", "block");        
+//         });
 
-        $("#div-main-part1").mouseleave(function(){
-$("#div-main-part2").css("display", "block");
-$("#div2-right-div-part1").css("display", "none");
-$("#div2-right-div-part1").css("display", "none");  
-$("#div2-right-div-part2").css("display", "none");  
-$("#div2-right-div-part3").css("display", "none");  
-$("#div2-right-div-part4").css("display", "none");         
-        }); 
+//         $("#div-main-part1").mouseleave(function(){
+// $("#div-main-part2").css("display", "block");
+// $("#div2-right-div-part1").css("display", "none");
+// $("#div2-right-div-part1").css("display", "none");  
+// $("#div2-right-div-part2").css("display", "none");  
+// $("#div2-right-div-part3").css("display", "none");  
+// $("#div2-right-div-part4").css("display", "none");         
+//         }); 
 /* end of blog landing page animation */   
 
 /* for portfolio page dropdown item click*/
@@ -827,149 +827,149 @@ $("#div2-right-div-part4").css("display", "none");
    // });
 /* end for portfolio page dropdown item click*/     
 
-  var height_pixel = $("#blog1-div1-part1").css('height');
-  $("#blog1-div1-part1").click(function(){
+  var height_pixel = $("#blog-banner-data-ops").css('height');
+  $("#blog-banner-data-ops").click(function(){
     if( $(this).css('height') === height_pixel )
     {
-      $("#blog2-div1-part2").animate({'height' : '0%'},844);
+      $("#blog-banner-devops").animate({'height' : '0%'},844);
       $(this).css(  "z-index", "1");
-      $(this).children().next(".part2").animate({'margin-top' : '10%'},444);
-      $(this).find(".main-animate-arrow").hide(); 
+      $(this).children().next(".blog-banner-posts-content").animate({'margin-top' : '10%'},444);
+      $(this).find(".hw-hm-animate-arrow-icon").hide(); 
       $(this).animate({'height' : '100vh'},844);  
     }
     else{
       $(this).animate({'height' : '50vh'},844);
-      $(this).find(".main-animate-arrow").show();  
-      $(this).children().next(".part2").animate({'margin-top' : '27%'},444); 
+      $(this).find(".hw-hm-animate-arrow-icon").show();  
+      $(this).children().next(".blog-banner-posts-content").animate({'margin-top' : '27%'},444); 
       $(this).css(  "z-index", "0");
-      $("#blog2-div1-part2").animate({'height' : '50vh'},844);
+      $("#blog-banner-devops").animate({'height' : '50vh'},844);
     }
   });
-  $("#blog1-div1-part1").mouseleave(function(){
+  $("#blog-banner-data-ops").mouseleave(function(){
       $(this).animate({'height' : '50vh'},844); 
-      $(this).children().next(".part2").animate({'margin-top' : '27%'},444); 
+      $(this).children().next(".blog-banner-posts-content").animate({'margin-top' : '27%'},444); 
       $(this).css(  "z-index", "0");  
-      $(this).find(".main-animate-arrow").show(); 
-      $("#blog2-div1-part2").animate({'height' : '50vh'},844);       
+      $(this).find(".hw-hm-animate-arrow-icon").show(); 
+      $("#blog-banner-devops").animate({'height' : '50vh'},844);       
     }); 
 
 
-  $("#blog2-div1-part2").click(function(){
+  $("#blog-banner-devops").click(function(){
 
     if( $(this).css('height') === height_pixel )
     {
      
       $(this).css(  "z-index", "1");
-      $(this).find(".blog-img").animate({'margin-top' : '25%'},444);
-      $(this).children().next(".part2").animate({'margin-top' : '12%'},444); 
-      $(this).find(".main-animate-arrow").hide();
-      $("#blog1-div1-part1").animate({'top' : '-100%'},844); 
+      $(this).find(".hw-blog-banner-img").animate({'margin-top' : '25%'},444);
+      $(this).children().next(".blog-banner-posts-content").animate({'margin-top' : '12%'},444); 
+      $(this).find(".hw-hm-animate-arrow-icon").hide();
+      $("#blog-banner-data-ops").animate({'top' : '-100%'},844); 
       $(this).animate({'height' : '100vh'},844);  
     }
     else{
-      $(this).find(".blog-img").animate({'margin-top' : '20%'},444);  
-      $(this).children().next(".part2").animate({'margin-top' : '27%'},444); 
+      $(this).find(".hw-blog-banner-img").animate({'margin-top' : '20%'},444);  
+      $(this).children().next(".blog-banner-posts-content").animate({'margin-top' : '27%'},444); 
       $(this).animate({'height' : '50vh'},844);
-      $(this).find(".main-animate-arrow").show();   
+      $(this).find(".hw-hm-animate-arrow-icon").show();   
       $(this).css(  "z-index", "0");
-      $("#blog1-div1-part1").animate({'top' : '0%'},844); 
+      $("#blog-banner-data-ops").animate({'top' : '0%'},844); 
     }
   });
-  $("#blog2-div1-part2").mouseleave(function(){
-      $(this).find(".blog-img").animate({'margin-top' : '20%'},444);
-      $(this).children().next(".part2").animate({'margin-top' : '27%'},444); 
+  $("#blog-banner-devops").mouseleave(function(){
+      $(this).find(".hw-blog-banner-img").animate({'margin-top' : '20%'},444);
+      $(this).children().next(".blog-banner-posts-content").animate({'margin-top' : '27%'},444); 
       $(this).animate({'height' : '50vh'},844); 
       $(this).css(  "z-index", "0");  
-      $(this).find(".main-animate-arrow").show(); 
-      $("#blog1-div1-part1").animate({'top' : '0%'},844);     
+      $(this).find(".hw-hm-animate-arrow-icon").show(); 
+      $("#blog-banner-data-ops").animate({'top' : '0%'},844);     
         }); 
 
 
 
-  $("#blog2-div2-part2").click(function(){
+  $("#blog-banner-data-science").click(function(){
 
     if( $(this).css('height') === height_pixel )
     {
-      $("#blog1-div2-part1").animate({'top' : '-100%'},844); 
+      $("#blog-banner-we-are-thinkers").animate({'top' : '-100%'},844); 
       $(this).css(  "z-index", "1");
-      $(this).find(".blog-img").animate({'margin-top' : '25%'},444); 
-      $(this).children().next(".part2").animate({'margin-top' : '12%'},444); 
-      $(this).find(".main-animate-arrow").hide(); 
+      $(this).find(".hw-blog-banner-img").animate({'margin-top' : '25%'},444); 
+      $(this).children().next(".blog-banner-posts-content").animate({'margin-top' : '12%'},444); 
+      $(this).find(".hw-hm-animate-arrow-icon").hide(); 
       $(this).animate({'height' : '100vh'},844);   
     }
     else{
-      $(this).find(".blog-img").animate({'margin-top' : '20%'},444);  
-      $(this).children().next(".part2").animate({'margin-top' : '27%'},444); 
+      $(this).find(".hw-blog-banner-img").animate({'margin-top' : '20%'},444);  
+      $(this).children().next(".blog-banner-posts-content").animate({'margin-top' : '27%'},444); 
       $(this).animate({'height' : '50vh'},844); 
       $(this).css(  "z-index", "0");  
-      $(this).find(".main-animate-arrow").show(); 
-      $("#blog1-div2-part1").animate({'top' : '0%'},844);  
+      $(this).find(".hw-hm-animate-arrow-icon").show(); 
+      $("#blog-banner-we-are-thinkers").animate({'top' : '0%'},844);  
     }
   });
-  $("#blog2-div2-part2").mouseleave(function(){
-      $(this).find(".blog-img").animate({'margin-top' : '20%'},444);
-      $(this).children().next(".part2").animate({'margin-top' : '27%'},444); 
+  $("#blog-banner-data-science").mouseleave(function(){
+      $(this).find(".hw-blog-banner-img").animate({'margin-top' : '20%'},444);
+      $(this).children().next(".blog-banner-posts-content").animate({'margin-top' : '27%'},444); 
       $(this).animate({'height' : '50vh'},844); 
       $(this).css(  "z-index", "0");  
-      $(this).find(".main-animate-arrow").show(); 
-      $("#blog1-div2-part1").animate({'top' : '0%'},844); 
+      $(this).find(".hw-hm-animate-arrow-icon").show(); 
+      $("#blog-banner-we-are-thinkers").animate({'top' : '0%'},844); 
         }); 
 
         /* for the 3d row*/
-  $("#blog1-div3-part1").click(function(){
+  $("#blog-banner-ux-ui").click(function(){
 
     if( $(this).css('height') === height_pixel )
     {
-      $("#blog2-div3-part2").animate({'height' : '0vh'},844);
-      $(this).children().next(".part2").animate({'margin-top' : '13%'},444); 
+      $("#blog-banner-mobility").animate({'height' : '0vh'},844);
+      $(this).children().next(".blog-banner-posts-content").animate({'margin-top' : '13%'},444); 
       $(this).css(  "z-index", "1");
-      $(this).find(".main-animate-arrow").hide(); 
+      $(this).find(".hw-hm-animate-arrow-icon").hide(); 
       $(this).animate({'height' : '100vh'},844);    
     }
     else{
       $(this).animate({'height' : '50vh'},844); 
       $(this).css(  "z-index", "0");  
-      $(this).find(".main-animate-arrow").show(); 
-      $("#blog2-div3-part2").animate({'height' : '50vh'},844);
-      $(this).children().next(".part2").animate({'margin-top' : '27%'},444);     
+      $(this).find(".hw-hm-animate-arrow-icon").show(); 
+      $("#blog-banner-mobility").animate({'height' : '50vh'},844);
+      $(this).children().next(".blog-banner-posts-content").animate({'margin-top' : '27%'},444);     
     }
   });
-  $("#blog1-div3-part1").mouseleave(function(){
+  $("#blog-banner-ux-ui").mouseleave(function(){
       $(this).animate({'height' : '50vh'},844); 
       $(this).css(  "z-index", "0");  
-      $(this).find(".main-animate-arrow").show(); 
-      $("#blog2-div3-part2").animate({'height' : '50vh'},844); 
-      $(this).children().next(".part2").animate({'margin-top' : '27%'},444);   
+      $(this).find(".hw-hm-animate-arrow-icon").show(); 
+      $("#blog-banner-mobility").animate({'height' : '50vh'},844); 
+      $(this).children().next(".blog-banner-posts-content").animate({'margin-top' : '27%'},444);   
     }); 
 
 
-  $("#blog2-div3-part2").click(function(){
+  $("#blog-banner-mobility").click(function(){
 
     if( $(this).css('height') === height_pixel )
     {
-      $("#blog1-div3-part1").animate({'top' : '-100%'},844); 
+      $("#blog-banner-ux-ui").animate({'top' : '-100%'},844); 
       $(this).css(  "z-index", "1"); 
-      $(this).find(".blog-img").animate({'margin-top' : '25%'},444);
-      $(this).children().next(".part2").animate({'margin-top' : '12%'},444); 
-      $(this).find(".main-animate-arrow").hide(); 
+      $(this).find(".hw-blog-banner-img").animate({'margin-top' : '25%'},444);
+      $(this).children().next(".blog-banner-posts-content").animate({'margin-top' : '12%'},444); 
+      $(this).find(".hw-hm-animate-arrow-icon").hide(); 
       $(this).animate({'height' : '100vh'},844); 
     }
     else{
-      $(this).find(".blog-img").animate({'margin-top' : '20%'},444);
-      $(this).children().next(".part2").animate({'margin-top' : '27%'},444); 
+      $(this).find(".hw-blog-banner-img").animate({'margin-top' : '20%'},444);
+      $(this).children().next(".blog-banner-posts-content").animate({'margin-top' : '27%'},444); 
       $(this).animate({'height' : '50vh'},844); 
       $(this).css(  "z-index", "0");  
-      $(this).find(".main-animate-arrow").show(); 
-      $("#blog1-div3-part1").animate({'top' : '0%'},844); 
+      $(this).find(".hw-hm-animate-arrow-icon").show(); 
+      $("#blog-banner-ux-ui").animate({'top' : '0%'},844); 
     }
   });
-  $("#blog2-div3-part2").mouseleave(function(){
-      $(this).find(".blog-img").animate({'margin-top' : '20%'},444);
-      $(this).children().next(".part2").animate({'margin-top' : '27%'},444); 
+  $("#blog-banner-mobility").mouseleave(function(){
+      $(this).find(".hw-blog-banner-img").animate({'margin-top' : '20%'},444);
+      $(this).children().next(".blog-banner-posts-content").animate({'margin-top' : '27%'},444); 
       $(this).animate({'height' : '50vh'},844); 
       $(this).css(  "z-index", "0");  
-      $(this).find(".main-animate-arrow").show(); 
-      $("#blog1-div3-part1").animate({'top' : '0%'},844);  
+      $(this).find(".hw-hm-animate-arrow-icon").show(); 
+      $("#blog-banner-ux-ui").animate({'top' : '0%'},844);  
   });      
 
 /*our thinking */

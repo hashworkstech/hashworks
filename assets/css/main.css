@@ -1488,10 +1488,10 @@ width: 100%;
         margin-bottom: 25%;
 
 }
-.arrow-hover:hover {
+.hm-product-left-brace:hover {
 	opacity: 0.5;
 }
-.arrow-hover1:hover {
+.hm-product-right-brace:hover {
 	opacity: 0.5;
 }
 .main-contentt{
@@ -1776,13 +1776,6 @@ width: 100%;
 	.blog-container .blog-content-wrapper h3{
 		height: 72px;
 	}
-	#blog1-div3-part1 a.gotham-rounded-bok.blog-a.clr-white:hover {
-    outline: none;
-    outline-offset: 0;
-    text-decoration: none;
-    color: #6E6D6D;
-}
-
 
 
 	.blog-grid a {

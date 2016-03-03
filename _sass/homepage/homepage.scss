@@ -226,14 +226,14 @@
     width: 100%;
     height: 100vh;
 }
-.blog-banner .part2 {
+.blog-banner .blog-banner-posts-content {
     position: absolute;
     margin-top: 27%;
     padding: 20px;
 }
-#blog1-div1-part1 .animate-arroww .main-animate-arrow, #blog2-div1-part2 .animate-arroww .main-animate-arrow,
-#blog1-div2-part1 .animate-arroww .main-animate-arrow , #blog2-div2-part2 .animate-arroww .main-animate-arrow,
-#blog1-div3-part1 .animate-arroww .main-animate-arrow, #blog2-div3-part2 .animate-arroww .main-animate-arrow,
+#blog-banner-data-ops .hw-hm-animate-arrow .hw-hm-animate-arrow-icon, #blog-banner-devops .hw-hm-animate-arrow .hw-hm-animate-arrow-icon,
+#blog-banner-we-are-thinkers .hw-hm-animate-arrow .hw-hm-animate-arrow-icon , #blog-banner-data-science .hw-hm-animate-arrow .hw-hm-animate-arrow-icon,
+#blog-banner-ux-ui .hw-hm-animate-arrow .hw-hm-animate-arrow-icon, #blog-banner-mobility .hw-hm-animate-arrow .hw-hm-animate-arrow-icon,
 {
     position: absolute;
     color: #fff;
@@ -248,9 +248,9 @@
     transition: all 0.5s ease 0.3s;
 }
 
-#blog1-div1-part1:hover .animate-arroww .main-animate-arrow, #blog2-div1-part2:hover .animate-arroww .main-animate-arrow,
-#blog1-div2-part1:hover .animate-arroww .main-animate-arrow , #blog2-div2-part2:hover .animate-arroww .main-animate-arrow,
-#blog1-div3-part1:hover .animate-arroww .main-animate-arrow, #blog2-div3-part2:hover .animate-arroww .main-animate-arrow,
+#blog-banner-data-ops:hover .hw-hm-animate-arrow .hw-hm-animate-arrow-icon, #blog-banner-devops:hover .hw-hm-animate-arrow .hw-hm-animate-arrow-icon,
+#blog-banner-we-are-thinkers:hover .hw-hm-animate-arrow .hw-hm-animate-arrow-icon , #blog-banner-data-science:hover .hw-hm-animate-arrow .hw-hm-animate-arrow-icon,
+#blog-banner-ux-ui:hover .hw-hm-animate-arrow .hw-hm-animate-arrow-icon, #blog-banner-mobility:hover .hw-hm-animate-arrow .hw-hm-animate-arrow-icon,
 {
   margin-left: 45%;
   opacity: 1; 
@@ -258,17 +258,17 @@
 .blog-banner .blog-category{
         margin-top: 5%;
 }
-.blog-banner  .blog-img{ 
+.blog-banner  .hw-blog-banner-img{ 
     width: 25%;
     margin-top: 20%;
     margin-left: 38%;
 }
-#blog1-div1-part1 .blog-img,#blog1-div2-part1 .blog-img,#blog1-div3-part1 .blog-img{
+#blog-banner-data-ops .hw-blog-banner-img,#blog-banner-we-are-thinkers .hw-blog-banner-img,#blog-banner-ux-ui .hw-blog-banner-img{
     width: 25%;
     margin-top: 25%;
     margin-left: 38%;
 }
-.blog-banner .half-height{
+.blog-banner .blog-contents-half-height{
     height: 50vh;
     width: 101.4%;
 }
@@ -282,14 +282,11 @@
     width: 100%;
     height: 86%;
 }
-.blog-banner .blog1-div1{
+.blog-banner-init-height{
     height: 50vh;
+}
 
-}   
-.blog-banner .blog2-div1{
-    height: 50vh;
-}   
-.blog-banner #blog1-div1-part1{
+.blog-banner #blog-banner-data-ops{
     position: absolute;
     top: 0%;
      background: #490a3d;
@@ -298,7 +295,7 @@
     margin-left: -15px;
     cursor: pointer;
 }
-.blog-banner #blog2-div1-part2{
+.blog-banner #blog-banner-devops{
     background: #8a9b0f;
     position: absolute;
     bottom: 0%;
@@ -309,14 +306,9 @@
     cursor: pointer;
 }
 
-.blog-banner .blog1-div2{
-    height: 50vh;
 
-}   
-.blog-banner .blog2-div2{
-    height: 50vh;
-}   
-.blog-banner #blog1-div2-part1{
+  
+.blog-banner #blog-banner-we-are-thinkers{
     position: absolute;
     top: 0%;
     background: #bd1550;
@@ -325,7 +317,7 @@
     margin-left: -8px;
    
 }
-.blog-banner #blog2-div2-part2{
+.blog-banner #blog-banner-data-science{
     background: #f8ca00;
     position: absolute;
     bottom: 0%;
@@ -335,21 +327,14 @@
     margin-left: -8px;
     cursor: pointer;
 }
-.blog-mar {
+.hm-blog-post-desc {
     text-align: justify;
     margin: 18px 20px;
     margin-top: 15px;
     font-weight: lighter;
 }
-.blog-banner .blog1-div3{
-    height: 50vh;
 
-}   
-.blog-banner .blog2-div3{
-    height: 50vh;
-    /*margin-top: -1px;*/
-}   
-.blog-banner #blog1-div3-part1{
+.blog-banner #blog-banner-ux-ui{
     position: absolute;
     top: 0%;
      background: #191726; 
@@ -357,10 +342,8 @@
     overflow: hidden;
     margin-left: -2px;
 }
-.blog-banner #blog1-div3-part1 .blog-a{
-    color: #fff;
-}
-.blog-banner #blog2-div3-part2{
+
+.blog-banner #blog-banner-mobility{
     background: #1ac1b0;
     position: absolute;
     bottom: 0%;
@@ -536,7 +519,7 @@
     .product-quote {
         margin-top: -20px;
     }
-    .svg-rotate {
+    .hm-product-svg-rotate {
        -ms-transform: rotateY(-180deg); /* IE 9 */
        -webkit-transform: rotateY(-180deg);
         transform: rotateY(-180deg);
@@ -545,33 +528,21 @@
     .product-span {
         padding-left: 15px;
     }
+
     .product-desc{
-        position: absolute;
-        background-color: #fff;
-        width: 100%;
-        opacity: 0;
-        top: 12%; 
-        height: 100%;
-        
-    }
-        .product-desc{
-        position: absolute;
-        background-color: #fff;
-        opacity: 0;
-        height: 100%;
+    position: absolute;
+    background-color: #fff;
+    opacity: 0;
+    height: 100%;
     width: 80%;
     top: 6%;
     left: 15%;
         
     }
     .product-desc1 {
-    position: absolute;
-    background-color: #fff;
     width: 90%;
-    opacity: 0;
     top: -8%;
     left: 7%;
-    height: 100%;
 }
     
     .product-carousel .item:hover  .product-desc{
@@ -608,60 +579,8 @@
         top: 29%;
     } 
 
-#right-div-part1 .animate-arroww .main-animate-arrow, #right-div-part2 .animate-arroww .main-animate-arrow,
-#right-div-part3 .animate-arroww .main-animate-arrow , #right-div-part4 .animate-arroww .main-animate-arrow{
-    position: absolute;
-    color: #fff;
-    width: 53px;
-    margin-top: 194px;
-    margin-left: 96px;
-    opacity: 0;
-    -webkit-transition: all 0.5s ease 0.3s;
-    -moz-transition: all 0.5s ease 0.3s;
-    -ms-transition: all 0.5s ease 0.3s;
-    -o-transition: all 0.5s ease 0.3s;
-    transition: all 0.5s ease 0.3s;
-}
-
-#right-div-part1:hover .animate-arroww .main-animate-arrow,#right-div-part2:hover .animate-arroww .main-animate-arrow,
-#right-div-part3:hover .animate-arroww .main-animate-arrow,#right-div-part4:hover .animate-arroww .main-animate-arrow{
-  margin-left: 176px;
-  opacity: 1;
-}
-
-#right-div-part1:hover p, #right-div-part2:hover p,#right-div-part3:hover p,#right-div-part4:hover p{ 
-    transform: scale(1.1); }
 
 
-
-.div-main-part2-part1{
-  position: relative;
-      margin-top: 62px;
-}
-
-#div-main-part1  img{
-  width: 15%;
-    margin-bottom: 5px;
-        margin-right: 25px;
-}
-.blog-div-part{
-    margin-bottom: 38px;
-}
-#div-main-part1  .blog-link-anchor{
-    text-decoration: none;
-    color: #ff0;
-    margin-left: 15px;
-}
-#div-main-part1  .blog-link-anchor:hover{
-  color: gray;
-}
-#div-main-part1  .blog-link-anchor span{
-  opacity:0;
-  color: gray;
-}
-#div-main-part1  .blog-link-anchor:hover span{
-  opacity:1;
-}
 /*end  animation of blog landing page */
 
   /*End of bg-color*/
