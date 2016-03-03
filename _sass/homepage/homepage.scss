@@ -1088,16 +1088,13 @@ div#carousel_inner2 {
           position: absolute;
           right: 10%;
           top: 5%;
+          z-index: 2011
           cursor: pointer;
         }
 
         /*form css*/
         .contact-container {
           width: 100%;
-        }
-        #start-project,
-        #start-project {
-          z-index: 2011
         }
         .contact-modal {
           width: 100%;

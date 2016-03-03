@@ -632,10 +632,13 @@ html {
 		.test-right {
 			margin-right: 55px;
 		}
-		.hw-engage-cont .img-outer {
+		/*.hw-engage-cont .img-outer {
 			margin-top: 28px;
+		}*/
+		.hw-eu-icon{
+		    margin-top: 28px;
+		    margin-left: 120px;
 		}
-
 		.div-margin-left {
 			margin-left: 100px;
 			margin-right: 100px;
@@ -694,9 +697,9 @@ html {
 		.img-center1 {
 			margin-right: 120px;
 		}
-		.img-center {
+/*		.img-center {
 			margin-left: 120px;
-		}
+		}*/
 	/* end of engages page */
 
 /* solutions */
