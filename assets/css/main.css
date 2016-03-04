@@ -1429,19 +1429,19 @@ width: 100%;
 	margin-left: -65px;
     margin-bottom: -30px;
 }
-.title-background{
+.bs-txt-bg-img{
 	background: url("/assets/img/service-del/Text_Background_Shades.svg") no-repeat;
 }
-.title-background2{
+.bs-txt-bg-img-2{
 	background: url("/assets/img/service-del/Text_Background_Shades2.svg") no-repeat;
 }
-.title-background3{
+.bs-txt-bg-img-3{
 	background: url("/assets/img/service-del/Text_Background_Shades3.svg") no-repeat;
 }
 .hw-buiseness-padding-left {
     padding-left: 50px;
 }
-.hw-buiseness-padding-right {
+.hw-business-padding-right {
     padding-right: 50px;
 }
 #collapse-image-2{
@@ -1696,11 +1696,11 @@ width: 100%;
 	.service-col-padding {
 		padding: 0px 30px;
 	}
-	.partner-content {
+	.hw-bs-content {
 		text-align: justify;
 		margin:10px 0px;
 	}
-	.partner-title {
+	.bs-title {
 		margin:16px 0px;
 	}
 	.service-img-mar {
