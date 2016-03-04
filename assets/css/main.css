@@ -1486,16 +1486,18 @@ width: 100%;
 	    overflow: hidden;
 	}
 	
-	.thinking-height2 {
+	.business-value-height {
 		height: 38.7vh;
 	}
-	.thinking-height:hover {
+	.business-value-hover:hover {
 		background-color: #e8e8e8;
 	}
 	.content {
 		padding: 50px 0px 0px;
 	}
-#div-top-left{
+
+	
+#hw-weresolve{
 	    padding-top: 15px;
 	height: 38.7vh;	
 	position: absolute;
@@ -1506,7 +1508,7 @@ width: 100%;
     top: 0;
     cursor:pointer;
 }
-#div-top-right{
+#hw-we-practice{
 	    padding-top: 15px;
 	height: 38.7vh;	
 	position: absolute;
@@ -1517,7 +1519,7 @@ width: 100%;
     top: 0;
   cursor:pointer;
 }
-#div-bottom-right{
+#hw-we-partner{
 	    padding-top: 15px;
 	height: 38.7vh;	
 	position: absolute;
@@ -1528,7 +1530,7 @@ width: 100%;
     bottom: 0;
     cursor:pointer;
 }
-#div-bottom-left{
+#hw-we-accelarate{
 	    padding-top: 15px;
 	height: 38.7vh;	
 	position: absolute;
