@@ -5,21 +5,13 @@
 
    		<div class="hw-header-padding">
 		   	<div class="hw-header-underline"></div>
-			<!-- <div id="hw-upskilling" class="carousel slide upskilling-carousel" data-ride="carousel" data-interval="false"> -->
-
-		   		<div class="container heading-caro-padd">
-				    <!-- Wrapper for slides -->
-				    <!-- <div class="carousel-inner" role="listbox"> -->
+		   		<div class="container">
 				    	 {% for cont in site.data.Portfolio.carousel.carousel_content%}
 					       {% if forloop.first %}
 					  	<div class="item active">
 					      <p class=" gotham-rounded-bok hw-para">
 					       {{ cont.content}}
 					      </p>
-					      <!-- <div class="hr-display">
-					      	<button class="custom-btn text-uppercase">Casestudies</button>
-					      	<button class="custom-btn text-uppercase">Blogs</button>
-					      </div> -->
 					    </div>
 						{% else %}
 					   <div class="item">
@@ -33,14 +25,8 @@
 					    </div>
 						{% endif %}
 					    {% endfor %}
-				    <!-- </div> -->
-				<!-- </div> -->
 			</div>
 	 	</div>
-	<!-- end of carousel-->
-<!-- End of upskilling carousel -->
-
-<!--tabs-->
 	<div class="bs-example line-padding">
 			<div class="container">
 
@@ -101,31 +87,23 @@
 				        		<h3 class="hw-tab-heading gotham-rounded-bok">Learning Obectives1</h3>
 				        		
 
-	<p class="gotham-rounded-light hw-para">{{page.learning_objective.description}}</p>
-       <ul>
-	{%for point in  {{page.learning_objective.points}} %}
-	         
-				        			<li><p class="gotham-rounded-light hw-para">
-                {{point}}
-            </p>
-        </li>
-	    {%endfor%}
-
-</ul>
-    
-
-				        		
+							<p class="gotham-rounded-light hw-para">{{page.learning_objective.description}}</p>
+						       <ul>
+							{%for point in  {{page.learning_objective.points}} %}
+							         
+								<li><p class="gotham-rounded-light hw-para">
+						                {{point}}
+						            </p>
+						        </li>
+							    {%endfor%}
+								</ul>
 				        	</div>
 				        </div>
 			        <!-- End of container -->
-				
 				</div>
-
 			<!-- End of objectives -->
 
-
 			<!-- objectives -->
-
 				<div id="audience" class="tab-pane fade">
 
 					<!-- audience -->
