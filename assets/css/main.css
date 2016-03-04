@@ -949,7 +949,7 @@ html {
 		padding: 0px 60px 24px;
 	}
 
-	.heading-caro-padd {
+	 .hw-header-padding div:last-child{
 		padding:0 100px;
 	}
 
