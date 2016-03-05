@@ -87,7 +87,6 @@
         display: flex;
         margin: auto;
     }
-
     .footer>div:last-child {
         -webkit-justify-content: -webkite-flex-end;
         -moz-justify-content: -moz-flex-end;
@@ -95,9 +94,6 @@
         -ms-justify-content: -ms-flex-end;
         justify-content: flex-end;
     }
-
-    
-
     .footer .hw-socialshare :last-child {
         margin-right: 0;
     }

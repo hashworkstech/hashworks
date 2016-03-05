@@ -2556,24 +2556,16 @@ nav#hw-right-nav-menu ul {
  .pointer {
    	pointer-events: none;
    }
-   
    .hw-hover-header .navbar-nav > .pointer > a, .hw-hover-header .navbar-nav > .pointer > a:hover, .hw-hover-header .navbar-nav > .pointer > a:active, .hw-hover-header .navbar-nav > .pointer > a:focus
    {
    	color: #ababab !important;
    }
 
-   
-/*    .hw-hover-header .navbar-nav > .pointer1 > a, .hw-hover-header .navbar-nav > .pointer1 > a:hover, .hw-hover-header .navbar-nav > .pointer1 > a:active, .hw-hover-header .navbar-nav > .pointer1 > a:focus
-   {
-   	color: #ababab !important;
-   }*/
-
+   .hw-hover-header .navbar-nav > li > a{
+   	color:#fff;
+   }
 
 /* Icon 2 */
-
-
-
-
 /* Start of end of our thinking banner*/ 
 #hw-hm-ourthinking-div{
 	position: relative;
