@@ -1,10 +1,7 @@
 
 html {
-
 	font-size: 16px;
 	}
-
-
 /* fonts */
 	@font-face {
 		font-family:'gotham-rounded-bold';
@@ -35,42 +32,33 @@ html {
 		src: url(../font/ProximaNova-Regular.otf);
 	}
 /* end of fonts */
-
-/* general css */
-	
+/* general css */	
 	html * {
 	  -webkit-font-smoothing: antialiased;
 	  -moz-osx-font-smoothing: grayscale;
 	}
-
 	*, *:after, *:before {
 	  -webkit-box-sizing: border-box;
 	  -moz-box-sizing: border-box;
 	  box-sizing: border-box;
 	}
-
 	*, p {
 		margin:0px;
 		padding: 0px;
 	}
-
 	ul li {
 		list-style-type: none;
 	}
-
 	body.hw-home-body {
 		overflow: hidden;
 	}
-
 	body {
 		font: 1rem/1.4 "gotham-rounded-bold";
 		color: #7c7c7c;
 	}
-
 	a {
 		color: inherit; /**/
 	}
-
 	a:focus,
 	a:hover,
 	.btn:focus, 
@@ -91,9 +79,6 @@ html {
     width: 100%;
     z-index: 5;
 	}
-	
-
-
 	.btn:active,
 	.btn.active {
 		box-shadow: none;
@@ -157,26 +142,19 @@ html {
 	.hw-font-heading3 {
 		font-size: 1.75rem; 
 	}
-
-	
 	.ribon-font {
 	    font-size: 1.313rem;
 	}
 	.hw-heading {
 		font-size: 1.125rem;  /*24px*/ /* 18px */
 	}
-	/*.hm-vertical1 {
-		margin-top: 3px !important;
-	}*/
 	.hw-para,
 	.header-links {
 		font-size: 1.13rem;  /*18px*/
 	}
-
 	.hw-copyright {
 		font-size: 1rem;  /*16px*/
 	}
-
 	.hw-contact-no {
 		font-size: 0.875rem;  /*14px*/
 		cursor: default;
@@ -215,7 +193,6 @@ html {
 		float: left;
 		padding: 0 25px;
 	}
-	
 	.clr-white {
 		color: #fff;
 	}
@@ -385,21 +362,12 @@ html {
     	margin: auto;
     	margin-bottom: -2px;
 	}
-/*	.c-flex {
-    	-webkit-justify-content: center;
-    	-moz-justify-content: center;
-    	-o-justify-content: center;
-    	-ms-justify-content: center;
-    	justify-content: center;
-    	margin: auto;
-	}*/
 	.filter-content {
 		display: none;
 	}
 	.filter-content.active {
 		display: block;
 	}
-
 	.header-right-line-animation,
 	.header-left-line-animation {
 		bottom: 5px;
@@ -415,12 +383,7 @@ html {
 		-o-transition: all 0.5s ease 0s;
 		pointer-events: none;
 	}
-/* end of general css */
 
-	/*homepage header*/
-	/*.top-margin-zero {
-		margin: 20px !important;
-	}*/
 	header.hw-home {
 	position: fixed;
 	top: 0;
@@ -443,8 +406,6 @@ html {
 	   border: medium none;
 	   margin: 0;
 	}
-
-
 	.hw-logo {
 		float: left;
 		position: relative;
@@ -475,12 +436,9 @@ html {
 	}
 
 	/*End of homepage header*/
-
 	#hw-homepage {
 	padding: 0 25px;
 	}
-
-
 	#hw-homepage .row > div:first-child {
 	-webkit-align-items: center;
 	-moz-align-items: center;
@@ -489,8 +447,6 @@ html {
 	align-items: center;
 	padding: 0 25px;
 	}
-
-
 	nav.navbar-default.hw-fixed-header {
 	position: fixed;
 	   top: 0;
@@ -1745,9 +1701,7 @@ width: 100%;
 	.nav-cs-margin {
 		margin-top: 70px;
 	}
-	/*.cs-li-margin {
-		margin-top: 40px;
-	}*/
+	
 	.para-padding {
 		padding: 0px 80px;
 	}
@@ -1787,16 +1741,7 @@ width: 100%;
 	#google-search-div i.fa.fa-angle-right.search-arrow:hover {
     color: #ee2b7b;
 	}
-/* case study _detail */
-	/*.casestudy-img {
-	    background-image: url("http://forgeandsmith.com/wp-content/uploads/2014/06/casestudies.jpg");;
-	    background-repeat: no-repeat;
-	    background-position: 50% 0.0181803%;
-	    height: 500px;
-	    width: 100%;
-	    background-size: 180% auto;
-	    position: relative;
-	}*/
+
 	.banner-inner {
 	    position: absolute;
 	    top: 50%;
@@ -1856,11 +1801,7 @@ width: 100%;
 		.blog-filter {
 		margin-top: 40px;
 		}
-	 /* .blog-grid .filter select:hover,
-	  .blog-grid .filter select:focus {
-	    border-color: #000;
-	  }
-*/
+	
 	  .blog-intro-wrapper h2 {
 	    letter-spacing: 2px;
 	  }
@@ -2153,12 +2094,7 @@ width: 100%;
 	  .blog-post-likes{
 	  	float:right;
 	  }
-	  /*.margin-zero {
-	  	margin-top: 0px;
-	  }*/
-
-	 
-
+	  
 	/*hover*/
 	  .blog-grid li:hover .image-wrapper::before,
 	  .blog-grid li:focus .image-wrapper::before {
@@ -2319,13 +2255,7 @@ width: 100%;
     width: 100%;
     border-bottom: 1px solid #37b5c4;
   	}
-/*  	.nav-tabs>li>a, .nav-tabs>li>a, .nav-tabs>li>a {
-    border-bottom: 3px solid transparent;
-    color: #5f5f5f;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-	}*/
+
   .block-grid {
   	font-family:'gotham-rounded-light';
   	float: left;
@@ -2342,7 +2272,6 @@ width: 100%;
     vertical-align: baseline;
 }
 /* end of row banner */
-
  	#map {
         width: 500px;
         height: 380px;
@@ -2401,8 +2330,6 @@ width: 100%;
   }
 
 }
-
-
 /* end of casestudy page*/
 
 /* blog nav page */
@@ -2419,28 +2346,6 @@ width: 100%;
 }
 /* end of navblog detail page */
 
-/*@media screen and (min-width: 1500px) {
-    body {
-        max-width: 1500px;
-        display: table;
-        margin: 0 auto;
-        height: 100%;+
-        width: 100%;
-    }
-
-    header .navbar-default,
-    .hw-fixed-heading {
-    	max-width: 1500px;
-    }
-
-    .hw-logo {
-    	padding-left: 15px;
-    }
-    .scroll-indicators {
-      right: 200px;
-	}
-
-}*/
 
 /* menu for header */
 	nav#hw-right-nav-menu {
@@ -2528,11 +2433,7 @@ nav#hw-right-nav-menu ul {
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
-  transform: rotate(0deg);/*
-  -webkit-transition: .5s ease-in-out;
-  -moz-transition: .5s ease-in-out;
-  -o-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;*/
+  transform: rotate(0deg);
 }
 
 #nav-hamburger-icon span:nth-child(1) {
@@ -2562,6 +2463,9 @@ nav#hw-right-nav-menu ul {
    }
 
    .hw-hover-header .navbar-nav > li > a{
+   	color:#fff;
+   }
+   .hw-fixed-header .navbar-nav > li > a{
    	color:#fff;
    }
 
@@ -3304,14 +3208,4 @@ img#big-ipad {
 	top: 37px;
     right: -67px;
 }
-/*.banner1-svg {
-    position: absolute;
-    bottom: 15%;
-    left: 50%;
-    margin-left: -500px;
-}
-	*/
- 
-
-
 }

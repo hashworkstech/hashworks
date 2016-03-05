@@ -2,17 +2,10 @@
 
 <!-- upskilling carousel -->
 	<h1 class="text-center gotham-rounded-bok heading hw-font-heading"> Bootcamps </h1>
-
    		<div class="hw-header-padding">
 		   	<div class="hw-header-underline"></div>
-			<!-- <div id="hw-upskilling" class="carousel slide" data-ride="carousel" data-interval="false"> -->
-
 		   		<div class="container">
-				    <!-- Wrapper for slides -->
-				    <!-- <div class="carousel-inner" role="listbox"> -->
 				    	 <h2 class="gotham-rounded-light hw-heading h2-color text-center hw-line-height">{{site.data.upskilling-carousel.content}}</h2> 
-				    <!-- </div> -->
-				<!-- </div> -->
 			</div>
 	 	</div>
 	<!-- end of carousel-->
@@ -52,17 +45,12 @@
 
 <!-- upskilling details -->
 	<div class="hw-upskilling-details">
-
 		<!-- container -->
 			<div class="container">
-
 				<!-- row -->
 					<div class="row">
-
 						<!-- col -->
 							{% for cont in site.upskilling_cs %}
-
-
 								<div class="col-lg-4 upskill-cont-filter {{ cont.topic | downcase }}">
 									<a href="{{cont.url}}">
 									<h2 class="gotham-rounded-bok hw-heading text-center">{{ cont.topic }}</h2>
@@ -70,7 +58,6 @@
 										<div class="hw-upskill-cont">	
 											<h3 class="gotham-rounded-bold text-uppercase hw-tab-heading text-center">{{ cont.title }}</h3>
 											<p class="gotham-rounded-light text-justify">{{ cont.desc }}</p>
-
 											<!-- row -->
 												<div class="row">
 													<div class="col-lg-6">
@@ -103,20 +90,12 @@
 								</div>
 							{% endfor %}
 						<!-- End of col -->
-
-
-						
-
 					</div>
 				<!-- End of row -->
-
 			</div>
 		<!-- End of container -->
 	</div>
-<!-- End of upskilling details -->
-		
-
-
+<!-- End of upskilling details -->		
 <!-- hw-started -->
 	<div class="hw-started log-clr-backgrnd container-fluid" >
 		<div class="row p-flex">
@@ -129,9 +108,6 @@
 		</div>
 	</div>
 <!-- End of hw-started -->
-
-
-
 		<!-- layout for map and form-->
 			<div class="container ms-form-mar collapse" id="upskilling">
 				<div class="row">
@@ -139,9 +115,6 @@
 						<!-- google map -->
       					<div id="map"></div>
    					 <!-- End of google map -->
-						<div>
-							
-						</div>	
 					</div>
 					<div class="col-lg-6">
 						<div class="post-resume">

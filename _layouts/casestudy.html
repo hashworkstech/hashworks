@@ -2,25 +2,14 @@
 <main>
 
 	<h1 class="text-center gotham-rounded-bok heading hw-font-heading"> Case Study </h1>
-	<!-- carousel-->
-
    		<div class="hw-header-padding"> 
 		   	<div class="hw-header-underline"></div>
-			<!-- <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false"> -->
-
 		   		<div class="container">
-				    <!-- Wrapper for slides -->
-				    <!-- <div class="carousel-inner" role="listbox"> -->
 				    	<h2 class="gotham-rounded-light hw-heading h2-color text-center hw-line-height">{{site.data.casestudy-carousel.content}}</h2> 
-				    <!-- </div> -->
-				<!-- </div> -->
 			</div>
 	 	</div>
-
-	<section >
-		
+	<section>
 	   <div class="case-studies-filter-contents">
-
 		  <div class="hr-display"  id="case-studies-total">
 			<p class="hw-carousel-heading gotham-rounded-bok text-center" id="case-studies-total-no">24</p>
 			<h2 class="hw-copyright gotham-rounded-light">CASE STUDIES</h2>
@@ -52,10 +41,7 @@
 			</label>
 		</div>
 	</div>
-
-
 </section>
-	
 	<div class="casestudy-ul">
 		<ul class="blog-grid clearfix">
 			{% for navcasestudy in site.casestudy  %}
@@ -76,5 +62,4 @@
 	 	</ul>
 	</div>
 	</main>	
-
 {% include footer.html %}

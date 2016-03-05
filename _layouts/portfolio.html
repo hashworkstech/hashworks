@@ -1,41 +1,25 @@
 {% include header.html %}
-
 <main>
-
-   
 	<h1 class="text-center gotham-rounded-bok heading hw-font-heading"> Portfolio </h1>
 	<!-- carousel-->
-
    		<div class="hw-header-padding"> 
 		   	<div class="hw-header-underline"></div>
-			<!-- <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false"> -->
-
 		   		<div class="container">
-				    <!-- Wrapper for slides -->
-				    <!-- <div class="carousel-inner" role="listbox"> -->
 				    	<h2 class="gotham-rounded-light hw-heading h2-color text-center hw-line-height">{{site.data.Portfolio.carousel.content}}</h2> 
-					  	
-				    <!-- </div> -->
-				<!-- </div> -->
-			</div>
+			    </div>
 	 	</div>
-
 	<!-- end of carousel-->
-	
-
-	
 	<!--tabs-->
 	<div class="bs-example line-padding">
 		<div class="container">
-
 		    <div id='carousel_container' class="row">
 			  	<div id='left_scroll' class="arrow"><i class="fa fa-angle-left"></i></div>
 			    <div id='carousel_inner'>
 			        <ul id='carousel_ul' class="nav nav-tabs p-flex hw-tablink">
-			           
 			            <li  data-value="DataOps"><a data-toggle="tab" href="#platform" >
 				        	<ul class="tab-img">
-				        		<li  class="li-tab-mar"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				        		<li  class="li-tab-mar">
+				        	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 										 width="75px" height="75px" viewBox="0 0 75 75" enable-background="new 0 0 75 75" xml:space="preserve">
 									<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M64.734,33.724"/>
 									<g>
@@ -61,16 +45,15 @@
 									<path fill="none" stroke="#231F20" stroke-linecap="round" stroke-linejoin="round" d="M73.855,54.029
 										c0,10.846-8.793,19.638-19.638,19.638H21.324c-10.845,0-19.637-8.792-19.637-19.638V21.136C1.688,10.292,10.479,1.5,21.324,1.5
 										h32.894c10.845,0,19.638,8.792,19.638,19.636V54.029z"/>
-									</svg>
+							</svg>
 								</li>
 				        		<li class="gotham-rounded-light font-24"><p class="text-center">DataOps</p> <!-- <p class="text-center">Integration</p>--></li> 
 							</ul></a>
-						</li>
-				        
+						</li>   
 				        <li data-value="DevOps"><a  data-toggle="tab" href="#engineering" >
 				        	<ul class="tab-img">
 				        		<li class="li-tab-mar">
-				        			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				        		    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 										 width="75px" height="75px" viewBox="0 0 75 75" enable-background="new 0 0 75 75" xml:space="preserve">
 									<path fill="none" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" d="M37.417,1h-3.522
 										c-1.948,0-3.526,1.579-3.526,3.527v4.503c0,1.518-0.972,2.865-2.412,3.345l-2.569,0.856c-1.267,0.423-2.664,0.093-3.608-0.851
@@ -94,7 +77,6 @@
 				        		<li class="gotham-rounded-light font-24"><p>DevOps</p> <!-- <p class="text-center"> Practice</p> --></li>
 							</ul></a>
 				        </li>
-
 				        <li data-value="DataScience"><a  data-toggle="tab" href="#tab_mobility" >
 				        	<ul class="tab-img" >
 				        		<li class="li-tab-mar"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -120,7 +102,6 @@
 				        		<li class="gotham-rounded-light font-24"><p>Data Science</p> <!-- <p class="text-center"> Science</p> --></li>
 							</ul></a>
 				        </li>
-
 				        <li data-value="Ui-ux"><a  data-toggle="tab" href="#ui" >
 				        	<ul class="tab-img" >
 				        		<li class="li-tab-mar"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -164,44 +145,25 @@
 			    </div>
 			  	<div id='right_scroll' class="arrow"><i class="fa fa-angle-right"></i></div>
 			</div>
-
 		</div> <!--end of contaier-fuild of tab heading-->
-
-
 	    <div class="tab-content hw-tabcont-link">
-
 	        <div id="platform" class="tab-pane fade in active" data-value="DataOps">
 	           <!-- categories -->
        			<div class="container">
-
 			<!-- hw-engage-cont -->
 				<div class="hw-engage-cont hw-margin-div">
 					<!-- row one-->
 						<div class="row ">
-
 							<div class="col-lg-6">
 								<h2 class="gotham-rounded-light hw-heading h2-color">{{ site.data.Portfolio.DataOps.api_platform.title}}</h2>
 								<div class="div-border-left">
 									<p class="gotham-rounded-light hw-copyright hw-para-color-margin">{{ site.data.Portfolio.DataOps.api_platform.content}}
 									</p>
 								</div>
-							<a href="javascript:void(0)" data-parm="john" data-toggle="tooltip" data-placement="right" title="Coming Soon"><button class="custom-btn">VIEW CASE STUDY</button></a>	
-							
-							</div>
-
+							<a href="javascript:void(0)" data-parm="john" data-toggle="tooltip" data-placement="right" title="Coming Soon"><button class="custom-btn">VIEW CASE STUDY</button></a></div>
 							<div class="col-lg-6 col-testimoni testimonial-carousel">
 								<!-- Testimonial carousel -->
 									<div id="osb-testimonial-first" class="carousel-osb carousel slide testimonial test-left" data-ride="carousel" data-interval="false">
-  							<!-- 	<ol class="carousel-indicators testimonial-ol">
-									{% for testimony in site.data.Portfolio.DataOps.api_platform.testimonial%}
-		                      			{% if forloop.first %}
-		 									<li data-to="{{forloop.index0}}" class="active"></li>
-										{% else %}
-		   									<li data-to="{{forloop.index0}}"></li>
-										{% endif %}
-	                     			{% endfor %}
- 								 </ol> -->
-
 							  <!-- Wrapper for slides -->
 							  <div class="carousel-inner">
 							   {% for testimony in site.data.Portfolio.DataOps.api_platform.testimonial%}
@@ -242,13 +204,10 @@
 							     </div>
 							    </div>
 							{% endif %}
-							{% endfor %}
-
-								
+							{% endfor %}	
 						 </div><!-- end of carousel inner-->
 						</div><!-- end of testimonial-carousel-->
 							</div><!-- end of testimonial-div-->
-
 						</div>
 					<!--end of row1-->
 				</div>
@@ -257,21 +216,9 @@
 				<div class="hw-engage-cont hw-margin-div">
 					<!-- row 2 -->
 						<div class="row">
-
-							<div class="col-lg-6 col-testimoni testimonial-carousel">
-								
+							<div class="col-lg-6 col-testimoni testimonial-carousel">	
                                <!-- Testimonial carousel -->
-									<div id="ms-testimonial-first" class="carousel-ms carousel slide testimonial test-right" data-ride="carousel" data-interval="false">
-  								<!-- <ol class="carousel-indicators testimonial-ol">
-									{% for testimony in site.data.Portfolio.DataOps.microservices.testimonial%}
-		                      			{% if forloop.first %}
-		 									<li data-to="{{forloop.index0}}" class="active"></li>
-										{% else %}
-		   									<li data-to="{{forloop.index0}}"></li>
-										{% endif %}
-	                     			{% endfor %}
- 								 </ol> -->
-
+									<div id="ms-testimonial-first" class="carousel-ms carousel slide testimonial test-right" data-ride="carousel" data-interval="false">  
 							  <!-- Wrapper for slides -->
 							  <div class="carousel-inner">
 							   {% for testimony in site.data.Portfolio.DataOps.microservices.testimonial%}
@@ -293,7 +240,6 @@
 							    <div class="arrow-down-left "></div>
 								</div>
 								<div id="ms-testimonial-second" class="carousel carousel-ms slide carousel-etl-left-allign" data-ride="carousel" data-interval="false">
-
 							  <!-- Wrapper for slides -->
 							  <div class="carousel-inner">
 							    {% for testimony in site.data.Portfolio.DataOps.microservices.testimonial%}
@@ -316,12 +262,8 @@
 							{% endfor %}
 						 </div><!-- end of carousel inner-->
 						</div>
-
-
-
 							</div> 
 							<!-- end of testimony-carousel-div -->
-
 							<div class="col-lg-6">
 								<h2 class="gotham-rounded-light h2-color hw-heading">{{ site.data.Portfolio.DataOps.microservices.title}}</h2>
 								<div class="div-border-left">
@@ -336,8 +278,6 @@
 					<!-- end of row2 -->
 				</div>
 			<!-- End of hw-engage-cont -->
-
-
 			<!-- hw-engage-cont -->
 				<div class="hw-engage-cont hw-margin-div">
 					<!-- row3-->
@@ -356,16 +296,6 @@
 								
                                <!-- Testimonial carousel -->
 									<div id="etl-testimonial-first" class="carousel-etl carousel slide testimonial test-left" data-ride="carousel" data-interval="false">
-  								<!-- <ol class="carousel-indicators testimonial-ol">
-									{% for testimony in site.data.Portfolio.DataOps.data_integration.testimonial%}
-		                      			{% if forloop.first %}
-		 									<li data-to="{{forloop.index0}}" class="active"></li>
-										{% else %}
-		   									<li data-to="{{forloop.index0}}"></li>
-										{% endif %}
-	                     			{% endfor %}
- 								 </ol>
- -->
 							  <!-- Wrapper for slides -->
 							  <div class="carousel-inner">
 							   {% for testimony in site.data.Portfolio.DataOps.data_integration.testimonial%}
@@ -409,36 +339,18 @@
 							{% endfor %}
 						 </div><!-- end of carousel inner-->
 						</div>
-
-
-
 							</div> 
 							<!-- end of testimony-carousel-div -->
-					
-
 						</div>
 					<!--end of row3-->
 				</div>
-			<!-- hw-engage-cont -->
-
 			<!-- hw-engage-cont -->
 				<div class="hw-engage-cont hw-margin-div">
 					<!-- row 4 -->
 						<div class="row">
 	<div class="col-lg-6 col-testimoni testimonial-carousel">
-								
-                                                              <!-- Testimonial carousel -->
+                                                            <!-- Testimonial carousel -->
 									<div id="ad-testimonial-first" class="carousel-ad carousel slide testimonial test-right" data-ride="carousel" data-interval="false">
-  								<!-- <ol class="carousel-indicators testimonial-ol">
-									{% for testimony in site.data.Portfolio.DataOps.data_virtualization.testimonial%}
-		                      			{% if forloop.first %}
-		 									<li data-to="{{forloop.index0}}" class="active"></li>
-										{% else %}
-		   									<li data-to="{{forloop.index0}}"></li>
-										{% endif %}
-	                     			{% endfor %}
- 								 </ol> -->
-
 							  <!-- Wrapper for slides -->
 							  <div class="carousel-inner">
 							   {% for testimony in site.data.Portfolio.DataOps.data_virtualization.testimonial%}
@@ -476,7 +388,6 @@
 							   <div class="item">
 							         <div class="name-align-left">
 							       	<span class="textvalignmiddle gotham-rounded-bok"> {{ testimony.name}}<br>{{ testimony.role}}</span>
-							        
 							        <!-- <img src="/assets/img/solutions/user-pic.png"> -->
 							     </div>
 							    </div>
@@ -484,12 +395,8 @@
 							{% endfor %}
 						 </div><!-- end of carousel inner-->
 						</div>
-
-
-
 							</div> 
-							<!-- end of testimony-carousel-div -->
-                               
+							<!-- end of testimony-carousel-div -->   
 							<div class="col-lg-6">
 								<h2 class="gotham-rounded-light h2-color hw-heading">{{ site.data.Portfolio.DataOps.data_virtualization.title}}</h2>
 								<div class="div-border-left">
@@ -498,18 +405,14 @@
 								</div>
 								<a  href="javascript:void(0)" data-toggle="tooltip" data-placement="right" title="Coming Soon"><button class="custom-btn">VIEW CASE STUDY</button></a>
 							</div>
-
 						</div>
 					<!-- end of row4 -->
 				</div>
 		<!-- End of hw-engage-cont -->
-
 		</div>
 		<!-- end of container-->
-
 		</div>
 	   	<!-- end of tab1 -->
-
 	   	<!-- tab2-->
 	        <div id="engineering" class="tab-pane fade" data-value="DevOps">
 	            <div class="container">
@@ -529,16 +432,6 @@
 							<div class="col-lg-6 col-testimoni testimonial-carousel">
 								<!-- Testimonial carousel -->
 									<div id="ep1-testimonial-first" class="carousel-ep1 carousel slide testimonial test-left" data-ride="carousel" data-interval="false">
-  								<!-- <ol class="carousel-indicators testimonial-ol">
-									{% for testimony in site.data.Portfolio.DevOps.ci_orchestration.testimonial%}
-		                      			{% if forloop.first %}
-		 									<li data-to="{{forloop.index0}}" class="active"></li>
-										{% else %}
-		   									<li data-to="{{forloop.index0}}"></li>
-										{% endif %}
-	                     			{% endfor %}
- 								 </ol> -->
-
 							  <!-- Wrapper for slides -->
 							  <div class="carousel-inner">
 							   {% for testimony in site.data.Portfolio.DevOps.ci_orchestration.testimonial%}
@@ -583,31 +476,17 @@
 						 </div><!-- end of carousel inner-->
 						</div><!-- end of testimonial-carousel-->
 							</div><!-- end of testimonial-div-->
-
 						</div>
 					<!--end of row1-->
 				</div>
 			<!-- End of hw-engage-cont -->
-
 			<!-- hw-engage-cont -->
 				<div class="hw-engage-cont hw-margin-div">
 					<!-- row 2 -->
 						<div class="row">
-
 							<div class="col-lg-6 col-testimoni testimonial-carousel">
-								
                                <!-- Testimonial carousel -->
 									<div id="ep2-testimonial-first" class="carousel-ep2 carousel slide testimonial test-right" data-ride="carousel" data-interval="false">
-  								<!-- <ol class="carousel-indicators testimonial-ol">
-									{% for testimony in site.data.Portfolio.DevOps.performance_engineering.testimonial%}
-		                      			{% if forloop.first %}
-		 									<li data-to="{{forloop.index0}}" class="active"></li>
-										{% else %}
-		   									<li data-to="{{forloop.index0}}"></li>
-										{% endif %}
-	                     			{% endfor %}
- 								 </ol> -->
-
 							  <!-- Wrapper for slides -->
 							  <div class="carousel-inner">
 							   {% for testimony in site.data.Portfolio.DevOps.performance_engineering.testimonial%}
@@ -629,7 +508,6 @@
 							    <div class="arrow-down-left "></div>
 								</div>
 								<div id="ep2-testimonial-second" class="carousel carousel-etl-left-allign carousel-ep2 slide" data-ride="carousel" data-interval="false">
-
 							  <!-- Wrapper for slides -->
 							  <div class="carousel-inner">
 							    {% for testimony in site.data.Portfolio.DevOps.performance_engineering.testimonial%}
@@ -662,18 +540,14 @@
 								</div>
 								<a  href="javascript:void(0)" data-toggle="tooltip" data-placement="right" title="Coming Soon"><button class="custom-btn">VIEW CASE STUDY</button></a>
 							</div>
-
 						</div>
 					<!-- end of row2 -->
 				</div>
 			<!-- End of hw-engage-cont -->
-
-
 			<!-- hw-engage-cont -->
 				<div class="hw-engage-cont hw-margin-div">
 					<!-- row3-->
 						<div class="row">
-
 							<div class="col-lg-6">
 								<h2 class="gotham-rounded-light h2-color hw-heading">{{ site.data.Portfolio.DevOps.test_automation.title}}</h2>
 								<div class="div-border-left">
@@ -682,21 +556,9 @@
 								</div>
 								<a  href="javascript:void(0)" data-toggle="tooltip" data-placement="right" title="Coming Soon"><button class="custom-btn">VIEW CASE STUDY</button></a>
 							</div>
-
 							<div class="col-lg-6 col-testimoni testimonial-carousel">
-								
                                <!-- Testimonial carousel -->
 									<div id="ep3-testimonial-first" class="carousel-ep3 carousel slide testimonial test-left" data-ride="carousel" data-interval="false">
-  								<!-- <ol class="carousel-indicators testimonial-ol">
-									{% for testimony in site.data.Portfolio.DevOps.test_automation.testimonial%}
-		                      			{% if forloop.first %}
-		 									<li data-to="{{forloop.index0}}" class="active"></li>
-										{% else %}
-		   									<li data-to="{{forloop.index0}}"></li>
-										{% endif %}
-	                     			{% endfor %}
- 								 </ol> -->
-
 							  <!-- Wrapper for slides -->
 							  <div class="carousel-inner">
 							   {% for testimony in site.data.Portfolio.DevOps.test_automation.testimonial%}
@@ -718,7 +580,6 @@
 							    <div class="arrow-down"></div>
 								</div>
 								<div id="ep3-testimonial-second" class="carousel carousel-etl-right-allign carousel-ep3 slide" data-ride="carousel" data-interval="false">
-
 							  <!-- Wrapper for slides -->
 							  <div class="carousel-inner">
 							    {% for testimony in site.data.Portfolio.DevOps.test_automation.testimonial%}
@@ -740,36 +601,18 @@
 							{% endfor %}
 						 </div><!-- end of carousel inner-->
 						</div>
-
-
-
 							</div> 
 							<!-- end of testimony-carousel-div -->
-					
-
 						</div>
 					<!--end of row3-->
 				</div>
-			<!-- hw-engage-cont -->
-
 			<!-- hw-engage-cont -->
 				<div class="hw-engage-cont hw-margin-div">
 					<!-- row 4 -->
 						<div class="row">
 	<div class="col-lg-6 col-testimoni testimonial-carousel">
-								
                                                               <!-- Testimonial carousel -->
 									<div id="ep4-testimonial-first" class="carousel-ep4 carousel slide testimonial test-right" data-ride="carousel" data-interval="false">
-  								<!-- <ol class="carousel-indicators testimonial-ol">
-									{% for testimony in site.data.Portfolio.DevOps.agile_testing.testimonial%}
-		                      			{% if forloop.first %}
-		 									<li data-to="{{forloop.index0}}" class="active"></li>
-										{% else %}
-		   									<li data-to="{{forloop.index0}}"></li>
-										{% endif %}
-	                     			{% endfor %}
- 								 </ol> -->
-
 							  <!-- Wrapper for slides -->
 							  <div class="carousel-inner">
 							   {% for testimony in site.data.Portfolio.DevOps.agile_testing.testimonial%}
@@ -829,20 +672,15 @@
 					<!-- end of row4 -->
 				</div>
 		<!-- End of hw-engage-cont -->
-
 		</div>
-		<!-- end of container-->
-				
+		<!-- end of container-->				
 	        </div><!-- end of tab2-->
-
 	        <div id="tab_mobility" class="tab-pane fade" data-value="DataScience">
 	           <div class="container">
-
 				<!-- hw-engage-cont -->
 				<div class="hw-engage-cont hw-margin-div">
 					<!-- row one-->
 						<div class="row ">
-
 							<div class="col-lg-6">
 								<h2 class="gotham-rounded-light h2-color hw-heading">{{ site.data.Portfolio.DataScience.operational_analytics.title}}</h2>
 								<div class="div-border-left">
@@ -851,20 +689,9 @@
 								</div>
 								<a  href="javascript:void(0)" data-toggle="tooltip" data-placement="right" title="Coming Soon"><button class="custom-btn">VIEW CASE STUDY</button></a>
 							</div>
-
 							<div class="col-lg-6 col-testimoni testimonial-carousel">
 								<!-- Testimonial carousel -->
 									<div id="mb1-testimonial-first" class="carousel-mb1 carousel slide testimonial test-left" data-ride="carousel" data-interval="false">
-  								<!-- <ol class="carousel-indicators testimonial-ol">
-									{% for testimony in site.data.Portfolio.DataScience.operational_analytics.testimonial%}
-		                      			{% if forloop.first %}
-		 									<li data-to="{{forloop.index0}}" class="active"></li>
-										{% else %}
-		   									<li data-to="{{forloop.index0}}"></li>
-										{% endif %}
-	                     			{% endfor %}
- 								 </ol> -->
-
 							  <!-- Wrapper for slides -->
 							  <div class="carousel-inner">
 							   {% for testimony in site.data.Portfolio.DataScience.operational_analytics.testimonial%}
@@ -886,7 +713,6 @@
 							    <div class="arrow-down"></div>
 								</div>
 								<div id="mb1-testimonial-second" class="carousel carousel-etl-right-allign carousel-mb1 slide" data-ride="carousel" data-interval="false">
-
 							  <!-- Wrapper for slides -->
 							  <div class="carousel-inner">
 							    {% for testimony in site.data.Portfolio.DataScience.operational_analytics.testimonial%}
@@ -909,31 +735,17 @@
 						 </div><!-- end of carousel inner-->
 						</div><!-- end of testimonial-carousel-->
 							</div><!-- end of testimonial-div-->
-
 						</div>
 					<!--end of row1-->
 				</div>
 			<!-- End of hw-engage-cont -->
-
 			<!-- hw-engage-cont -->
 				<div class="hw-engage-cont hw-margin-div">
 					<!-- row 2 -->
 						<div class="row">
-
-							<div class="col-lg-6 col-testimoni testimonial-carousel">
-								
+							<div class="col-lg-6 col-testimoni testimonial-carousel">		
                                <!-- Testimonial carousel -->
 									<div id="mb2-testimonial-first" class="carousel-mb2 carousel slide testimonial test-right" data-ride="carousel" data-interval="false">
-  								<!-- <ol class="carousel-indicators testimonial-ol">
-									{% for testimony in site.data.Portfolio.DataScience.predictive_analytics.testimonial%}
-		                      			{% if forloop.first %}
-		 									<li data-to="{{forloop.index0}}" class="active"></li>
-										{% else %}
-		   									<li data-to="{{forloop.index0}}"></li>
-										{% endif %}
-	                     			{% endfor %}
- 								 </ol> -->
-
 							  <!-- Wrapper for slides -->
 							  <div class="carousel-inner">
 							   {% for testimony in site.data.Portfolio.DataScience.predictive_analytics.testimonial%}
@@ -980,7 +792,6 @@
 						</div>
 					</div> 
 							<!-- end of testimony-carousel-div -->
-
 							<div class="col-lg-6">
 								<h2 class="gotham-rounded-light h2-color hw-heading">{{ site.data.Portfolio.DataScience.predictive_analytics.title}}</h2>
 								<div class="div-border-left">
@@ -989,18 +800,14 @@
 								</div>
 								<a  href="javascript:void(0)" data-toggle="tooltip" data-placement="right" title="Coming Soon"><button class="custom-btn">VIEW CASE STUDY</button></a>
 							</div>
-
 						</div>
 					<!-- end of row2 -->
 				</div>
 			<!-- End of hw-engage-cont -->
-
-
 			<!-- hw-engage-cont -->
 				<div class="hw-engage-cont hw-margin-div">
 					<!-- row3-->
 						<div class="row">
-
 							<div class="col-lg-6">
 								<h2 class="gotham-rounded-light h2-color hw-heading">{{ site.data.Portfolio.DataScience.data_visualization.title}}</h2>
 								<div class="div-border-left">
@@ -1009,21 +816,9 @@
 								</div>
 								<a  href="javascript:void(0)" data-toggle="tooltip" data-placement="right" title="Coming Soon"><button class="custom-btn">VIEW CASE STUDY</button></a>
 							</div>
-
 							<div class="col-lg-6 col-testimoni testimonial-carousel">
-								
                                <!-- Testimonial carousel -->
 									<div id="mb3-testimonial-first" class="carousel-mb3 carousel slide testimonial test-left" data-ride="carousel" data-interval="false">
-  								<!-- <ol class="carousel-indicators testimonial-ol">
-									{% for testimony in site.data.Portfolio.DataScience.data_visualization.testimonial%}
-		                      			{% if forloop.first %}
-		 									<li data-to="{{forloop.index0}}" class="active"></li>
-										{% else %}
-		   									<li data-to="{{forloop.index0}}"></li>
-										{% endif %}
-	                     			{% endfor %}
- 								 </ol> -->
-
 							  <!-- Wrapper for slides -->
 							  <div class="carousel-inner">
 							   {% for testimony in site.data.Portfolio.DataScience.data_visualization.testimonial%}
@@ -1045,7 +840,6 @@
 							    <div class="arrow-down"></div>
 								</div>
 								<div id="mb3-testimonial-second" class="carousel carousel-etl-right-allign carousel-mb3 slide" data-ride="carousel" data-interval="false">
-
 							  <!-- Wrapper for slides -->
 							  <div class="carousel-inner">
 							    {% for testimony in site.data.Portfolio.DataScience.data_visualization.testimonial%}
@@ -1072,25 +866,17 @@
 					</div>
 					<!--end of row3-->
 				</div>
-			<!-- hw-engage-cont -->
-
-			<!-- hw-engage-cont -->
-				
+			<!-- hw-engage-cont -->		
 		<!-- End of hw-engage-cont -->
-
 		</div>
 		<!-- end of container-->
 	        </div>
-
-
 	        <div id="big_data" class="tab-pane fade" data-value="Mobility">
 	           <div class="container">
-
 				<!-- hw-engage-cont -->
 				<div class="hw-engage-cont hw-margin-div">
 					<!-- row one-->
 						<div class="row ">
-
 							<div class="col-lg-6">
 								<h2 class="gotham-rounded-light h2-color hw-heading">{{ site.data.Portfolio.Mobility.enterprise_mobility.title}}</h2>
 								<div class="div-border-left">
@@ -1103,16 +889,6 @@
 							<div class="col-lg-6 col-testimoni testimonial-carousel">
 								<!-- Testimonial carousel -->
 									<div id="mb1-testimonial-first" class="carousel-mb1 carousel slide testimonial test-left" data-ride="carousel" data-interval="false">
-  								<!-- <ol class="carousel-indicators testimonial-ol">
-									{% for testimony in site.data.Portfolio.Mobility.enterprise_mobility.testimonial%}
-		                      			{% if forloop.first %}
-		 									<li data-to="{{forloop.index0}}" class="active"></li>
-										{% else %}
-		   									<li data-to="{{forloop.index0}}"></li>
-										{% endif %}
-	                     			{% endfor %}
- 								 </ol> -->
-
 							  <!-- Wrapper for slides -->
 							  <div class="carousel-inner">
 							   {% for testimony in site.data.Portfolio.Mobility.enterprise_mobility.testimonial%}
@@ -1157,31 +933,17 @@
 						 </div><!-- end of carousel inner-->
 						</div><!-- end of testimonial-carousel-->
 							</div><!-- end of testimonial-div-->
-
 						</div>
 					<!--end of row1-->
 				</div>
 			<!-- End of hw-engage-cont -->
-
 			<!-- hw-engage-cont -->
 				<div class="hw-engage-cont hw-margin-div">
 					<!-- row 2 -->
 						<div class="row">
-
 							<div class="col-lg-6 col-testimoni testimonial-carousel">
-								
                                <!-- Testimonial carousel -->
 									<div id="mb2-testimonial-first" class="carousel-mb2 carousel slide testimonial test-right" data-ride="carousel" data-interval="false">
-  								<!-- <ol class="carousel-indicators testimonial-ol">
-									{% for testimony in site.data.Portfolio.Mobility.byod.testimonial%}
-		                      			{% if forloop.first %}
-		 									<li data-to="{{forloop.index0}}" class="active"></li>
-										{% else %}
-		   									<li data-to="{{forloop.index0}}"></li>
-										{% endif %}
-	                     			{% endfor %}
- 								 </ol> -->
-
 							  <!-- Wrapper for slides -->
 							  <div class="carousel-inner">
 							   {% for testimony in site.data.Portfolio.Mobility.byod.testimonial%}
@@ -1226,12 +988,8 @@
 							{% endfor %}
 						 </div><!-- end of carousel inner-->
 						</div>
-
-
-
 							</div> 
 							<!-- end of testimony-carousel-div -->
-
 							<div class="col-lg-6">
 								<h2 class="gotham-rounded-light h2-color hw-heading">{{ site.data.Portfolio.Mobility.byod.title}}</h2>
 								<div class="div-border-left">
@@ -1240,18 +998,14 @@
 								</div>
 								<a  href="javascript:void(0)" data-toggle="tooltip" data-placement="right" title="Coming Soon"><button class="custom-btn">VIEW CASE STUDY</button></a>
 							</div>
-
 						</div>
 					<!-- end of row2 -->
 				</div>
 			<!-- End of hw-engage-cont -->
-
-
 			<!-- hw-engage-cont -->
 				<div class="hw-engage-cont hw-margin-div">
 					<!-- row3-->
 						<div class="row">
-
 							<div class="col-lg-6">
 								<h2 class="gotham-rounded-light h2-color hw-heading">{{ site.data.Portfolio.Mobility.mobility_testing.title}}</h2>
 								<div class="div-border-left">
@@ -1265,16 +1019,6 @@
 								
                                <!-- Testimonial carousel -->
 									<div id="mb3-testimonial-first" class="carousel-mb3 carousel slide testimonial test-left" data-ride="carousel" data-interval="false">
-  							<!-- 	<ol class="carousel-indicators testimonial-ol">
-									{% for testimony in site.data.Portfolio.Mobility.mobility_testing.testimonial%}
-		                      			{% if forloop.first %}
-		 									<li data-to="{{forloop.index0}}" class="active"></li>
-										{% else %}
-		   									<li data-to="{{forloop.index0}}"></li>
-										{% endif %}
-	                     			{% endfor %}
- 								 </ol> -->
-
 							  <!-- Wrapper for slides -->
 							  <div class="carousel-inner">
 							   {% for testimony in site.data.Portfolio.Mobility.mobility_testing.testimonial%}
@@ -1318,36 +1062,18 @@
 							{% endfor %}
 						 </div><!-- end of carousel inner-->
 						</div>
-
-
-
 							</div> 
 							<!-- end of testimony-carousel-div -->
-					
-
 						</div>
 					<!--end of row3-->
 				</div>
-			<!-- hw-engage-cont -->
-
 			<!-- hw-engage-cont -->
 				<div class="hw-engage-cont hw-margin-div">
 					<!-- row 4 -->
 						<div class="row">
 	<div class="col-lg-6 col-testimoni testimonial-carousel ">
-								
-                                                              <!-- Testimonial carousel -->
+                                                        <!-- Testimonial carousel -->
 									<div id="mb4-testimonial-first" class="carousel-mb4 carousel slide testimonial test-right" data-ride="carousel" data-interval="false">
-  								<!-- <ol class="carousel-indicators testimonial-ol">
-									{% for testimony in site.data.Portfolio.Mobility.consumer_apps.testimonial%}
-		                      			{% if forloop.first %}
-		 									<li data-to="{{forloop.index0}}" class="active"></li>
-										{% else %}
-		   									<li data-to="{{forloop.index0}}"></li>
-										{% endif %}
-	                     			{% endfor %}
- 								 </ol> -->
-
 							  <!-- Wrapper for slides -->
 							  <div class="carousel-inner">
 							   {% for testimony in site.data.Portfolio.Mobility.consumer_apps.testimonial%}
@@ -1391,12 +1117,8 @@
 							{% endfor %}
 						 </div><!-- end of carousel inner-->
 						</div>
-
-
-
 							</div> 
-							<!-- end of testimony-carousel-div -->
-                               
+							<!-- end of testimony-carousel-div -->   
 							<div class="col-lg-6">
 								<h2 class="gotham-rounded-light h2-color hw-heading">{{ site.data.Portfolio.Mobility.consumer_apps.title}}</h2>
 								<div class="div-border-left">
@@ -1410,19 +1132,15 @@
 					<!-- end of row4 -->
 				</div>
 		<!-- End of hw-engage-cont -->
-
 		</div>
 		<!-- end of container-->
 	        </div>
-
-
 	        <div id="ui" class="tab-pane fade in" data-value="Ui-ux">
 	            <div class="container">
 				<!-- hw-engage-cont -->
 				<div class="hw-engage-cont hw-margin-div">
 					<!-- row one-->
 						<div class="row ">
-
 							<div class="col-lg-6">
 								<h2 class="gotham-rounded-light h2-color hw-heading">{{ site.data.Portfolio.UI_UX.experience_design.title}}</h2>
 								<div class="div-border-left">
@@ -1431,15 +1149,12 @@
 								</div>
 								<a  href="javascript:void(0)" data-toggle="tooltip" data-placement="right" title="Coming Soon"><button class="custom-btn">VIEW CASE STUDY</button></a>
 							</div>
-							
 							<!-- testimonial -->
 							<div class="col-lg-6 col-testimoni">
 								<!-- ui-ux-carousel -->
 									<div class="hw-ui-ux-carousel test-left">
-
 										<!-- carousel -->
 										<div id="ui-ux-carousel" class="carousel ux-ui-carousel-inerval slide" data-ride="carousel">
-
 										  <!-- Wrapper for slides -->
 										  <div class="carousel-inner" role="listbox">
 										  	{% for testimony in site.data.Portfolio.UI_UX.experience_design.testimonial%}
@@ -1453,9 +1168,7 @@
 										    </div>
 												{% endif %}
 	                     					{% endfor %}
-
 										  </div>
-
 										  <!-- Left and right controls -->
 										  <a class="left carousel-control" href="#ui-ux-carousel" role="button" data-slide="prev">
 										    <i class="fa fa-play fa-play-left"></i>
@@ -1467,7 +1180,6 @@
 										  </a>
 									</div>
 										<!-- End of carousel -->
-										
 										<!-- hw-view-project -->
 											<div class="hw-view-project">
 												<div class="row">
@@ -1483,30 +1195,24 @@
 												</div>
 											</div>
 										<!-- End of hw-view-project -->
-
 									</div>
 								<!-- End of ui-ux-carousel -->	
 							</div>
 							<!-- end of testimonial-div-->
-
 						</div>
 					<!--end of row1-->
 				</div>
 			<!-- End of hw-engage-cont -->
-
 			<!-- hw-engage-cont -->
 				<div class="hw-engage-cont hw-margin-div">
 					<!-- row 2 -->
 						<div class="row">
-								
                                <!-- testimonial -->
 							<div class="col-lg-6 col-testimoni">
 								<!-- ui-ux-carousel -->
 									<div class="hw-ui-ux-carousel test-right">
-
 										<!-- carousel -->
 										<div id="ui-ux-carousel2" class="carousel ux-ui-carousel-inerval slide" data-ride="carousel">
-
 										  <!-- Wrapper for slides -->
 										  <div class="carousel-inner" role="listbox">
 										  	{% for testimony in site.data.Portfolio.UI_UX.visual_design.testimonial%}
@@ -1520,9 +1226,7 @@
 										    </div>
 												{% endif %}
 	                     					{% endfor %}
-
 										  </div>
-
 										  <!-- Left and right controls -->
 										  <a class="left carousel-control" href="#ui-ux-carousel2" role="button" data-slide="prev">
 										    <i class="fa fa-play fa-play-left"></i>
@@ -1534,7 +1238,6 @@
 										  </a>
 									</div>
 										<!-- End of carousel -->
-										
 										<!-- hw-view-project -->
 											<div class="hw-view-project">
 												<div class="row">
@@ -1554,7 +1257,6 @@
 								<!-- End of ui-ux-carousel -->	
 							</div>
 							<!-- end of testimonial-div-->
-
 							<div class="col-lg-6">
 								<h2 class="gotham-rounded-light h2-color hw-heading">{{ site.data.Portfolio.UI_UX.visual_design.title}}</h2>
 								<div class="div-border-left">
@@ -1563,18 +1265,14 @@
 								</div>
 								<a  href="javascript:void(0)" data-toggle="tooltip" data-placement="right" title="Coming Soon"><button class="custom-btn">VIEW CASE STUDY</button></a>
 							</div>
-
 						</div>
 					<!-- end of row2 -->
 				</div>
 			<!-- End of hw-engage-cont -->
-
-
 			<!-- hw-engage-cont -->
 				<div class="hw-engage-cont hw-margin-div">
 					<!-- row3-->
 						<div class="row">
-
 							<div class="col-lg-6">
 								<h2 class="gotham-rounded-light h2-color hw-heading">{{ site.data.Portfolio.UI_UX.frontend_develop.title}}</h2>
 								<div class="div-border-left">
@@ -1587,10 +1285,8 @@
 							<div class="col-lg-6 col-testimoni">
 								<!-- ui-ux-carousel -->
 									<div class="hw-ui-ux-carousel test-left">
-
 										<!-- carousel -->
 										<div id="ui-ux-carousel3" class="carousel ux-ui-carousel-inerval slide" data-ride="carousel">
-
 										  <!-- Wrapper for slides -->
 										  <div class="carousel-inner" role="listbox">
 										  	{% for testimony in site.data.Portfolio.UI_UX.frontend_develop.testimonial%}
@@ -1604,9 +1300,7 @@
 										    </div>
 												{% endif %}
 	                     					{% endfor %}
-
 										  </div>
-
 										  <!-- Left and right controls -->
 										  <a class="left carousel-control" href="#ui-ux-carousel3" role="button" data-slide="prev">
 										    <i class="fa fa-play fa-play-left"></i>
@@ -1617,8 +1311,7 @@
 										    <span class="sr-only">Next</span>
 										  </a>
 									</div>
-										<!-- End of carousel -->
-										
+										<!-- End of carousel -->	
 										<!-- hw-view-project -->
 											<div class="hw-view-project">
 												<div class="row">
@@ -1634,31 +1327,23 @@
 												</div>
 											</div>
 										<!-- End of hw-view-project -->
-
 									</div>
 								<!-- End of ui-ux-carousel -->	
 							</div>
 							<!-- end of testimonial-div-->
-					
-
 						</div>
 					<!--end of row3-->
 				</div>
 			<!-- hw-engage-cont -->
-
-			<!-- hw-engage-cont -->
 				<div class="hw-engage-cont hw-margin-div">
 					<!-- row 4 -->
 						<div class="row">
-
                                 <!-- testimonial -->
 								<div class="col-lg-6 col-testimoni">
 									<!-- ui-ux-carousel -->
 										<div class="hw-ui-ux-carousel test-right">
-
 											<!-- carousel -->
 											<div id="ui-ux-carousel4" class="carousel ux-ui-carousel-inerval slide" data-ride="carousel">
-
 											  <!-- Wrapper for slides -->
 											  <div class="carousel-inner" role="listbox">
 											  	{% for testimony in site.data.Portfolio.UI_UX.reporting_dashboard.testimonial%}
@@ -1672,9 +1357,7 @@
 											    </div>
 													{% endif %}
 		                     					{% endfor %}
-
 											  </div>
-
 											  <!-- Left and right controls -->
 											  <a class="left carousel-control" href="#ui-ux-carousel4" role="button" data-slide="prev">
 											    <i class="fa fa-play fa-play-left"></i>
@@ -1686,7 +1369,6 @@
 											  </a>
 										</div>
 											<!-- End of carousel -->
-											
 											<!-- hw-view-project -->
 												<div class="hw-view-project">
 													<div class="row">
@@ -1702,12 +1384,10 @@
 													</div>
 												</div>
 											<!-- End of hw-view-project -->
-
 										</div>
 									<!-- End of ui-ux-carousel -->	
 								</div>
 							<!-- end of testimonial-div-->
-                               
 							<div class="col-lg-6">
 								<h2 class="gotham-rounded-light h2-color hw-heading">{{ site.data.Portfolio.UI_UX.reporting_dashboard.title}}</h2>
 								<div class="div-border-left">
@@ -1716,30 +1396,21 @@
 								</div>
 								<a  href="javascript:void(0)" data-toggle="tooltip" data-placement="right" title="Coming Soon"><button class="custom-btn">VIEW CASE STUDY</button></a>
 							</div>
-
 						</div>
 					<!-- end of row4 -->
 				</div>
 		<!-- End of hw-engage-cont -->
-
-
      </div>
 		<!-- end of container-->
 	</div>
-	<!-- end of tabs-->
-
-
-
-	
+	<!-- end of tabs-->	
 	<!-- Working with-->
 		<div class="hw-tools">
 			<p class="text-center gotham-rounded-light hw-main-heading log-clr-backgrnd clr-white hw-contact-us-ribbon">Tools and technologies we <i class="fa fa-heart"></i>  working with:</p>
-
 			<!-- tools list -->
 				<div class="hw-tools-list container">
 					<!-- row -->
 						<div class="row">
-
 							<!-- hw-tolls-details -->
 								<div class="col-lg-4">
 									<ul class="hw-tools-details">
@@ -1782,7 +1453,6 @@
 									</ul>
 								</div>
 							<!-- End of hw-tools-details -->
-
 							<!-- hw-tolls-details -->
 								<div class="col-lg-4">
 									<ul class="hw-tools-details">
@@ -1825,7 +1495,6 @@
 									</ul>
 								</div>
 							<!-- End of hw-tools-details -->
-
 							<!-- hw-tolls-details -->
 								<div class="col-lg-4">
 									<ul class="hw-tools-details">
@@ -1868,25 +1537,19 @@
 									</ul>
 								</div>
 							<!-- End of hw-tools-details -->
-
 						</div>
 					<!-- End of row -->
 				</div>
 			<!-- End of tools list -->
-
 		</div>
 	<!-- End of Working with-->
-
-
 	<!-- How we works -->
 		<div class="client-backgrnd hw-works">
-			<h2 class="gotham-rounded-bok hw-tab-heading text-center h2-color">How We Work</h2>
-				
+			<h2 class="gotham-rounded-bok hw-tab-heading text-center h2-color">How We Work</h2>				
 			<!-- hw-works-row	 -->
 				<div class="hw-works-row container-fluid">
 					<!-- row -->
 						<div class="row">
-
 							<div class="col-20">
 								<div class="hw-work-cont arrow-top">
 									<div class="img-outer">
@@ -1898,7 +1561,6 @@
 									</div>
 								</div>
 							</div>
-
 							<div class="col-20">
 								<div class="hw-work-cont arrow-bottom">
 									<div class="img-outer">
@@ -1910,7 +1572,6 @@
 									</div>
 								</div>
 							</div>
-
 							<div class="col-20">
 								<div class="hw-work-cont arrow-top">
 									<div class="img-outer">
@@ -1922,7 +1583,6 @@
 									</div>
 								</div>
 							</div>
-
 							<div class="col-20">
 								<div class="hw-work-cont arrow-bottom">
 									<div class="img-outer">
@@ -1934,7 +1594,6 @@
 									</div>
 								</div>
 							</div>
-
 							<div class="col-20">
 								<div class="hw-work-cont">
 									<div class="img-outer">
@@ -1946,8 +1605,6 @@
 									</div>
 								</div>
 							</div>
-
-
 						</div>
 					<!-- End of row -->
 						<div style="position: relative">
@@ -1956,11 +1613,7 @@
 							</div>
 						</div>
 				</div>
-			<!-- End of hw-works-row -->
-			
-
-	
-
+			<!-- End of hw-works-row -->			
 </main>	
 <div id="hw-ribbon-our-thinking-footer">
 <!-- blue ribbon div-->
@@ -2098,8 +1751,6 @@
 	 </div>
 	</div>
     <!-- End of work-together popup -->
-
-
 {% include footer.html %}
 
 <script type="text/javascript">

@@ -781,15 +781,7 @@ var s = document.getElementsByTagName('script')[0];
 s.parentNode.insertBefore(gcse, s);
 })();
 /* end for google search engine */
-
-
-/* for portfolio page dropdown item click*/
-   //   $(".header-dropdown-link .dropdown a").click( function() {
-   //    var navtab = $(".line-padding.prot-img").offset().top - 50;
-   //        $('html, body').animate({
-   //          scrollTop: navtab}, 500, 'linear');
-   // });
-/* end for portfolio page dropdown item click*/     
+   
 
   var height_pixel = $("#blog-banner-data-ops").css('height');
   $("#blog-banner-data-ops").click(function(){
