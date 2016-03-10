@@ -1,6 +1,5 @@
 {% include header.html %}
 <main>
-
 	<h1 class="text-center gotham-rounded-bok heading hw-font-heading"> Blog </h1>
    		<div class="hw-header-padding"> 
 		   	<div class="hw-header-underline"></div>
@@ -8,16 +7,13 @@
 				    	<h2 class="gotham-rounded-light hw-heading h2-color text-center hw-line-height">{{site.data.blog-carousel.content}}</h2> 
 			</div>
 	 	</div>
-
 	<div class="blog-container">
 	<ul class="blog-grid clearfix">
-
 		<li class="blog-intro-wrapper">
 			<h2 class="gotham-rounded-bold hw-font-heading1">Sharing experience, Opinions & Thoughts</h2>
 			<h3 class="gotham-rounded-light">Read our Chronicles</h3>
 			<p class="gotham-rounded-light">We take our work seriously. We express our thoughts and share our passion. We also have fun at work.
 Come share our thinking; know more about our team and the work we do…</p>
-
 			<div class="row blog-filter">
 				<div class="col-md-6 col-sm-6 col-xs-12">
 					<form method="get" action="" class="blog-cat-form">
@@ -32,7 +28,6 @@ Come share our thinking; know more about our team and the work we do…</p>
 					</form>
 				</div>
 				<div class="col-md-6 col-sm-6 col-xs-12">
-
 					<form class="blog-author-form">
 						<div class="styled-select">
 							<select class="gotham-rounded-bok" id="blog-author" name="blog-author">
@@ -48,22 +43,17 @@ Come share our thinking; know more about our team and the work we do…</p>
 				</div>
 			</div>
 		</li>
-
 		<!-- for 2nd li we used different color, so we hide this li -->
 		<li class="hide"></li>
-
 		<!-- We need to add the option value attr name in li for filter -->
-
 	{% for post in site.posts | sort: 'date'   %}
-	
 		<li class="hw-filter-li blog-content {{ post.category}} {{ post.author}}">
 			<div class="image-wrapper">
 				<img width="" height="" alt="" src="{{post.landing_image}}">
 				<div class="blog-post-meta">
 					<a href="{{ post.url }}" class="view-article-btn" target="_blank">View Article</a>
 				</div>
-			</div>
- 
+			</div> 
 			<div class="blog-content-wrapper">
 				<h4><span class="blog-post-month gotham-rounded-bok">{{ post.published-date }}</span>  <span class="categories-list gotham-rounded-bok"><a rel="category tag" href="{{ post.url }}"  target="_blank">{{ post.category}}</a></span></h4>
 				<h3><a href="{{ post.url }}" class="gotham-rounded-light hw-para"   target="_blank">{{post.top-tweets}}</a></h3>
