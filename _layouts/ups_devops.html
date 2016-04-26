@@ -1,7 +1,8 @@
 {% include header.html %}
-
+<div id="ups-devops">
 <!-- ups-devops carousel -->
-	<h1 class="text-center gotham-rounded-bok heading hw-carousel-heading"> Devops</h1>
+	<h1 class="text-center gotham-rounded-bok heading hw-carousel-heading devops-heading"> <img src="/assets/img/arrows.png" class="devopss-fa-arrow-left">
+<span>Devops</span></h1>
 
    		<div class="carousel-padding">
 		   	<div class="line"></div>
@@ -44,26 +45,26 @@
 	<div class="bs-example line-padding">
 			<div class="container">
 
-		    <ul class="nav nav-tabs p-flex">
+		    <ul class="nav nav-tabs p-flex devops-nav-tabs">
 		    	
-		        <li class="active c-flex"><a class="hr-display"  data-toggle="tab" href="#introduction" >
+		        <li class="active c-flex devops-c-flex"><a class="hr-display"  data-toggle="tab" href="#introduction" >
 		        	<ul class="tab-img">
 		        		<li  class="li-tab-mar"><img src="/assets/img/upskilling/upskilling-tabs/Introduction.svg"></li>
-		        		<li class="gotham-rounded-light text-center"><p class="text-center">Introduction</p></li>
+		        		<li class="gotham-rounded-light text-center devops-para"><p class="text-center">Introduction</p></li>
 					</ul></a>
 				</li>
 		        
-		        <li class="c-flex"><a  class="hr-display" data-toggle="tab" href="#objectives" >
+		        <li class="c-flex devops-c-flex"><a  class="hr-display" data-toggle="tab" href="#objectives" >
 		        	<ul class="tab-img">
 		        		<li class="li-tab-mar"><img src="/assets/img/upskilling/upskilling-tabs/Objective.svg"></li>
-		        		<li class="gotham-rounded-light text-center"><p>Objectives</p></li>
+		        		<li class="gotham-rounded-light text-center devops-para"><p>Objectives</p></li>
 					</ul></a>
 		        </li>
 
-		        <li class="c-flex"><a  class="hr-display" data-toggle="tab" href="#audience" >
+		        <li class="c-flex devops-c-flex"><a  class="hr-display" data-toggle="tab" href="#audience" >
 		        	<ul class="tab-img" >
 		        		<li class="li-tab-mar"><img src="/assets/img/upskilling/upskilling-tabs/Audience.svg"></li>
-		        		<li class="gotham-rounded-light text-center"><p>Audience</p></li>
+		        		<li class="gotham-rounded-light text-center devops-para"><p>Audience</p></li>
 					</ul></a>
 		        </li>
 		    </ul>
@@ -79,9 +80,9 @@
 
 		        	<!-- container -->
 	    			<div class="container">
-			        	<div class="devops-cont">
-			        		<h3 class="hw-tab-heading gotham-rounded-bok">Course Description</h3>
-			        		<p class="gotham-rounded-light hw-para">{{page.course_description}}
+			        	<div class="devops-cont devops-count">
+			        		<h3 class="hw-tab-heading gotham-rounded-bok devops-para devops-count1">Course Description</h3>
+			        		<p class="gotham-rounded-light hw-para devops-count-para">{{page.course_description}}
 							</p>
 			        	</div>
 			        </div>
@@ -97,15 +98,15 @@
 
 					<!-- container -->
 						<div class="container">
-				        	<div class="devops-cont">
-				        		<h3 class="hw-tab-heading gotham-rounded-bok">Learning Obectives1</h3>
+				        	<div class="devops-cont devops-count">
+				        		<h3 class="hw-tab-heading gotham-rounded-bok devops-para devops-count1">Learning Obectives1</h3>
 				        		
 
-	<p class="gotham-rounded-light hw-para">{{page.learning_objective.description}}</p>
+	<p class="gotham-rounded-light hw-para devops-count-para">{{page.learning_objective.description}}</p>
        <ul>
 	{%for point in  {{page.learning_objective.points}} %}
 	         
-				        			<li><p class="gotham-rounded-light hw-para">
+				        			<li><p class="gotham-rounded-light hw-para devops-count-para devops-count-para1">
                 {{point}}
             </p>
         </li>
@@ -130,11 +131,11 @@
 
 					<!-- audience -->
 						<div class="container">
-				        	<div class="devops-cont">
-				        		<h3 class="hw-tab-heading gotham-rounded-bok">Audience</h3>
+				        	<div class="devops-cont devops-count">
+				        		<h3 class="hw-tab-heading gotham-rounded-bok devops-para devops-count1">Audience</h3>
 				        		<ul>
 				        			{%for audience in page.audience%}
-				        			<li><p class="gotham-rounded-light hw-para">{{audience}}</p></li>
+				        			<li><p class="gotham-rounded-light hw-para devops-count-para devops-count-para1">{{audience}}</p></li>
 				        			{%endfor%}
 				        		</ul>
 				        	</div>
@@ -155,19 +156,19 @@
 
 
 <!-- Course Details -->
-	<div class="client-backgrnd hw-works">
-		<h2 class="gotham-rounded-bok hw-heading text-center h2-color">Course Details</h2>
+	<div class="client-backgrnd hw-works ups-hw-works">
+		<h2 class="gotham-rounded-bok hw-heading text-center h2-color devops-course-heading">Course Details</h2>
 		
 		<!-- container -->
 			<div class="container">
-				<div class="panel-group " id="upskill-accordion">
+				<div class="panel-group devops-panel-group" id="upskill-accordion">
 				  <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
 				    <div class="panel-heading">
-				      <h4 class="panel-title clearfix header-links upskilling-ani">
+				      <h4 class="panel-title clearfix header-links upskilling-ani devops-upskilling-ani">
 				        <a class=" pull-left gotham-rounded-bok">
 				          {{page.topic}} Introduction & Overview
 				        </a><i class="indicator pull-right">
-				        <span><i class="fa fa-caret-right"></i></span>
+				        <span><i class="fa fa-caret-right devops-fa-caret-right"></i> <i class="fa fa-angle-right devops-fa-angle-right"></i></span>
 						</i>
 				      </h4>
 				    </div>
@@ -175,7 +176,7 @@
 				      <div class="panel-body">
 				        <ul>
 				        	{%for course_description in page.Course_Details.Introduction_Overview%}
-		        			<li><p class="gotham-rounded-light hw-para">{{course_description}}</li>
+		        			<li><p class="gotham-rounded-light hw-para devops-hw-para">{{course_description}}</li>
 		        			{%endfor%}
 		        		</ul>
 				      </div>
@@ -183,12 +184,12 @@
 				  </div>
 				  <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
 				    <div class="panel-heading">
-				      <h4 class="panel-title clearfix header-links upskilling-ani">
+				      <h4 class="panel-title clearfix header-links upskilling-ani devops-upskilling-ani">
 				        <a class=" pull-left gotham-rounded-bok">
 				           DevOps Challenges
 				        </a>
 				        <i class="indicator pull-right">
-				        <span><i class="fa fa-caret-right"></i></span>
+				        <span><i class="fa fa-caret-right devops-fa-caret-right"></i> <i class="fa fa-angle-right devops-fa-angle-right"></i></span>
 						</i>
 				      </h4>
 				    </div>
@@ -196,18 +197,18 @@
 				      <div class="panel-body">
 				        <ul>
 				        	{%for challenges in page.Course_Details.challenges%}
-		        			<li><p class="gotham-rounded-light hw-para">{{challenges}}</p></li>
+		        			<li><p class="gotham-rounded-light hw-para devops-hw-para">{{challenges}}</p></li>
 		        			{%endfor%}
 		        		</ul>
 				      </div>
 				    </div>
 				  </div>
 				  <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-				    <div class="panel-heading">
-				      <h4 class="panel-title clearfix header-links upskilling-ani">
+				    <div class="panel-heading"> 
+				      <h4 class="panel-title clearfix header-links upskilling-ani devops-upskilling-ani">
 				        <a class=" pull-left gotham-rounded-bok" >
 				          Methods & Tools to Principles & Mind-set
-				        </a><i class="indicator pull-right"><span><i class="fa fa-caret-right"></i></span>
+				        </a><i class="indicator pull-right"><span><i class="fa fa-caret-right devops-fa-caret-right"></i> <i class="fa fa-angle-right devops-fa-angle-right"></i></span>
 						</i>
 				      </h4>
 				    </div>
@@ -215,7 +216,7 @@
 				      <div class="panel-body">
 				        <ul>
 				        	{%for methods in page.Course_Details.methods_tools%}
-		        			<li><p class="gotham-rounded-light hw-para">{{methods}}</p></li>
+		        			<li><p class="gotham-rounded-light hw-para devops-hw-para">{{methods}}</p></li>
 		        			{%endfor%}
 		        		</ul>
 				      </div>
@@ -223,10 +224,10 @@
 				  </div>
 				  		  <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
 				    <div class="panel-heading">
-				      <h4 class="panel-title clearfix header-links upskilling-ani">
+				      <h4 class="panel-title clearfix header-links upskilling-ani devops-upskilling-ani">
 				        <a class=" pull-left gotham-rounded-bok" >
 				         Prescriptive Vs Adaptive process
-				        </a><i class="indicator pull-right"><span><i class="fa fa-caret-right"></i></span>
+				        </a><i class="indicator pull-right"><span><i class="fa fa-caret-right devops-fa-caret-right"></i> <i class="fa fa-angle-right devops-fa-angle-right"></i></span>
 						</i>
 				      </h4>
 				    </div>
@@ -234,7 +235,7 @@
 				      <div class="panel-body">
 				        <ul>
 				        	{%for adaptive in page.Course_Details.Prescriptive_Adaptive_process%}
-		        			<li><p class="gotham-rounded-light hw-para">{{adaptive}}</p></li>
+		        			<li><p class="gotham-rounded-light hw-para devops-hw-para">{{adaptive}}</p></li>
 		        			{%endfor%}
 		        		</ul>
 				      </div>
@@ -242,10 +243,10 @@
 				  </div>
 				   <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
 				    <div class="panel-heading">
-				      <h4 class="panel-title clearfix header-links upskilling-ani">
+				      <h4 class="panel-title clearfix header-links upskilling-ani devops-upskilling-ani">
 				        <a class=" pull-left gotham-rounded-bok" >
 				         Level of Abstraction Vs Cost of Ops
-				        </a><i class="indicator pull-right"><span><i class="fa fa-caret-right"></i></span>
+				        </a><i class="indicator pull-right"><span><i class="fa fa-caret-right devops-fa-caret-right"></i> <i class="fa fa-angle-right devops-fa-angle-right"></i></span>
 						</i>
 				      </h4>
 				    </div>
@@ -253,7 +254,7 @@
 				      <div class="panel-body">
 				        <ul>
 				        	{%for adaptive in page.Course_Details.Prescriptive_Adaptive_process%}
-		        			<li><p class="gotham-rounded-light hw-para">{{adaptive}}</p></li>
+		        			<li><p class="gotham-rounded-light hw-para devops-hw-para">{{adaptive}}</p></li>
 		        			{%endfor%}
 		        		</ul>
 				      </div>
@@ -261,10 +262,10 @@
 				  </div>
 				   <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
 				    <div class="panel-heading">
-				      <h4 class="panel-title clearfix header-links upskilling-ani">
+				      <h4 class="panel-title clearfix header-links upskilling-ani devops-upskilling-ani">
 				        <a class=" pull-left gotham-rounded-bok" >
 				         Project Management
-				        </a><i class="indicator pull-right"><span><i class="fa fa-caret-right"></i></span>
+				        </a><i class="indicator pull-right"><span><i class="fa fa-caret-right devops-fa-caret-right"></i> <i class="fa fa-angle-right devops-fa-angle-right"></i></span>
 						</i>
 				      </h4>
 				    </div>
@@ -272,7 +273,7 @@
 				      <div class="panel-body">
 				        <ul>
 				        	{%for adaptive in page.Course_Details.Project_Management%}
-		        			<li><p class="gotham-rounded-light hw-para">{{adaptive}}</p></li>
+		        			<li><p class="gotham-rounded-light hw-para devops-hw-para">{{adaptive}}</p></li>
 		        			{%endfor%}
 		        		</ul>
 				      </div>
@@ -280,10 +281,10 @@
 				  </div>
 				  	   <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
 				    <div class="panel-heading">
-				      <h4 class="panel-title clearfix header-links upskilling-ani">
+				      <h4 class="panel-title clearfix header-links upskilling-ani devops-upskilling-ani">
 				        <a class=" pull-left gotham-rounded-bok" >
 				         Version Control & Configuration Management
-				        </a><i class="indicator pull-right"><span><i class="fa fa-caret-right"></i></span>
+				        </a><i class="indicator pull-right"><span><i class="fa fa-caret-right devops-fa-caret-right"></i> <i class="fa fa-angle-right devops-fa-angle-right"></i></span>
 						</i>
 				      </h4>
 				    </div>
@@ -291,7 +292,7 @@
 				      <div class="panel-body">
 				        <ul>
 				        	{%for adaptive in page.Course_Details.Version_Control%}
-		        			<li><p class="gotham-rounded-light hw-para">{{adaptive}}</p></li>
+		        			<li><p class="gotham-rounded-light hw-para devops-hw-para">{{adaptive}}</p></li>
 		        			{%endfor%}
 		        		</ul>
 				      </div>
@@ -299,10 +300,10 @@
 				  </div>
 				   <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
 				    <div class="panel-heading">
-				      <h4 class="panel-title clearfix header-links upskilling-ani">
+				      <h4 class="panel-title clearfix header-links upskilling-ani devops-upskilling-ani">
 				        <a class=" pull-left gotham-rounded-bok" >
 				         Continuous_Integration
-				        </a><i class="indicator pull-right"><span><i class="fa fa-caret-right"></i></span>
+				        </a><i class="indicator pull-right"><span><i class="fa fa-caret-right devops-fa-caret-right"></i> <i class="fa fa-angle-right devops-fa-angle-right"></i></span>
 						</i>
 				      </h4>
 				    </div>
@@ -310,7 +311,7 @@
 				      <div class="panel-body">
 				        <ul>
 				        	{%for adaptive in page.Course_Details.Continuous_Integration%}
-		        			<li><p class="gotham-rounded-light hw-para">{{adaptive}}</p></li>
+		        			<li><p class="gotham-rounded-light hw-para devops-hw-para">{{adaptive}}</p></li>
 		        			{%endfor%}
 		        		</ul>
 				      </div>
@@ -318,10 +319,10 @@
 				  </div>
 				  <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseEight">
 				    <div class="panel-heading">
-				      <h4 class="panel-title clearfix header-links upskilling-ani">
+				      <h4 class="panel-title clearfix header-links upskilling-ani devops-upskilling-ani">
 				        <a class=" pull-left gotham-rounded-bok" >
 				         Infrastructure Automation
-				        </a><i class="indicator pull-right"><span><i class="fa fa-caret-right"></i></span>
+				        </a><i class="indicator pull-right"><span><i class="fa fa-caret-right devops-fa-caret-right"></i> <i class="fa fa-angle-right devops-fa-angle-right"></i></span>
 						</i>
 				      </h4>
 				    </div>
@@ -329,7 +330,7 @@
 				      <div class="panel-body">
 				        <ul>
 				        	{%for adaptive in page.Course_Details.Infrastructure_Automation%}
-		        			<li><p class="gotham-rounded-light hw-para">{{adaptive}}</p></li>
+		        			<li><p class="gotham-rounded-light hw-para devops-hw-para">{{adaptive}}</p></li>
 		        			{%endfor%}
 		        		</ul>
 				      </div>
@@ -337,10 +338,10 @@
 				  </div>
 				  <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseNine">
 				    <div class="panel-heading">
-				      <h4 class="panel-title clearfix header-links upskilling-ani">
+				      <h4 class="panel-title clearfix header-links upskilling-ani devops-upskilling-ani">
 				        <a class=" pull-left gotham-rounded-bok" >
 				         Deployment Automation
-				        </a><i class="indicator pull-right"><span><i class="fa fa-caret-right"></i></span>
+				        </a><i class="indicator pull-right"><span><i class="fa fa-caret-right devops-fa-caret-right"></i> <i class="fa fa-angle-right devops-fa-angle-right"></i></span>
 						</i>
 				      </h4>
 				    </div>
@@ -348,7 +349,7 @@
 				      <div class="panel-body">
 				        <ul>
 				        	{%for adaptive in page.Course_Details.Deployment_Automation%}
-		        			<li><p class="gotham-rounded-light hw-para">{{adaptive}}</p></li>
+		        			<li><p class="gotham-rounded-light hw-para devops-hw-para">{{adaptive}}</p></li>
 		        			{%endfor%}
 		        		</ul>
 				      </div>
@@ -356,10 +357,10 @@
 				  </div>
 				  <div class="panel panel-default accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTen">
 				    <div class="panel-heading">
-				      <h4 class="panel-title clearfix header-links upskilling-ani">
+				      <h4 class="panel-title clearfix header-links upskilling-ani devops-upskilling-ani">
 				        <a class=" pull-left gotham-rounded-bok" >
 				        Monitoring
-				        </a><i class="indicator pull-right"><span><i class="fa fa-caret-right"></i></span>
+				        </a><i class="indicator pull-right"><span><i class="fa fa-caret-right devops-fa-caret-right"></i> <i class="fa fa-angle-right devops-fa-angle-right"></i></span>
 						</i>
 				      </h4>
 				    </div>
@@ -367,7 +368,7 @@
 				      <div class="panel-body">
 				        <ul>
 				        	{%for adaptive in page.Course_Details.Monitoring%}
-		        			<li><p class="gotham-rounded-light hw-para">{{adaptive}}</p></li>
+		        			<li><p class="gotham-rounded-light hw-para devops-hw-para">{{adaptive}}</p></li>
 		        			{%endfor%}
 		        		</ul>
 				      </div>
@@ -386,7 +387,7 @@
 		<!-- Testimonial -->
 			<section id="testimonial">
 				<div class="container">
-					<center>
+					<center class="devops-center">
 						<!--Testimonial quotes icon-->
 						<span class="hw-sprite hw-test-quotes">
 							<svg version="1.1" id="Layer_1" x="0px" y="0px"
@@ -406,38 +407,41 @@
 						<div id="tCarousel" class="carousel slide" data-interval="8000" data-ride="carousel" style="display:block">
 							<div class="carousel-inner">
 								<div class="active item">
-									<p class="hw-test-txt">&ldquo;Hashworks team has been helping us in our web development needs and we are very excited that we found the right development partner. They have expert web development team who are great fun to work with. We are currently building few amazing products together and see good partnership ahead.&rdquo;</p>
+									<p class="hw-test-txt devops-hw-test-txt1">&ldquo;Hashworks team has been helping us in our web development needs and we are very excited that we found the right development partner. They have expert web development team who are great fun to work with. We are currently building few amazing products together and see good partnership ahead.&rdquo;</p>
 									<div class="hw-test-img hr-display clearfix">
 										<span class="img-outer"><img class="usr-pic" src="/assets/img/upskilling/testimonial/suman.jpg" alt="Suman Varanasi"></span>
 										<ul>
-											<li><p class="hw-usr-name">Suman <span>Varanasi</span></p></li>
-											<li><p class="hw-usr-des">COO - <span><a href="http://www.mobileways.in" target="_blank">MobileWays</a></span></p></li>
+											<li><p class="hw-usr-name devops-hw-usr-name">Suman <span>Varanasi</span></p></li>
+											<li><p class="hw-usr-des devops-hw-usr-des">COO - <span><a href="http://www.mobileways.in" target="_blank">MobileWays</a></span></p></li>
 										</ul>
 									</div>
-									
+									<p class="hw-test-txt devops-hw-test-txt">&ldquo;Hashworks team has been helping us in our web development needs and we are very excited that we found the right development partner. They have expert web development team who are great fun to work with. We are currently building few amazing products together and see good partnership ahead.&rdquo;</p>
 								</div>
 								<div class="item">
-									<p class="hw-test-txt">&ldquo;Pixel perfect websites are not a myth anymore, 
+									<p class="hw-test-txt devops-hw-test-txt1">&ldquo;Pixel perfect websites are not a myth anymore, 
 									at least in case of Codetag who are also our development partners. They have 
 									a strong web development practice and their developers do a darn good job at converting our complex designs into a reality, that is why our designers love working with them.&rdquo;</p>
 									<div class="hw-test-img hr-display clearfix">
 										<span class="img-outer" ><img class="usr-pic" src="/assets/img/upskilling/testimonial/suman.jpg" alt="Suman Varanasi"></span>
 										<ul>
-											<li><p class="hw-usr-name">Suman <span>Varanasi</span></p></li>
-											<li><p class="hw-usr-des">COO - <span><a href="http://www.mobileways.in" target="_blank">MobileWays</a></span></p></li>
+											<li><p class="hw-usr-name devops-hw-usr-name">Suman <span>Varanasi</span></p></li>
+											<li><p class="hw-usr-des devops-hw-usr-des">COO - <span><a href="http://www.mobileways.in" target="_blank">MobileWays</a></span></p></li>
 										</ul>
 									</div>
+									<p class="hw-test-txt devops-hw-test-txt">&ldquo;Hashworks team has been helping us in our web development needs and we are very excited that we found the right development partner. They have expert web development team who are great fun to work with. We are currently building few amazing products together and see good partnership ahead.&rdquo;</p>
 								</div>
 								<div class="item">
-									<p class="hw-test-txt">&ldquo;I have worked closely with the guys at Codetag 
+									<p class="hw-test-txt devops-hw-test-txt1">&ldquo;I have worked closely with the guys at Codetag 
 									for several projects.The best thing about Codetag is that it lives by it's values- customer first and perfect delivery.&rdquo;</p>
 									<div class="hw-test-img hr-display clearfix">
 										<span class="img-outer"><img class="usr-pic" src="/assets/img/upskilling/testimonial/suman.jpg" alt="Suman Varanasi"></span>
 										<ul>
-											<li><p class="hw-usr-name">Suman <span>Varanasi</span></p></li>
-											<li><p class="hw-usr-des">COO - <span><a href="http://www.mobileways.in" target="_blank">MobileWays</a></span></p></li>
+											<li><p class="hw-usr-name devops-hw-usr-name">Suman <span>Varanasi</span></p></li>
+											<li><p class="hw-usr-des devops-hw-usr-des">COO - <span><a href="http://www.mobileways.in" target="_blank">MobileWays</a></span></p></li>
 										</ul>
 									</div>  
+									<p class="hw-test-txt devops-hw-test-txt">&ldquo;I have worked closely with the guys at Codetag 
+									for several projects.The best thing about Codetag is that it lives by it's values- customer first and perfect delivery.&rdquo;</p>
 								</div>
 							</div>
 
@@ -459,111 +463,118 @@
 		<!-- End of testimonial -->
 
 
-<!-- hw-started -->
-	<div class="hw-started log-clr-backgrnd container-fluid">
-		<div class="row p-flex">
-			<div class="col-lg-8 c-flex">
-				<h2 class="gotham-rounded-light hw-main-heading clr-white h-approch">WE'RE HERE TO HELP YOU OUT</h2>
-			</div>
-			<div class="col-lg-4 upskill-filter all c-flex clearfix">
-				<button class="text-uppercase custom-btn heading-custom-btn talk-to-us">get started</button>
-			</div>
-		</div>
-	</div>
-<!-- End of hw-started -->
-
-
-
-	<!-- layout for map and form-->
-			<div class="container ms-form-mar" id="form-map-div">
-				<div class="row">
-					<div class="col-lg-6 ">
-						<!-- google map -->
-      					<div id="map"></div>
-   					 <!-- End of google map -->
-						<div>
-							
-						</div>	
-					</div>
-					<div class="col-lg-6">
-						<div class="post-resume">
-							<form class="form-signin" onSubmit="submitForm(event)" >  <!-- start of form -->
-							<div class="row ">
-									<div class="col-lg-6"> 
-										<div class="text-border">
-											<div class="input-group">
-					      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/name-img.png"></div>
-					      						
-												<input type="text" class="form-control placeholder-pro mainLoginInput input_name" id="name" placeholder="NAME" >
-											</div>
-										</div>		
-									</div>
-								
-								<div class="col-lg-6"> 
-									<div class="text-border">
-										<div class="input-group">
-				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/email-img.png"></div>
-											<input type="text" class="form-control placeholder-pro mainLoginInput input_email" id="email" placeholder="EMAIL">
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="row ms-row-mar">
-								<div class="col-lg-6"> 
-									<div class="text-border">
-										<div class="input-group">
-				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
-											<input type="text" class="form-control placeholder-pro mainLoginInput gotham-rounded-light input_subject" id="subject" placeholder="Subject">
-										</div>	
-									</div>	
-								</div>
-								<div class="col-lg-6"> 
-									<div class="text-border">
-										<div class="input-group">
-				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/phone-img.png"></div>
-											<input type="text" class="form-control placeholder-pro mainLoginInput input_phone" id="phone" placeholder="PHONE">
-										</div>
-									</div>	
-								</div>
-							</div>
-
-							<div class="row ms-row-mar">
-								<div class="col-lg-12">
-									<div class="text-border">
-									<div class="input-group">
-				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
-				      						<textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" class="form-control placeholder-pro mainLoginInput input_message"  id="message" rows="3"></textarea>
-				      					</div>	
-				      					
-									</div>
-								</div>
-							</div><!-- end of text-area row-->
-
-							<div class="attach-file">
-				      			<div class="col-lg-9">
-				      				<input type="file" class="gotham-book input_file-upload" id="file-upload">
-				      				<br/><br/>
-				      				<span class="attach-text"><span><img src="/assets/img/talent_acquisition/attach.png"></span><span class="gotham-rounded-bok attach-span">Attach File</span></span>
-				      				<input type="text"  class="input_file-detail form-control placeholder-pro mainLoginInput"  id="file-detail" readonly="readonly"/>
-				      			</div>
-				      			<div class="col-lg-3 submit-background">
-<button id="submit-btn" type="submit" class="btn">
-              <br>
-              <div class="submit-resume hr-display" style="margin: 0px auto;">
-               <img src="/assets/img/talent_acquisition/submit.png" class="img-submit" >
-               <p class="gotham-rounded-bok submit-text placeholder-pro img-para">SUBMIT</p>
-              </div>
-                      </button>
-				      				
-				      			</div>
-				      		</div><!-- end of attach-file-->
-							</form> <!-- end of form -->
-						</div><!-- end of postresume -->
-					</div><!--end of col-lg-8-->
-				</div>
-			</div>	
-	<!-- end of layout for map and form-->
-
+<div class="hw-started log-clr-backgrnd container-fluid bootcamp-ribbon-div">
+      <div class="p-flex">
+         <div class="c-flex">
+            <span class="gotham-rounded-light hw-main-heading clr-white h-approch">WE'RE HERE TO HELP YOU OUT</span>
+         </div>
+         <div class="upskill-filter all c-flex clearfix">
+            <button data-target="#upskilling" data-toggle="collapse" class="text-uppercase custom-btn heading-custom-btn talk-to-us">get started</button>
+         </div>
+      </div>
+   </div>
+   <!-- End of hw-started -->
+   <!-- layout for map and form-->
+   <div class="container ms-form-mar collapse" id="upskilling">
+      <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+            <!-- google map -->
+            <div id="map"></div>
+            <!-- End of google map -->
+            <div>
+            </div>
+         </div>
+         <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+            <div class="post-resume">
+               <form class="form-signin" onSubmit="submitForm(event)" >
+                  <!-- start of form -->
+                  <div class="row ">
+                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 form-col">
+                        <div class="text-border">
+                           <div class="input-group">
+                              <div class="input-group-addon collaborative-input-group"><img src="/assets/img/talent_acquisition/name-img.png"></div>
+                              <input type="text" class="form-control collaborative-form-control placeholder-pro mainLoginInput input_name" id="name" placeholder="NAME" >
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                        <div class="text-border">
+                           <div class="input-group">
+                              <div class="input-group-addon collaborative-input-group"><img src="/assets/img/talent_acquisition/email-img.png"></div>
+                              <input type="text" class="form-control collaborative-form-control placeholder-pro mainLoginInput input_email" id="email" placeholder="EMAIL">
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row ms-row-mar ms-row-mar-1">
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 form-col">
+                                 <div class="text-border">
+                                    <div class="input-group">
+                                       <div class="input-group-addon input-group-addon-cw"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
+                                       <span class="caret collaborative-caret"></span>
+                                       <select class="form-control mainLoginInput gotham-rounded-light input_subject collaborative-input_subject sub-width sub-width1" id="subject">
+                                          <option value="Subject" class="subject">Subject</option>
+                                          <option value="Marketing" class="level-0">Marketing</option>
+                                          <option value="Design" class="level-0">Design</option>
+                                          <option value="UX" class="level-0">UX</option>
+                                          <option value="WordPress" class="level-0">WordPress</option>
+                                          <option value="Strategy" class="level-0">Strategy</option>
+                                          <option value="Automations" class="level-0">Automations</option>
+                                          <option value="News" class="level-0">News</option>
+                                          <option value="Content" class="level-0">Content</option>
+                                          <option value="Social" class="level-0">Social Media</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                 <div class="text-border">
+                                    <div class="input-group">
+                                       <div class="input-group-addon collaborative-input-group"><img src="/assets/img/talent_acquisition/phone-img.png"></div>
+                                       <input type="text" class="form-control collaborative-form-control placeholder-pro mainLoginInput input_phone" id="phone1" placeholder="PHONE">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                  <div class="row ms-row-mar form-col-sec">
+                     <div class="col-lg-12 col-md-12 col-md-12 col-xs-12">
+                        <div class="text-border">
+                           <div class="input-group">
+                              <div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
+                              <textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" class="form-control textarea-form-control placeholder-pro mainLoginInput input_message"  id="message" rows="3"></textarea>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- end of text-area row-->
+                  <div class="attach-file collaborative-attach-file">
+                     <div class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+                        <input type="file" class="gotham-book input_file-upload collaborative-input_file-upload" id="file-upload">
+                        <br/><br/>
+                        <span class="attach-text collaborative-attach-text"><span><img src="/assets/img/talent_acquisition/attach.png"></span><span class="gotham-rounded-bok attach-span">Attach File</span></span>
+                        <input type="text"  class="input_file-detail form-control placeholder-pro mainLoginInput"  id="file-detail" readonly="readonly"/>
+                     </div>
+                     <div class="col-lg-3 col-md-3 col-sm-3 col-xs-5 submit-background collaborative-submit-background">
+                        <button id="submit-btn" type="submit" class="btn">
+                           <br>
+                           <div class="submit-resume hr-display" style="margin: 0px auto;">
+                              <img src="/assets/img/talent_acquisition/submit.png" class="img-submit collaborative-img-submit" >
+                              <p class="gotham-rounded-bok submit-text placeholder-pro img-para collaborative-submit">SUBMIT</p>
+                           </div>
+                        </button>
+                     </div>
+                  </div>
+                  <!-- end of attach-file-->
+               </form>
+               <!-- end of form -->
+            </div>
+            <!-- end of postresume -->
+         </div>
+         <!--end of col-lg-8-->
+      </div>
+   </div>
+   <!-- end of layout for map and form-->
+</div>
 
 
 
@@ -571,3 +582,4 @@
 
 
 {% include footer.html %}
+{% include html-footer.html %}

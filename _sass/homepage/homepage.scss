@@ -25,7 +25,7 @@
 }
 @-moz-keyframes moz-pencil-liquid1-anim {  
     0%{
-        transform: translateX(0%) translateY(0%);
+        transform: translateX(0%) translateY(0.4%);
     }
     25%{
         transform: translateX(-1%) translateY(4%);
@@ -34,10 +34,10 @@
         transform: translateX(-1%) translateY(4%);
     }
     75%{
-        transform: translateX(0%) translateY(0%);
+        transform: translateX(0%) translateY(0.4%);
     }
     100%{
-        transform: translateX(0%) translateY(0%);
+        transform: translateX(0%) translateY(0.4%);
     }
 } 
 #pencil-liquid2{
@@ -66,10 +66,10 @@
         transform: translateX(1%) translateY(4%);
     }
     25%{
-        transform: translateX(0%) translateY(0%);
+        transform: translateX(0%) translateY(0.4%);
     }
     50%{
-        transform: translateX(0%) translateY(0%);
+        transform: translateX(0%) translateY(0.4%);
     }
     75%{
         transform: translateX(1%) translateY(4%);
@@ -534,11 +534,11 @@
         padding-right: 12px;
         padding-top: 30px;
         bottom: 48%;
-        margin-left: -20px;
+        margin-left: -40px;
     }
-    .product-carousel {
-        width: 300px;
-   
+     .product-carousel {
+        width: 365px;
+            height: 115px;
     }
     .product-quote {
         margin-top: -20px;
@@ -553,15 +553,24 @@
         padding-left: 15px;
     }
     .product-desc{
-        position: absolute;
-        background-color: #fff;
-        width: 100%;
-        opacity: 0;
-        top: 12%; 
-        height: 100%;
+    position: absolute;
+    background-color: #fff;
+    opacity: 0;
+    height: 100%;
+    width: 80%;
+    top: 6%;
+    left: 10%;
         
     }
-    
+    .product-desc1 {
+    position: absolute;
+    background-color: #fff;
+    width: 90%;
+    opacity: 0;
+    top: 5%;
+    left: 5%;
+    height: 100%;
+}
     .product-carousel .item:hover  .product-desc{
         opacity: 1;
     }

@@ -1,7 +1,7 @@
 {% include header.html %}
 <main>
 	<section class="banner section_casestudy">
-		<div class="for-blog-back-color">
+		<div class="for-blog-back-color banner-bg-desktop">
 			<img src="{{page.ribbon-img}}">
 			<img class="blog-profile-pic" src="{{page.profile_img}}">
 		    <h1 class="clr-white gotham-rounded-bok blog-main-title">{{ page.category }}</h1>
@@ -10,107 +10,107 @@
 
 		
 		
-			<div class="container">
+			<div class="container blog-details">
 
 				<div class="row">
 					<div class="col-lg-8  col-lg-offset-2 ">
 						
 						<div class="hr-display">
 							<!-- <h3 class="text-uppercase hw-socialshare cs-li-margin">The New User Experience</h3> -->
-							<br/>
-							<p class="ribon-font gotham-rounded-bok">{{page.blog_title}}</p>
-							<hr/>
-						
-							<!-- <img  class="blog-ref-img" src="{{page.imgsrc1}}"> -->
-						
-							<p class="hw-para text-justify gotham-rounded-light">{{page.para}}</p>
-							
-							<!-- <img class="blog-ref-img" src="{{page.imgsrc}}"> -->
 							{% if {{page.imgsrc0}} == %}
 							{% else %}
-							<img  class="blog-ref-img blog-ref-img2" src="{{page.imgsrc0}}">
-							<span class="blog-source">Picture source from: {{page.blog_source}}</span>
+							<img class="hero-image-mob blog-ref-img blog-ref-img2" src="{{page.imgsrc0}}">
 							{% endif %}
-						
-							{% if {{page.para1}} == %}
-							{% else %}
-							<p class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para1}}</p>
-							{% endif %}
+							<br/>
+							<div class="blog-date">
+								{% assign dates = page.published-date | split: ' ' %}
+								<div class="date-bg">
+									{% for dat in dates | limit: 1 offset: 1 %}	
+									<span>{{ dat | split: ','}}</span>
+									{% endfor %}
+									{% for dat in dates | limit: 1 offset: 0 %}	
+									<span>{{ dat }}</span>
+									{% endfor %}
+								</div>
+							</div>
+							<div class="blog-tab-content">
+								<div class="blog-header">
+									<div class="ribon-font gotham-rounded-bok">{{page.blog_title}}</div>
+									<div class="blog-author"><span class="pb-by">Published By </span>{{page.author}}</div>
+									<div class="line"></div>
+								</div>
+								<hr class="desktop-blog-hr" />
+								<!-- <img  class="blog-ref-img" src="{{page.imgsrc1}}"> -->
+								<div class="blog-content">
+									<div class="hw-para text-justify gotham-rounded-light">{{page.para}}</div> 
+									
+									<!-- <img class="blog-ref-img" src="{{page.imgsrc}}"> -->
+									{% if {{page.imgsrc0}} == %}
+									{% else %}
+									<img  class="hero-image-desktop blog-ref-img blog-ref-img2" src="{{page.imgsrc0}}">
+									<span class="blog-source">Picture source from: {{page.blog_source}}</span>
+									{% endif %}
+								
+									{% if {{page.para1}} == %}
+									{% else %}
+									<div class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para1}}</div> 
+									{% endif %}
 
-							{% if {{page.para2}} == %}
-							{% else %}
-							<p class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para2}}</p>
-							{% endif %}
+									{% if {{page.para2}} == %}
+									{% else %}
+									<div class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para2}}</div> 
+									{% endif %}
 
-							{% if {{page.para3}} == %}
-							{% else %}
-							<p class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para3}}</p>
-							{% endif %}
+									{% if {{page.para3}} == %}
+									{% else %}
+									<div class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para3}}</div> 
+									{% endif %}
 
-							{% if {{page.para4}} == %}
-							{% else %}
-							<p class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para4}}</p>
-							{% endif %}
+									{% if {{page.para4}} == %}
+									{% else %}
+									<div class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para4}}</div> 
+									{% endif %}
 
-							{% if {{page.para5}} == %}
-							{% else %}
-							<p class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para5}}</p>
-							{% endif %}
+									{% if {{page.para5}} == %}
+									{% else %}
+									<div class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para5}}</div> 
+									{% endif %}
 
-							{% if {{page.imgsrc1}} == %}
-							{% else %}
-							<img  class="blog-ref-img blog-ref-img2" src="{{page.imgsrc1}}">
-							{% endif %}
-
-
-							{% if {{page.para6}} == %}
-							{% else %}
-							<p class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para6}}</p>
-							{% endif %}
-
-							{% if {{page.para7}} == %}
-							{% else %}
-							<p class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para7}}</p>
-							{% endif %}
-
-							{% if {{page.para8}} == %}
-							{% else %}
-							<p class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para8}}</p>
-							{% endif %}
-
-							{% if {{page.para9}} == %}
-							{% else %}
-							<p class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para9}}</p>
-							{% endif %}
+									{% if {{page.imgsrc1}} == %}
+									{% else %}
+									<img  class="blog-ref-img blog-ref-img2" src="{{page.imgsrc1}}">
+									{% endif %}
 
 
-							{% if {{page.imgsrc2}} == %}
-							{% else %}
-							<img  class="blog-ref-img blog-ref-img2" src="{{page.imgsrc2}}">
-							{% endif %}
-							
+									{% if {{page.para6}} == %}
+									{% else %}
+									<div class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para6}}</div> 
+									{% endif %}
 
+									{% if {{page.para7}} == %}
+									{% else %}
+									<div class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para7}}</div> 
+									{% endif %}
+
+									{% if {{page.para8}} == %}
+									{% else %}
+									<div class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para8}}</div> 
+									{% endif %}
+
+									{% if {{page.para9}} == %}
+									{% else %}
+									<div class="hw-para margin-top-ten text-justify gotham-rounded-light">{{page.para9}}</div> 
+									{% endif %}
+
+
+									{% if {{page.imgsrc2}} == %}
+									{% else %}
+									<img  class="blog-ref-img blog-ref-img2" src="{{page.imgsrc2}}">
+									{% endif %}
+									
+								</div>
+							</div>
 						</div>
-
-<!-- 						<div class="hr-display">
-							<h3 class="text-uppercase hw-heading cs-li-margin">Using the Universal Windows Platform</h3>
-							<hr/>
-							{% for para in page.universal %}
-							<p class="hw-para gotham-rounded-bok">{{page.para}}</p>
-							{% endfor %}
-						</div>
-
-						<div class="hr-display">
-							<h3 class="text-uppercase hw-heading cs-li-margin">Our Focus</h3>
-							<hr/>
-							<p class="hw-para gotham-rounded-bok">{{page.focus}}{{page.focus}}{{page.focus}}{{page.focus}}</p>
-							<p class="hw-para gotham-rounded-bok">{{page.focus}}{{page.focus}}{{page.focus}}</p>
-						
-							
-						
-							
-							<p class="hw-para gotham-rounded-bok">{{page.focus}}{{page.focus}}</p>
-						</div> -->
 					    <div class="comments col-testimoni">
 						     {%include disqus.html%}
 					    </div>
@@ -139,3 +139,4 @@
     </script>
 
 {% include footer.html %}
+{% include html-footer.html %}

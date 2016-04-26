@@ -1,0 +1,141 @@
+.jb-desk-tab{
+	display: block;
+}
+.jb-mob{
+	display: none;
+}
+
+@media screen and (max-width:767px){
+	.jb-desk-tab{
+		display: none;
+	}
+	.jb-mob{
+		display: block;
+	}
+	.job-hw-font-heading{
+		font-size: 18px !important;
+		margin-top: 20px;
+		margin-bottom: 4px;
+	}
+	.job-line{
+		width: 50px;
+		height: 3px;
+	}
+	.job-carousel-padding{
+		margin-bottom: 18px;
+	}
+	.job-table{
+		display: table;
+    	padding-bottom: 15px;
+    	border-bottom: 1px solid #bebebe;
+    	width: 100%;
+    	cursor: pointer;
+	}
+	.job-row{
+    	margin-top: 15px;
+    	color: #000;
+    	font-size: 11px;
+    	font-family: "gotham-rounded-light";
+	}
+	.jb-skill{
+		color: #000;
+		font-size: 11px;
+    	font-family: "gotham-rounded-light";
+    	line-height: 16.5px;
+    	margin-bottom: 22px;
+    	text-align: justify;
+	}
+	.job-table-cell{
+		display: table-cell;
+	}
+/*	input[type=radio]{
+    	border: 1px solid #aeaeae;
+	}
+	input[type="radio"]:checked + label span{
+     	color: #ee2b7b;
+	}
+	input[type=radio]:checked .check::before{
+  		color: #ee2b7b;
+	}*/
+	.job-title {
+    	color: #343434;
+    	font-size: 14px;
+    	font-family: "gotham-rounded-book";
+    	font-weight: normal;
+	}
+	.job-table-cell > img {
+    	margin-left: 31px;
+    	margin-right: 15px;
+	}
+	.pagination-list{
+		margin-top: 14px;
+	}
+	#jb-mob .jb-skill{
+		list-style-type: initial;
+		color: #343434;
+	}
+	.job-tit{
+		margin-left: 0;
+	}
+	.job-table-cell > .job-img{
+		margin-left: 10px;
+	}
+	.job-word-wrap{
+		text-align: justify;
+	}
+	.apply-full-div{
+		width: 100%;
+	}
+	.apply-div{
+		background-color: #0ab4c5;
+		text-align: center;
+		font-family: "gotham-rounded-book";
+		font-size: 12px;
+		color: #fff;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		width: 100%;
+		border: none;
+	}
+
+	#jb-mob .pannel-job ul li {
+  		list-style: none;
+	}
+	#jb-mob .pannel-job ul  li:before {
+  		content: '\2022';
+		display: block;
+		position: relative;
+		max-width: 0;
+		max-height: 0;
+		left: -15px;
+		top: 0;
+		color: #0ab4c5;
+		font-size: 20px;
+	}
+	input[type=radio] {
+	    display:none;
+	}
+	input[type="radio"]:checked + label::before {
+    	background-color: #fff;
+    	border: 2px solid #acacac;
+	    color: #ee2b7b;
+	    content: "•";
+	    font-size: 38px;
+	    line-height: 14px;
+	    padding: 0;
+	    text-align: center;
+	    text-shadow: none;
+	}
+	input[type="radio"] + label::before {
+	    background-color: #fff;
+	    border: 2px solid #acacac;
+	    border-radius: 12px;
+	    box-shadow: none;
+	    content: "";
+	    display: inline-block;
+	    height: 20px;
+	    margin-right: 12px;
+	    vertical-align: middle;
+	    width: 21px;
+	}
+}

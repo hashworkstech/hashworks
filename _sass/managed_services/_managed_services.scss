@@ -310,3 +310,58 @@ span.page-number.clickable.active {
 }
 
 
+@media screen and (min-width:1200px){
+	.jobs-tab-header{
+		display: none;
+	}
+}
+@media screen and (max-width:1199px){
+	.super-job{
+		display: none;
+	}
+	.jobs-tab-header{
+		display: block;
+	}
+	.srch-heading{
+		text-align: center;
+		font-family: "gotham-rounded-light" !important;
+	}
+	.jobs-tab-content .keyword{
+		padding: 14px 5px;
+		width: 100%;
+	}
+	.job-list-btn{
+		width: 100%;
+		margin-bottom: 30px;
+		display: table;
+	}
+	.span-padding-rite{
+		display: block;
+	    float: left;
+	    padding-right: 10px;
+	    width: 38%;
+	}
+	.srch-job-btn{
+		width: 24%;
+		padding-right: 0;
+	}
+	.srch-job-btn button {
+	    width: 100%;
+	}
+	.srch-job-btn .job-search,.apply{
+		border:1px solid #ee2b7b;
+	}
+	.table > thead > tr > th{
+		padding-bottom: 25px;
+		font-family: "gotham-rounded-light";
+		font-size: 16px;
+		color: #000000;
+	}
+	.table > tbody > tr > td{
+		font-family: "gotham-rounded-light" !important;	
+		color: #343434;	
+	}
+	.log-color-blue{
+		color: #343434;
+	}
+}
