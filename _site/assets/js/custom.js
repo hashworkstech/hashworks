@@ -2062,49 +2062,11 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
 
 /* Homepage hack */
 
-// $(document).ready(function () {
-//   function reorient(e) {
-//     var portrait = (window.orientation % 180 == 0);
-//     $("body > div").css("-webkit-transform", !portrait ? "rotate(-90deg)" : "");
-//   }
-//   window.onorientationchange = reorient;
-//   window.setTimeout(reorient, 0);
-// });
-
-$(window).bind('orientationchange resize', function(event){
-  if (event.orientation) {
-    if (event.orientation == 'landscape') {
-      if (window.rotation == 90) {
-        rotate(this, -90);
-      } else {
-        rotate(this, 90);
-      }
-    }
+$(document).ready(function () {
+  function reorient(e) {
+    var portrait = (window.orientation % 180 == 0);
+    $("body > .hwmt").css("-webkit-transform", !portrait ? "rotate(-90deg)" : "");
   }
+  window.onorientationchange = reorient;
+  window.setTimeout(reorient, 0);
 });
-
-function rotate(el, degs) {
-  iedegs = degs/90;
-  if (iedegs < 0) iedegs += 4;
-  transform = 'rotate('+degs+'deg)';
-  iefilter = 'progid:DXImageTransform.Microsoft.BasicImage(rotation='+iedegs+')';
-  styles = {
-    transform: transform,
-    '-webkit-transform': transform,
-    '-moz-transform': transform,
-    '-o-transform': transform,
-    filter: iefilter,
-    '-ms-filter': iefilter
-  };
-  $(el).css(styles);
-  rads = degs * Math.PI / 180;
-  m11 = m22 = Math.cos(rads);
-  m21 = Math.sin(rads);
-  m12 = -m21;
-  iefilter = "progid:DXImageTransform.Microsoft.Matrix("
-    + "M11 = " + m11 + ", "
-    + "M12 = " + m12 + ", "
-    + "M21 = " + m21 + ", "
-    + "M22 = " + m22 + ", sizingMethod = 'auto expand')";
-  styles['filter'] = styles['-ms-filter'] = iefilter;
-}

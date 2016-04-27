@@ -6607,25 +6607,33 @@ text-align: inherit;
 
 
 
-
-
-
-/*@media only screen and (orientation:landscape) and (max-width: 1199px){
-  .hwmt {  
-    height: 100vw;
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    transform: rotate(90deg);
-  }
+select#author::-ms-expand,select#cat::-ms-expand {
+    display: none;
 }
-@media only screen and (orientation:portrait) and (max-width: 1199px){
-  .hwmt {  
-	-webkit-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
-	-ms-transform: rotate(0deg);
-	transform: rotate(0deg);
-  }
-}*/
+select#cat,select#author {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+
+@media (max-height: 480px) and (min-width: 480px) and (max-width: 600px) { 
+    .hwmt{
+        -webkit-transform: rotate(-90deg);
+           -moz-transform: rotate(-90deg);
+            -ms-transform: rotate(-90deg);
+             -o-transform: rotate(-90deg);
+                transform: rotate(-90deg);
+        -webkit-transform-origin: left top;
+           -moz-transform-origin: left top;
+            -ms-transform-origin: left top;
+             -o-transform-origin: left top;
+                transform-origin: left top;
+        width: 100%; /*this is the iPhone screen width.*/
+        position: absolute;
+        top: 100%;
+            left: 0;
+            height: 100vh;
+    }
+}
