@@ -6610,7 +6610,7 @@ text-align: inherit;
 
 
 
-@media only screen and (orientation:landscape) and (max-width: 1199px){
+/*@media only screen and (orientation:landscape) and (max-width: 1199px){
   .hwmt {  
     height: 100vw;
     -webkit-transform: rotate(90deg);
@@ -6628,4 +6628,4 @@ text-align: inherit;
 	-ms-transform: rotate(0deg);
 	transform: rotate(0deg);
   }
-}
+}*/
