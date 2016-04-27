@@ -1,322 +1,343 @@
+
+
 {% include header.html %}
-<main> 
-   <h1 class="text-center gotham-rounded-bok heading hw-font-heading">Collaborative Workforce</h1>
-        <div class="hw-header-padding">
-            <div class="hw-header-underline"></div>
-            <div class="container">
-                     <h2 class="gotham-rounded-light hw-heading h2-color text-center hw-line-height">{{site.data.Talent_Acquisition.carousel.content}}</h2> 
-        </div>
-        </div>
-    <!--tabs-->
-    <div class="bs-example line-padding">
-            <div class="container">
+<div id="cw-responsive">
+   <main>
+      <h1 class="text-center gotham-rounded-bok heading hw-font-heading collabrative-header">Collaborative Workforce</h1>
+      <div class="carousel-padding">
+         <div class="line"></div>
+         <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+            <div class="container heading-caro-padd">
+               <!-- Wrapper for slides -->
+               <div class="carousel-inner container" role="listbox">
+                  <h2 class="gotham-rounded-light hw-heading h2-color text-center hw-line-height">{{site.data.Talent_Acquisition.carousel.content}}</h2>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end of carousel-->
+      
+      <div class="bs-example line-padding collo-talent1">
+         <div class="container">
             <ul class="nav nav-tabs p-flex talent">
-                <li class="active"><a class="hw-te-tab hr-display"  data-toggle="tab" href="#cw-tab-employer" >
-                    <ul class="tab-img">
-                        <li  class="li-tab-mar">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                 width="75px" height="75px" viewBox="0 0 75 75" enable-background="new 0 0 75 75" xml:space="preserve">
-                            <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M34.722,61.998
-                                V13.708c0-1.238,1.288-2.542,2.525-2.542H67.78c1.237,0,2.523,1.303,2.523,2.542v48.291c0.848,2.383-1.286,1.694-2.523,1.694H37.248
-                                C36.01,63.692,34.034,64.646,34.722,61.998z"/>
-                            <polyline fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
-                                45.736,62.9 45.736,45.957 59.292,45.957 59.292,62.9 "/>
-                            <line fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="0.835" y1="63.748" x2="74.54" y2="63.748"/>
-                            <rect x="42.347" y="18.79" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="5.932" height="5.93"/>
-                            <rect x="56.75" y="18.79" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="5.929" height="5.93"/>
-                            <rect x="42.347" y="32.345" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="5.932" height="5.931"/>
-                            <rect x="56.75" y="32.345" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" width="5.929" height="5.931"/>
-                            <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M17.847,63.336
-                                V25.888c0-1.148,0.641-2.079,1.432-2.079h9.849c0.791,0,1.431,0.931,1.431,2.079v37.448"/>
-                            <path fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M5.269,63.336V38.459
-                                c0-0.762,0.426-1.381,0.952-1.381h6.542c0.525,0,0.952,0.619,0.952,1.381v24.877"/>
-                            </svg>
-                        </li>
-                        <li class="gotham-rounded-light  "><p class="text-center hw-heading hr-display">Employer</p></li>
-                    </ul></a>
-                </li>
-                
-                <li><a  class="hw-te-tab hr-display" data-toggle="tab" href="#cw-tab-partner" >
-                    <ul class="tab-img">
-                        <li class="li-tab-mar"><img src="/assets/img/talent_acquisition/Partner.svg"></li>
-                        <li class="gotham-rounded-light"><p class="text-center hw-heading  hr-display">Partner</p></li>
-                    </ul></a>
-                </li>
-
-                <li><a  class="hw-te-tab hr-display" data-toggle="tab" href="#cw-tab-job-seeker" >
-                    <ul class="tab-img" >
-                        <li class="li-tab-mar">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                     width="75px" height="75px" viewBox="0 0 75 75" enable-background="new 0 0 75 75" xml:space="preserve">
-                                <g>
-                                    <path fill="none" stroke="#231F20" stroke-miterlimit="10" d="M69.896,65.253H6.437c-2.266,0-4.104-1.838-4.104-4.104V19.303
-                                        c0-2.266,1.837-4.104,4.104-4.104h63.458c2.268,0,4.104,1.838,4.104,4.104v41.847C74,63.415,72.163,65.253,69.896,65.253z"/>
-                                    <path fill="none" stroke="#231F20" stroke-miterlimit="10" d="M2.333,30.84c0,2.267,1.837,4.104,4.104,4.104h63.458
-                                        c2.268,0,4.104-1.837,4.104-4.104"/>
-                                    <path fill="none" stroke="#231F20" stroke-linecap="round" stroke-linejoin="round" d="M40.038,30.886
-                                        c1.376,0,2.493,1.117,2.493,2.494v10.631c0,1.377-1.117,2.494-2.493,2.494h-3.743c-1.377,0-2.493-1.117-2.493-2.494V33.38
-                                        c0-1.377,1.116-2.494,2.493-2.494H40.038z"/>
-                                    <path fill="none" stroke="#231F20" stroke-width="0.75" stroke-linecap="round" stroke-linejoin="round" d="M38.663,37.71
-                                        c0.365,0,0.662,0.467,0.662,1.042v4.437c0,0.575-0.297,1.041-0.662,1.041H37.67c-0.365,0-0.661-0.466-0.661-1.041v-4.437
-                                        c0-0.574,0.296-1.042,0.661-1.042H38.663z"/>
-
-                                    <path fill="none" stroke="#231F20" stroke-linecap="round" stroke-linejoin="round" d="M22.215,14.782
-                                        c0-3.758,2.282-6.801,5.095-6.801h21.714c2.812,0,5.094,3.042,5.094,6.801"/>
-                                </g>
-                            </svg>
-                        </li>
-                        <li class="gotham-rounded-light "><p class="text-center hw-heading  hr-display">Job Seeker</p> </li>
-                    </ul></a>
-                </li>  
+               <div class="carousel-div">
+                  <li class="active c-flex c-flex-1 tab-val" id="tab-1">
+                     <a class="hw-te-tab hr-display c-flex-anchor"  data-toggle="tab" href="#employer" >
+                        <ul class="tab-img">
+                           <li  class="li-tab-mar"><img src="/assets/img/collaborative-works/employee.svg"></li>
+                           <li class="gotham-rounded-light  ">
+                              <p class="text-center hw-heading hr-display">Employer</p>
+                           </li>
+                        </ul>
+                     </a>
+                  </li>
+                  <li class="c-flex c-flex-1 tab-val" id="tab-2">
+                     <a  class="hw-te-tab hr-display c-flex-anchor" data-toggle="tab" href="#patner" >
+                        <ul class="tab-img">
+                           <li class="li-tab-mar"><img src="/assets/img/talent_acquisition/Partner.svg"></li>
+                           <li class="gotham-rounded-light">
+                              <p class="text-center hw-heading  hr-display">Partner</p>
+                           </li>
+                        </ul>
+                     </a>
+                  </li>
+                  <li class="c-flex c-flex-1 tab-val" id="tab-3">
+                     <a  class="hw-te-tab hr-display c-flex-anchor" data-toggle="tab" href="#job-seeker" >
+                        <ul class="tab-img" >
+                           <li class="li-tab-mar"><img src="/assets/img/collaborative-works/jobseeker.svg"></li>
+                           <li class="gotham-rounded-light ">
+                              <p class="text-center hw-heading  hr-display">Job Seeker</p>
+                           </li>
+                        </ul>
+                     </a>
+                  </li>
+               </div>
             </ul>
-        </div> <!--end of contaier-fuild of tab heading-->
-        <div class="tab-content">
-            <div id="cw-tab-employer" class="tab-pane fade in active">
-                <div class="container">
-                    <div class="hw-engage-cont">
-                        <h2 class="hw-heading gotham-rounded-bok h2-color">Employer</h2>
-                        {% for para in site.data.Talent_Acquisition.talent.Employer %}
-                        <p class="hw-copyright gotham-rounded-light">{{ para.employee }}</p><br>
-                        {% endfor %}
-                        <p class="hw-copyright gotham-rounded-light h2-color"><span class="gotham-rounded-bold hw-tab-heading clr-black "><img src="/assets/img/talent_acquisition/left.svg" class="right-workforce"></span> To meet the demands of digital business transformation, VM leaders must provide alternatives to conventional VM process. This means reducing cycle times and allowing exceptions to long standing practices that may have hindered creativity or stalled vendor delivery of innovation.</p><br>
-                        <p class="hw-copyright gotham-rounded-light h2-color">Digital business demands greater dexterity in creating value from technology.Bimodal IT is a tool vital to addressing that challenge. Using it, IT adopts two distinct ways to meet enterprise demand - being agile and flexible, and having a step-by-step approach that ensures efficiency and predictability. Bimodal IT fills the digital divide between what IT provides and what IT really needs. Harnessing this same methodology for IT VM practices enables business stakeholders to (1) attain the innovation and agility they need from vendors, and (2) leverage best practices in VM adopted to fast-track" key business initiatives.<span class="gotham-rounded-bold hw-tab-heading clr-black"><img src="/assets/img/talent_acquisition/right.svg" class="right-workforce"></span></p>
-                        <h2 class="gotham-rounded-bok hw-heading">Applying Bimodal IT to VM <span class="hw-copyright gotham-rounded-light">(Source: Gartner)</span></h2>
-                    <table class="table" >
-    <thead>
-      <tr >
-        <th class="gotham-rounded-bold hw-para"></th>
-        <th class="gotham-rounded-bold hw-para">Conventional</th>
-        <th class="gotham-rounded-bold hw-para">Agile</th>
-         </tr>
-    </thead>
-    <tbody>
-        <tr >
-            <td class="gotham-rounded-bok  hw-contact-no "> Goal</td>
-            <td class="gotham-rounded-bok  hw-contact-no ">Reliability</td>
-            <td class="gotham-rounded-bok  hw-contact-no">Agility</td>
-          </tr>
-          <tr>
-            <td class="gotham-rounded-bok  hw-contact-no "> Value </td>
-            <td class="gotham-rounded-bok  hw-contact-no ">Cost/risk reduction, price for performance</td>
-            <td class="gotham-rounded-bok  hw-contact-no">Revenue, brand, external customer
-experience</td>
-          </tr>
-          <tr >
-            <td class="gotham-rounded-bok  hw-contact-no "> Approach </td>
-            <td class="gotham-rounded-bok  hw-contact-no ">Sequential, workflow-based approvals, policy</td>
-            <td class="gotham-rounded-bok  hw-contact-no">Fluid, flexible, guardrails, not policy</td>
-          </tr>
-          <tr  >
-            <td class="gotham-rounded-bok  hw-contact-no "> Governance</td>
-            <td class="gotham-rounded-bok  hw-contact-no ">Controlled, policy-based</td>
-            <td class="gotham-rounded-bok  hw-contact-no">Coordinated, based on guardrails</td>
-          </tr>
-          <tr>
-            <td class="gotham-rounded-bok  hw-contact-no "> Vendors </td>
-            <td class="gotham-rounded-bok  hw-contact-no ">Traditional, larger, technology leaders, enterprise suppliers</td>
-            <td class="gotham-rounded-bok  hw-contact-no">Smaller, niche providers, micro-vendors, "new guard," emerging and new vendors</td>
-          </tr>
-          <tr>
-            <td class="gotham-rounded-bok  hw-contact-no "> Risk</td>
-            <td class="gotham-rounded-bok  hw-contact-no ">Thorough, multipoint vendor risk management; complete due <br>diligence and ongoing risk monitoring; risk mitigation
-            negotiations may be lengthy</td>
-            <td class="gotham-rounded-bok  hw-contact-no">Calculated, prioritized and focused
-            risk management; deal <br> breakers identified early</td>
-          </tr>
-          <tr >
-            <td class="gotham-rounded-bok  hw-contact-no ">Performance</td>
-            <td class="gotham-rounded-bok  hw-contact-no ">Measure contract milestones, SLAs</td>
-            <td class="gotham-rounded-bok  hw-contact-no">Measure innovation, collaboration
-            within ecosystems</td>
-          </tr>
-          <tr>
-            <td class="gotham-rounded-bok  hw-contact-no ">Relationships</td>
-            <td class="gotham-rounded-bok  hw-contact-no ">Hierarchical, may be cross-functional internally, single point <br> of contact (SPOC) model with vendor</td>
-            <td class="gotham-rounded-bok  hw-contact-no">Collaborative, flexible, multidisciplinary teams internally, working in <br>clusters or vendor ecosystems</td>
-          </tr>
-          <tr>
-            <td class="gotham-rounded-bok  hw-contact-no "> Talent </td>
-            <td class="gotham-rounded-bok  hw-contact-no">Skills and aptitude for conventional processes and projects</td>
-            <td class="gotham-rounded-bok  hw-contact-no">Skills and aptitude for new and
-            uncertain processes</td>
-          </tr>
-          <tr >
-            <td class="gotham-rounded-bok  hw-contact-no "> Culture </td>
-            <td class="gotham-rounded-bok  hw-contact-no">IT-centric, removed from customer</td>
-            <td class="gotham-rounded-bok  hw-contact-no">Business-centric, close to customer</td>
-          </tr>
-          <tr>
-            <td class="gotham-rounded-bok  hw-contact-no "> DataAnalytics</td>
-            <td class="gotham-rounded-bok  hw-contact-no">Historical views, reporting</td>
-            <td class="gotham-rounded-bok  hw-contact-no">Predictive, proactive, leverage trends</td>
-          </tr>
-          <tr>
-            <td class="gotham-rounded-bok  hw-contact-no "> Cycle Times </td>
-            <td class="gotham-rounded-bok  hw-contact-no">Long (months)</td>
-            <td class="gotham-rounded-bok  hw-contact-no">Short (days or weeks)</td>
-          </tr>
-       </tbody>
-  </table>
-                </div>  
-                </div>
-            <!-- hw-started -->
-                <div class="hw-started log-clr-backgrnd container-fluid ">
-                    <div class="row p-flex">
-                        <div class="col-lg-8">
-                            <h2 class="gotham-rounded-light hw-main-heading clr-white hw-contact-us-ribbon">WE ADVOCATE ELASTIC WORKFORCE</h2>
-                        </div>
-                        <div class="col-lg-4 upskill-filter clearfix">
-                            <span><button class="hw-talk-to-us-btn talk-to-us" >TALK TO US</button></span>
-                            <span><a href='/job_board'><button class="hw-talk-to-us-btn">JOB BOARD</button></a></span>
-                        </div>
-                    </div>
-                </div>
-            <!-- End of hw-started -->
-            </div><!-- end of tab1-->
-                 <!-- for the bottom up button-->       
-                    <div style="position: relative">
-                            <div class="collaborative-apst-wrapper nav-scroll-up">
-                            <div class="apst-button"></div>
-                            </div>
-                        </div>  
+         </div>
+         <!--end of contaier-fuild of tab heading-->
+         <div class="tab-content">
+            <div id="tabContent-1" class="tab-pane fade in active">
+               <div class="container">
+                  <div class="hw-engage-cont">
+                     <h2 class="hw-heading gotham-rounded-bok h2-color">Employer</h2>
+                     {% for para in site.data.Talent_Acquisition.talent.Employer %}
+                     <p class="hw-copyright gotham-rounded-light collaborative-employee-para">{{ para.employee }}</p>
+                     <br>
+                     {% endfor %}
+                     <p class="hw-copyright gotham-rounded-light h2-color collaborative-employee-para"><span class="gotham-rounded-bold hw-tab-heading clr-black"><img src="/assets/img/talent_acquisition/left.svg" class="right-workforce"></span> To meet the demands of digital business transformation, VM leaders must provide alternatives to conventional VM process. This means reducing cycle times and allowing exceptions to long standing practices that may have hindered creativity or stalled vendor delivery of innovation.</p>
+                     <br>
+                     <p class="hw-copyright gotham-rounded-light h2-color collaborative-employee-para">Digital business demands greater dexterity in creating value from technology.Bimodal IT is a tool vital to addressing that challenge. Using it, IT adopts two distinct ways to meet enterprise demand - being agile and flexible, and having a step-by-step approach that ensures efficiency and predictability. Bimodal IT fills the digital divide between what IT provides and what IT really needs. Harnessing this same methodology for IT VM practices enables business stakeholders to (1) attain the innovation and agility they need from vendors, and (2) leverage best practices in VM adopted to fast-track" key business initiatives.<span class="gotham-rounded-bold hw-tab-heading clr-black"><img src="/assets/img/talent_acquisition/right.svg" class="right-workforce"></span></p>
+                     <h2 class="gotham-rounded-bok hw-heading collaborative-apply-heading">Applying Bimodal IT to VM <span class="hw-copyright gotham-rounded-light">(Source: Gartner)</span></h2>
+                     <h2 class="gotham-rounded-bok hw-heading collaborative-apply-heading collaborative-apply-heading-1">Applying Bimodal IT to VM</h2>
+                     <h2 class="gotham-rounded-bok hw-heading hw-copyright gotham-rounded-light collaborative-apply-heading collaborative-apply-heading-1">(Source: Gartner)</h2>
+                     <table class="table" >
+                        <thead>
+                           <tr >
+                              <th class="gotham-rounded-bold hw-para"></th>
+                              <th class="gotham-rounded-bold hw-para collaborative-conventional">Conventional</th>
+                              <th class="gotham-rounded-bold hw-para collaborative-conventional">Agile</th>
+                           </tr>
+                        </thead>
+                        <tbody>
+                           <tr >
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family"> Goal</td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Reliability</td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Agility</td>
+                           </tr>
+                           <tr>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family"> Value </td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Cost/risk reduction, price for performance</td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Revenue, brand, external customer
+                                 experience
+                              </td>
+                           </tr>
+                           <tr >
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family"> Approach </td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Sequential, workflow-based approvals, policy</td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Fluid, flexible, guardrails, not policy</td>
+                           </tr>
+                           <tr  >
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family"> Governance</td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Controlled, policy-based</td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Coordinated, based on guardrails</td>
+                           </tr>
+                           <tr  >
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family"> Vendors </td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Traditional, larger, technology leaders, enterprise suppliers</td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Smaller, niche providers, micro-vendors, "new guard," emerging and new vendors</td>
+                           </tr>
+                           <tr   >
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family"> Risk</td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Thorough, multipoint vendor risk management; complete due <br>diligence and ongoing risk monitoring; risk mitigation
+                                 negotiations may be lengthy
+                              </td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Calculated, prioritized and focused
+                                 risk management; deal <br> breakers identified early
+                              </td>
+                           </tr>
+                           <tr >
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Performance</td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Measure contract milestones, SLAs</td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Measure innovation, collaboration
+                                 within ecosystems
+                              </td>
+                           </tr>
+                           <tr >
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Relationships</td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Hierarchical, may be cross-functional internally, single point <br> of contact (SPOC) model with vendor</td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Collaborative, flexible, multidisciplinary teams internally, working in <br>clusters or vendor ecosystems</td>
+                           </tr>
+                           <tr>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family"> Talent </td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Skills and aptitude for conventional processes and projects</td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Skills and aptitude for new and
+                                 uncertain processes
+                              </td>
+                           </tr>
+                           <tr >
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family"> Culture </td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">IT-centric, removed from customer</td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Business-centric, close to customer</td>
+                           </tr>
+                           <tr  >
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family"> Data
+                                 Analytics
+                              </td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Historical views, reporting</td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Predictive, proactive, leverage trends</td>
+                           </tr>
+                           <tr  >
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family"> Cycle Times </td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Long (months)</td>
+                              <td class="gotham-rounded-bok  hw-contact-no collaborative-font-family">Short (days or weeks)</td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+              <div class="hw-started1 log-clr-backgrnd container-fluid ">
+               <div class="row p-flex collobo-footer-division">
+                  <span class="c-flex gotham-rounded-light hw-main-heading clr-white h-approch collobo-hw-main-heading">WE ADVOCATE ELASTIC WORKFORCE</span>
+                  <div class="upskill-filter all c-flex clearfix">
+                     <span><button class=" job-board-btn job-btn custom-btn heading-custom-btn talk-to-us collobo-talk-to-us">TALK TO US</button></span>
+                     <span><a href="/job_board"><button class=" job-board-btn gotham-rounded-bold custom-btn heading-custom-btn collobo-talk-to-us">JOB BOARD</button></a></span>
+                  </div>
+               </div>
+            </div>
+               <!-- End of hw-started -->
+            </div>
+            <!-- end of tab1-->
+            <!-- for the bottom up button-->   	
+            <div style="position: relative">
+               <div class="collaborative-apst-wrapper nav-scroll-up">
+                  <div class="apst-button"></div>
+               </div>
+            </div>
             <!-- tab2-->
-            <div id="cw-tab-partner" class="tab-pane fade">
-                <div class="container">
-                    <div class="hw-engage-cont">
-                        <h2 class="hw-heading gotham-rounded-bok h2-color">Partner</h2>
-                        <ul class="job-board-ul">
-                            {% for para in site.data.Talent_Acquisition.talent.Partner %}
-                            <li><p class="hw-copyright gotham-rounded-light li-class">{{para.partner}}</p><br/></li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </div>  
-                <!-- hw-started -->
-                <div class="hw-started log-clr-backgrnd container-fluid ">
-                     <div class="row p-flex">
-                        <div class="col-lg-8">
-                            <h2 class="gotham-rounded-light hw-main-heading clr-white hw-contact-us-ribbon">WE ADVOCATE ELASTIC WORKFORCE</h2>
-                        </div>
-                        <div class="col-lg-4 upskill-filter clearfix">
-                            <span><button class="hw-talk-to-us-btn talk-to-us" >TALK TO US</button></span>
-                            <span><a href='/job_board'><button class="hw-talk-to-us-btn">JOB BOARD</button></a></span>
-                        </div>
-                    </div>
-                </div>
-            <!-- End of hw-started -->  
-            </div><!-- end of tab2-->
+            <div id="tabContent-2" class="tab-pane fade in">
+               <div class="container">
+                  <div class="hw-engage-cont">
+                     <h2 class="hw-heading gotham-rounded-bok h2-color paterner-heading">Partner</h2>
+                     <!-- <p class="hw-copyright gotham-rounded-light">This course introduces attendees to the goals, objectives, benefits, practices of a DevOps environment with hands on working sessions. The course also addresses why DevOps is a mix of cultural, process  tools movement. This sessions talks about principles and mind-sets with practical hands-on use-cases that is pivoting the software delivery landscape.</p> -->
+                     <ul class="job-board-ul">
+                        {% for para in site.data.Talent_Acquisition.talent.Partner %}
+                        <li>
+                           <p class="hw-copyright gotham-rounded-light li-class collaborative-employee-para">{{para.partner}}</p>
+                           <br/>
+                        </li>
+                        {% endfor %}
+                     </ul>
+                  </div>
+               </div>
+               <div class="hw-started1 log-clr-backgrnd container-fluid ">
+               <div class="row p-flex collobo-footer-division">
+                  <span class="c-flex gotham-rounded-light hw-main-heading clr-white h-approch collobo-hw-main-heading">BE OUR CHANNEL PARTNER</span>
+                  <div class="upskill-filter all c-flex clearfix">
+                     <span><button class=" job-board-btn job-btn custom-btn heading-custom-btn talk-to-us collobo-talk-to-us">TALK TO US</button></span>
+                     <span><a href="/job_board"><button class=" job-board-btn gotham-rounded-bold custom-btn heading-custom-btn collobo-talk-to-us">JOB BOARD</button></a></span>
+                  </div>
+               </div>
+            </div>
+               <!-- End of hw-started -->	
+            </div>
+            <!-- end of tab2-->
             <!-- tab3-->
-            <div id="cw-tab-job-seeker" class="tab-pane fade">
-                <div class="container">
-                    <div class="hw-engage-cont">
-                        <h2 class="hw-heading gotham-rounded-bok h2-color">Job Seeker</h2>
-                        <ul class="job-board-ul">
-                            {% for para in site.data.Talent_Acquisition.talent.Job %}
-                            <li><p class="hw-copyright gotham-rounded-light li-class">{{ para.job }}</p><br/></li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </div>   
-                <!-- hw-started -->
-                <div class="hw-started log-clr-backgrnd container-fluid">
-                    <div class="row p-flex">
-                        <div class="col-lg-8">
-                            <h2 class="gotham-rounded-light hw-main-heading clr-white hw-contact-us-ribbon">EXPLORE JOB OPPORTUNITIES</h2>
-                        </div>
-                        <div class="col-lg-4 upskill-filter all clearfix">
-                            <span><button class="hw-talk-to-us-btn talk-to-us" >TALK TO US</button></span>
-                            <span><a href='/job_board'><button class="hw-talk-to-us-btn">JOB BOARD</button></a></span>
-                        </div>
-                    </div>
-                </div><!-- End of hw-started -->
-            </div><!-- end of tab3-->
-    <!-- layout for map and form-->
+            <div id="tabContent-3" class="tab-pane fade in">
+               <div class="container">
+                  <div class="hw-engage-cont">
+                     <h2 class="hw-heading gotham-rounded-bok h2-color paterner-heading">Job Seeker</h2>
+                     <ul class="job-board-ul">
+                        {% for para in site.data.Talent_Acquisition.talent.Job %}
+                        <li>
+                           <p class="hw-copyright gotham-rounded-light li-class collaborative-employee-para">{{ para.job }}</p>
+                           <br/>
+                        </li>
+                        {% endfor %}
+                     </ul>
+                  </div>
+               </div>
+               <!-- hw-started -->
+               <div class="hw-started1 log-clr-backgrnd container-fluid ">
+               <div class="row p-flex collobo-footer-division">
+                  <span class="c-flex gotham-rounded-light hw-main-heading clr-white h-approch collobo-hw-main-heading">EXPLORE JOB OPPORTUNITIES</span>
+                  <div class="upskill-filter all c-flex clearfix">
+                     <span><button class=" job-board-btn job-btn custom-btn heading-custom-btn talk-to-us collobo-talk-to-us">POST RESUME</button></span>
+                     <span><a href="/job_board"><button class=" job-board-btn gotham-rounded-bold custom-btn heading-custom-btn collobo-talk-to-us">JOB BOARD</button></a></span>
+                  </div>
+               </div>
+            </div>
+             
+               <!-- End of hw-started -->
+            </div>
+            <!-- end of tab3-->
+            <!-- layout for map and form-->
             <div class="container ms-form-mar" id="form-map-div">
-                <i class="fa fa-times job-close"></i>
-                <div class="row">
-                    <div class="col-lg-6 ">
-                        <!-- google map -->
-                        <div id="map"></div>
+               <i class="fa fa-times job-close job-close-1"></i>
+               <h1 class="lets-work-heading">Lets Work Together<i class="fa fa-times job-close lets-job-close"></i></h1>
+               <div class="row">
+                  <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                     <!-- google map -->
+                     <div id="map"></div>
                      <!-- End of google map -->
-                        <div>
-                            
-                        </div>  
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="post-resume">
-                            <form class="form-signin" onSubmit="submitForm(event)" >  <!-- start of form -->
-                            <div class="row ">
-                                    <div class="col-lg-6"> 
-                                        <div class="text-border">
-                                            <div class="input-group">
-                                                <div class="input-group-addon"><img src="/assets/img/talent_acquisition/name-img.png"></div>
-                                                
-                                                <input type="text" class="form-control placeholder-pro mainLoginInput input_name"  placeholder="NAME" >
-                                            </div>
-                                        </div>      
-                                    </div>
-                                <div class="col-lg-6"> 
-                                    <div class="text-border">
-                                        <div class="input-group">
-                                            <div class="input-group-addon"><img src="/assets/img/talent_acquisition/email-img.png"></div>
-                                            <input type="text" class="form-control placeholder-pro mainLoginInput input_email" placeholder="EMAIL">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row ms-row-mar">
-                                <div class="col-lg-6"> 
-                                    <div class="text-border">
-                                        <div class="input-group">
-                                            <div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
-                                            <input type="text" class="form-control placeholder-pro mainLoginInput gotham-rounded-light input_subject"  placeholder="Subject">
-                                        </div>  
-                                    </div>  
-                                </div>
-                                <div class="col-lg-6"> 
-                                    <div class="text-border">
-                                        <div class="input-group">
-                                            <div class="input-group-addon"><img src="/assets/img/talent_acquisition/phone-img.png"></div>
-                                            <input type="text" class="form-control placeholder-pro mainLoginInput input_phone" placeholder="PHONE">
-                                        </div>
-                                    </div>  
-                                </div>
-                            </div>
-                            <div class="row ms-row-mar">
-                                <div class="col-lg-12">
-                                    <div class="text-border">
+                     <div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                     <div class="post-resume">
+                        <form class="form-signin" onSubmit="submitForm(event)" >
+                           <!-- start of form -->
+                           <div class="row">
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 form-col">
+                                 <div class="text-border">
                                     <div class="input-group">
-                                            <div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
-                                            <textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" class="form-control placeholder-pro mainLoginInput input_message"  id="message" rows="3"></textarea>
-                                        </div>  
-                                        
+                                       <div class="input-group-addon collaborative-input-group"><img src="/assets/img/talent_acquisition/name-img.png"></div>
+                                       <input type="text" class="form-control collaborative-form-control placeholder-pro mainLoginInput input_name" id="name1" placeholder="NAME" >
                                     </div>
-                                </div>
-                            </div><!-- end of text-area row-->
-                            <div class="attach-file">
-                                <div class="col-lg-9">
-                                    <input type="file" class="gotham-book input_file-upload" id="file-upload">
-                                    <br/><br/>
-                                    <span class="attach-text"><span><img src="/assets/img/talent_acquisition/attach.png"></span><span class="gotham-rounded-bok attach-span clr-white">Attach File</span></span>
-                                    <input type="text"  class="input_file-detail form-control placeholder-pro mainLoginInput"  id="file-detail" readonly="readonly"/>
-                                </div>
-                                <div class="col-lg-3 submit-background">
-								<button id="submit-btn" type="submit" class="btn">
-								              <br>
-								              <div class="submit-resume hr-display" >
-								               <img src="/assets/img/talent_acquisition/submit.png" class="img-submit" >
-								               <p class="gotham-rounded-bok submit-text placeholder-pro img-para">SUBMIT</p>
-								              </div>
-		                        </button> 
-                                </div>
-                            </div><!-- end of attach-file-->
-                            </form> <!-- end of form -->
-                        </div><!-- end of postresume -->
-                    </div><!--end of col-lg-8-->
-                </div>
-            </div>  
-    <!-- end of layout for map and form-->
-        </div><!-- end of tab content-->
-    </div> <!-- end of the bs-example tab-->
-</main> 
+                                 </div>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                 <div class="text-border">
+                                    <div class="input-group">
+                                       <div class="input-group-addon collaborative-input-group"><img src="/assets/img/talent_acquisition/email-img.png"></div>
+                                       <input type="text" class="form-control collaborative-form-control placeholder-pro mainLoginInput input_email" id="email1" placeholder="EMAIL">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row ms-row-mar ms-row-mar-1">
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 form-col">
+                                 <div class="text-border">
+                                    <div class="input-group">
+                                       <div class="input-group-addon input-group-addon-cw"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
+                                       <span class="caret collaborative-caret"></span>
+                                       <select class="form-control mainLoginInput gotham-rounded-light input_subject collaborative-input_subject sub-width sub-width1" id="subject">
+                                          <option value="Subject" class="subject">Subject</option>
+                                          <option value="Marketing" class="level-0">Marketing</option>
+                                          <option value="Design" class="level-0">Design</option>
+                                          <option value="UX" class="level-0">UX</option>
+                                          <option value="WordPress" class="level-0">WordPress</option>
+                                          <option value="Strategy" class="level-0">Strategy</option>
+                                          <option value="Automations" class="level-0">Automations</option>
+                                          <option value="News" class="level-0">News</option>
+                                          <option value="Content" class="level-0">Content</option>
+                                          <option value="Social" class="level-0">Social Media</option>
+                                       </select>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                 <div class="text-border">
+                                    <div class="input-group">
+                                       <div class="input-group-addon collaborative-input-group"><img src="/assets/img/talent_acquisition/phone-img.png"></div>
+                                       <input type="text" class="form-control collaborative-form-control placeholder-pro mainLoginInput input_phone" id="phone" placeholder="PHONE">
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="row ms-row-mar form-col-sec">
+                              <div class="col-lg-12 col-md-12 col-md-12 col-xs-12">
+                                 <div class="text-border">
+                                    <div class="input-group">
+                                       <div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
+                                       <textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" class="form-control textarea-form-control placeholder-pro mainLoginInput input_message"  id="message" rows="3"></textarea>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <!-- end of text-area row-->
+                           <div class="attach-file collaborative-attach-file">
+                              <div class="col-lg-9 col-md-9 col-sm-9 col-xs-7">
+                                 <input type="file" class="gotham-book input_file-upload collaborative-input_file-upload" id="file-upload">
+                                 <br/><br/>
+                                 <span class="attach-text collaborative-attach-text"><span><img src="/assets/img/talent_acquisition/attach.png"></span><span class="gotham-rounded-bok attach-span clr-white">Attach File</span></span>
+                                 <input type="text"  class="input_file-detail form-control placeholder-pro mainLoginInput"  id="file-detail" readonly="readonly"/>
+                              </div>
+                              <div class="col-lg-3 col-md-3 col-sm-3 col-xs-5 submit-background collaborative-submit-background">
+                                 <button id="submit-btn" type="submit" class="btn">
+                                    <br>
+                                    <div class="submit-resume hr-display" style="margin: 0px auto;">
+                                       <img src="/assets/img/talent_acquisition/submit.png" class="img-submit collaborative-img-submit" >
+                                       <p class="gotham-rounded-bok submit-text placeholder-pro img-para collaborative-submit">SUBMIT</p>
+                                    </div>
+                                 </button>
+                              </div>
+                           </div>
+                           <!-- end of attach-file-->
+                        </form>
+                        <!-- end of form -->
+                     </div>
+                     <!-- end of postresume -->
+                  </div>
+                  <!--end of col-lg-8-->
+               </div>
+            </div>
+            <!-- end of layout for map and form-->
+         </div>
+         <!-- end of tab content-->
+      </div>
+      <!-- end of the bs-example tab-->
+   </main>
+</div>
 {% include footer.html %}
+{% include html-footer.html %}
+

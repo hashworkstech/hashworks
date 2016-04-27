@@ -4,6 +4,8 @@
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
      <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/css/slick/slick-theme.css"/>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/chan.css">
     <link rel="stylesheet" href="/assets/css/main.css">
@@ -11,43 +13,47 @@
     <script src="/assets/js/modernizr/modernizr.js"></script>
     <link rel="shortcut icon" type="image/ico" href="/favicon.ico">
   </head>
+
 {% if page.layout == "default" %}
 <body class="hw-home-body">
-{% else %}
-<body>  
 {% endif %}
+
   {% if page.layout == "default" %}
   <header class="hw-home">
     {% else %}
-    <header>
+    <header class="hw-others">
+  
 {% endif %}
+
+
+
   <!-- navigation-bar -->
-          <nav class="navbar navbar-default">
+          <nav class="nav-desktop navbar navbar-default">
             <div>
               <!-- logo -->
-                <div class="hw-logo">
+                <div class="logo">
                   <a href="/"></a>
                 </div>
               <!-- End of logo -->
 
               <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse" id="hw-header-Nav">
+              <div class="collapse navbar-collapse" id="Hashworks-Nav">
                 <ul class="nav navbar-nav navbar-left">
                  
-                <li class="gotham-rounded-light header-links header-dropdown-link">
+                <li class="gotham-rounded-light header-links dropdown-link">
                    <a id="anchor-portfolio"  href="/portfolio">Portfolio</a>
                     <ul class="dropdown">
-                      <a href="/portfolio/#DataOps"><li class="gotham-rounded-light hw-contact-no Portfolio-first_dropdown">DataOps</li></a>
+                      <a href="/portfolio/#DataOps"><li class="gotham-rounded-light hw-contact-no first_dropdown">DataOps</li></a>
                       <a href="/portfolio/#DevOps"><li class="gotham-rounded-light hw-contact-no">DevOps</li></a>
                       <a href="/portfolio/#DataScience"><li class="gotham-rounded-light hw-contact-no">Data Science</li></a>
                       <a href="/portfolio/#Ui-ux"><li class="gotham-rounded-light hw-contact-no">UX/UI</li></a>
-                      <a href="/portfolio/#Mobility"><li class="gotham-rounded-light hw-contact-no Portfolio-last_dropdown">Mobility</li></a>
+                      <a href="/portfolio/#Mobility"><li class="gotham-rounded-light hw-contact-no last_dropdown">Mobility</li></a>
                     </ul>
                 </li>
                  
-                <li class="gotham-rounded-light header-links header-dropdown-link">
+                <li class="gotham-rounded-light header-links dropdown-link">
                       <a href="/engage_us">Engage Us </a>
-                      <ul class="dropdown hw-header-eu-width">
+                      <ul class="dropdown dropdown-width">
                           <a href="/our_thinking"><li class="gotham-rounded-light hw-contact-no">Our Thinking</li></a>
                           <a href="/collaborative_workforce"><li class="gotham-rounded-light hw-contact-no">Collaborative Workforce</li></a>
                           <a href="/bootcamp"><li class="gotham-rounded-light hw-contact-no">Bootcamps</li></a>
@@ -57,7 +63,7 @@
                       <a href="javascript:void(0);">Case Study</a>
                    </li>
                  </ul>
-                 <span class="header-left-line-animation"></span>                           
+                 <span class="line-animation1" style="overflow: hidden; width: 0px; left: 0;"></span>                           
                 <ul class="nav navbar-nav navbar-right">
                   <li class="gotham-rounded-light header-links">
                     
@@ -71,14 +77,14 @@
                     
                        <a href="/job_board">Job Board</a>
                    </li>
-                   <li class="gotham-rounded-light header-links pointer">
+                   <li class="gotham-rounded-light header-links pointer1">
                     
                        <a href="#">News</a>
                    </li>
 
                   <!-- search bar-->
                   <li>
-                    <div id="hw-google-search" class="hidden">
+                    <div id="credits" class=" hidden ">
 
                         <div id="google-search-div">
                             <gcse:search></gcse:search>
@@ -88,13 +94,75 @@
                    </div>
                   </li>
                   <!-- end  search bar-->
-                  <li><a  href="#hw-google-search" class="hw-search-control btn "><i class="fa fa-search"></i></a></li>
+                  <li><a  href="#credits" class="toggle btn "><i class="fa fa-search"></i></a></li>
                 </ul>
-                  <span class="header-right-line-animation" ></span>
+                  <span class="line-animation" style="overflow: hidden; width: 0px; left: 0;"></span>
                  </li>
                </ul>
-            </div><!-- /.navbar-collapse -->
+
+             </div><!-- /.navbar-collapse -->
            </div><!-- /.container-fluid -->
           </nav>
         <!-- navigation-bar -->
-</header>
+
+    <nav class="nav-mob">
+      <div class="logo">
+        <a href="/"></a>
+      </div>
+      <div id="nav-icon1">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div id="toc" class="on menu-hide" style="right: 0px;">
+      <p id="button1">&#10006;</p>
+        <ul class="hw-menu-list">
+              <!-- search bar-->
+              <li class="srch-content-menu">
+                <div id="credits" class=" hidden ">
+                  <div id="google-search-div">
+                    <gcse:search></gcse:search>
+                    <i class="fa fa-angle-right search-arrow"></i>
+                  </div>
+                </div>
+                <a href="#credits" class="toggle btn srch-btn"><i class="fa fa-search"></i><span class="srch-txt">Search</span></a>
+              </li>
+              <!-- end  search bar-->  
+              <li>
+                  <a class="pf-icon" href="/portfolio"><img class="menu-icon"/>Portfolio</a></li>
+              <li>
+                  <a class="es-icon" href="/engage_us"><img class="menu-icon"/>Engage&nbspUs</a></li>
+              <li class="pointer">
+                  <a class="cs-icon" href="javascript:void(0);"><img class="menu-icon"/>Case&nbspStudy</a></li>
+              <li>
+                  <a class="comp-icon" href="/company"><img class="menu-icon"/>Company</a></li>
+              <li>
+                  <a class="blog-icon" href="/blog"><img class="menu-icon"/>Blog</a></li>
+              <li>
+                  <a class="jb-icon" href="/job_board"><img class="menu-icon"/>Job&nbspBoard</a></li>
+              <li>
+                  <a class="news-icon" href="javascript:void(0);"><img class="menu-icon"/>News</a></li>
+          </ul>
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 social-share-menu-list">
+            <a target="new" class="fa-stack hw-socialshare social-icons" href="https://www.facebook.com/hashworks/">
+            <!-- <span > -->
+              <i class="fa fa-circle-thin fa-stack-2x"></i>
+              <i class="fa fa-facebook fa-stack-1x"></i>
+            <!-- </span> -->
+            </a>
+            <a target="new" class="fa-stack hw-socialshare social-icons" href="https://twitter.com/hashworksco">
+            <!-- <span > -->
+              <i class="fa fa-circle-thin fa-stack-2x"></i>
+              <i class="fa fa-twitter fa-stack-1x"></i>
+            <!-- </span> -->
+            </a>
+            <a target="new" class="fa-stack hw-socialshare social-icons" href="https://www.linkedin.com/company/9228490">
+            <!-- <span > -->
+              <i class="fa fa-circle-thin fa-stack-2x"></i>
+              <i class="fa fa-linkedin fa-stack-1x"></i>
+            <!-- </span> -->
+               </a>
+          </div>
+      </div>
+    </nav>
+</header>  

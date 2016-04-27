@@ -1,23 +1,30 @@
-/*contact*/ 
+/*contact*/
+   
+
     .contact:hover {
         color: #fff;
     }
-    #hw-google-searchs .toggle {
+    .navbar-default .navbar-nav > li > a {
+        color: #040404;
+    }
+    #credits .toggle {
         -webkit-transition: all 0.3s linear;
         -moz-transition: all 0.3s linear;
         -o-transition: all 0.3s linear;
         transition: all 0.3s linear;
     }
 /*End of contact*/
+
 /*header-search*/
-    #hw-google-searchs{
+    #credits{
     width: 200px;
     margin-top: 0px;
     padding-top: 11px;
     overflow: hidden;
     position: relative;
     }
-    #hw-google-searchs .input-group{
+
+    #credits .input-group{
     position: relative;
     display: table;
     border-collapse: separate;
@@ -25,11 +32,13 @@
     border-radius: 7px;
     border: 1px solid #EC297B;
     }
-    #hw-google-searchs input {
+
+    #credits input {
     box-shadow: none 
     background: transparent;
     }
-    #hw-google-searchs .search{
+
+    #credits .search{
     color: #ee2b7b;
     font-size: 20px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
@@ -37,18 +46,29 @@
     border: none;
     padding-top: -27px;
     }
-    #hw-google-searchs .form-control {
+    #credits .form-control {
     background-color: #fff;
     border: none;
     height: 12px;    height: 30px;
     padding: 7px 4px 6px 6px;
     border-radius: 7px;
     }
-    #hw-google-searchs .input-group-addon {
+    #credits .input-group-addon {
         padding: 4px 11px 0px;
     }
 /*End of header-search*/
+
 /*footer*/
+
+    /*homepage header*/
+        footer.hw-home-footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            display: none;
+        }
+    /*End of homepage header*/
+
     .footer{
         height: 75px;
         padding: 0 45px 0;
@@ -58,9 +78,7 @@
         display: -o-flex;
         display: flex;
     }
-    .footer .hw-socialshare:last-child{
-        margin-right: 0px;
-    }
+
     .footer > div {
         display: -webkit-flex;
         display: -moz-flex;
@@ -69,6 +87,7 @@
         display: flex;
         margin: auto;
     }
+
     .footer>div:last-child {
         -webkit-justify-content: -webkite-flex-end;
         -moz-justify-content: -moz-flex-end;
@@ -76,21 +95,21 @@
         -ms-justify-content: -ms-flex-end;
         justify-content: flex-end;
     }
-    .footer .hw-socialshare :last-child {
+
+    .social-icons{
+        margin-right: 35px;
+    }
+
+    .footer .social-icons:last-child {
         margin-right: 0;
     }
+
     .hm-shows-love .social-icons {
         margin-right: 10px;
     }
-    .hw-tab-heading,
-    .hw-socialshare {
-        font-size: 1.25rem; 
-        margin-right: 35px;
-    }
-     .hw-socialshare:hover {
-        color: #ee2b7b;
-    }
 /*footer*/
+
+
 /*carousel*/
     .testimonial {
         display:block;
@@ -130,7 +149,8 @@
         height: 12px;
         margin:1px;
     }
-       .carosel-pos
+
+        .carosel-pos
         {
             margin-top: 80px;
         }
@@ -174,57 +194,66 @@
             text-align: right;
         }
         .textvalign-right-middle {
-        display: inline-block;
-        vertical-align: middle;
-        margin: 0 1px;
-        font-size: 0.875rem;
-        text-align: left;
-        }
-        a.gotham-rounded-bok.blog-a.clr-white:hover,a.gotham-rounded-bok.blog-a.clr-white:hover{
-        outline: none;
-        outline-offset: 0;
-        text-decoration: none;
-        color: #6E6D6D;
-        }
-        div#osb-testimonial-first {
-            padding-top: 54px;
-                margin-top: -30px;
-        }
-        div#ms-testimonial-first {
-            padding-top: 38px;
-                margin-top: -20px;
-        }
-        div#etl-testimonial-first {
-            padding-top: 65px;
-        }
-        div#ad-testimonial-first {
-            padding-top: 40px;
-        }
-        div#ep2-testimonial-first {
-            padding-top: 36px;
-        }
-        div#ep3-testimonial-first {
-            padding-top: 45px;
-        }
-        div#ep4-testimonial-first {
-            padding-top: 63px;
-        }
-        div#mb1-testimonial-first {
-            padding-top: 53px;
-        }
-        div#mb2-testimonial-first {
-            padding-top: 44px;
-                margin-top: -33px;
-        }
-        div#mb3-testimonial-first {
-            padding-top: 29px;
-            margin-top: -37px;
-        }
-            div#mb4-testimonial-first{
-            padding-top: 47px;
-            margin-top: -40px;
-            }
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 1px;
+    font-size: 0.875rem;
+    text-align: left;
+}
+
+
+a.gotham-rounded-bok.blog-a.clr-white:hover,a.gotham-rounded-bok.blog-a.clr-white:hover{
+    outline: none;
+    outline-offset: 0;
+    text-decoration: none;
+    color: #6E6D6D;
+    }
+
+
+
+
+div#osb-testimonial-first {
+    padding-top: 54px;
+        margin-top: -30px;
+}
+div#ms-testimonial-first {
+    padding-top: 38px;
+        margin-top: -20px;
+}
+div#etl-testimonial-first {
+    padding-top: 65px;
+}
+div#ad-testimonial-first {
+    padding-top: 40px;
+}
+div#ep2-testimonial-first {
+    padding-top: 36px;
+}
+div#ep3-testimonial-first {
+    padding-top: 45px;
+}
+div#ep4-testimonial-first {
+    padding-top: 63px;
+}
+div#mb1-testimonial-first {
+    padding-top: 53px;
+}
+div#mb2-testimonial-first {
+    padding-top: 44px;
+        margin-top: -33px;
+}
+div#mb3-testimonial-first {
+    padding-top: 29px;
+        margin-top: -37px;
+}
+div#mb4-testimonial-first {
+    padding-top: 47px;
+        margin-top: -40px;
+}
+
+
         /*carousel*/
+
 /* drop down */
     .dropdown:hover {
         visibility: visible !important;
@@ -236,7 +265,8 @@
         -ms-transition: color .5s ease 0s;
         -o-transition: color .5s ease 0s;
         transition: color .5s ease 0s;
-        cursor: pointer;      
+        cursor: pointer;
+        
     }
     ul li ul.dropdown {
         background-color: rgba(12, 200, 219, 0.6);
@@ -250,8 +280,13 @@
         -moz-transition: background-color .5s ease 0s;
         -ms-transition: background-color .5s ease 0s;
         -o-transition: background-color .5s ease 0s;
-        transition: background-color .5s ease 0s;        
+        transition: background-color .5s ease 0s;
+        
     }
+    .dropdown-width {
+        width: 200px !important;
+    }
+   
     ul li ul.dropdown a{
         text-align: left;
         display: block;
@@ -259,13 +294,20 @@
         line-height: 1.8;
         border-bottom: 1px solid #fff;
     }
+
     ul li ul.dropdown a:last-child {
         border: none;
     }
+
     ul li ul.dropdown a:hover {
         visibility: visible;
         background-color: rgba(12, 200, 219, 1);
     }
-    .hw-header-eu-width{
-        width:  200px !important;
+
+    .hw-socialshare:hover {
+        color: #ee2b7b;
     }
+  
+
+    
+    

@@ -2,6 +2,37 @@
   /*----------------------------------------------------------------------
   portfolio pages
   -----------------------------------------------------------------------*/
+
+  .cust-hap {
+    left: 50%;
+    position: absolute;
+    top: 40%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+
+  .cust-hap .blog-main,
+  .cust-hap .blog-content,
+  .cust-hap .hm-text {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -o-flex;
+    display: -ms-flex;
+    display: flex;
+  }
+
+  .cust-hap .hm-text {
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -o-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
   .grey-top-port {
       background: url(../img/grey_top.png) no-repeat;
       height: 101px;
@@ -57,6 +88,7 @@
   div#shell{
     z-index: 1;
     }
+
   img#plax-sphere-1 {
       height: 330px;
       left: -89px;
@@ -128,6 +160,7 @@
     text-transform: uppercase;
      border-radius: 0;
   }
+
   .btn-bolt:hover,
   .btn-bolt:focus,
   .btn-bolt:active,.btn-health:hover{
@@ -135,10 +168,12 @@
     color: #fff;
     border:1px solid #fff;
     }
+
   .project-name {
     margin-top: 0px;
     font-size:30px;
   }
+
   .nav-options {
     list-style-type: none;
     margin: 10px auto 15px;
@@ -183,6 +218,7 @@
     font-family: 'gotham';
     font-size: 18px;
   }
+
   #navigator {
     padding: 50px 0 0;
   }
@@ -282,7 +318,7 @@
       margin-top: -162px;
     }
   }
- /* @media screen and (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     #navigator .col-sm-8, #content-logo h3, #content-logo p, #content-logo-bol h3, #content-logo-bol p {
     text-align:center;
     }
@@ -304,6 +340,7 @@
     .btn-bolt, .btn-health {
       display: table;
     }
+
     #footer {
       margin-top: -159px;
       padding: 175px 0 10px;
@@ -333,9 +370,10 @@
       margin: 60px auto;
       display: table;
     }
-  }*/
+  }
   /*Media query for portfolio page*/
-  @media screen and (max-width:600px){
+
+  @media screen and (max-width:500px){
     #navigator .col-sm-8{
     text-align:center;
     }
@@ -366,4 +404,5 @@
   /*----------------------------------------------------------------------
   portfolio pages
   -----------------------------------------------------------------------*/
+
 /*End of customer happiness section*/
