@@ -3585,12 +3585,12 @@ img#big-ipad {
 }
 @media screen and (max-height: 1280px){
 	.hw-btm-content{
-		padding-top: 190px;
+		padding-top: 180px;
 	}
 }
 @media screen and (max-height: 1024px){
 	.hw-btm-content{
-		padding-top: 65px;
+		padding-top: 55px;
 	}
 }
 @media screen and (max-width: 1024px) and (max-height: 768px){
@@ -3598,17 +3598,17 @@ img#big-ipad {
 		max-width: 550px;
 	}
 	.hw-btm-content{
-		padding-top: 65px;
+		padding-top: 55px;
 	}
 }
 @media screen and (max-height: 640px){
 	.hw-btm-content{
-		padding-top: 65px;
+		padding-top: 55px;
 	}
 }
 @media screen and (max-height: 480px){
 	.hw-btm-content{
-		padding-top: 25px;
+		padding-top: 15px;
 	}
 }
 @media screen and (max-width: 640px) and (max-height: 360px){
@@ -3620,14 +3620,14 @@ img#big-ipad {
 		font-size: 10px;
 	}
 	.hw-btm-content{
-		padding-top: 30px;
+		padding-top: 20px;
 	}
 }
 @media screen and (max-height: 320px) and (max-width: 480px){
 	.hw-btm-content{
 		font-size: 10px;
 		padding-bottom: 10px;
-    	padding-top: 25px;
+    	padding-top: 15px;
 	}
 	.hw-git-btn{
 		font-size: 11px;
