@@ -6610,24 +6610,22 @@ text-align: inherit;
 
 
 
-@media screen and (max-width: 1199px){
-	@media only screen and (orientation:landscape){
-	  .hwmt {  
-	    height: 100vw;
-	    -webkit-transform: rotate(90deg);
-	    -moz-transform: rotate(90deg);
-	    -o-transform: rotate(90deg);
-	    -ms-transform: rotate(90deg);
-	    transform: rotate(90deg);
-	  }
-	}
-	@media only screen and (orientation:portrait){
-	  .hwmt {  
-		-webkit-transform: rotate(0deg);
-		-moz-transform: rotate(0deg);
-		-o-transform: rotate(0deg);
-		-ms-transform: rotate(0deg);
-		transform: rotate(0deg);
-	  }
-	}
+@media only screen and (orientation:landscape) and (max-width: 1199px){
+  .hwmt {  
+    height: 100vw;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+}
+@media only screen and (orientation:portrait) and (max-width: 1199px){
+  .hwmt {  
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	transform: rotate(0deg);
+  }
 }
