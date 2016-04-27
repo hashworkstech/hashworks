@@ -3405,7 +3405,7 @@ img#big-ipad {
 	    background-position: 0 -31px;
 	}
 	#button1{
-		color: #fff;
+		color: #fff !important;
 	}
 	#nav-hamburger-icon span, #nav-icon3 span,#nav-icon1 span, #nav-icon4 span{
 		background-color: #fff;
@@ -3585,12 +3585,12 @@ img#big-ipad {
 }
 @media screen and (max-height: 1280px){
 	.hw-btm-content{
-		padding-top: 180px;
+		padding-top: 170px;
 	}
 }
 @media screen and (max-height: 1024px){
 	.hw-btm-content{
-		padding-top: 55px;
+		padding-top: 50px;
 	}
 }
 @media screen and (max-width: 1024px) and (max-height: 768px){
@@ -3598,17 +3598,17 @@ img#big-ipad {
 		max-width: 550px;
 	}
 	.hw-btm-content{
-		padding-top: 55px;
+		padding-top: 50px;
 	}
 }
 @media screen and (max-height: 640px){
 	.hw-btm-content{
-		padding-top: 55px;
+		padding-top: 50px;
 	}
 }
 @media screen and (max-height: 480px){
 	.hw-btm-content{
-		padding-top: 15px;
+		padding-top: 5px;
 	}
 }
 @media screen and (max-width: 640px) and (max-height: 360px){
@@ -3620,14 +3620,14 @@ img#big-ipad {
 		font-size: 10px;
 	}
 	.hw-btm-content{
-		padding-top: 20px;
+		padding-top: 10px;
 	}
 }
 @media screen and (max-height: 320px) and (max-width: 480px){
 	.hw-btm-content{
 		font-size: 10px;
 		padding-bottom: 10px;
-    	padding-top: 15px;
+    	padding-top: 5px;
 	}
 	.hw-git-btn{
 		font-size: 11px;
@@ -6604,3 +6604,30 @@ text-align: inherit;
 }
 
 /*job board css ends*/
+
+
+
+
+
+
+@media screen and (max-width: 1199px){
+	@media only screen and (orientation:landscape){
+	  .hwmt {  
+	    height: 100vw;
+	    -webkit-transform: rotate(90deg);
+	    -moz-transform: rotate(90deg);
+	    -o-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	    transform: rotate(90deg);
+	  }
+	}
+	@media only screen and (orientation:portrait){
+	  .hwmt {  
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	  }
+	}
+}

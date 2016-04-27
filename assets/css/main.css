@@ -3405,7 +3405,7 @@ img#big-ipad {
 	    background-position: 0 -31px;
 	}
 	#button1{
-		color: #fff;
+		color: #fff !important;
 	}
 	#nav-hamburger-icon span, #nav-icon3 span,#nav-icon1 span, #nav-icon4 span{
 		background-color: #fff;
@@ -6604,3 +6604,30 @@ text-align: inherit;
 }
 
 /*job board css ends*/
+
+
+
+
+
+
+@media screen and (max-width: 1199px){
+	@media only screen and (orientation:landscape){
+	  .hwmt {  
+	    height: 100vw;
+	    -webkit-transform: rotate(90deg);
+	    -moz-transform: rotate(90deg);
+	    -o-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	    transform: rotate(90deg);
+	  }
+	}
+	@media only screen and (orientation:portrait){
+	  .hwmt {  
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+	  }
+	}
+}
