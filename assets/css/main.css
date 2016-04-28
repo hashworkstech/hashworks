@@ -2544,7 +2544,7 @@ nav#toc ul , nav #toc ul {
   width: 23px;
   height: 45px;
   top: 0;
-/*  position: relative;*/
+  position: relative;
   margin: 2px 20px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -4006,6 +4006,7 @@ img#big-ipad {
 	}
 	.hw-home-nav-header {
 	    position: absolute;
+	    width: 100%
 	}
 	.nav-mob{
 		background-color: #ee2b7b;
