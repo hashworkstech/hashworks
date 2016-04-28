@@ -6014,6 +6014,9 @@ button.close {
   padding-left: 30px;
   text-align: justify; }
 
+.pf-vh:focus {
+  outline: none; }
+
 @media screen and (max-width: 767px) {
   .pvh-title {
     font-size: 12px; }
