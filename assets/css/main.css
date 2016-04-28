@@ -4919,6 +4919,9 @@ img#big-ipad {
 }
 
 @media screen and (max-width: 767px) {
+	 .bc-desk .upskill-cont-filter:hover .hw-upskill-cont {  
+    border-color: #0ab4c5;
+  }
   .bootcamp-ribbon-div{
     width: 350px;
   }

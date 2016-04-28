@@ -247,11 +247,14 @@ var count = $('.f-option').length;
  });
  }
 
- $(".job-devops-heading").click(function(){
-  $('.job-board-content').show();
+$(".devopss-fa-arrow-left").click(function(){
   $('.job-detailed-content').hide();
-   $('.apply-full-div').hide();
-  });
+  $('.jobs-tab-header').show();
+  $('.job-board-content').show();
+  $('#pager').show();
+  $('.hw-started1').show();
+  $('.apply-full-div').hide();
+ });
 
 // $(function(){
 // /*whitepapers Pagination*/
@@ -269,9 +272,9 @@ var count = $('.f-option').length;
 // });
 
 // });
- $(".devopss-fa-arrow-left").click(function(){
-    window.history.back();
- });
+  $(".devopss-fa-arrow-left1").click(function(){
+  window.history.back();
+  });
 
  });
 
