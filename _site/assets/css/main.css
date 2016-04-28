@@ -3534,6 +3534,11 @@ img#big-ipad {
 		margin: 0;
 	}
 }
+@media screen and (orientation:landscape) {
+  .hwmt {
+    overflow: scroll !important;
+  }
+}
 @media screen and (max-width: 767px){
 	.hw-mob-header {
 	    font-size: 22px;
@@ -3620,7 +3625,7 @@ img#big-ipad {
 		font-size: 10px;
 	}
 	.hw-btm-content{
-		padding-top: 10px;
+		padding-top: 40px;
 	}
 }
 @media screen and (max-height: 320px) and (max-width: 480px){
@@ -6615,25 +6620,4 @@ select#cat,select#author {
     -moz-appearance: none;
     text-indent: 1px;
     text-overflow: '';
-}
-
-
-@media (max-height: 480px) and (min-width: 480px) and (max-width: 600px) { 
-    .hwmt{
-        -webkit-transform: rotate(-90deg);
-           -moz-transform: rotate(-90deg);
-            -ms-transform: rotate(-90deg);
-             -o-transform: rotate(-90deg);
-                transform: rotate(-90deg);
-        -webkit-transform-origin: left top;
-           -moz-transform-origin: left top;
-            -ms-transform-origin: left top;
-             -o-transform-origin: left top;
-                transform-origin: left top;
-        width: 100%; /*this is the iPhone screen width.*/
-        position: absolute;
-        top: 100%;
-            left: 0;
-            height: 100vh;
-    }
 }
