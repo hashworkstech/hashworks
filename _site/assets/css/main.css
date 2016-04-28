@@ -1537,7 +1537,7 @@ width: 100%;
 		cursor:pointer;
 	}
 	.thinking-height2 {
-		height: 38.7vh;
+		height: 325px;
 	}
 	.thinking-height:hover {
 		background-color: #e8e8e8;
@@ -1550,7 +1550,7 @@ width: 100%;
 	}
 #div-top-left{
 	    padding-top: 15px;
-	height: 38.7vh;	
+	height: 325px;	
 	position: absolute;
 	overflow: hidden;
 	padding-left: 0px; 
@@ -1560,7 +1560,7 @@ width: 100%;
 }
 #div-top-right{
 	    padding-top: 15px;
-	height: 38.7vh;	
+	height: 325px;	
 	position: absolute;
 	overflow: hidden;
 	padding-left: 0px; 
@@ -1571,7 +1571,7 @@ width: 100%;
 }
 #div-bottom-right{
 	    padding-top: 15px;
-	height: 38.7vh;	
+	height: 325px;	
 	position: absolute;
 	overflow: hidden;
 	padding-left: 0px; 
@@ -1581,7 +1581,7 @@ width: 100%;
 }
 #div-bottom-left{
 	    padding-top: 15px;
-	height: 38.7vh;	
+	height: 325px;	
 	position: absolute;
 	overflow: hidden;
 	padding-left: 0px; 
@@ -2544,7 +2544,7 @@ nav#toc ul , nav #toc ul {
   width: 23px;
   height: 45px;
   top: 0;
-/*  position: relative;*/
+  position: relative;
   margin: 2px 20px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -4006,6 +4006,7 @@ img#big-ipad {
 	}
 	.hw-home-nav-header {
 	    position: absolute;
+	    width: 100%
 	}
 	.nav-mob{
 		background-color: #ee2b7b;
@@ -5881,7 +5882,7 @@ h2 {
     }
    /* .#div-bottom-left,.div-top-left,.div-top-right,.div-bottom-right
     {
-        height: 38.7vh !important;
+        height: 325px !important;
     }*/
     .tab-view{
         display: block;
