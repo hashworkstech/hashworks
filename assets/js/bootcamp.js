@@ -228,13 +228,13 @@ $('.apply-full-div').hide();
 var count = $('.f-option').length;
     for(var i=1; i<=count; i++){
 
- $('#jt-'+i).on('click',function(){
+ $('#f-option'+i).on('click',function(){
   var id=$(this).attr('id');
-  var sub=id.substring(3,4);
+  var sub=id.substring(8,9);
   for(var j=1; j<=count;j++){
     $('#jd-'+j).hide();
   }
-  if($(this).siblings('#f-option'+sub).prop('checked')===true) {
+  // if($(this).siblings('#f-option'+sub).prop('checked')===true) {
     
   $('#jd-'+sub).show();
   $('.jobs-tab-header').hide();
@@ -243,7 +243,7 @@ var count = $('.f-option').length;
   $('#form-map-div').hide();
   $('.hw-started1').hide();
   $('.apply-full-div').show();
-  }
+  // }
  });
  }
 
