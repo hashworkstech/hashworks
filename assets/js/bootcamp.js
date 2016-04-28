@@ -230,7 +230,7 @@ var count = $('.f-option').length;
 
  $('#f-option'+i).on('click',function(){
   var id=$(this).attr('id');
-  var sub=id.substring(8,9);
+  var sub=id.substring(8);
   for(var j=1; j<=count;j++){
     $('#jd-'+j).hide();
   }
