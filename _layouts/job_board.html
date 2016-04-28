@@ -268,7 +268,7 @@
 {% for job in items %}
   <li class="pagination-list">
   <input type="radio" id="f-option{{forloop.index}}" name="selector" class="f-option" value="">
-    <label for="f-option{{forloop.index}}" class="job-title">{{job.job_title}}</label>
+    <label for="f-option{{forloop.index}}" class="job-title"><span>{{job.job_title}}</span></label>
 
  <div class="job-table" id="jt-{{forloop.index}}">
    <div class="job-row"><span class="job-table-cell"><img src="/assets/img/job-board/job-exp.png"></span><span class="job-table-cell">{{job.experience}}</span></div>

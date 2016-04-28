@@ -112,7 +112,7 @@
 		color: #0ab4c5;
 		font-size: 20px;
 	}
-	input[type=radio] {
+	/*input[type=radio] {
 	    display:none;
 	}
 	input[type="radio"]:checked + label::before {
@@ -137,5 +137,38 @@
 	    margin-right: 12px;
 	    vertical-align: middle;
 	    width: 21px;
+	}*/
+	.pagination-list input[type="radio"] {
+	  border: 0; 
+	  clip: rect(0 0 0 0); 
+	  height: 1px;
+	  margin: -1px; 
+	  overflow: hidden; 
+	  padding: 0; 
+	  position: absolute; 
+	  width: 1px;
+	}
+
+	.pagination-list input[type="radio"] + label span {
+	  display: block;
+	}
+
+	/* the basic, unchecked style */
+	.pagination-list input[type="radio"] + label span:before {
+	  content: '';
+	  display: inline-block;
+	  width: 10px;
+	  height: 10px;
+	  vertical-align: -0.25em;
+	  border-radius: 1em;
+	  border: 3px solid #fff;
+	  box-shadow: 0 0 0 2px #acacac;
+	  margin-right: 10px;
+	}
+
+	/* the checked style using the :checked pseudo class */
+	.pagination-list input[type="radio"]:checked + label span:before {
+	  background: #ee2b7b;
+	  box-shadow: 0 0 0 2px #acacac;
 	}
 }
