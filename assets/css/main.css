@@ -6603,11 +6603,10 @@ text-align: inherit;
 	.pagination-list input[type="radio"] + label span:before {
 	  content: '';
 	  display: inline-block;
-	  width: 10px;
-	  height: 10px;
-	  vertical-align: -0.25em;
+	  width: 13px;
+	  height: 13px;
 	  border-radius: 1em;
-	  border: 3px solid #fff;
+	  border: 2px solid #fff;
 	  box-shadow: 0 0 0 2px #acacac;
 	  margin-right: 10px;
 	}
