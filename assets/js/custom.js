@@ -1902,6 +1902,7 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
     setTimeout(slick_dots,1000);
 
     $(window).resize(function() {
+      function slick_resize(){        
         var slick_h = $('.hw-hompage-banner').height();
         var th;
         // if (screen.width > 350) {
@@ -1911,8 +1912,9 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
         // }
 
         $('.hwmt .slick-dots').css('top', th+'px');
+      }
+      setTimeout(slick_resize,1500);
     });
-    setTimeout(slick_dots,1000);
     $('.pf-vertical-header').slick({
         dots: false,
         infinite: false,
