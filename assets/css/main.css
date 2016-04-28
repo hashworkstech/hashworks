@@ -3582,7 +3582,8 @@ img#big-ipad {
     	padding-top: 25px;
 	}
 	.hw-git-btn{
-		font-size: 11px;
+		font-size: 8px;
+		width: 150px;
 	}
 	.hw-mob-header {
 	    font-size: 18px;
@@ -3613,7 +3614,7 @@ img#big-ipad {
 }
 @media screen and (max-height: 480px){
 	.hw-btm-content{
-		padding-top: 5px;
+		padding-top: 25px;
 	}
 }
 @media screen and (max-width: 640px) and (max-height: 360px){
@@ -3632,11 +3633,11 @@ img#big-ipad {
 	.hw-btm-content{
 		font-size: 10px;
 		padding-bottom: 10px;
-    	padding-top: 5px;
+    	padding-top: 25px;
 	}
 	.hw-git-btn{
-		font-size: 11px;
-    	width: 145px;
+		font-size: 8px;
+    	width: 130px;
     	padding: 5px 20px;
 	}
 }

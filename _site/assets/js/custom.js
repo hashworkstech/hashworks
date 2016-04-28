@@ -1891,11 +1891,11 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
     function slick_dots(){        
       var slick_h = $('.hw-hompage-banner').height();
       var th;
-      if (screen.width > 350) {
-          th = slick_h + 70;
-      } else {
+      // if (screen.width > 350) {
           th = slick_h + 60;
-      }
+      // } else {
+      //     th = slick_h + 60;
+      // }
       $('.hwmt .slick-dots').css('top', th+'px');
     }
 
@@ -1904,14 +1904,15 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
     $(window).resize(function() {
         var slick_h = $('.hw-hompage-banner').height();
         var th;
-        if (screen.width > 350) {
-            th = slick_h + 70;
-        } else {
+        // if (screen.width > 350) {
             th = slick_h + 60;
-        }
+        // } else {
+        //     th = slick_h + 60;
+        // }
 
         $('.hwmt .slick-dots').css('top', th+'px');
     });
+    setTimeout(slick_dots,1000);
     $('.pf-vertical-header').slick({
         dots: false,
         infinite: false,
