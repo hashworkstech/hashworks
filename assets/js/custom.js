@@ -199,7 +199,7 @@ $(".apst-wrapper").hide();
         $(document).scroll(function(){
           var main = $(this).scrollTop();
 
-          if(main >= 51) {
+          if(main >= 10) {
             if(!$('header').hasClass('hw-home')) {
               $("header nav").addClass('hw-fixed-header');
               $("main").css("margin-top","70px");

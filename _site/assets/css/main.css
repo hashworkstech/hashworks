@@ -3955,8 +3955,8 @@ img#big-ipad {
 	.hw-menu-list li span.menu-icon{
 	    background-repeat: no-repeat;
 	    display: inline-block;
-	    height: 24px;
-	    width: 24px;
+	    height: 35px;
+	    width: 35px;
 	    background-size: contain;
 	    float: left;
 	}
@@ -4146,6 +4146,10 @@ img#big-ipad {
 	}
 }
 @media screen and (max-width: 767px){
+	.hw-menu-list li span.menu-icon{
+	    height: 24px;
+	    width: 24px;
+	}
 	nav#toc ul li a, nav #toc ul li a{
 		color: white;
 	    font: normal 14px/25px "gotham-rounded-light";
