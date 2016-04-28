@@ -6480,7 +6480,11 @@ text-align: inherit;
 .jb-mob{
 	display: none;
 }
-
+@media screen and (max-width: 1199px){
+	.jb-desk-tab > main{
+		margin-top: 20px;
+	}
+}
 @media screen and (max-width:767px){
 	.jb-desk-tab{
 		display: none;

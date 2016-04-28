@@ -668,7 +668,7 @@ function jobPostSplitter(){
   $('table.job-table').each(function() {
     $('.job-table').next(".pager").remove();
     var currentPage = 0;
-    var numPerPage = 5;
+    var numPerPage = 15;
     var $table = $(this);
     $table.bind('repaginate', function() {
         $table.find('tbody .shown-item').hide().slice(currentPage * numPerPage, (currentPage + 1) * numPerPage).show();
