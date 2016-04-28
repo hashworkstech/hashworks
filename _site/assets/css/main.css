@@ -2539,7 +2539,6 @@ nav#toc ul , nav #toc ul {
 
 #nav-icon1 {
 	float: right;
-	position: fixed;
     right: 0px;
     z-index: 1;
   width: 23px;
@@ -4020,8 +4019,7 @@ img#big-ipad {
 		padding: 10px 15px 10px;
 	}
 	.nav-mob #nav-icon1{
-		margin: 0 20px;
-		top: -3px;
+		margin: -3px 20px;
 	}
 	.nav-mob.hw-fixed-header {
 	    border: medium none;
