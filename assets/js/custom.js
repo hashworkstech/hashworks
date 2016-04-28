@@ -668,7 +668,13 @@ function jobPostSplitter(){
   $('table.job-table').each(function() {
     $('.job-table').next(".pager").remove();
     var currentPage = 0;
-    var numPerPage = 15;
+    var numPerPage;
+    if (screen.width>1199) {
+      numPerPage = 5;
+    }
+    else{
+      numPerPage = 15;
+    }
     var $table = $(this);
     $table.bind('repaginate', function() {
         $table.find('tbody .shown-item').hide().slice(currentPage * numPerPage, (currentPage + 1) * numPerPage).show();
