@@ -1537,7 +1537,7 @@ width: 100%;
 		cursor:pointer;
 	}
 	.thinking-height2 {
-		height: 314px;
+		height: 270px;
 	}
 	.thinking-height:hover {
 		background-color: #e8e8e8;
@@ -1550,7 +1550,7 @@ width: 100%;
 	}
 #div-top-left{
 	    padding-top: 15px;
-	height: 314px;	
+	height: 270px;	
 	position: absolute;
 	overflow: hidden;
 	padding-left: 0px; 
@@ -1560,7 +1560,7 @@ width: 100%;
 }
 #div-top-right{
 	    padding-top: 15px;
-	height: 314px;	
+	height: 270px;	
 	position: absolute;
 	overflow: hidden;
 	padding-left: 0px; 
@@ -1571,7 +1571,7 @@ width: 100%;
 }
 #div-bottom-right{
 	    padding-top: 15px;
-	height: 314px;	
+	height: 270px;	
 	position: absolute;
 	overflow: hidden;
 	padding-left: 0px; 
@@ -1581,7 +1581,7 @@ width: 100%;
 }
 #div-bottom-left{
 	    padding-top: 15px;
-	height: 314px;	
+	height: 270px;	
 	position: absolute;
 	overflow: hidden;
 	padding-left: 0px; 
@@ -4332,7 +4332,7 @@ img#big-ipad {
 	}
 	.blog-grid li h3 {
 	    color: #ee2b7b;
-	    font-size: 16px;
+	    font-size: 20px;
 	    margin-top: 15px;
 	    padding-bottom: 0px;
 	    text-align: center;
@@ -4341,7 +4341,7 @@ img#big-ipad {
 	    font-size: 14px;
 	    line-height: 22px;
 	    padding: 0 45px;
-	    text-align: left;
+	    text-align: center;
 	    color: #000;
 	}
 	.blog-grid .filters select {
@@ -4538,7 +4538,7 @@ img#big-ipad {
 		text-align: left;
 	}
 	.blog-details .blog-content {
-	    padding: 20px 15px 0 5px;
+	    padding: 20px 0px 0 0px;
 	}
 	.blog-details .hw-para{
 		font-size: 16px;
@@ -5498,11 +5498,11 @@ img#big-ipad {
         display: none;
     }
     #div-top-left,#div-bottom-right,#div-bottom-left,#div-top-right{
-        min-height: 314px !important;
+        min-height: 270px !important;
     }
     .thinking-height2{
-        min-height: 314px;
-        max-height: 314px;
+        min-height: 270px;
+        max-height: 270px;
     }
      
     .es-line {
@@ -5557,6 +5557,34 @@ img#big-ipad {
         }
 }
 @media screen and (min-width:768px) and (max-width: 1199px) {
+	.job-margin{
+		font-weight: lighter;
+    	line-height: 18px;
+    	margin: 30px 48px 10px;
+	}
+	.col-lg-6.col-md-6.col-sm-6.col-xs-8.bootcamp-clearfix {
+	    padding-left: 15px;
+	    padding-right: 0;
+	}
+	.bc-tab-container{
+		width: 100%;
+		padding: 0 80px;
+	}
+	.case-studies-label-text.font-weight-lighter.bootcamp-margin-right {
+	    font-size: 14px;
+	}
+	.bootcamp-ribbon-div {
+		padding: 0px;
+	}
+	.collobo-footer-division{
+    	padding: 0px;
+    }
+    .fa.fa-times.job-close.job-close-1{
+    	display: none !important;
+    }
+	.c-flex-1{
+		padding-bottom: 20px;
+	}
 	.ot-tab-container{
 		width: 100%;
 		 padding: 0 76px;
@@ -5708,6 +5736,9 @@ img#big-ipad {
 }
 
 @media screen and (min-width:320px) and (max-width: 767px){
+	.fa.fa-times.job-close.job-close-1{
+    	display: block !important;
+    }
     .mob-busval-show .hw-font-heading{
         color: #000;
         font-family:"gotham-rounded-light";
@@ -5911,7 +5942,20 @@ h2 {
     /*.our-thinking-responsive{
         display: none;
     }*/
-    .hw-font-heading {
+    .jobs-tab-content{
+    	width: 100%;
+    	padding: 0 35px;
+    }
+    .text-justify.bootcamp-hw-tab-para {
+	    font-size: 10px;
+	}
+    .bootcamp-hw-tab-heading{
+    	font-size: 14px;
+    }
+    .hw-upskilling-details .row > div {
+	    margin: 28px 0;
+	}
+	.hw-font-heading {
     	margin-top: 48px;
     }
     .our-thinking-responsive .nav li{
@@ -5919,7 +5963,7 @@ h2 {
     }
    /* .#div-bottom-left,.div-top-left,.div-top-right,.div-bottom-right
     {
-        height: 314px !important;
+        height: 270px !important;
     }*/
     .tab-view{
         display: block;
@@ -6408,6 +6452,22 @@ h2 {
 }
 #ups-devops .fa-3x{
 	color: #343434;
+}
+.fa.fa-angle-right.devops-fa-angle-right {
+	    display: block;
+}
+.panel-body{
+	padding-bottom: 0px;
+}
+.hw-works p{
+	margin-bottom: 0px;
+}
+.dev-container{
+	width:100%;
+	padding: 0 66px;
+}
+.fa.fa-angle-right.devops-fa-angle-right{
+	font-size: 16px;
 }
 }
 @media screen and (max-width: 767px) {
