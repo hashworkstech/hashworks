@@ -952,7 +952,7 @@ html {
 /* end of it services*/	
 	  
 	.line {
-		height: 2px;
+		height: 3px;
 		width: 10%;
 		background-color: #0ab4c5;
 		left: 50%;
@@ -3644,9 +3644,6 @@ img#big-ipad {
 /* Start : Portfolio.css */
 
 @media screen and (max-width: 1199px){
-	.hw-tools-list {
-	    padding: 20px 20px 0 20px;
-	}
 	.portfolio-custom-btn{
 		font-family: "gotham-rounded-light";
 		text-transform: none;
@@ -3873,6 +3870,10 @@ img#big-ipad {
 	}
 }
 @media screen and (max-width: 1199px){
+	.resp-pf .portfolio-client-backgrnd {
+	    background-color: #ddd;
+	    padding-bottom: 20px;
+	}
 	.comp-mob{
 		display: block;
 	}
@@ -5556,6 +5557,18 @@ img#big-ipad {
         }
 }
 @media screen and (min-width:768px) and (max-width: 1199px) {
+	.pf-mob {
+	    margin: 40px auto 0;
+	}
+	.our-heading-custom-btn {
+	    margin-left: 6%;
+	}
+	.ribon-font{
+		font-size: 18px;
+	}
+	.hw-tools-list {
+	    padding: 20px 76px 0 76px;
+	}
 	.pf-mob.container {
 	    padding: 0 76px;
 	    width: 100%;
@@ -5604,6 +5617,7 @@ img#big-ipad {
     }
     .es-haeding{
          font-size: 32px;
+         margin-top: 48px;
     }
     .es-heading-text{
         font-size: 20px;
@@ -5661,7 +5675,6 @@ img#big-ipad {
     }
     .our-heading-custom-btn {
         font-size: 12px;
-        padding: 6px;
         margin-right: 0px;
     }
     .thinking-height{
@@ -5892,6 +5905,9 @@ h2 {
     /*.our-thinking-responsive{
         display: none;
     }*/
+    .hw-font-heading {
+    	margin-top: 48px;
+    }
     .our-thinking-responsive .nav li{
        color: #5f5f5f; 
     }
