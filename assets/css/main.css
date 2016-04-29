@@ -5552,13 +5552,17 @@ img#big-ipad {
         }
 }
 @media screen and (min-width:768px) and (max-width: 1199px) {
-        #our-thinking-responsive .gotham-rounded-light.hw-copyright.clr-black {
-    display: block;
-}
+	.container.tab-section {
+	    padding: 0 50px;
+	    width: 100%;
+	}
+     #our-thinking-responsive .gotham-rounded-light.hw-copyright.clr-black {
+	    display: block;
+	}
    .es-desktop-view .img-outer > img {
-    max-width: 100%;
-    width: 100%;
-}
+    	max-width: 100%;
+    	width: 100%;
+	}
     .es-desktop-view .img-center{
         margin-left: 0;
     }
@@ -5795,9 +5799,12 @@ h2 {
     z-index: 20;
     color: #000;
 }
-#accordion label:hover {
+/*#accordion label:hover {
     background: #cccccc;
-}
+}*/
+/*.es-label-section-1:hover{
+	background: #cccccc;
+}*/
 
 #accordion input:checked + label {
     border-bottom-right-radius: 0;

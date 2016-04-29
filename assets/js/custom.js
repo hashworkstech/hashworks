@@ -2051,17 +2051,17 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
         });
       }
      
-     $('.es-label-section-1').on('click',function(){
+     $('#check-1').on('click',function(){
         $('#check-1').attr('checked', true);
         $('#check-2').attr('checked', false);
         $('#check-3').attr('checked', false);
      });
-      $('.es-label-section-2').on('click',function(){
+      $('#check-2').on('click',function(){
         $('#check-1').attr('checked', false);
         $('#check-2').attr('checked', true);
         $('#check-3').attr('checked', false);
      });
-       $('.es-label-section-3').on('click',function(){
+       $('#check-3').on('click',function(){
         $('#check-1').attr('checked', false);
         $('#check-2').attr('checked', false);
         $('#check-3').attr('checked', true);
