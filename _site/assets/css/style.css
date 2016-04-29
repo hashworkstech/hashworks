@@ -6020,7 +6020,8 @@ button.close {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .pvd-data {
     font-weight: lighter;
-    line-height: 18px; }
+    line-height: 18px;
+    font-family: "gotham-rounded-light"; }
 
   .pvh-title {
     padding: 30px 0 14px; } }
@@ -6032,7 +6033,8 @@ button.close {
     font-size: 12px; }
 
   .pvd-data {
-    font-size: 10px; } }
+    font-size: 10px;
+    font-family: "gotham-rounded-light"; } }
 .navbar, .navbar-inverse {
   border-radius: 0;
   border: none;
