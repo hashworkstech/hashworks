@@ -538,16 +538,17 @@ $(".apst-wrapper").hide();
               });
           }
     }
+    if(screen.width > 1199){      
+      $('.nav-tabs > li a').click(function(){
+          var navtab = $(this).parents('.nav-tabs').offset().top - 95;
+            $('html, body').animate({
+              scrollTop: navtab}, 1000, 'linear');
+      });
 
-    $('.nav-tabs > li a').click(function(){
-        var navtab = $(this).parents('.nav-tabs').offset().top - 95;
-          $('html, body').animate({
-            scrollTop: navtab}, 1000, 'linear');
-    });
-
-    $(".nav-tabs a").click(function(){
-        $(this).tab('show');
-    });
+      $(".nav-tabs a").click(function(){
+          $(this).tab('show');
+      });
+    }
 
 
 
