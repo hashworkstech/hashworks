@@ -173,6 +173,16 @@ border-radius: 5px;
     .pf-vh:focus{
         outline: none;
     }
+    @media screen and (min-width:768px) and (max-width: 1199px){
+        .pvd-data{
+        font-weight: lighter;
+        line-height: 18px;
+        }
+        .pvh-title{
+        padding: 30px 0 14px;
+        }
+
+    }
 @media screen and (max-width:767px){
     .pvh-title{
         font-size:12px;
@@ -195,7 +205,6 @@ border-radius: 5px;
     display: inline;
     color: white;
 }
-
 .navbar-inverse .navbar-nav > li > a {
     color: #ffffff;
     font-family: Lato;

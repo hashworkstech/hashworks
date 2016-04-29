@@ -3644,6 +3644,9 @@ img#big-ipad {
 /* Start : Portfolio.css */
 
 @media screen and (max-width: 1199px){
+	.hw-tools-list {
+	    padding: 20px 20px 0 20px;
+	}
 	.portfolio-custom-btn{
 		font-family: "gotham-rounded-light";
 		text-transform: none;
@@ -5553,6 +5556,10 @@ img#big-ipad {
         }
 }
 @media screen and (min-width:768px) and (max-width: 1199px) {
+	.pf-mob.container {
+	    padding: 0 76px;
+	    width: 100%;
+	}
 	.container.tab-section {
 	    padding: 0 50px;
 	    width: 100%;
