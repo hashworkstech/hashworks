@@ -1108,6 +1108,12 @@ div#bootcamp-filter-controls label{
 	.banner img {
 		width: 100%;
 	}
+	@media screen and (max-width: 1199px){
+		.banner img {
+			width: 100%;
+			margin: 36px 0 20px; 
+		}
+	}
 	.cs-cntr-mar {
 		margin: 40px 50px;
 	}
@@ -3896,6 +3902,10 @@ img#big-ipad {
 	    font-family: "gotham-rounded-book";
 	    font-size: 20px;
 	    color: #000;
+	    padding: 0;
+	}
+	.drop-line{
+		margin: 0;
 	}
 	.drop-icon{
 		display: none;
@@ -3905,6 +3915,9 @@ img#big-ipad {
 	}
 	.clr-black{
 		display: none;
+	}
+	.job-table .clr-black{
+		display: block;
 	}
 }
 @media screen and (max-width: 767px){	
@@ -4515,6 +4528,9 @@ img#big-ipad {
 	.blog-details{
 		color: #000;
 	}
+	.container.blog-details{
+		padding: 0 36px;
+	}
 	.banner-bg-desktop,.hero-image-desktop,.blog-source,.blog-details .line{
 		display: none;
 	}
@@ -4558,7 +4574,7 @@ img#big-ipad {
 	    float: left;
 	}
 	.blog-tab-content{		
-	    width: 90%;
+	    width: 89%;
 	}
 	.blog-details .date-bg{
 		background-color: #52af83;
@@ -5560,7 +5576,7 @@ img#big-ipad {
 	.job-margin{
 		font-weight: lighter;
     	line-height: 18px;
-    	margin: 30px 48px 10px;
+    	margin: 16px 48px 10px;
 	}
 	.col-lg-6.col-md-6.col-sm-6.col-xs-8.bootcamp-clearfix {
 	    padding-left: 15px;
