@@ -1932,7 +1932,7 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
           {
             breakpoint: 1920,
             settings: {
-              slidesToShow: 3,
+              slidesToShow: 4,
               slidesToScroll: 1
             }
           },
@@ -2068,7 +2068,9 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
      });
 
 });
-
+if(screen.width <1199){
+  $('.es-border-left').removeClass('div-border-left');
+}
 /* Homepage hack */
 
 // $(document).ready(function () {
