@@ -4695,11 +4695,12 @@ img#big-ipad {
 	margin-left: 10px;
 }
 @media screen and (max-width: 600px){
-	.ribon-font {
+	.about-us .ribon-font {
 	    font-size: 8px !important;
 	}
-	.our-heading-custom-btn{
+	.about-us .our-heading-custom-btn{
 		font-size: 6px !important;
+		padding: 6px;
 	}
 }
 
@@ -6078,22 +6079,19 @@ h2 {
     }*/
 
     .our-heading-custom-btn{
-        font-size: 12px;
+        font-size: 8px;
         background: #f9d602 none repeat scroll 0 0;
         border: 1px solid #f9d602;
         color: #474e5d;
         font-family: "gotham-rounded-bold";
         margin-right: 0px;
+        padding: 3px 12px;
     }
     .ribon-font {
-    font-size: 12px;
+    font-size: 10px;
     }
     .our-heading-custom-btn {
         margin-left:6%;
-    }
-    .our-heading-custom-btn {
-        padding: 6px;
-        font-size: 9px;
     }
     .tab-mobile{
         display: block;
@@ -6149,11 +6147,9 @@ h2 {
         display: block;
     }
     .mob-business-value {
-        margin: 0 auto;
-        width: 80px;
+        text-align: center;
         cursor: pointer;
         margin-top: 4%;
-        margin-bottom: 1
     }
     .mob-business-head{
         font-size: 12px;
@@ -6163,6 +6159,9 @@ h2 {
         padding-top: 3%;
         margin-top:0;
     }
+     .mob-business-value > img {
+	    width: 12%;
+	}
     .mob-we-resolve{
         font-size: 11px;
         color: #000;
@@ -6242,9 +6241,9 @@ h2 {
         text-align: center;
         margin-left: 0px;
     }
-    #accordion input:checked + label .img-class{
+   /* #accordion input:checked + label .img-class{
         margin-top: 5px;
-    }
+    }*/
     #accordion input:checked + label .heading-class{
         margin-top: 10px;
     }
@@ -6260,11 +6259,11 @@ h2 {
 
 }
 /*our thinking responsive ends*/
-@media screen and (max-width:419px){
+/*@media screen and (max-width:419px){
     .our-heading-custom-btn {
         margin-left:0px;
     }
-}
+}*/
     .tab-img{
         width:100%;
     }
