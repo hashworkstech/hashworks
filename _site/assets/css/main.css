@@ -5795,7 +5795,6 @@ h2 {
     cursor: pointer;
     display: block;
     margin-bottom: 0em;
-    padding: .25em 1em;
     z-index: 20;
     color: #000;
 }
@@ -5829,7 +5828,8 @@ h2 {
 }
 #accordion img {
     margin-left: 4%;
-    width:15%;
+    width:10%;
+    padding: 14px 0;
 }
 #accordion span {
     font-size: 16px;
@@ -6383,7 +6383,10 @@ h2 {
 }
 }
 @media screen and (max-width: 767px) {
-    .devopss-fa-arrow-left {
+	.es-service-img-mar{
+		margin-top: 20px;
+	}
+.devopss-fa-arrow-left {
     cursor: pointer;
 }
 #ups-devops .fa-3x {
