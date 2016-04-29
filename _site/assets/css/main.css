@@ -1537,7 +1537,7 @@ width: 100%;
 		cursor:pointer;
 	}
 	.thinking-height2 {
-		height: 325px;
+		height: 314px;
 	}
 	.thinking-height:hover {
 		background-color: #e8e8e8;
@@ -1550,7 +1550,7 @@ width: 100%;
 	}
 #div-top-left{
 	    padding-top: 15px;
-	height: 325px;	
+	height: 314px;	
 	position: absolute;
 	overflow: hidden;
 	padding-left: 0px; 
@@ -1560,7 +1560,7 @@ width: 100%;
 }
 #div-top-right{
 	    padding-top: 15px;
-	height: 325px;	
+	height: 314px;	
 	position: absolute;
 	overflow: hidden;
 	padding-left: 0px; 
@@ -1571,7 +1571,7 @@ width: 100%;
 }
 #div-bottom-right{
 	    padding-top: 15px;
-	height: 325px;	
+	height: 314px;	
 	position: absolute;
 	overflow: hidden;
 	padding-left: 0px; 
@@ -1581,7 +1581,7 @@ width: 100%;
 }
 #div-bottom-left{
 	    padding-top: 15px;
-	height: 325px;	
+	height: 314px;	
 	position: absolute;
 	overflow: hidden;
 	padding-left: 0px; 
@@ -5498,11 +5498,11 @@ img#big-ipad {
         display: none;
     }
     #div-top-left,#div-bottom-right,#div-bottom-left,#div-top-right{
-        min-height: 325px !important;
+        min-height: 314px !important;
     }
     .thinking-height2{
-        min-height: 325px;
-        max-height: 325px;
+        min-height: 314px;
+        max-height: 314px;
     }
      
     .es-line {
@@ -5557,6 +5557,13 @@ img#big-ipad {
         }
 }
 @media screen and (min-width:768px) and (max-width: 1199px) {
+	.ot-tab-container{
+		width: 100%;
+		 padding: 0 76px;
+	}
+	.ot-tab-container-top{
+		padding-top: 38px;
+	}
 	.pf-mob {
 	    margin: 40px auto 0;
 	}
@@ -5912,7 +5919,7 @@ h2 {
     }
    /* .#div-bottom-left,.div-top-left,.div-top-right,.div-bottom-right
     {
-        height: 325px !important;
+        height: 314px !important;
     }*/
     .tab-view{
         display: block;
