@@ -5590,6 +5590,48 @@ img#big-ipad {
         }
 }
 @media screen and (min-width:768px) and (max-width: 1199px) {
+	.hr-display.ot-hr-display{
+		padding: 10px 15px 14px;
+	}
+	/*.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+		border-width: medium medium 4px;
+	}*/
+	.nav-tabs > li > a, .nav-tabs > li > a, .nav-tabs > li > a {
+	    border-color: -moz-use-text-color -moz-use-text-color transparent;
+	    border-style: none none solid;
+	    border-width: medium medium 4px;
+	    color: #5f5f5f;
+	}
+	.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+	    border-color: -moz-use-text-color -moz-use-text-color #ee2b7b;
+	    border-style: none none solid;
+	    border-width: medium medium 4px;
+   }
+	.nav-tabs > li > .ot-hr-display{
+		margin-right: 0px;
+	}
+	.ot-c-flex{
+		width: 33.33%;
+	}
+	.ot-tab-container-top .nav-tabs > li,.dev-container .nav-tabs > li{
+		margin-bottom: -4px;
+	}
+	.cw-tab-val{
+		border-bottom: 4px solid #e4e5e1;
+	}
+	.cw-tab-container-top .nav-tabs{
+		border-bottom: none;
+	}
+	.tab-nav-tabs,.devops-nav-tabs{
+		border-bottom: 4px solid #e4e5e1;
+		width: 100%;
+	}
+	.pvh-active {
+	    border-bottom: 4px solid #ee2b7b;
+	}
+	.gotham-rounded-light.hw-para.devops-count-para.dev-devops-count-para {
+    	margin-bottom: 20px;
+	}
 	.job-margin{
 		font-weight: lighter;
     	line-height: 18px;
