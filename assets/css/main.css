@@ -5613,7 +5613,7 @@ img#big-ipad {
 	.ot-c-flex{
 		width: 33.33%;
 	}
-	.ot-tab-container-top .nav-tabs > li,.dev-container .nav-tabs > li{
+	.dev-container .nav-tabs > li{
 		margin-bottom: -4px;
 	}
 	.cw-tab-val{
