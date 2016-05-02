@@ -3411,6 +3411,7 @@ img#big-ipad {
 	}
 	#button1{
 		color: #fff !important;
+		-webkit-text-fill-color:#fff !important;
 	}
 	#nav-hamburger-icon span, #nav-icon3 span,#nav-icon1 span, #nav-icon4 span{
 		background-color: #fff;
@@ -4161,11 +4162,14 @@ img#big-ipad {
 	}
 	.social-share-menu-list .social-icons{
 		color: #fafafa;
-		margin-right: 15px;
+	    margin: 0 8px;
 	}
 	.social-share-menu-list {
 	    padding-left: 0;
 	    padding-top: 25px;
+	    margin-left: 0;
+	    padding-right: 0;
+	    text-align: center;
 	}
 	nav #toc ul li a {
 	    padding-left: 0;
@@ -4173,6 +4177,9 @@ img#big-ipad {
 	}
 	#google-search-div .gsc-search-box input#gsc-i-id1{
 		border: none !important;
+	}
+	.toggle.btn.srch-btn {
+	    padding-top: 12px;
 	}
 }
 @media screen and (max-width: 767px){

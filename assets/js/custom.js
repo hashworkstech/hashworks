@@ -1893,7 +1893,9 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
         speed: 300,
         slidesToShow: 1,
         adaptiveHeight: true,
-        arrows: false
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000
     });
     function slick_dots(){        
       var slick_h = $('.hw-hompage-banner').height();
