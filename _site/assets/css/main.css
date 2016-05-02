@@ -4645,6 +4645,15 @@ img#big-ipad {
 	    margin-top: 25px;
 	}
 }
+@media screen and (min-width: 768px) and (max-width: 1199px){
+	.blog-author{
+		padding: 4px 0 15px;
+	}
+	.blog-details .ribon-font{
+		margin-top: -6px;
+		font-family: "gotham-rounded-book";
+	}
+}
 @media screen and (max-width: 767px){
 	.desktop-blog-hr,.pb-by{
 		display: none;
