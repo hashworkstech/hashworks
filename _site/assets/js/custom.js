@@ -1838,7 +1838,7 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
               right: 0
           });
       });
-      $('.hwmt #button1,.hw-others #button1,main').on('click', function() {
+      $('.hwmt #button1,.hw-others #button1,main,.hwmt > div').on('click', function() {
           $('#toc').animate({
               width: 0,
               right: 0
@@ -1895,7 +1895,7 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
         adaptiveHeight: true,
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 5000
+        autoplaySpeed: 3000
     });
     function slick_dots(){        
       var slick_h = $('.hw-hompage-banner').height();
