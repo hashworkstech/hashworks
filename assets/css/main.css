@@ -3411,7 +3411,8 @@ img#big-ipad {
 	}
 	#button1{
 		color: #fff !important;
-		-webkit-text-fill-color:#fff !important;
+		-webkit-text-fill-color:white !important;
+		font-family: "gotham-rounded-book";
 	}
 	#nav-hamburger-icon span, #nav-icon3 span,#nav-icon1 span, #nav-icon4 span{
 		background-color: #fff;
@@ -3933,6 +3934,30 @@ img#big-ipad {
 	}
 	.job-table .clr-black{
 		display: block;
+	}
+	.hm-contact,.form-container > hr{
+		display: none;
+	}
+	#start-project .close-pop{
+		height: 15px;
+	   	right: 50px;
+	    top: 24px;
+	}
+	.form-container > h1{
+		font-family: "gotham-rounded-light";
+    	font-size: 20px;
+	}
+	.post-resume .row {
+	    margin-top: 0;
+	}
+	.post-resume .text-border {
+	    margin-bottom: 10px;
+	}
+	.hm-shows-love{
+		display: none;
+	}
+	.contact-modal > div{
+		height: initial;
 	}
 }
 @media screen and (max-width: 767px){	
