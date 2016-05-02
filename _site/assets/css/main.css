@@ -3859,6 +3859,20 @@ img#big-ipad {
 	.pf-mob .slick-next {
 	    right: -25px;
 	}
+	.clearfix > li{
+		color: #000;
+	    display: table-cell;
+	    font-size: 8px;
+	}
+	.techImg{
+		width: 25px;
+	}
+	.group{
+		padding: 0 30px;
+	}
+	.hw-works p,.hw-works h3{
+		color: #000;
+	}
 }
 @media screen and (max-width: 360px){
 	#categories ul li span{
@@ -4251,6 +4265,9 @@ img#big-ipad {
 	footer .hw-copyright{
 		font-size: 12px;
 		padding-right: 0;
+	}
+	.footer{
+		height: 45px;
 	}
 }
 @media screen and (max-width: 420px){

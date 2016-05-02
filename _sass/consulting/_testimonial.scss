@@ -185,6 +185,9 @@ border-radius: 5px;
 
     }
 @media screen and (max-width:767px){
+    .pf-mob{
+        margin-top: 25px;
+    }
     .pvh-title{
         font-size:12px;
     }
@@ -194,6 +197,29 @@ border-radius: 5px;
     .pvd-data{
         font-size:10px;
         font-family: "gotham-rounded-light"
+    }
+    .pvh{
+        width: 65px;
+        height: 65px;
+        background-size: cover;
+    }
+    .pvh-1{
+        background-position: 0 0px;
+    }
+    .pvh-2{
+        background-position: 0 -130px;
+    }
+    .pvh-3{
+        background-position: 0 -65px;
+    }
+    .pvh-4{
+        background-position: 0 -260px;
+    }
+    .pvh-5{
+        background-position: 0 -195px;
+    }
+    .pvh-title{
+        padding: 10px 0 8px;
     }
 }
 .navbar, .navbar-inverse {
