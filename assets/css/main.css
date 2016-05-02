@@ -4203,7 +4203,7 @@ img#big-ipad {
 	#google-search-div .gsc-search-box input#gsc-i-id1{
 		border: none !important;
 	}
-	.toggle.btn.srch-btn {
+	.toggle.btn.srch-btn,.toggle-hw.btn.srch-btn {
 	    padding-top: 12px;
 	}
 }
