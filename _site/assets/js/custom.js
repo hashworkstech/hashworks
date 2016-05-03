@@ -1838,8 +1838,14 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
               right: 0
           });
       });
-      $('.hwmt #button1,.hw-others #button1,main,.hwmt .slick-list').on('click', function() {
+      $('.hwmt #button1,.hw-others #button1,main').on('click', function() {
           $('#toc').animate({
+              width: 0,
+              right: 0
+          });
+      });
+      $('.hwmt .single-item').on('click', function() {
+          $('.hwmt #toc').animate({
               width: 0,
               right: 0
           });

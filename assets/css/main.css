@@ -3959,6 +3959,11 @@ img#big-ipad {
 	.contact-modal > div{
 		height: initial;
 	}
+	#start-project-1 {
+	    margin-top: -27px;
+	    padding: 130px 0 115px;
+	    z-index: 2011;
+	}
 }
 @media screen and (max-width: 767px){	
 	.company-value,.company-btm .hw-contact-no,.company-det {
@@ -3993,6 +3998,19 @@ img#big-ipad {
 	}
 	.company-btm:last-child{
 		padding-bottom: 30px;
+	}
+	#start-project,#start-project-1 {
+	    margin-top: 0;
+	    padding: 15px 0;
+	}
+	.tab-mobile .nav-tabs{
+		border-bottom: none;
+	}
+	.slick-track > li{
+		border-bottom: 4px solid #e4e5e1;
+	}	
+	.slick-track .pvh-active{
+		border-bottom: 4px solid #ee2b7b !important;
 	}
 }
 /* End : Company.css */
@@ -4774,11 +4792,20 @@ img#big-ipad {
 }
 @media screen and (max-width: 600px){
 	.about-us .ribon-font {
-	    font-size: 8px !important;
+	    font-size: 10px !important;
 	}
 	.about-us .our-heading-custom-btn{
-		font-size: 6px !important;
-		padding: 6px;
+		font-size: 8px !important;
+		padding: 3px 12px;
+	}
+}
+@media screen and (max-width: 359px){
+	.about-us .ribon-font {
+	    font-size: 10px !important;
+	}
+	.about-us .our-heading-custom-btn{
+		font-size: 8px !important;
+		padding: 3px 2px;
 	}
 }
 
@@ -6589,6 +6616,7 @@ h2 {
 @media screen and (max-width: 767px) {
 	.es-service-img-mar{
 		margin-top: 20px;
+		margin-bottom: 20px;
 	}
 .devopss-fa-arrow-left {
     cursor: pointer;
