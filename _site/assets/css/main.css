@@ -3541,6 +3541,41 @@ img#big-ipad {
 		margin: 0;
 	}
 }
+/*change*/
+option:before { content: "☐ " }
+       option:checked:before { content: "☑ " }
+.hw-menu-list .gsc-input-box{
+	height: 35px;
+}
+.attach-span{
+	color: #fff;
+}
+.frame { 
+	width: 100%; 
+	overflow: hidden; 
+	} 
+	.zoomin img{ 
+	width: 80%; /* -webkit-transition: all 2s ease; 
+		-moz-transition: all 2s ease; -ms-transition: all 2s ease; 
+		transition: all 2s ease; */
+		} 
+		/*.zoomin img:hover { 
+			width: 700px; 
+			height: 300px; 
+		} */
+		.hr-display.service-img-mar.frame.zoomin {
+    text-align: center;
+}
+.toggle.btn.srch-btn > img {
+    width: 18px;
+}
+		.eng-zoom-out{
+			float: right;
+		}
+		.eng-zoom-in{
+			float: right;
+			margin-right: 75px;
+		}
 @media screen and (orientation:landscape) {
   .hwmt {
     overflow: scroll !important;
@@ -4817,7 +4852,6 @@ img#big-ipad {
    .bootcamp-ribbon-div{
     margin: 0 auto;
     width: 500px;
-     padding: 10px 0;
   }
   .bc-desk .gotham-rounded-light.hw-main-heading.clr-white.h-approch {
     text-align: initial;
@@ -4827,7 +4861,7 @@ img#big-ipad {
 .bc-desk .text-uppercase.custom-btn.heading-custom-btn.talk-to-us {
   font-family: "gotham-rounded-book";
     font-size: 12px;
-     padding: 6px 10px;
+     padding: 1px 10px 0;
 }
 .hw-started.log-clr-backgrnd.container-fluid.bootcamp-ribbon-div {
     width: 100%;
@@ -5032,6 +5066,7 @@ img#big-ipad {
 }
 
 @media screen and (max-width: 767px) {
+	
 	 .bc-desk .upskill-cont-filter:hover .hw-upskill-cont {  
     border-color: #0ab4c5;
   }
@@ -5045,8 +5080,10 @@ img#big-ipad {
     font-size: 12px;
 }
   .bc-desk .hw-font-heading {
+  	font-family: "gotham-rounded-light"!important;
     font-size: 18px !important;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
   .container.bc-mob {
     margin-top: 14px;
@@ -5213,6 +5250,7 @@ img#big-ipad {
     font-size: 14px;
     margin-top: 0;
     font-weight: bold;
+    margin-bottom: 6px;
   }
 
   .text-justify.bootcamp-hw-tab-para {
@@ -5241,6 +5279,51 @@ img#big-ipad {
   .clearfix.pull-right {
     padding-top: 15px;
   }
+  .bc-desk div#bootcamp-filter-total {
+  	margin-top: 12px;
+  }
+  .bc-desk .bootcamp-filter-contents {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+.bc-desk div#bootcamp-filter-controls {
+    display: none;
+    }
+.bc-desk .hw-upskilling-details h2 {
+    padding: 18px 0 0;
+    font-size: 14px;
+}
+.bc-desk .clearfix {
+    padding: 1px 0;
+}
+.bc-desk .clearfix.pull-right {
+    padding-top: 7px;
+}
+.hw-started.log-clr-backgrnd.container-fluid.bootcamp-ribbon-div {
+    margin-top: 25px;
+}
+.bc-desk .hw-upskill-cont {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.gotham-rounded-bok.hw-heading.heading.text-center.bootcamp-hw-heading {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.container.bc-mob {
+    margin-bottom: 20px;
+}
+.bc-desk .hw-copyright.gotham-rounded-light{
+	font-size: 14px;
+}
+.bootcamp-span-heading{
+	margin: 6px 0 0;
+	font-size: 12px;
+}
+.bc-desk .bootcamp-dropdown-list > a{
+ padding: 0 11.5px;
+}
 }
 @media screen and (max-width: 420px) {
 
@@ -5482,6 +5565,8 @@ img#big-ipad {
         color: #000;
         font-family: "gotham-rounded-light";
         line-height: 16.5px;
+         margin-left: 15px;
+    margin-right: 15px;
     }
     .text-center.hw-heading.hr-display {
         font-size: 12px;
@@ -5590,6 +5675,23 @@ img#big-ipad {
     .fa.fa-times.job-close.job-close-1 {
         display: none;
     }
+     #cw-responsive .hw-engage-cont {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#cw-responsive .nav.nav-tabs.p-flex.talent {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#cw-responsive .clearfix {
+    padding: 0 0 5px;
+}
+#cw-responsive .collobo-talk-to-us {
+    padding: 1px 6px 0;
+}
+#cw-responsive .collobo-footer-division{
+	padding: 0;
+}
 }
 /*collaborative css ends*/
 
@@ -5779,11 +5881,6 @@ img#big-ipad {
     .margin-buisness-tab1{
         margin-bottom: 30px;
     }
-   /* .es-haeding{
-        color: #000;
-        font-family:"gotham-rounded-light";
-        font-size: 18px;
-    }*/
     .es-desktop-view {
        display: block;
     }
@@ -5871,6 +5968,10 @@ img#big-ipad {
                 }
                 .es-contact-modal{
                     display: table;
+                }
+                .row-clearfix{
+                	margin-right: 0px;
+                	margin-left: 0px;
                 }
 
 }
@@ -5999,13 +6100,6 @@ h2 {
     z-index: 20;
     color: #000;
 }
-/*#accordion label:hover {
-    background: #cccccc;
-}*/
-/*.es-label-section-1:hover{
-	background: #cccccc;
-}*/
-
 #accordion input:checked + label {
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
