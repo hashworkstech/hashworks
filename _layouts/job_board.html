@@ -413,7 +413,7 @@
 <div class="container pannel-job">
 <ul>
   {% for  job_descr in job.job_description %}
-    <li class="jb-skill">{{job_descr}}</li>
+    <li class="jb-skill1"><p class="jb-skill">{{job_descr}}</p></li>
     {% endfor %}
     </ul>
 </div>
@@ -421,11 +421,10 @@
   <div class="container pannel-job">
   <ul>
    {% for  job_skills in job.skills %}
-    <li class="jb-skill">{{job_skills}}</li>
+    <li class="jb-skill1"><p class="jb-skill">{{job_skills}}</p></li>
     {% endfor %}
     </ul>
 </div>
-</ul>
 </div></div></div>
  {% endfor %}
 <div class="apply-full-div"><button class="apply-div" data-toggle="modal" data-target="#start-project1">Apply for job</button></div>

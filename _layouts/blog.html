@@ -37,12 +37,12 @@ Come share our thinking; know more about our team and the work we do…</p>
 				<div class="col-md-6 col-sm-6 col-xs-6 col-xxs-12 cats">
 					<form class="blog-cat-form" action="" method="get">
 						<select name="cat" id="cat" class="postform gotham-rounded-bok">
-						<option data-value="Categories" value="0" selected="selected">Categories</option>
-						<option data-value="DataOps" class="level-0" value="1">DataOps</option>
-						<option data-value="Devops" class="level-0" value="2">DevOps</option>
-						<option data-value="Data Science" class="level-0" value="3">Data Science</option>
-						<option data-value="UX/UI" class="level-0" value="4">UX/UI</option>
-						<option data-value="Mobility" class="level-0" value="5">Mobility</option>
+						<option data-value="Categories" value="0" selected="selected" class="case-studies-label-text">Categories</option>
+						<option data-value="DataOps" class="level-0" value="1" class="case-studies-label-text">DataOps</option>
+						<option data-value="Devops" class="level-0" value="2" class="case-studies-label-text">DevOps</option>
+						<option data-value="Data Science" class="level-0" value="3" class="case-studies-label-text">Data Science</option>
+						<option data-value="UX/UI" class="level-0" value="4" class="case-studies-label-text">UX/UI</option>
+						<option data-value="Mobility" class="level-0" value="5" class="case-studies-label-text">Mobility</option>
 						</select>
 					</form>
 				</div>
@@ -51,12 +51,12 @@ Come share our thinking; know more about our team and the work we do…</p>
 					<form class="blog-author-form">
 						<div class="styled-select">
 							<select name="author" id="author" class="gotham-rounded-bok">
-								<option data-value="Authors" value="0">Authors</option>          
-								<option data-value="GK" value="1">GK</option>
-								<option data-value="Mohit" value="2">Mohit</option>
-								<option data-value="Rajesh" value="3">Rajesh</option>
-								<option data-value="Shilpa" value="4">Shilpa</option>
-								<option data-value="Stanely" value="5">Stanely</option>
+								<option data-value="Authors" value="0" class="case-studies-label-text">Authors</option>          
+								<option data-value="GK" value="1" class="case-studies-label-text">GK</option>
+								<option data-value="Mohit" value="2" class="case-studies-label-text">Mohit</option>
+								<option data-value="Rajesh" value="3" class="case-studies-label-text">Rajesh</option>
+								<option data-value="Shilpa" value="4" class="case-studies-label-text">Shilpa</option>
+								<option data-value="Stanely" value="5" class="case-studies-label-text">Stanely</option>
 							</select>
 						</div>											
 					</form>
@@ -109,7 +109,16 @@ Come share our thinking; know more about our team and the work we do…</p>
 			    $(".blog-grid > .hw-filter-li:not(." + val + ")").hide();
 			});
 
+
+
+$('.postform').each(function() {
+    $(this).SumoSelect();
+});
+
+
+
 		});
+
 	</script>
 
 

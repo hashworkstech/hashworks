@@ -1700,7 +1700,9 @@ width: 100%;
 	-moz-transition: all 0.2s;
 	-ms-transition: all 0.2s;
 	-o-transition: all 0.2s;
-	transition: all 0.2s;}
+	transition: all 0.2s;
+	margin-top: 25px;
+}
 
 .apst-button:before {
     content: "";
@@ -3846,7 +3848,6 @@ option:before { content: "☐ " }
 		margin-bottom: 22px;
 	}
 	.resp-pf .portfolio-client-backgrnd {
-		margin-bottom: 20px;
 		background-color: #ddd;
 	}
 	.hw-tools-details {
@@ -5381,13 +5382,16 @@ option:before { content: "☐ " }
     }
     .collobo-talk-to-us{
         font-size: 11px;
-        padding: 4px 6px;
+        padding: 1px 6px 0;
         margin-right: 22px;
     }
     .collobo-footer-division {
         margin: 0 auto;
-        padding: 10px 0;
+        padding: 0;
         width: 600px;
+}
+.clearfix {
+    padding: 2px 0 6px;
 }
 #cw-responsive .c-flex.c-flex-1.tab-val {
     display: inline-block;
@@ -6929,6 +6933,7 @@ text-align: inherit;
     	font-size: 14px;
     	font-family: "gotham-rounded-book";
     	font-weight: normal;
+    	margin-top: 15px;
 	}
 	.job-table-cell > img {
     	margin-left: 31px;
@@ -6940,6 +6945,7 @@ text-align: inherit;
 	#jb-mob .jb-skill{
 		list-style-type: initial;
 		color: #343434;
+		margin-top: 6px;
 	}
 	.job-tit{
 		margin-left: 0;
@@ -7012,17 +7018,20 @@ text-align: inherit;
 	  box-shadow: 0 0 0 2px #acacac;
 	}
 	.jb-skill {
-    margin-left: 6px;
+    margin-left: 3px;
 }
 .container.job-container {
-    margin-left: 9px;
-    margin-right: 9px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.jb-skill1 {
+	list-style-type: initial;
+color:#0ab4c5;
 }
 
 }
 
 /*job board css ends*/
-/*@media screen and (max-width: 1199px){
 .blog-dropdown .btn-group.bootcamp-btn-group.blog-btn-group {
     display: block;
 }
@@ -7121,7 +7130,6 @@ text-align: inherit;
     padding: 15px 0 15px;
     background-color: #efefef;
 }
-}*/
 /*
 select#author::-ms-expand,select#cat::-ms-expand {
     display: none;
