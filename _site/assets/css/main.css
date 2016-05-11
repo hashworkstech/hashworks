@@ -6852,6 +6852,10 @@ text-align: inherit;
     	float: left;
     	margin-left: 20px;
     }
+    .blog-content {
+    margin-left: 15px;
+    margin-right: 15px;
+}
 }
 /*ups devops css ends*/
 
