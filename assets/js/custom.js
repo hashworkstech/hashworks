@@ -2150,6 +2150,23 @@ $('.eng-zoom-out').click(function () {
         });
   // }
    });
+// setTimeout(function(){
+//    document.getElementById("myDiv").style.display="hide";
+// }, 5000);  
+(function(){
+    var myDiv = document.getElementById("myDiv");
+
+    var show = function(){
+      myDiv.style.display = "block";
+      setTimeout(hide, 5000);  // 5 seconds
+    }
+
+    var hide = function(){
+      myDiv.style.display = "none";
+    }
+
+    show();
+  })();
 // var expanded = false;
 //     function showCheckboxes() {
 //         var checkboxes = document.getElementById("cat");

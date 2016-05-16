@@ -980,6 +980,9 @@ html {
 		padding:0 100px;
 	}
 	@media screen and (max-width: 1199px){
+			#subject, #message {
+    color: #6c717d;
+}
 		.heading-caro-padd {
 			padding:0;
 			width: inherit;
@@ -1845,6 +1848,14 @@ width: 100%;
 	  float: left;
 	  height: auto;
 	  overflow: hidden; /*without this li will create more height*/
+	  line-height: 2.25em;
+	  margin: 10px 0;
+	}	
+	.blog-grid-new > li {
+	  /*width: 25%;*/
+	  /*width: 33.33333%;*/
+	  float: left;
+	  height: auto;
 	  line-height: 2.25em;
 	  margin: 10px 0;
 	}	
@@ -4081,25 +4092,25 @@ option:before { content: "☐ " }
 	    float: left;
 	}
 	.pf-icon span.menu-icon {
-	    background-image: url("../img/header/portfolio_active.png");
+	    background-image: url("../img/Sprite_Icon_set.png" 0 0);
 	}
 	.es-icon span.menu-icon {
-	    background-image: url("../img/header/engagement_active.png");
+	    background-image: url("../img/Sprite_Icon_set.png");
 	}
 	.cs-icon span.menu-icon {
-	    background-image: url("../img/header/casestudy_active.png");
+	    background-image: url("../img/Sprite_Icon_set.png");
 	}
 	.comp-icon span.menu-icon {
-	    background-image: url("../img/header/company_active.png");
+	    background-image: url("../img/Sprite_Icon_set.png");
 	}
 	.blog-icon span.menu-icon {
-	    background-image: url("../img/header/blog_active.png");
+	    background-image: url("../img/Sprite_Icon_set.png");
 	}
 	.jb-icon span.menu-icon {
-	    background-image: url("../img/header/job_board_active.png");
+	    background-image: url("../img/Sprite_Icon_set.png");
 	}
 	.news-icon span.menu-icon {
-	    background-image: url("../img/header/news_active.png");
+	    background-image: url("../img/Sprite_Icon_set.png");
 	}
 	.pf-icon:hover span.menu-icon {
 	    background-image: url("../img/header/portfolio_hover.png");
@@ -4470,7 +4481,7 @@ option:before { content: "☐ " }
 	.blog-grid .filters select {
 	    width: 175px;
 	}
-	.blog-grid > li{
+	.blog-grid > li,.blog-grid-new > li{
 		margin: 10px 0 0;
 	}
 	.blog-content-wrapper{
@@ -4518,12 +4529,16 @@ option:before { content: "☐ " }
 	.blog-content:nth-child(2n+1){
 		padding-right: 75px;
 	}
-	.blog-grid > li {
-		overflow: initial;
-	}
+	/*.blog-grid > li {
+		overflow: hidden;
+	}*/
 }
 /* End : blog.css*/
 @media screen and (max-width: 767px){
+	.gotham-rounded-light.hw-heading.h2-color.text-center.hw-line-height {
+    	padding-left: 30px;
+    	padding-right: 30px;
+	}
 	.carousel-padding{
 		padding: 0 10px 15px !important;
 	}
@@ -4573,7 +4588,7 @@ option:before { content: "☐ " }
 	    color: #000;
 	    width: 175px;
 	}
-	.blog-grid > li{
+	.blog-grid > li,.blog-grid-new > li{
 		margin: 10px 0 0;
 	}
 	.blog-author-form, .blog-cat-form{
@@ -6000,6 +6015,11 @@ option:before { content: "☐ " }
 }
 
 @media screen and (min-width:320px) and (max-width: 767px){
+
+	.blog-grid.clearfix.blog-main {
+    padding-left: 25px;
+    padding-right: 25px;
+}
 	.fa.fa-times.job-close.job-close-1{
     	display: block !important;
     }
@@ -6203,9 +6223,12 @@ h2 {
     /*.our-thinking-responsive{
         display: none;
     }*/
+    .gotham-rounded-bok.hw-contact-no {
+    font-size: 14px;
+}
     .jobs-tab-content{
     	width: 100%;
-    	padding: 0 35px;
+    	padding: 0 43px;
     }
     .text-justify.bootcamp-hw-tab-para {
 	    font-size: 10px;
@@ -6217,7 +6240,8 @@ h2 {
 	    margin: 28px 0;
 	}
 	.hw-font-heading {
-    	margin-top: 48px;
+    	margin-top: 55px;
+    	margin-bottom: 0;
     }
     .our-thinking-responsive .nav li{
        color: #5f5f5f; 
@@ -6632,6 +6656,7 @@ h2 {
         text-align: center;
     }
     @media screen and (min-width:768px) and (max-width: 1199px){
+
     .es-desktop-view .upskill-img{
         max-width: 50% !important;
         float: right;
@@ -6647,6 +6672,46 @@ h2 {
     display: none;
 }
 @media screen and (max-width: 1199px) {
+	.ms-options > ul {
+    display: -moz-groupbox;
+}
+.ms-options ul li{
+		font-size: 12px;
+	color: #000;
+	font-family: "gotham-rounded-light";
+}
+.blog-grid.clearfix.blog-main {
+    padding-left: 55px;
+    padding-right: 55px;
+}
+    .subtitle.gotham-rounded-light {
+    font-size: 16px;
+    text-align: center;
+}
+.blog-grid li h3 {
+	font-size: 14px;
+}
+.ms-options-wrap > button:focus, .ms-options-wrap > button {
+	border-radius: 35px;
+	padding: 0 15px;
+	border: none;
+	font-size: 14px;
+	color: #000;
+	font-family: "gotham-rounded-light";
+}
+.ms-options-wrap {
+    padding-right: 15px;
+}
+.blog-para-first{
+	font-size: 14px;
+	margin-left: 55px;
+    margin-right: 55px;
+    line-height: 22px;
+}
+.row.filters.cs-li-margin {
+    margin-left: 55px;
+    margin-right: 55px;
+}
 	.devops-heading{
 		font-size: 32px;
 		font-family:"gotham-rounded-light";
@@ -6877,6 +6942,23 @@ text-align: inherit;
 	}
 }
 @media screen and (max-width:767px){
+
+.blog-grid.clearfix.blog-main {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.blog-content-wrapper span {
+    margin-top: 8px;
+}
+.blog-para-first {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+.tagline.gotham-rounded-bold.margin-zero.hw-font-heading1 {
+    margin-left: 15px;
+    margin-right: 15px;
+}
 	.jb-desk-tab{
 		display: none;
 	}
@@ -6946,6 +7028,7 @@ text-align: inherit;
 		list-style-type: initial;
 		color: #343434;
 		margin-top: 6px;
+		margin-left: 8px;
 	}
 	.job-tit{
 		margin-left: 0;
@@ -7128,7 +7211,7 @@ color:#0ab4c5;
 .row.filters.cs-li-margin {
     margin: 24px 0 0 0;
     padding: 15px 0 15px;
-    background-color: #efefef;
+    background-color: none;
 }
 /*
 select#author::-ms-expand,select#cat::-ms-expand {
