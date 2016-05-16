@@ -57,51 +57,37 @@ $(document).ready(function(){
 
 
 //filter for the blog
-     $('#author,#cat').change(function() {
-         var  val1 = $("#cat").children('option:selected').data('value');
-         var  val2 = $("#author").children('option:selected').data('value');
-         
-         if(val1=='Categories' && val2=='Authors'){
-          $(".hw-filter-li").each(function(){
-                 $(this).show();
-             });
-          }
-
-          else if(val1!='Categories' && val2=='Authors'){
-          $(".hw-filter-li").each(function(){
-           if($(this).hasClass(val1)){
-             $(this).show();
-             
-           }
-           else{
-             $(this).hide();
-           }
-         });
-          }
-
-           else if(val1=='Categories' && val2!='Authors'){
-          $(".hw-filter-li").each(function(){
-           if($(this).hasClass(val2)){
-             $(this).show();
-             
-           }
-           else{
-             $(this).hide();
-           }
-         });
-          }
-
-          else if(val1!='Categories' && val2!='Authors'){
-          $(".hw-filter-li").each(function(){
-           if($(this).hasClass(val2) && $(this).hasClass(val1))
-           {
-                 $(this).show();}
-               else{
-                 $(this).hide();
-               }
-         });
-          }
-     });
+    $('#author').multiselect({
+      columns: 4,
+      placeholder: 'Authors'
+    });
+    $('#cat').multiselect({
+      columns: 4,
+      placeholder: 'Categories'
+    });
+    $('#author,#cat').change(function () {
+      var val1 = $('#cat').children('option:selected').data('value');
+      var val2 = $('#author').children('option:selected').data('value');
+      cval1 = $('#cat').val();
+      cval2 = $('#author').val();
+      var dataVal1="",dataVal2="";
+      $('#cat :selected').each(function(i, sel){ 
+          dataVal1 += '.'+$(sel).text()+',';
+      });
+      $('#author :selected').each(function(i, sel){ 
+          dataVal2 += '.'+$(sel).text()+',';
+      });
+      datafinalVal1 = dataVal1.replace(/,\s*$/, "");
+      datafinalVal2 = dataVal2.replace(/,\s*$/, "");
+      $('.hw-filter-li').each(function(){
+        if($(this).is(datafinalVal1) || $(this).is(datafinalVal2)){
+          $(this).show();
+        }
+        else{
+          $(this).hide();
+        }
+      });
+    });
 
     /* we love parter */
     $('.home-hr').addClass("anim");
@@ -2202,22 +2188,22 @@ $('.eng-zoom-out').click(function () {
     //     }
     //     });
     //   }
-    function function1() {
-  var ul = $(".slick-dots");
-  var li = document.createElement("li");
-  li.appendChild(document.createTextNode("play"));
-  li.appendChild(document.createTextNode("pause"));
-  ul.appendChild(li);
-}
-function1();
-    $('.pause').on('click', function() {
-    $('.slider')
-        .slick('slickPause')
-        .slick('slickSetOption', 'pauseOnDotsHover', false);
-});
+//     function function1() {
+//   var ul = $(".slick-dots");
+//   var li = document.createElement("li");
+//   li.appendChild(document.createTextNode("play"));
+//   li.appendChild(document.createTextNode("pause"));
+//   ul.appendChild(li);
+// }
+// function1();
+//     $('.pause').on('click', function() {
+//     $('.slider')
+//         .slick('slickPause')
+//         .slick('slickSetOption', 'pauseOnDotsHover', false);
+// });
 
-$('.play').on('click', function() {
-    $('.slider')
-        .slick('slickPlay')
-        .slick('slickSetOption', 'pauseOnDotsHover', true);
-});
+// $('.play').on('click', function() {
+//     $('.slider')
+//         .slick('slickPlay')
+//         .slick('slickSetOption', 'pauseOnDotsHover', true);
+// });
