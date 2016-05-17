@@ -4084,61 +4084,56 @@ option:before { content: "☐ " }
 }
 @media screen and (max-width: 1199px){
 	.hw-menu-list li span.menu-icon{
+		background-image: url("../img/Sprite_Icon_set.png");
 	    background-repeat: no-repeat;
-	    display: inline-block;
-	    height: 35px;
-	    width: 35px;
-	    background-size: contain;
 	    float: left;
+	    height: 36px;
+	    width: 36px;
 	}
 	.hw-menu-list li span.menu-text {
 	    float: left;
 	}
 	.pf-icon span.menu-icon {
-	    background: url('imgs/Sprite_Icon_set.PNG') no-repeat;
-	    width: 36px;
-	    height:36px;
-	    display: inline-block;
-	    background-position: 0 -200px;
+	    background-position: -5px -46px;
 	}
 	.es-icon span.menu-icon {
-	    background: url('imgs/Sprite_Icon_set.PNG') no-repeat;
+	    background-position: -46px -46px;
 	}
 	.cs-icon span.menu-icon {
-	    background: url('imgs/Sprite_Icon_set.PNG') no-repeat;
+	    background-position: -87px -46px;
 	}
 	.comp-icon span.menu-icon {
-	    background: url('imgs/Sprite_Icon_set.PNG') no-repeat;
+	    background-position: -5px -128px;
 	}
 	.blog-icon span.menu-icon {
-	    background: url('imgs/Sprite_Icon_set.PNG') no-repeat;
+	    background-position: -46px -127px;
 	}
 	.jb-icon span.menu-icon {
-	    background: url('imgs/Sprite_Icon_set.PNG') no-repeat;
+	    background-position: -87px -127px;
 	}
 	.news-icon span.menu-icon {
-	    background: url('imgs/Sprite_Icon_set.PNG') no-repeat;
+	    background-position: -46px -169px;
 	}
 	.pf-icon:hover span.menu-icon {
-	    background-image: url("../img/header/portfolio_hover.png");
+	    background-position: -5px -5px;
 	}
 	.es-icon:hover span.menu-icon {
-	    background-image: url("../img/header/engagement_hover.png");
+	    background-position: -46px -5px;
 	}
 	.cs-icon:hover span.menu-icon {
-	    background-image: url("../img/header/casestudy_hover.png");
+	    background-position: -87px -5px;
 	}
 	.comp-icon:hover span.menu-icon {
-	    background-image: url("../img/header/company_hover.png");
+	    background-position: -5px -87px;
 	}
 	.blog-icon:hover span.menu-icon {
-	    background-image: url("../img/header/blog_hover.png");
+	    background-position: -46px -87px;
 	}
 	.jb-icon:hover span.menu-icon {
-	    background-image: url("../img/header/job_board_hover.png");
+	    background-position: -87px -87px;
 	}
 	.news-icon:hover span.menu-icon {
-	    background-image: url("../img/header/news_hover.png");
+	    background-position: -5px -169px;
 	}
 	.hw-home-nav-header {
 	    position: absolute;
@@ -4287,6 +4282,9 @@ option:before { content: "☐ " }
 	}
 }
 @media screen and (max-width: 767px){
+	.ms-options-wrap > button:focus, .ms-options-wrap > button {
+    background-color: #ededed !important;
+}
 	.hw-menu-list li span.menu-icon{
 	    height: 24px;
 	    width: 24px;
@@ -4351,6 +4349,41 @@ option:before { content: "☐ " }
 
 /* Start : footer.css */
 @media screen and (max-width: 1199px){
+	.ms-options-wrap > button {
+    padding-left: 15px !important;
+}
+.custom-btn {
+    font-family: "gotham-rounded-light";
+    font-size: 13px;
+}
+.ms-options-wrap > button::after{
+	right: 15px !important;
+}
+	.ms-options-wrap > .ms-options > ul input[type="checkbox"] {
+    left: 4px;
+    margin-right: 5px;
+    top: 2px !important;
+}
+.ms-options-wrap > .ms-options > ul label {
+    font-weight: normal;
+    }
+	.ms-options-wrap > .ms-options {
+    border: none;
+    left: 5px !important;
+    width: 75% !important;
+}
+.ms-options-wrap > button:focus, .ms-options-wrap > button {
+    border: none !important;
+    }
+	.default-table{
+		display: table;
+		height: 100vh;
+	}
+	.default-table-cell{
+		display: table-cell;
+		vertical-align: middle;
+		height: inherit;
+	}
 	.gotham-rounded-bok.hw-contact-no.collaborative-font-family.last-td {
     border-bottom: medium none;
 }
@@ -6693,12 +6726,10 @@ h2 {
 @media screen and (max-width: 1199px) {
 	.ms-options-wrap > .ms-options {
     background: white none repeat scroll 0 0;
-    border: 1px solid #aaa;
     left: 0;
-    margin-bottom: 20px;
-    margin-left: 22px;
-    margin-top: 1px;
-    position: absolute;
+    margin-bottom: 0px;
+    margin-left: 14px;
+    margin-top: 0px;
     width: 74%;
     z-index: 2000;
 }
