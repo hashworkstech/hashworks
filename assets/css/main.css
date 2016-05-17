@@ -4349,6 +4349,9 @@ option:before { content: "☐ " }
 
 /* Start : footer.css */
 @media screen and (max-width: 1199px){
+	.devops-container{
+		padding: 0 30px !important;
+	}
 	.ms-options-wrap > button {
     padding-left: 15px !important;
 }
@@ -4356,25 +4359,6 @@ option:before { content: "☐ " }
     font-family: "gotham-rounded-light";
     font-size: 13px;
 }
-.ms-options-wrap > button::after{
-	right: 15px !important;
-}
-	.ms-options-wrap > .ms-options > ul input[type="checkbox"] {
-    left: 4px;
-    margin-right: 5px;
-    top: 2px !important;
-}
-.ms-options-wrap > .ms-options > ul label {
-    font-weight: normal;
-    }
-	.ms-options-wrap > .ms-options {
-    border: none;
-    left: 5px !important;
-    width: 75% !important;
-}
-.ms-options-wrap > button:focus, .ms-options-wrap > button {
-    border: none !important;
-    }
 	.default-table{
 		display: table;
 		height: 100vh;
@@ -4490,6 +4474,29 @@ option:before { content: "☐ " }
 	}
 }
 @media screen and (max-width: 1199px){
+	.devops-cont.devops-count {
+    padding-left: 15px;
+}
+.panel.panel-default.accordion-toggle {
+    background-color: transparent;
+}
+.panel-heading {
+    padding: 10px 0 !important;
+    margin: 0 15px !important;
+}
+.fa.fa-angle-left.fa-3x, .fa.fa-angle-right.fa-3x {
+    font-size: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#ups-devops .panel-body {
+    background-color: #fff;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+	.nav-tabs > li > a {
+		margin-right: 0 !important;
+	}
 	.intro-wrapper .cs-li-margin {
 	    margin: 25px 45px 0;
 	}
@@ -4578,6 +4585,14 @@ option:before { content: "☐ " }
 }
 /* End : blog.css*/
 @media screen and (max-width: 767px){
+	.ms-options-wrap > .ms-options > ul input[type="checkbox"]{
+		top:7px !important;
+		margin-top: 0 !important;
+	}
+	.es-custom-btn {
+    font-family: "gotham-rounded-light" !important;
+    font-size: 13px !important;
+}
 	.gotham-rounded-light.hw-heading.h2-color.text-center.hw-line-height {
     	padding-left: 30px;
     	padding-right: 30px;
@@ -6728,7 +6743,6 @@ h2 {
     background: white none repeat scroll 0 0;
     left: 0;
     margin-bottom: 0px;
-    margin-left: 14px;
     margin-top: 0px;
     width: 74%;
     z-index: 2000;
@@ -6743,9 +6757,7 @@ h2 {
 	.apst-button.collo-apst-button {
     bottom: 75px;
 }
-	.ms-options > ul {
-    display: -moz-groupbox;
-}
+
 .ms-options ul li{
 		font-size: 12px;
 	color: #000;
@@ -6795,7 +6807,7 @@ h2 {
 		width: 100%;
 	}
 	.devops-c-flex{
-		width: 33%;
+		width: 100%;
 	}
 	#ups-devops .devops-para{
 		color: #000;
@@ -7185,6 +7197,7 @@ text-align: inherit;
 .jb-skill1 {
 	list-style-type: initial;
 color:#0ab4c5;
+margin-left: 15px;
 }
 
 }
@@ -7283,6 +7296,49 @@ color:#0ab4c5;
 .blog-dropdown .btn-group-blog{
 	float: left;
 }
+.ms-options-wrap > button:focus, .ms-options-wrap > button {
+	border-radius: 35px;
+	padding: 0 15px;
+	border: none;
+	font-size: 16px;
+	color: #000;
+	font-family: "gotham-rounded-light";
+}
+.ms-options-wrap {
+    padding-right: 15px;
+}
+.ms-options-wrap > button::after{
+	right: 15px !important;
+}
+	.ms-options-wrap > .ms-options > ul input[type="checkbox"] {
+    left: 4px;
+    margin-right: 5px;
+    top: 2px !important;
+    margin-top: 13px !important;
+}
+.ms-options-wrap > .ms-options > ul label {
+    font-weight: normal;
+    }
+	.ms-options-wrap > .ms-options {
+    border: none;
+    left:12% !important;
+    width: 75% !important;
+}
+.ms-options-wrap > button:focus, .ms-options-wrap > button {
+    border: none !important;
+    }
+    	.ms-options > ul {
+    display: -moz-groupbox;
+}
+@media screen and (max-width: 767px){
+	.ms-options-wrap > .ms-options > ul input[type="checkbox"]{
+		top:7px !important;
+		margin-top: 0 !important;
+	}
+	.ms-options-wrap > .ms-options {
+    left: 10% !important;
+}
+	}
 /*
 select#author::-ms-expand,select#cat::-ms-expand {
     display: none;
