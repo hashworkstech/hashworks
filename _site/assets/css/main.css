@@ -4084,7 +4084,7 @@ option:before { content: "☐ " }
 }
 @media screen and (max-width: 1199px){
 	.hw-menu-list li span.menu-icon{
-		background-image: url("../img/Sprite_Icon_set.png");
+		background-image: url("../img/Sprite_Icon.png");
 	    background-repeat: no-repeat;
 	    float: left;
 	    height: 36px;
