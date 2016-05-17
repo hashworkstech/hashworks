@@ -1354,7 +1354,7 @@ div#bootcamp-filter-controls label{
 
 		#upskill-accordion .panel-heading {
 			border-bottom: 2px solid #545454;
-			background-color: #f4f4f4;
+			background-color: transparent;
 		}
 
 	/*End of accordian*/
@@ -4593,9 +4593,13 @@ option:before { content: "☐ " }
     font-family: "gotham-rounded-light" !important;
     font-size: 13px !important;
 }
-	.gotham-rounded-light.hw-heading.h2-color.text-center.hw-line-height {
+	/*.gotham-rounded-light.hw-heading.h2-color.text-center.hw-line-height {
     	padding-left: 30px;
     	padding-right: 30px;
+	}*/
+	.gotham-rounded-light.hw-heading.h2-color.text-center.hw-line-height.es-heading-text{
+		padding-left: 9px;
+    	padding-right: 9px;
 	}
 	.carousel-padding{
 		padding: 0 10px 15px !important;
@@ -6073,6 +6077,9 @@ option:before { content: "☐ " }
 }
 
 @media screen and (min-width:320px) and (max-width: 767px){
+	.cw-tab-container-top .nav-tabs {
+    border-bottom: medium none;
+}
 	.ms-options-wrap {
     background-color: #fff;
 }
@@ -7231,10 +7238,13 @@ margin-left: 15px;
     border: none;
   }
 
- .blog-dropdown .btn-danger:active:hover, .btn-danger:active:focus, .btn-danger.focus:active, .btn-danger.active:hover, .btn-danger.active:focus, .btn-danger.active.focus, .open > .btn-danger.dropdown-toggle:hover, .open > .btn-danger.dropdown-toggle:focus, .open > .btn-danger.dropdown-toggle.focus {
-    background-color: #fff;
-    color: #444;
-    border: none;
+ .blog-dropdown .btn-danger:active:hover, .btn-danger:active:focus, 
+ .btn-danger.focus:active, .btn-danger.active:hover, 
+ .btn-danger.active:focus, .btn-danger.active.focus, 
+ .open > .btn-danger.dropdown-toggle:hover, 
+ .open > .btn-danger.dropdown-toggle:focus,
+  .open > .btn-danger.dropdown-toggle.focus {
+    border: 2px solid #0ab4c5;
   }
 
  .blog-dropdown .bootcamp-dropdown-menu {
@@ -7298,11 +7308,15 @@ margin-left: 15px;
 }
 .ms-options-wrap > button:focus, .ms-options-wrap > button {
 	border-radius: 35px;
-	padding: 0 15px;
+	padding: 0 15px !important;
 	border: none;
 	font-size: 16px;
 	color: #000;
 	font-family: "gotham-rounded-light";
+     height: 35px !important;
+}
+.ms-options-wrap > button::after {
+	height: 35px !important;
 }
 .ms-options-wrap {
     padding-right: 15px;
