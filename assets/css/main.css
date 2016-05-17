@@ -7360,6 +7360,7 @@ margin-left: 15px;
     left:12% !important;
     width: 75% !important;
     min-height: auto !important;
+    z-index: 9;
 }
 .ms-options-wrap > button:focus, .ms-options-wrap > button {
     border: none !important;
