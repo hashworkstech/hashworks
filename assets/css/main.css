@@ -5459,7 +5459,7 @@ option:before { content: "☐ " }
     }
     .collobo-talk-to-us{
         font-size: 11px;
-        padding: 1px 6px 0;
+        padding: 3px 6px;
         margin-right: 22px;
     }
     .collobo-footer-division {
@@ -5778,7 +5778,7 @@ option:before { content: "☐ " }
     padding: 0 0 5px;
 }
 #cw-responsive .collobo-talk-to-us {
-    padding: 3px 6px 0;
+    padding: 3px 6px;
 }
 #cw-responsive .collobo-footer-division{
 	padding: 0;
@@ -6458,6 +6458,9 @@ h2 {
     }
 }
 @media screen and (min-width:320px) and (max-width: 767px){
+	.col-md-6.col-sm-6.col-xs-6.col-xxs-12.cats {
+    padding-left: 0;
+}
     .es-label-section-1{
         background-color: #e6e6e6;
     }

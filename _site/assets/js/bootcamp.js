@@ -205,7 +205,11 @@ function bootcamp_filter_function(){
 bootcamp_filter_function();
 });
 
-$('.bootcamp-dropdown-menu').click(function(e){
+$('.boot-dropdown-menu').click(function(e){
+  e.stopPropagation();
+  $('.dropdown-toggle').dropdown('toggle');
+});
+$('.bootcamp-dropdown-toggle').click(function(e){
   e.stopPropagation();
   $('.dropdown-toggle').dropdown('toggle');
 });
