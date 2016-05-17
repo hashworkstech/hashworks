@@ -5093,15 +5093,10 @@ option:before { content: "☐ " }
   }
 
   .dropdown-menu.bootcamp-dropdown-menu a {
-    -moz-border-bottom-colors: none;
-    -moz-border-left-colors: none;
-    -moz-border-right-colors: none;
-    -moz-border-top-colors: none;
-    border-color: -moz-use-text-color #0ab4c5 #0ab4c5;
-    border-image: none;
-    border-style: none solid solid;
-    border-width: medium 2px 2px;
     padding: 2px 11.5px;
+    border-left:2px solid #0ab4c5;
+    border-bottom:2px solid #0ab4c5;
+    border-right:2px solid #0ab4c5;
   }
 
   .bootcamp-dropdown-menu {
@@ -6813,6 +6808,9 @@ h2 {
 	color: #000;
 	font-family: "gotham-rounded-light";
 }
+.ms-options-wrap > .ms-options > ul li.selected label, .ms-options-wrap > .ms-options > ul label:hover{
+	background-color: transparent;
+}
 .ms-options-wrap {
     padding-right: 15px;
 }
@@ -7365,8 +7363,9 @@ margin-left: 15px;
 .ms-options-wrap > button:focus, .ms-options-wrap > button {
     border: none !important;
     }
-    	.ms-options > ul {
-    display: -moz-groupbox;
+.ms-options > ul {
+    column-count: 1 !important;
+    padding: 0 20px;
 }
 @media screen and (max-width: 767px){
 	.ms-options-wrap > .ms-options > ul input[type="checkbox"]{
