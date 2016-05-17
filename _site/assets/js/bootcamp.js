@@ -209,18 +209,18 @@ $('.boot-dropdown-menu').click(function(e){
   e.stopPropagation();
   $('.dropdown-toggle').dropdown('toggle');
 });
-// $('.bootcamp-dropdown-toggle').click(function(e){
-//   e.stopPropagation();
-//   $('.dropdown-toggle').dropdown('toggle');
-// });
-// $('#bootcamp-dropdown-menu1').click(function(e){
-//   e.stopPropagation();
-//   $('#dropdown-toggle').dropdown('toggle');
-// });
-//  $('#bootcamp-dropdown-menu2').click(function(e){
-//   e.stopPropagation();
-//   $('#dropdown-toggle1').dropdown('toggle');
-// });
+$('.bootcamp-dropdown-toggle').click(function(e){
+  e.stopPropagation();
+  $('.dropdown-toggle').dropdown('toggle');
+});
+$('#bootcamp-dropdown-menu1').click(function(e){
+  e.stopPropagation();
+  $('#dropdown-toggle').dropdown('toggle');
+});
+ $('#bootcamp-dropdown-menu2').click(function(e){
+  e.stopPropagation();
+  $('#dropdown-toggle1').dropdown('toggle');
+});
 
 /*end filtering in bootcamp*/ 
 
