@@ -4570,10 +4570,10 @@ option:before { content: "☐ " }
 		padding: 25px 20%;
 	}
 	.blog-content:nth-child(2n){
-		padding-left: 75px;
+		padding-left: 17px;
 	}
 	.blog-content:nth-child(2n+1){
-		padding-right: 75px;
+		padding-right: 17px;
 	}
 	/*.blog-grid > li {
 		overflow: hidden;
@@ -4783,6 +4783,9 @@ option:before { content: "☐ " }
 	}
 }
 @media screen and (min-width: 768px) and (max-width: 1199px){
+	.contact-modal, #start-project .modal-content{
+		height: initial;
+	}
 	.blog-author{
 		padding: 4px 0 15px;
 	}
@@ -6309,7 +6312,7 @@ h2 {
 }
     .jobs-tab-content{
     	width: 100%;
-    	padding: 0 43px;
+    	padding: 0 40px;
     }
     .text-justify.bootcamp-hw-tab-para {
 	    font-size: 10px;
@@ -7367,8 +7370,11 @@ margin-left: 0;
 	text-align: left !important;
 }
 @media screen and (max-width: 767px){
-	#file-upload{
+#file-upload{
 	height: 24px;
+}
+.bc-mob #file-upload{
+height: 0;
 }
 .submit-background{
 	height: 45px;
@@ -7394,7 +7400,7 @@ margin-left: 0;
     	height: 45px;
     	font-size: 12px;
     }
-    .default-attach-file{
+     .default-attach-file{
     	height: 60px;
     }
     .submit-text{
@@ -7402,6 +7408,9 @@ margin-left: 0;
     }
     input#file-detail {
     display: none;
+}
+.div-attach-file{
+	padding-top: 26px;
 }
 #jb-mob textarea#message {
     padding-top: 11px;
