@@ -7219,7 +7219,7 @@ color:#0ab4c5;
 margin-left: 0;
 }
 .job-hr{
-	color: #bebebe;
+	border-bottom: 1px solid #bebebe;
 }
 
 }
@@ -7368,7 +7368,7 @@ margin-left: 0;
 }
 @media screen and (max-width: 767px){
 	#file-upload{
-	height: 55px;
+	height: 24px;
 }
 .submit-background{
 	height: 45px;
@@ -7378,9 +7378,11 @@ margin-left: 0;
 .form-control{
 	padding: 6px 0;
 	height: 40px;
+	font-size: 12px;
 }
 .sub-width{
 	margin-left: -6px;
+	text-transform: uppercase;
 }
 .attach-text{
 	bottom: 28px;
@@ -7390,10 +7392,23 @@ margin-left: 0;
     }
     .attach-file{
     	height: 45px;
+    	font-size: 12px;
     }
     .default-attach-file{
     	height: 60px;
     }
+    .submit-text{
+    	font-size: 12px;
+    }
+    input#file-detail {
+    display: none;
+}
+#jb-mob textarea#message {
+    padding-top: 11px;
+}
+input.collaborative-input_file-upload {
+    margin-top: 4px;
+}
 	.banner img {
     margin: 0;
 }
