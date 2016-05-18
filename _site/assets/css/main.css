@@ -3570,15 +3570,6 @@ option:before { content: "☐ " }
 	width: 100%; 
 	overflow: hidden; 
 	} 
-	.zoomin img{ 
-	width: 80%; /* -webkit-transition: all 2s ease; 
-		-moz-transition: all 2s ease; -ms-transition: all 2s ease; 
-		transition: all 2s ease; */
-		} 
-		/*.zoomin img:hover { 
-			width: 700px; 
-			height: 300px; 
-		} */
 		.hr-display.service-img-mar.frame.zoomin {
     text-align: center;
 }
@@ -4356,7 +4347,7 @@ option:before { content: "☐ " }
     padding-left: 15px !important;
 }
 .custom-btn {
-    font-family: "gotham-rounded-light";
+    font-family: "gotham-rounded-book";
     font-size: 13px;
 }
 	.default-table{
@@ -4554,13 +4545,13 @@ option:before { content: "☐ " }
 		font-size: 12px;
 	}
 	.DataOps .blog-content-wrapper h4 .month{
-		color: #8ad7c3;
+		color: #11383b;
 	}
 	.uxui .blog-content-wrapper h4 .month{
-		color: #f39c11;
+		color: #11383b;
 	}
 	.Devops .blog-content-wrapper h4 .month,.DataScience .blog-content-wrapper h4 .month,.Mobility .blog-content-wrapper h4 .month{
-		color: #0ab4c5;
+		color: #11383b;
 	}
 	.blog-content-wrapper h3 > a,.blog-content-wrapper .categories-list, .blog-content-wrapper .categories-list > a{
 		color: #737373;
@@ -4682,13 +4673,13 @@ option:before { content: "☐ " }
 		font-size: 12px;
 	}
 	.DataOps .blog-content-wrapper h4 .month{
-		color: #8ad7c3;
+		color: #11383b;
 	}
 	.uxui .blog-content-wrapper h4 .month{
 		color: #0ab4c5;
 	}
 	.Devops .blog-content-wrapper h4 .month,.DataScience .blog-content-wrapper h4 .month,.Mobility .blog-content-wrapper h4 .month{
-		color: #0ab4c5;
+		color: #11383b;
 	}
 	.blog-content-wrapper h3 > a,.blog-content-wrapper .categories-list, .blog-content-wrapper .categories-list > a{
 		color: #737373;
@@ -6537,7 +6528,7 @@ h2 {
         background: #f9d602 none repeat scroll 0 0;
         border: 1px solid #f9d602;
         color: #474e5d;
-        font-family: "gotham-rounded-bold";
+        font-family: "gotham-rounded-book";
         margin-right: 0px;
         padding: 3px 12px;
     }
@@ -6725,9 +6716,6 @@ h2 {
 }
 .tab-mobile .tab-content {
     margin-top: 25px;
-}
-.tab-mobile {
-    margin-bottom: 6px;
 }
 .tab-content.mob-business-content {
     margin-top: 0;
@@ -7058,7 +7046,9 @@ text-align: inherit;
 	}
 }
 @media screen and (max-width:767px){
-
+.text-center.gotham-rounded-bok.heading.hw-carousel-heading.devops-heading > span {
+    margin-left: -35px;
+}
 .blog-grid.clearfix.blog-main {
     padding-left: 25px;
     padding-right: 25px;
@@ -7226,7 +7216,10 @@ text-align: inherit;
 .jb-skill1 {
 	list-style-type: initial;
 color:#0ab4c5;
-margin-left: 15px;
+margin-left: 0;
+}
+.job-hr{
+	color: #bebebe;
 }
 
 }
@@ -7328,6 +7321,7 @@ margin-left: 15px;
 .blog-dropdown .btn-group-blog{
 	float: left;
 }
+
 .ms-options-wrap > button:focus, .ms-options-wrap > button {
 	border-radius: 35px;
 	padding: 0 15px !important;
@@ -7360,6 +7354,7 @@ margin-left: 15px;
     left:12% !important;
     width: 75% !important;
     min-height: auto !important;
+    z-index: 9;
 }
 .ms-options-wrap > button:focus, .ms-options-wrap > button {
     border: none !important;
@@ -7368,7 +7363,40 @@ margin-left: 15px;
     column-count: 1 !important;
     padding: 0 20px;
 }
+.ms-options-wrap > .ms-options > ul label {
+	text-align: left !important;
+}
 @media screen and (max-width: 767px){
+	#file-upload{
+	height: 55px;
+}
+.submit-background{
+	height: 45px;
+	padding-bottom:0;
+	padding-top: 3px; 
+}
+.form-control{
+	padding: 6px 0;
+	height: 40px;
+}
+.sub-width{
+	margin-left: -6px;
+}
+.attach-text{
+	bottom: 28px;
+}
+.input-group-addon {
+    padding: 11px 21px;
+    }
+    .attach-file{
+    	height: 45px;
+    }
+    .default-attach-file{
+    	height: 60px;
+    }
+	.banner img {
+    margin: 0;
+}
 	.ms-options-wrap > .ms-options > ul input[type="checkbox"]{
 		top:7px !important;
 		margin-top: 0 !important;
