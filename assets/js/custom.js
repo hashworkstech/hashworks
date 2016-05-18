@@ -2154,11 +2154,11 @@ $('.eng-zoom-out').click(function () {
 //    document.getElementById("myDiv").style.display="hide";
 // }, 5000);  
 (function(){
-    var myDiv = document.getElementById("myDiv");
+    var myDiv = document.getElementById("init-screen");
 
     var show = function(){
       myDiv.style.display = "block";
-      setTimeout(hide, 5000);  // 5 seconds
+      setTimeout(hide, 2000);  // 5 seconds
     }
 
     var hide = function(){
