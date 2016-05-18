@@ -2131,30 +2131,39 @@ function rotate(el, degs) {
 // //     });
 // });
 // var count=0;
-$('.eng-zoom-in').click(function () {
+// $('.eng-zoom-in').click(function () {
    // if(width < 100+"%"){
   // count++;
   // if(count<=3){
-  $(".zoomin img").animate({
-            width: "+=10%"
-        });
+  // $(".zoomin img").animate({
+  //           width: "+=10%"
+  //       });
   // }
-   });
+   // });
 // var count1=0;
-$('.eng-zoom-out').click(function () {
+// $('.eng-zoom-out').click(function () {
    // if(width < 100+"%"){
   // count1++;
   // if(count1<=3){
-  $(".zoomin img").animate({
-            width: "-=10%"
-        });
+  // $(".zoomin img").animate({
+  //           width: "-=10%"
+  //       });
   // }
-   });
+   // });
 // setTimeout(function(){
 //    document.getElementById("myDiv").style.display="hide";
 // }, 5000);  
+var width=$(".tab-img").width();
+$('.eng-zoom-in').click(function () {
+  if(width < 130+"%"){
+  $(".zoomin img").animate({
+            width: "+=10%"
+        });
+}
+   });
+
 (function(){
-    var myDiv = document.getElementById("init-screen");
+    var myDiv = document.getElementById("logo-img");
 
     var show = function(){
       myDiv.style.display = "block";
