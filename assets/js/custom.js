@@ -1,27 +1,17 @@
-
  //scrollup
-
-
 $(document).ready(function(){
-
-
     $('.toggle').on('click',function (event) { 
         event.preventDefault();
         var target = $(this).attr('href');
         $(target).toggleClass('hidden show');
     });
-
     /* scroll up */
-
     $('.nav-scroll-up').click(function (e) {
       
     $('html, body').animate({scrollTop: '0px'},1.7e3 );
     });
-
     /* end of scroll up */
- 
      $('[data-toggle="tooltip"]').tooltip();   
-
     /* google search button animation*/
     $(".srch-content-menu a.toggle.btn").on('click',function(){
       if(screen.width>767){
@@ -42,12 +32,7 @@ $(document).ready(function(){
       }
       $('.srch-content-menu .srch-txt').toggleClass('srch-txt-hide');
     });
-
-    
-    
-
     /* end */
-
  $(document).on('mouseenter', 'input.gsc-search-button.gsc-search-button-v2', function(){
          $("i.fa.fa-angle-right.search-arrow").css("color", "#ee2b7b");
 });
@@ -2172,20 +2157,20 @@ $('.eng-zoom-out1').click(function () {
 // }
 //    });
 
-(function(){
-    var myDiv = document.getElementById("logo-img");
+// (function(){
+//     var myDiv = document.getElementById("logo-img");
 
-    var show = function(){
-      myDiv.style.display = "block";
-      setTimeout(hide, 2000);  // 5 seconds
-    }
+//     var show = function(){
+//       myDiv.style.display = "block";
+//       setTimeout(hide, 2000);  // 5 seconds
+//     }
 
-    var hide = function(){
-      myDiv.style.display = "none";
-    }
+//     var hide = function(){
+//       myDiv.style.display = "none";
+//     }
 
-    show();
-  })();
+//     show();
+//   })();
 // var expanded = false;
 //     function showCheckboxes() {
 //         var checkboxes = document.getElementById("cat");
