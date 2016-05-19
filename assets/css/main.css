@@ -6350,7 +6350,7 @@ h2 {
 }
     .jobs-tab-content{
     	width: 100%;
-    	padding: 0 15px 75px;
+    	padding: 0 15px 80px;
     }
     .text-justify.bootcamp-hw-tab-para {
 	    font-size: 10px;
@@ -6778,7 +6778,16 @@ h2 {
         text-align: center;
     }
     @media screen and (min-width:768px) and (max-width: 1199px){
-
+   .bc-desk input[type='checkbox']+.case-studies-label-text::after {
+    top: -2px;
+    height: 9px;
+    width: 28px;
+}
+.bc-desk input[type='checkbox']+.case-studies-label-text::before {
+    top: -2px;
+    width: 22px;
+    height: 21px;
+}
     .es-desktop-view .upskill-img{
         max-width: 50% !important;
         float: right;
