@@ -3568,7 +3568,6 @@ option:before { content: "☐ " }
 }
 .frame { 
 	width: 100%; 
-	overflow: hidden; 
 	} 
 		.hr-display.service-img-mar.frame.zoomin {
     text-align: center;
@@ -4783,6 +4782,9 @@ option:before { content: "☐ " }
 	}
 }
 @media screen and (min-width: 768px) and (max-width: 1199px){
+	#google-search-div i.fa.fa-angle-right.search-arrow{
+		margin-left: 156px;
+	}
 	.blog-author{
 		padding: 4px 0 15px;
 	}
