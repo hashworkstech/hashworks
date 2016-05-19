@@ -3577,10 +3577,10 @@ option:before { content: "☐ " }
 .toggle.btn.srch-btn > img {
     width: 18px !important;
 }
-		.eng-zoom-out{
+		.eng-zoom-out, .eng-zoom-out1{
 			float: right;
 		}
-		.eng-zoom-in{
+		.eng-zoom-in, .eng-zoom-in1{
 			float: right;
 			margin-right: 75px;
 		}
