@@ -90,7 +90,7 @@
             <td class="gotham-rounded-bok  hw-contact-no log-color-blue">{{job.location}}</td>
             <td class="gotham-rounded-bok  hw-contact-no">{{job.date | date: '%B %d, %Y'}}</td>
             <td class="gotham-rounded-bok  hw-contact-no">{{job.experience}}</td>
-            <td class="gotham-rounded-bok  hw-contact-no">{{job.type}}</td>
+            <td class="gotham-rounded-bok  hw-contact-no full-time-job">{{job.type}}</td>
             <td class="gotham-rounded-bok hw-contact-no hw-job1" ><span><i class="fa fa-search"></i></span><span class="view-act view-mar">View</span></td>
           </tr>
 
@@ -105,18 +105,18 @@
             <span class="view1-close view-close"><i class="fa fa-times"></i></span>
             <h5 class="gotham-rounded-bold clr-black hw-copyright job-title-mar">Job Description</h5>
             {% for  job_descr in job.job_description %}
-              <li class="gotham-rounded-bok vw-coll-line-height hw-contact-no hw-contact-no job-margin ">{{job_descr}}</li>
+              <li class="job-tab-li job-margin"><p class="gotham-rounded-bok vw-coll-line-height hw-contact-no hw-contact-no">{{job_descr}}</p></li>
             {% endfor %}
 
             <h5 class="gotham-rounded-bold clr-black hw-copyright job-title-mar"> Responsibilities of Visual Designer</h5>
             {% for  job_res in job.responsibilities %}
-              <li class="gotham-rounded-bok vw-coll-line-height hw-contact-no hw-contact-no job-margin ">{{job_res}}</li>
+              <li class="job-tab-li job-margin"><p class="gotham-rounded-bok vw-coll-line-height hw-contact-no hw-contact-no">{{job_res}}</p></li>
             {% endfor %}
             
 
             <h5 class="gotham-rounded-bold clr-black hw-copyright job-title-mar">Skills</h5>
             {% for  job_skill in job.skills %}
-              <li class="gotham-rounded-bok vw-coll-line-height hw-contact-no hw-contact-no job-margin ">{{job_skill}}</li>
+              <li class="job-tab-li job-margin"><p  class="gotham-rounded-bok vw-coll-line-height hw-contact-no hw-contact-no">{{job_skill}}</p></li>
             {% endfor %}
             
             <button class="apply gotham-rounded-bold" data-toggle="modal" data-target="#start-project">Apply Now</button>
@@ -251,7 +251,17 @@
   
 
 
-</main> 
+</main>
+
+<div id="hw-ribbon-our-thinking" class=" log-clr-backgrnd container">
+                <div class="row">
+                    <div class="col-lg-12 col-padding">
+                        <span class="gotham-rounded-light ribon-font clr-white h-approch text-center rbn-ftr-others">We <i class="fa fa-heart  hm-heart"></i> to be your technology partners</span>
+                       
+                       
+                    </div>
+                </div>
+           </div> 
 </div>
 
 <div class="jb-mob" id="jb-mob"> 

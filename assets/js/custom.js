@@ -2174,16 +2174,13 @@ $('.eng-zoom-out1').click(function () {
 
 (function(){
     var myDiv = document.getElementById("logo-img");
-
     var show = function(){
       myDiv.style.display = "block";
-      setTimeout(hide, 3500);  // 5 seconds
+      setTimeout(hide, 3000);  // 5 seconds
     }
-
     var hide = function(){
       myDiv.style.display = "none";
     }
-
     show();
   })();
 // var expanded = false;
