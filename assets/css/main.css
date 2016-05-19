@@ -6321,12 +6321,17 @@ h2 {
     /*.our-thinking-responsive{
         display: none;
     }*/
+    .job-search:hover {
+    background-color: #ee2b7b;
+    border: 1px solid #ee2b7b;
+    color: #fff;
+}
     .gotham-rounded-bok.hw-contact-no {
     font-size: 14px;
 }
     .jobs-tab-content{
     	width: 100%;
-    	padding: 0 40px;
+    	padding: 0 15px;
     }
     .text-justify.bootcamp-hw-tab-para {
 	    font-size: 10px;
