@@ -6079,6 +6079,9 @@ option:before { content: "☐ " }
 }
 
 @media screen and (min-width:320px) and (max-width: 767px){
+	#google-search-div i.fa.fa-angle-right.search-arrow {
+    margin-left: 75px;
+}
 	.subtitle.gotham-rounded-light {
     color: #ee2b7b;
     font-size: 12px !important;
