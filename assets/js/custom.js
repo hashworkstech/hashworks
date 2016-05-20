@@ -54,17 +54,33 @@ $(document).ready(function(){
   $(document).on('mouseleave', 'input.gsc-search-button.gsc-search-button-v2', function(){
          $("i.fa.fa-angle-right.search-arrow").css("color", "gray");
 });
-
-
 //filter for the blog
+if(pageName =="blog"){
     $('#author').multiselect({
       columns: 4,
-      placeholder: 'Authors'
+      placeholder: 'Authors',
+      selectAll : true,
+      minHeight: null
     });
     $('#cat').multiselect({
       columns: 4,
-      placeholder: 'Categories'
+      placeholder: 'Categories',
+      selectAll : true,
+      minHeight: null
     });
+
+    setTimeout(function(){    
+      $('.ms-options > a').on('click',function(){
+        if($(this).text().toLowerCase() == "select all"){
+          $(this).text('unselect all');
+        }
+        else{$(this).text('select all');}
+      });
+    },5000);
+    if(navigator.userAgent.indexOf("Firefox") != -1){
+      $('.ms-options ul').removeAttr('style');
+    // alert('firefox');
+    }
     $('#author,#cat').change(function () {
       var val1 = $('#cat').children('option:selected').data('value');
       var val2 = $('#author').children('option:selected').data('value');
@@ -88,6 +104,7 @@ $(document).ready(function(){
         }
       });
     });
+}
 
     /* we love parter */
     $('.home-hr').addClass("anim");
@@ -2171,18 +2188,18 @@ $('.eng-zoom-out1').click(function () {
 //         });
 // }
 //    });
-
-(function(){
-    var myDiv = document.getElementById("logo-img");
-    var show = function(){
-      myDiv.style.display = "block";
-      setTimeout(hide, 3000);  // 5 seconds
-    }
-    var hide = function(){
-      myDiv.style.display = "none";
-    }
-    show();
-  })();
+if(pageName == "homepage"){
+  (function(){
+      var myDiv = document.getElementById("logo-img");
+      var show = function(){
+        setTimeout(hide, 3000);  // 5 seconds
+      }
+      var hide = function(){
+        myDiv.style.display = "none";
+      }
+      show();
+    })();
+}
 // var expanded = false;
 //     function showCheckboxes() {
 //         var checkboxes = document.getElementById("cat");
