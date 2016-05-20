@@ -1916,9 +1916,9 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
       // }
       $('.hwmt .slick-dots').css('top', th+'px');
     }
-
-    setTimeout(slick_dots,1000);
-
+    $(".hw-hero-banner img").one('load', function() {
+      setTimeout(slick_dots,200);
+    });
     $(window).resize(function() {
       function slick_resize(){        
         var slick_h = $('.hw-hompage-banner').height();
