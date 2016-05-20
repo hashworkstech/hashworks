@@ -6060,6 +6060,10 @@ option:checked:before {
     .ot-tab-container-top {
         padding-top: 38px;
     }
+    #outer
+	{
+	    overflow-y:scroll;
+	}
     .pf-mob {
         margin: 40px auto 0;
     }
@@ -6440,7 +6444,7 @@ h2 {
     }*/
     
     .heading-custom-btn {
-        padding: 4px 20px 5px;
+        padding: 5px 20px 5px;
     }
     #cw-responsive .heading-custom-btn {
         padding: 6px 20px 5px;
@@ -6928,6 +6932,11 @@ h2 {
     display: none;
 }
 @media screen and (max-width: 1199px) {
+	.tab-img-div{
+		height: 100%;
+		width: 100%;
+		overflow: scroll;
+	}
     .contact-modal,
     #start-project .modal-content {
         height: initial;
