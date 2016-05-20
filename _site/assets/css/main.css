@@ -6936,6 +6936,7 @@ h2 {
 		height: 100%;
 		width: 100%;
 		overflow: scroll;
+		padding-bottom: 10px;
 	}
     .contact-modal,
     #start-project .modal-content {
