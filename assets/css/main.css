@@ -7303,7 +7303,7 @@ h2 {
 }
 @media screen and (max-width: 1199px) {
     #logo-img {
-        animation: anime2 3s  linear;
+        animation: anime2 3.5s  linear;
         background-color: #fff;
         height: inherit;
         opacity: 0;
