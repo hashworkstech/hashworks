@@ -7301,9 +7301,12 @@ h2 {
 .jb-mob {
     display: none;
 }
+.techImg.techImg1 > img {
+    margin: 2px 0 6px;
+}
 @media screen and (max-width: 1199px) {
     #logo-img {
-        animation: anime2 3.5s  linear;
+        animation: anime2 3s  linear;
         background-color: #fff;
         height: inherit;
         opacity: 0;
