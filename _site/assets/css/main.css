@@ -7118,6 +7118,9 @@ h2 {
         margin: 24px 55px 0;
     }
 }
+/*#home-screen{
+	visibility: hidden;
+}*/
 @media screen and (max-width: 767px) {
     /*#home-screen{
 	overflow: hidden;
@@ -7306,7 +7309,7 @@ h2 {
 }
 @media screen and (max-width: 1199px) {
     #logo-img {
-        animation: anime2 2.5s  linear;
+        animation: anime2 3.5s  linear;
         background-color: #fff;
         height: inherit;
         opacity: 0;

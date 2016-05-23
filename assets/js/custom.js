@@ -2220,16 +2220,20 @@ $('.eng-zoom-out1').click(function () {
 // }
 //    });
 if(pageName == "homepage"){
-  (function(){
-      var myDiv = document.getElementById("logo-img");
-      var show = function(){
-        setTimeout(hide, 3000); 
-      }
-      var hide = function(){
-        myDiv.style.display = "none";
-      }
-      show();
-    })();
+  $("#logo-img img").bind('load', function() {
+      setTimeout(logo_img,5000);
+    });
+  function logo_img(){
+    var myDiv = document.getElementById("logo-img");
+    var show = function(){
+      setTimeout(hide, 4000); 
+    }
+    var hide = function(){
+      myDiv.style.display = "none";
+      // $('#home-screen').css('visibility','visible');
+    }
+    show();
+  }
 }
 // var expanded = false;
 //     function showCheckboxes() {
