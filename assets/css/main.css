@@ -7309,16 +7309,16 @@ h2 {
 }
 @media screen and (max-width: 1199px) {
     #logo-img {
-        animation: anime2 3.5s  linear;
+        /*animation: anime2 3.5s  linear;*/
+        display: table;
         background-color: #fff;
         height: inherit;
-        opacity: 0;
         position: inherit;
         width: 100%;
         z-index: 10;
         overflow: hidden;
     }
-    @keyframes anime2 {
+    /*@keyframes anime2 {
         0% {
             -webkit-transform: scale(1);
             -ms-transform: scale(1);
@@ -7336,19 +7336,19 @@ h2 {
             border-radius: 0%;
         }
         81% {
-            border-radius: 50%;
+            border-radius: 0%;
         }
         100% {
             -webkit-transform: scale(0);
             -ms-transform: scale(0);
             -o-transform: scale(0);
             transform: scale(0);
-            border-radius: 50%;
-        }
+            border-radius: 0%;
+        }*/
         .jb-desk-tab > main {
             margin-top: 20px;
         }
-    }
+    /*}*/
 }
 @media screen and (max-width: 767px) {
     .text-center.gotham-rounded-bok.heading.hw-carousel-heading.devops-heading > span {
