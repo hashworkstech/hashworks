@@ -2223,7 +2223,7 @@ if(pageName == "homepage"){
   (function(){
       var myDiv = document.getElementById("logo-img");
       var show = function(){
-        setTimeout(hide, 10000);
+        setTimeout(hide, 3000);  // 5 seconds
       }
       var hide = function(){
         myDiv.style.display = "none";
