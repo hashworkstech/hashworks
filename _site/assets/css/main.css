@@ -6626,6 +6626,7 @@ h2 {
     }
     .col-md-6.col-sm-6.col-xs-6.col-xxs-12.cats {
         padding-left: 0;
+        padding-right: 0;
     }
     .es-label-section-1 {
         background-color: #e6e6e6;
@@ -7755,6 +7756,10 @@ input[type="radio"] {
     }
     .row.filters.cs-li-margin{
         margin: 24px 35px 0;
+    }
+    .ms-options-wrap {
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
 @media screen (min-width: 641px) and (max-width: 1199px){
