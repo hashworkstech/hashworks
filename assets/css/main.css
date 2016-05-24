@@ -2504,7 +2504,7 @@ nav #toc a#toc-actuator {
     cursor: pointer;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px){
-    #nav-icon1 {
+    .hw-home-nav-header #nav-icon1 {
         top: 8px;
         margin: 2px 28px;
     }
