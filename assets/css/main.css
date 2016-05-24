@@ -298,7 +298,7 @@ a:hover,
     color: #c9443d;
 }
 .hw-our-thinking-head-contents {
-    margin-top: 20px;
+    margin-top: 14px;
     margin-bottom: 18px;
 }
 .explore-btn {
@@ -451,8 +451,8 @@ a:hover,
 /* end of general css */
 /*homepage header*/
 /*.top-margin-zero {
-		margin: 20px !important;
-	}*/
+        margin: 20px !important;
+    }*/
 
 header.hw-home {
     position: fixed;
@@ -651,9 +651,9 @@ nav.navbar-default.hw-hover-header {
     margin-top: 28px;
 }
 /*.div-margin-left {
-			margin-left: 100px;
-			margin-right: 100px;
-		}*/
+            margin-left: 100px;
+            margin-right: 100px;
+        }*/
 
 .para {
     color: #7e7e7e;
@@ -822,8 +822,8 @@ nav.navbar-default.hw-hover-header {
     border-bottom: 2px solid #e4e5e1;
 }
 /*.prot-img .nav-tabs {
-		height: 173px;
-	}*/
+        height: 173px;
+    }*/
 
 .tab-img li {
     list-style-type: none;
@@ -949,8 +949,8 @@ nav.navbar-default.hw-hover-header {
     padding: 0 100px;
 }
 .devops-img-header{
-		display: none;
-		}
+        display: none;
+        }
 @media screen and (max-width: 1199px) {
     #subject,
     #message {
@@ -1301,13 +1301,13 @@ div#bootcamp-filter-controls label {
 #testimonial .carousel-inner {
     padding: 0 50px;
 }
-/*		       .carousel-inner > .item {
+/*             .carousel-inner > .item {
        
-		    -webkit-transition: 0.2s ease-in-out left;
-		    -moz-transition: 0.2s ease-in-out left;
-		    -o-transition: 0.2s ease-in-out left;
-		    transition: 0.2s ease-in-out left;
-		}*/
+            -webkit-transition: 0.2s ease-in-out left;
+            -moz-transition: 0.2s ease-in-out left;
+            -o-transition: 0.2s ease-in-out left;
+            transition: 0.2s ease-in-out left;
+        }*/
 
 #testimonial .hw-test-img .img-outer,
 #testimonial .hw-test-img ul {
@@ -1787,14 +1787,14 @@ span.page-number.clickable:hover {
 }
 /* case study _detail */
 /*.casestudy-img {
-	    background-image: url("http://forgeandsmith.com/wp-content/uploads/2014/06/casestudies.jpg");;
-	    background-repeat: no-repeat;
-	    background-position: 50% 0.0181803%;
-	    height: 500px;
-	    width: 100%;
-	    background-size: 180% auto;
-	    position: relative;
-	}*/
+        background-image: url("http://forgeandsmith.com/wp-content/uploads/2014/06/casestudies.jpg");;
+        background-repeat: no-repeat;
+        background-position: 50% 0.0181803%;
+        height: 500px;
+        width: 100%;
+        background-size: 180% auto;
+        position: relative;
+    }*/
 
 .banner-inner {
     position: absolute;
@@ -1879,8 +1879,8 @@ span.page-number.clickable:hover {
     padding: 12px 0px 12px 0px;
 }
 /*.blog-grid li:nth-child(2n) {
-	   background: #67b4bb none repeat scroll 0 0;
-	}*/
+       background: #67b4bb none repeat scroll 0 0;
+    }*/
 
 .blog-grid .image-wrapper {
     position: relative;
@@ -2410,15 +2410,15 @@ h5 {
 
     header .navbar-default,
     .hw-fixed-heading {
-    	max-width: 1500px;
+        max-width: 1500px;
     }
 
     .logo {
-    	padding-left: 15px;
+        padding-left: 15px;
     }
     .scroll-indicators {
       right: 200px;
-	}
+    }
 
 }*/
 /* menu for header */
@@ -2503,10 +2503,15 @@ nav #toc a#toc-actuator {
     transition: .5s ease-in-out;
     cursor: pointer;
 }
-@media screen and (min-width: 767px) and (max-width: 1199px){
+@media screen and (min-width: 768px) and (max-width: 1199px){
     #nav-icon1 {
         top: 8px;
         margin: 2px 28px;
+    }
+}
+@media screen and (max-width: 767px){
+    .hw-home-nav-header #nav-icon1 {
+        top: -6px;
     }
 }
 #nav-icon1 span,
@@ -3456,7 +3461,7 @@ i.fa.fa-chevron-down.down-arrow {
     left: 50%;
     margin-left: -500px;
 }
-	*/
+    */
 }
 /* START : Mobile.css */
 
@@ -3680,7 +3685,7 @@ option:checked:before {
     }
 }
 @media screen and (max-width: 767px) {
-	.hw-menu-list li span.menu-icon {
+    .hw-menu-list li span.menu-icon {
         background-image: url("../img/Sprite_Icon_set_24.png");
         height: 24px;
         width: 24px;
@@ -3706,7 +3711,7 @@ option:checked:before {
         background-position: -63px -91px;
     }
     .news-icon span.menu-icon {
-        background-position: -34px -120px;
+        background-position: -34px -122px;
     }
     .pf-icon:hover span.menu-icon {
         background-position: -5px -5px;
@@ -3727,7 +3732,7 @@ option:checked:before {
         background-position: -63px -63px;
     }
     .news-icon:hover span.menu-icon {
-        background-position: -5px -120px;
+        background-position: -5px -122px;
     }
     .hw-mob-header {
         font-size: 22px;
@@ -3754,8 +3759,8 @@ option:checked:before {
         height: 100% !important;
     }
     /*.slick-dots {
-	    bottom: 35%;
-	}*/
+        bottom: 35%;
+    }*/
     
     .slick-track {
         height: 100%;
@@ -4097,7 +4102,7 @@ option:checked:before {
     .company-value {
         color: #ee2b7b;
         font-size: 24px;
-        margin-top: 25px !important;
+        margin-top: 18px !important;
     }
     .hw-company-gen-txt {
         text-align: justify;
@@ -4161,7 +4166,7 @@ option:checked:before {
 }
 @media screen and (max-width: 767px) {
     .col-padding {
-        padding: 4px 10px 7px 10px;
+        padding: 7px 10px 7px 10px;
     }
     .company-value,
     .company-btm .hw-contact-no,
@@ -4187,10 +4192,10 @@ option:checked:before {
         padding-bottom: 0;
     }
     .company-btm {
-        padding-top: 25px;
+        padding-top: 22px;
     }
     .company-para {
-        padding: 18px 0;
+        padding: 14px 0;
     }
     .company-det {
         padding-bottom: 0;
@@ -4452,6 +4457,10 @@ option:checked:before {
     nav #toc ul li {
         width: 64%;
     }
+    nav#toc ul li.srch-content-menu,nav #toc ul .srch-content-menu{
+        width: 80%;
+        padding-left: 15px;
+    }
 }
 /* End : header.css */
 /* Start : footer.css */
@@ -4698,8 +4707,8 @@ option:checked:before {
         padding-right: 17px;
     }
     /*.blog-grid > li {
-		overflow: hidden;
-	}*/
+        overflow: hidden;
+    }*/
 }
 /* End : blog.css*/
 
@@ -4713,16 +4722,16 @@ option:checked:before {
         font-size: 13px !important;
     }
     /*.gotham-rounded-light.hw-heading.h2-color.text-center.hw-line-height {
-    	padding-left: 30px;
-    	padding-right: 30px;
-	}*/
+        padding-left: 30px;
+        padding-right: 30px;
+    }*/
     
     .gotham-rounded-light.hw-heading.h2-color.text-center.hw-line-height.es-heading-text {
         padding-left: 9px;
         padding-right: 9px;
     }
     .carousel-padding {
-        padding: 0 10px 15px !important;
+        padding: 0 15px 5px !important;
     }
     .hw-font-heading1 {
         font-family: "gotham-rounded-light";
@@ -4732,10 +4741,14 @@ option:checked:before {
     .blog-margin {
         margin-top: 0;
     }
+    .blog-margin .clearfix{
+        padding: 2px 0 10px;
+    }
     .blog-grid li h3 {
         color: #ee2b7b;
         font-size: 12px;
-        margin-top: 15px;
+        margin-top: 12px;
+        margin-bottom: 13px;
         padding-bottom: 0px;
         text-align: center;
     }
@@ -4777,7 +4790,7 @@ option:checked:before {
         border-radius: 35px;
         margin: 0 auto;
         padding: 0;
-        width: 210px;
+        width: 220px;
         text-align: center;
         float: none;
     }
@@ -4827,6 +4840,10 @@ option:checked:before {
     }
     .blog-content:nth-child(2n+1) {
         padding-right: 15px;
+    }
+    .blog-para-first{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
 }
 /* Start : Blog.css */
@@ -4919,10 +4936,10 @@ option:checked:before {
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-	.our-thinking-responsive {
+    .our-thinking-responsive {
     overflow-x: hidden;
 }
-	 .hw-menu-list li span.menu-icon {
+     .hw-menu-list li span.menu-icon {
         background-image: url("../img/Sprite_Icon.png");
         background-repeat: no-repeat;
         float: left;
@@ -4971,19 +4988,19 @@ option:checked:before {
     .news-icon:hover span.menu-icon {
         background-position: -5px -169px;
     }
-	.li-tab-mar > img {
+    .li-tab-mar > img {
     width: 75px;
 }
 .gotham-rounded-light.text-center.devops-para > p {
     margin-bottom: 8px;
     margin-top: 14px;
 }
-	.devops-img-header{
-		display: block;
-		 background-color: #adabab;
+    .devops-img-header{
+        display: block;
+         background-color: #adabab;
     padding: 16px 0;
-	}
-	.vw-coll-line-height {
+    }
+    .vw-coll-line-height {
     line-height: 28px;
 }
     .collapse-button > img {
@@ -5141,12 +5158,12 @@ option:checked:before {
 }
 @media screen and (max-width: 359px) {
     /*.about-us .ribon-font {
-	    font-size: 10px !important;
-	}*/
+        font-size: 10px !important;
+    }*/
     /*.about-us .our-heading-custom-btn{
-		font-size: 8px !important;
-		padding: 3px 2px;
-	}*/
+        font-size: 8px !important;
+        padding: 3px 2px;
+    }*/
 }
 /*bootcamp css*/
 
@@ -5640,6 +5657,15 @@ option:checked:before {
     padding: 0;
     width: 600px;
 }
+#jb-mob .collobo-footer-division {
+    padding: 8px 0;
+    display: table;
+}
+#jb-mob .collobo-hw-main-heading{
+    font-size: 10px;
+    padding: 10px 0;
+    text-align: center;
+}
 .clearfix {
     padding: 12px 0 10px;
 }
@@ -6083,8 +6109,8 @@ option:checked:before {
         width: 33.33%;
     }
     /*.dev-container .nav-tabs > li{
-		margin-bottom: -4px;
-	}*/
+        margin-bottom: -4px;
+    }*/
     
     .cw-tab-val {
         border-bottom: 4px solid #e4e5e1;
@@ -6139,9 +6165,9 @@ option:checked:before {
         padding-top: 38px;
     }
     #outer
-	{
-	    overflow-y:scroll;
-	}
+    {
+        overflow-y:scroll;
+    }
     .pf-mob {
         margin: 40px auto 0;
     }
@@ -6289,7 +6315,7 @@ option:checked:before {
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
     #google-search-div i.fa.fa-angle-right.search-arrow {
-        margin-left: 75px;
+        margin-left: 105px;
     }
     .subtitle.gotham-rounded-light {
         color: #ee2b7b;
@@ -6696,8 +6722,8 @@ h2 {
     }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
-	.ms-options-wrap > .ms-options .ms-selectall {
-    	font-size: 14px !important;
+    .ms-options-wrap > .ms-options .ms-selectall {
+        font-size: 14px !important;
     }
     .col-md-6.col-sm-6.col-xs-6.col-xxs-12.cats {
         padding-left: 0;
@@ -7020,12 +7046,12 @@ h2 {
     display: none;
 }
 @media screen and (max-width: 1199px) {
-	.tab-img-div{
-		height: 100%;
-		width: 100%;
-		overflow: scroll;
-		padding-bottom: 10px;
-	}
+    .tab-img-div{
+        height: 100%;
+        width: 100%;
+        overflow: scroll;
+        padding-bottom: 10px;
+    }
     .contact-modal,
     #start-project .modal-content {
         height: initial;
@@ -7070,7 +7096,7 @@ h2 {
         padding: 0 15px;
         border: none;
         font-size: 14px;
-        color: #000;
+        color: #000 !important;
         font-family: "gotham-rounded-light";
     }
     .ms-options-wrap > .ms-options > ul li.selected label,
@@ -7207,24 +7233,24 @@ h2 {
     }
 }
 /*#home-screen{
-	visibility: hidden;
+    visibility: hidden;
 }*/
 @media screen and (max-width: 767px) {
     /*#home-screen{
-	overflow: hidden;
-	width: 100%;
-	height:100vh;
+    overflow: hidden;
+    width: 100%;
+    height:100vh;
 
 }*/
     /*#init-screen{
-	overflow: hidden;
-	width: 100%;
-	height:100vh;
-	background-color: #fff;
+    overflow: hidden;
+    width: 100%;
+    height:100vh;
+    background-color: #fff;
 
-	position: absolute;
-	
-	opacity: 0;
+    position: absolute;
+    
+    opacity: 0;
     animation:anime2 2.8s linear;
 }*/
     /*#logo-img{*/
@@ -7244,37 +7270,37 @@ h2 {
     animation:anime1 2.6s linear;
 }*/
     /*@keyframes anime1{
-	0%{top: 50%;opacity:1;}
-	80%{top: 50%;opacity:1;}
-	100%{top: 100%;}
+    0%{top: 50%;opacity:1;}
+    80%{top: 50%;opacity:1;}
+    100%{top: 100%;}
 }
 @keyframes anime2{
-	0%{	-webkit-transform: scale(1);
-		-ms-transform: scale(1);
-		-o-transform: scale(1);
-		transform: scale(1);
-		opacity:1;
-		border-radius: 0;
-	}
-	80%{-webkit-transform: scale(1);
-		-ms-transform: scale(1);
-		-o-transform: scale(1);
-		transform: scale(1);
-		opacity:1;
-		border-radius: 0;
-	}
-	100%{-webkit-transform: scale(1);
-		-ms-transform: scale(0);
-		-o-transform: scale(0);
-		transform: scale(0);
-		border-radius: 70%;}
+    0%{ -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+        opacity:1;
+        border-radius: 0;
+    }
+    80%{-webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+        opacity:1;
+        border-radius: 0;
+    }
+    100%{-webkit-transform: scale(1);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+        border-radius: 70%;}
 }
 #home-screen .home-screen1{
-	animation: anime3 2s linear;
+    animation: anime3 2s linear;
 }
 @keyframes anime3{
-	from{margin-top: -70%;opacity: 0;}
-	to{margin-top: 0%;}
+    from{margin-top: -70%;opacity: 0;}
+    to{margin-top: 0%;}
 }*/
     
     .es-service-img-mar {
@@ -7504,15 +7530,15 @@ h2 {
     .job-table-cell {
         display: table-cell;
     }
-    /*	input[type=radio]{
-    	border: 1px solid #aeaeae;
-	}
-	input[type="radio"]:checked + label span{
-     	color: #ee2b7b;
-	}
-	input[type=radio]:checked .check::before{
-  		color: #ee2b7b;
-	}*/
+    /*  input[type=radio]{
+        border: 1px solid #aeaeae;
+    }
+    input[type="radio"]:checked + label span{
+        color: #ee2b7b;
+    }
+    input[type=radio]:checked .check::before{
+        color: #ee2b7b;
+    }*/
     
     .job-title {
         color: #343434;
@@ -7560,7 +7586,7 @@ h2 {
     #jb-mob .pannel-job ul li {
         list-style: none;
     }
-    #jb-mob .pannel-job ul li:before {
+    .pannel-job ul li.jb-skill1:before {
         content: '\2022';
         display: block;
         position: relative;
@@ -7743,6 +7769,7 @@ input[type="radio"] {
     left: 12% !important;
     width: 75% !important;
     min-height: auto !important;
+    max-height: 200px !important;
     z-index: 9;
 }
 .ms-options-wrap > button:focus,
@@ -7816,7 +7843,9 @@ input[type="radio"] {
         left: 10% !important;
     }
 }
-
+.blog-grid .intro-wrapper{
+    overflow: visible;
+}
 @media screen and (min-width: 1200px){
     .blog-grid .intro-wrapper {
         padding: 0 50px 50px;
@@ -7827,10 +7856,17 @@ input[type="radio"] {
         padding: 0;
     }
 }
+@media screen and (max-width: 767px){
+    .hw-works-row .nav-scroll-up {
+        display: none !important;
+    }
+    .blog-grid a.button{
+        padding: 14px 20%;
+    }
+}
 @media screen and (max-width: 640px){
     .blog-grid .intro-wrapper{
-        padding: 0 0 24px;
-        overflow: visible;
+        padding: 0;
     }
     .tagline.gotham-rounded-bold.margin-zero.hw-font-heading1 {
         margin-left: 0;
@@ -7841,7 +7877,7 @@ input[type="radio"] {
         padding-right: 0;
     }
     .row.filters.cs-li-margin{
-        margin: 24px 35px 0;
+        margin: 20px 25px 0;
     }
     .ms-options-wrap {
         padding-left: 5px;
