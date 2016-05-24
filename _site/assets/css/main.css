@@ -3703,10 +3703,10 @@ option:checked:before {
         background-position: -34px -93px;
     }
     .jb-icon span.menu-icon {
-        background-position: -63px -93px;
+        background-position: -63px -91px;
     }
     .news-icon span.menu-icon {
-        background-position: -34px -122px;
+        background-position: -34px -120px;
     }
     .pf-icon:hover span.menu-icon {
         background-position: -5px -5px;
@@ -3727,7 +3727,7 @@ option:checked:before {
         background-position: -63px -63px;
     }
     .news-icon:hover span.menu-icon {
-        background-position: -5px -122px;
+        background-position: -5px -120px;
     }
     .hw-mob-header {
         font-size: 22px;
@@ -4919,6 +4919,9 @@ option:checked:before {
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+	.our-thinking-responsive {
+    overflow-x: hidden;
+}
 	 .hw-menu-list li span.menu-icon {
         background-image: url("../img/Sprite_Icon.png");
         background-repeat: no-repeat;
