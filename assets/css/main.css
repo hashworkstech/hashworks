@@ -4570,7 +4570,7 @@ option:checked:before {
     width: 200px;
 }
 .blog-grid .intro-wrapper {
-    padding: 0 15px 50px;
+    padding: 0 15px 24px;
 }
 @media screen and (max-width: 640px) {
     .col-xxs-12 {
@@ -4616,9 +4616,6 @@ option:checked:before {
         font-family: "gotham-rounded-light";
         font-size: 20px;
         text-align: center;
-    }
-    .blog-grid .intro-wrapper {
-        padding: 0 30px 10px;
     }
     .blog-margin {
         margin-top: 0;
@@ -4726,9 +4723,6 @@ option:checked:before {
         font-family: "gotham-rounded-light";
         font-size: 14px;
         text-align: center;
-    }
-    .blog-grid .intro-wrapper {
-        padding: 0 30px 10px;
     }
     .blog-margin {
         margin-top: 0;
@@ -7126,7 +7120,7 @@ h2 {
         font-size: 16px;
     }
     .row.filters.cs-li-margin {
-        margin: 24px 55px 0;
+        margin: 24px 0px 0;
     }
 }
 /*#home-screen{
@@ -7735,58 +7729,37 @@ input[type="radio"] {
         left: 10% !important;
     }
 }
-/*
-select#author::-ms-expand,select#cat::-ms-expand {
-    display: none;
+
+@media screen and (min-width: 1200px){
+    .blog-grid .intro-wrapper {
+        padding: 0 50px 50px;
+        width: 50%;
+    }
+    .blog-grid > li{
+        width: 25%;
+        padding: 0;
+    }
 }
-select#cat,select#author {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    text-indent: 1px;
-    text-overflow: '';
+@media screen and (max-width: 640px){
+    .blog-grid .intro-wrapper{
+        padding: 0 0 24px;
+        overflow: visible;
+    }
+    .tagline.gotham-rounded-bold.margin-zero.hw-font-heading1 {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .col-md-6.col-sm-6.col-xs-6.col-xxs-12.cats{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .row.filters.cs-li-margin{
+        margin: 24px 35px 0;
+    }
 }
-#google-search-div i.fa.fa-angle-right.search-arrow {
-    margin-left: 150px;
-    }
-.multiselect1 {
-    background-color: #ededed;
-    border-radius: 35px;
+@media screen (min-width: 641px) and (max-width: 1199px){
+   .blog-grid li.intro-wrapper p{
+        margin: 0;
+        padding: 0;
+   } 
 }
-    .selectBox {
-        position: relative;
-    }
-    .checkbox-label{
-    	font-weight: normal;
-    	font-family: "gotham-rounded-light";
-    	color: #000;
-    	font-size: 12px;
-    }
-    .checkboxes1 {
-    background-color: #efefef;
-    margin-left: 14px;
-    margin-right: 14px;
-    text-align: initial;
-}
-    input[type="checkbox"] {
-margin: 4px 10px 0;
-}
-    .overSelect {
-        position: absolute;
-        left: 0; right: 0; top: 0; bottom: 0;
-    }
-    .checkboxes1 {
-        display: none;
-        border: 1px #dadada solid;
-    }
-    .checkboxes1 label {
-        display: block;
-    }
-    .checkboxes1 label:hover {
-        background-color: #1e90ff;
-    }
-    .option-name{
-    	font-family: "gotham-rounded-light";
-    	font-weight: normal;
-    	font-size: 14px;
-    	color: #000;
-    }*/
