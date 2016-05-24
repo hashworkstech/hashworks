@@ -480,6 +480,11 @@ header.hw-home .navbar-default {
     padding: 10px 15px 0;
     z-index: 10;
 }
+@media screen and (min-width:768px) and (max-width: 1199px){
+    .logo {
+        padding: 24px 28px 0;
+    }
+}
 .logo > a {
     background: url(/assets/img/logo.png);
     background-size: cover;
@@ -2480,7 +2485,7 @@ nav #toc a#toc-actuator {
     float: right;
     right: 0px;
     z-index: 1;
-    width: 23px;
+    width: 24px;
     height: 45px;
     top: 0;
     position: relative;
@@ -2494,6 +2499,12 @@ nav #toc a#toc-actuator {
     -o-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
     cursor: pointer;
+}
+@media screen and (min-width: 767px) and (max-width: 1199px){
+    #nav-icon1 {
+        top: 8px;
+        margin: 2px 28px;
+    }
 }
 #nav-icon1 span,
 #nav-icon3 span,
@@ -3496,7 +3507,7 @@ i.fa.fa-chevron-down.down-arrow {
         position: absolute;
         right: 25%;
         text-align: center;
-        top: 0;
+        top: 10px;
         width: 50%;
     }
     .hw-hero-banner {
