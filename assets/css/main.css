@@ -172,7 +172,7 @@ a:hover,
     /* 18px */
 }
 .hm-vertical1 {
-    margin-top: 3px !important;
+    margin-top: 0;
 }
 .hw-para,
 .header-links {
@@ -948,6 +948,9 @@ nav.navbar-default.hw-hover-header {
 .heading-caro-padd {
     padding: 0 100px;
 }
+.devops-img-header{
+		display: none;
+		}
 @media screen and (max-width: 1199px) {
     #subject,
     #message {
@@ -1079,7 +1082,7 @@ div#bootcamp-filter-controls label {
 @media screen and (max-width: 1199px) {
     .banner img {
         width: 100%;
-        margin: 36px 0 20px;
+        margin: 18px 0 20px;
     }
 }
 .cs-cntr-mar {
@@ -3677,6 +3680,55 @@ option:checked:before {
     }
 }
 @media screen and (max-width: 767px) {
+	.hw-menu-list li span.menu-icon {
+        background-image: url("../img/Sprite_Icon_set_24.png");
+        height: 24px;
+        width: 24px;
+        background-repeat: no-repeat;
+        float: left;
+    }
+    .pf-icon span.menu-icon {
+    background-position: -5px -34px;
+}
+.es-icon span.menu-icon {
+    background-position: -34px -34px;
+}
+.cs-icon span.menu-icon {
+    background-position: -62px -34px;
+}
+    .comp-icon span.menu-icon {
+        background-position: -5px -92px;
+    }
+    .blog-icon span.menu-icon {
+        background-position: -34px -93px;
+    }
+    .jb-icon span.menu-icon {
+        background-position: -63px -93px;
+    }
+    .news-icon span.menu-icon {
+        background-position: -34px -122px;
+    }
+    .pf-icon:hover span.menu-icon {
+        background-position: -5px -5px;
+    }
+    .es-icon:hover span.menu-icon {
+        background-position: -34px -5px;
+    }
+    .cs-icon:hover span.menu-icon {
+        background-position: -87px -5px;
+    }
+    .comp-icon:hover span.menu-icon {
+        background-position: -5px -63px;
+    }
+    .blog-icon:hover span.menu-icon {
+        background-position: -34px -63px;
+    }
+    .jb-icon:hover span.menu-icon {
+        background-position: -63px -63px;
+    }
+    .news-icon:hover span.menu-icon {
+        background-position: -5px -122px;
+    }
     .hw-mob-header {
         font-size: 22px;
     }
@@ -4082,7 +4134,7 @@ option:checked:before {
     }
     #start-project .close-pop {
         height: 15px;
-        right: 50px;
+        right: 24px;
         top: 24px;
     }
     .form-container > h1 {
@@ -4174,58 +4226,10 @@ option:checked:before {
     }
 }
 @media screen and (max-width: 1199px) {
-    .hw-menu-list li span.menu-icon {
-        background-image: url("../img/Sprite_Icon.png");
-        background-repeat: no-repeat;
-        float: left;
-        height: 36px;
-        width: 36px;
-    }
     .hw-menu-list li span.menu-text {
         float: left;
     }
-    .pf-icon span.menu-icon {
-        background-position: -5px -46px;
-    }
-    .es-icon span.menu-icon {
-        background-position: -46px -46px;
-    }
-    .cs-icon span.menu-icon {
-        background-position: -87px -46px;
-    }
-    .comp-icon span.menu-icon {
-        background-position: -5px -128px;
-    }
-    .blog-icon span.menu-icon {
-        background-position: -46px -127px;
-    }
-    .jb-icon span.menu-icon {
-        background-position: -87px -127px;
-    }
-    .news-icon span.menu-icon {
-        background-position: -46px -169px;
-    }
-    .pf-icon:hover span.menu-icon {
-        background-position: -5px -5px;
-    }
-    .es-icon:hover span.menu-icon {
-        background-position: -46px -5px;
-    }
-    .cs-icon:hover span.menu-icon {
-        background-position: -87px -5px;
-    }
-    .comp-icon:hover span.menu-icon {
-        background-position: -5px -87px;
-    }
-    .blog-icon:hover span.menu-icon {
-        background-position: -46px -87px;
-    }
-    .jb-icon:hover span.menu-icon {
-        background-position: -87px -87px;
-    }
-    .news-icon:hover span.menu-icon {
-        background-position: -5px -169px;
-    }
+    
     .hw-home-nav-header {
         position: absolute;
         width: 100%
@@ -4460,7 +4464,7 @@ option:checked:before {
         padding-left: 15px !important;
     }
     .custom-btn {
-        font-family: "gotham-rounded-book";
+        font-family: "gotham-rounded-bold";
         font-size: 13px;
     }
     .default-table {
@@ -4579,7 +4583,8 @@ option:checked:before {
 }
 @media screen and (max-width: 1199px) {
     .devops-cont.devops-count {
-        padding-left: 15px;
+        padding-left: 8px;
+        padding-right: 8px
     }
     .panel.panel-default.accordion-toggle {
         background-color: transparent;
@@ -4914,6 +4919,70 @@ option:checked:before {
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+	 .hw-menu-list li span.menu-icon {
+        background-image: url("../img/Sprite_Icon.png");
+        background-repeat: no-repeat;
+        float: left;
+        height: 36px;
+        width: 36px;
+    }
+    .pf-icon span.menu-icon {
+        background-position: -5px -46px;
+    }
+    .es-icon span.menu-icon {
+        background-position: -46px -46px;
+    }
+    .cs-icon span.menu-icon {
+        background-position: -87px -46px;
+    }
+    .comp-icon span.menu-icon {
+        background-position: -5px -128px;
+    }
+    .blog-icon span.menu-icon {
+        background-position: -46px -127px;
+    }
+    .jb-icon span.menu-icon {
+        background-position: -87px -127px;
+    }
+    .news-icon span.menu-icon {
+        background-position: -46px -169px;
+    }
+    .pf-icon:hover span.menu-icon {
+        background-position: -5px -5px;
+    }
+    .es-icon:hover span.menu-icon {
+        background-position: -46px -5px;
+    }
+    .cs-icon:hover span.menu-icon {
+        background-position: -87px -5px;
+    }
+    .comp-icon:hover span.menu-icon {
+        background-position: -5px -87px;
+    }
+    .blog-icon:hover span.menu-icon {
+        background-position: -46px -87px;
+    }
+    .jb-icon:hover span.menu-icon {
+        background-position: -87px -87px;
+    }
+    .news-icon:hover span.menu-icon {
+        background-position: -5px -169px;
+    }
+	.li-tab-mar > img {
+    width: 75px;
+}
+.gotham-rounded-light.text-center.devops-para > p {
+    margin-bottom: 8px;
+    margin-top: 14px;
+}
+	.devops-img-header{
+		display: block;
+		 background-color: #adabab;
+    padding: 16px 0;
+	}
+	.vw-coll-line-height {
+    line-height: 28px;
+}
     .collapse-button > img {
         width: 70px;
     }
@@ -5064,6 +5133,7 @@ option:checked:before {
         font-size: 7px !important;
         margin-left: 0 !important;
         padding: 3px 6px !important;
+        margin-top: 3px !important;
     }
 }
 @media screen and (max-width: 359px) {
@@ -5090,7 +5160,7 @@ option:checked:before {
     margin-right: 20px;
 }
 .bc-desk .text-uppercase.custom-btn.heading-custom-btn.talk-to-us {
-    font-family: "gotham-rounded-book";
+    font-family: "gotham-rounded-bold";
     font-size: 12px;
     padding: 1px 10px 0;
 }
@@ -5568,7 +5638,7 @@ option:checked:before {
     width: 600px;
 }
 .clearfix {
-    padding: 2px 0 6px;
+    padding: 12px 0 10px;
 }
 #cw-responsive .c-flex.c-flex-1.tab-val {
     display: inline-block;
@@ -6033,7 +6103,7 @@ option:checked:before {
     .job-margin {
         font-weight: lighter;
         line-height: 18px;
-        margin: 16px 48px 10px;
+        margin: 6px 48px;
     }
     .col-lg-6.col-md-6.col-sm-6.col-xs-8.bootcamp-clearfix {
         padding-left: 15px;
@@ -6447,7 +6517,9 @@ h2 {
     /*.our-thinking-responsive{
         display: none;
     }*/
-    
+    .form-container > h1 {
+    padding: 0;
+}
     .heading-custom-btn {
         padding: 5px 20px 5px;
     }
@@ -6696,7 +6768,7 @@ h2 {
         background: #f9d602 none repeat scroll 0 0;
         border: 1px solid #f9d602;
         color: #474e5d;
-        font-family: "gotham-rounded-book";
+        font-family: "gotham-rounded-bold";
         margin-right: 0px;
         padding: 3px 12px;
     }
@@ -6912,6 +6984,9 @@ h2 {
 .nav.nav-tabs.p-flex {
     text-align: center;
 }
+.devopss-fa-arrow-left {
+    display: none;
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .bc-desk input[type='checkbox']+.case-studies-label-text::after {
         top: -2px;
@@ -6927,13 +7002,17 @@ h2 {
         max-width: 50% !important;
         float: right;
     }
+    .devopss-fa-arrow-left.devopss-fa-arrow-left1 {
+    margin-left: 20px;
+}
+.devopss-fa-arrow-left {
+    display: block;
+}
 }
 /*  engage us and ourthinking ends*/
 /*ups devops starts*/
 
-.devopss-fa-arrow-left {
-    display: none;
-}
+
 .fa.fa-angle-right.devops-fa-angle-right {
     display: none;
 }
@@ -7011,7 +7090,7 @@ h2 {
     .devops-heading {
         font-size: 32px;
         font-family: "gotham-rounded-light";
-        margin-top: 55px;
+        margin-top: 24px;
         margin-bottom: 14px;
     }
     .devops-nav-tabs {
@@ -7214,8 +7293,12 @@ h2 {
         padding: 3px 12px;
     }
     #ups-devops .li-tab-mar > img {
-        width: 70%;
+        width: 45px;
+        margin-bottom: 14px;
     }
+    .gotham-rounded-light.text-center.devops-para > p {
+    margin-bottom: 8px;
+}
     .devops-heading {
         background-color: #adabab;
         color: #fff;
