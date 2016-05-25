@@ -2503,6 +2503,9 @@ nav #toc a#toc-actuator {
     transition: .5s ease-in-out;
     cursor: pointer;
 }
+.hwd #nav-icon1{
+    position: fixed;
+}
 @media screen and (min-width: 768px) and (max-width: 1199px){
     .hw-home-nav-header #nav-icon1 {
         top: 8px;
@@ -3972,6 +3975,9 @@ option:checked:before {
     width: 100%;
     max-width: 200px;
 }
+.resp-pf .img-outer > img {
+    max-width: 100px;
+}
 .hw-works h3 {
     font-family: "gotham-rounded-light";
     font-size: 12px;
@@ -4511,7 +4517,7 @@ option:checked:before {
         font-size: 13px;
     }
     .upskill-filter .custom-btn {
-        font-family: "gotham-rounded-bold";
+        font-family: "gotham-rounded-book";
     }
     .default-table {
         display: table;
@@ -5906,7 +5912,6 @@ option:checked:before {
         color: #000;
         font-family: "gotham-rounded-light";
         line-height: 16.5px;
-        margin-bottom: 26px;
     }
     .text-center.hw-heading.hr-display {
         font-size: 12px;
@@ -6369,10 +6374,10 @@ option:checked:before {
     }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
-	.mob-busval-show .carousel-inner {
+    .mob-busval-show .carousel-inner {
     margin-bottom: 5px;
 }
-	.bc-desk .carousel-inner {
+    .bc-desk .carousel-inner {
     margin-bottom: 9px;
 }
     .carousel-inner.container {
@@ -7503,7 +7508,7 @@ h2 {
 }
 @media screen and (max-width: 1199px) {
     #logo-img {
-        /*animation: anime2 3.5s  linear;*/
+        animation: anime2 3.5s  linear;
         display: table;
         background-color: #fff;
         height: inherit;
@@ -7511,38 +7516,31 @@ h2 {
         width: 100%;
         z-index: 10;
         overflow: hidden;
+        opacity: 0;
     }
-    /*@keyframes anime2 {
+    @keyframes anime2 {
         0% {
-            -webkit-transform: scale(1);
-            -ms-transform: scale(1);
-            -o-transform: scale(1);
-            transform: scale(1);
+            -webkit-clip-path: circle(75% at 50% 50%);
+            clip-path: circle(20% at 50% 50%);
             opacity: 1;
-            border-radius: 0%;
         }
         80% {
-            -webkit-transform: scale(1);
-            -ms-transform: scale(1);
-            -o-transform: scale(1);
-            transform: scale(1);
+            -webkit-clip-path: circle(75% at 50% 50%);
+            clip-path: circle(60% at 50% 50%);
             opacity: 1;
-            border-radius: 0%;
         }
-        81% {
-            border-radius: 0%;
+        81% {           
+            -webkit-clip-path: circle(75% at 50% 50%);
+            clip-path: circle(30% at 50% 50%);
         }
         100% {
-            -webkit-transform: scale(0);
-            -ms-transform: scale(0);
-            -o-transform: scale(0);
-            transform: scale(0);
-            border-radius: 0%;
-        }*/
+            -webkit-clip-path: circle(75% at 50% 50%);
+            clip-path: circle(0% at 50% 50%);
+        }
         .jb-desk-tab > main {
             margin-top: 20px;
         }
-    /*}*/
+    }
 }
 @media screen and (max-width: 767px) {
     /*.li-tab-mar > img {
