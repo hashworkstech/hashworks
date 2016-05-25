@@ -3732,10 +3732,10 @@ option:checked:before {
         background-position: -34px -91px;
     }
     .jb-icon span.menu-icon {
-        background-position: -63px -91px;
+        background-position: -63px -93px;
     }
     .news-icon span.menu-icon {
-        background-position: -34px -120px;
+        background-position: -34px -122px;
     }
     .pf-icon:hover span.menu-icon {
         background-position: -5px -5px;
@@ -3756,7 +3756,7 @@ option:checked:before {
         background-position: -63px -63px;
     }
     .news-icon:hover span.menu-icon {
-        background-position: -5px -120px;
+        background-position: -5px -122px;
     }
     .hw-mob-header {
         font-size: 22px;
@@ -4976,6 +4976,7 @@ option:checked:before {
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+<<<<<<< HEAD
     #testimonial .hw-usr-name {
     line-height: 18px !important;
 }
@@ -4983,6 +4984,9 @@ option:checked:before {
     overflow-x: hidden;
 }
      .hw-menu-list li span.menu-icon {
+=======
+	 .hw-menu-list li span.menu-icon {
+>>>>>>> parent of 266fee5... changes in engages
         background-image: url("../img/Sprite_Icon.png");
         background-repeat: no-repeat;
         float: left;
