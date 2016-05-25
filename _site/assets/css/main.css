@@ -4977,6 +4977,7 @@ option:checked:before {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 <<<<<<< HEAD
+<<<<<<< HEAD
     #testimonial .hw-usr-name {
     line-height: 18px !important;
 }
@@ -4985,6 +4986,8 @@ option:checked:before {
 }
      .hw-menu-list li span.menu-icon {
 =======
+=======
+>>>>>>> parent of 266fee5... changes in engages
 	 .hw-menu-list li span.menu-icon {
 >>>>>>> parent of 266fee5... changes in engages
         background-image: url("../img/Sprite_Icon.png");

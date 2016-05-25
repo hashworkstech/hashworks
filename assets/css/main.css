@@ -4987,6 +4987,7 @@ option:checked:before {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 	.text-center.gotham-rounded-bok.heading.hw-font-heading.collabrative-header{
 		margin-top: 52px;
 		margin-bottom: 6px;
@@ -5089,6 +5090,8 @@ option:checked:before {
 }
      .hw-menu-list li span.menu-icon {
 =======
+=======
+>>>>>>> parent of 266fee5... changes in engages
 	 .hw-menu-list li span.menu-icon {
 >>>>>>> parent of 266fee5... changes in engages
         background-image: url("../img/Sprite_Icon.png");
