@@ -254,7 +254,7 @@ var count = $('.f-option').length;
   $('#pager').hide();
   $('#form-map-div').hide();
   $('.hw-started1').hide();
-   $('html, body').animate({scrollTop: '0px'});
+//    $('html, body').animate({scrollTop: '0px'});
   $('.apply-full-div').show();
   // }
  });
