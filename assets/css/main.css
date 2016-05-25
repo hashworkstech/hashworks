@@ -2507,7 +2507,7 @@ nav #toc a#toc-actuator {
     position: fixed;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px){
-    .hw-home-nav-header #nav-icon1 {
+    #nav-icon1 {
         top: 8px;
         margin: 2px 28px;
     }
