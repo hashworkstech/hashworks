@@ -105,18 +105,18 @@
             <span class="view1-close view-close"><i class="fa fa-times"></i></span>
             <h5 class="gotham-rounded-bold clr-black hw-copyright job-title-mar">Job Description</h5>
             {% for  job_descr in job.job_description %}
-              <li class="job-tab-li job-margin job-margin-2"><p class="gotham-rounded-bok vw-coll-line-height hw-contact-no hw-contact-no">{{job_descr}}</p></li>
+              <li class="job-tab-li job-margin"><p class="gotham-rounded-bok vw-coll-line-height hw-contact-no hw-contact-no">{{job_descr}}</p></li>
             {% endfor %}
 
             <h5 class="gotham-rounded-bold clr-black hw-copyright job-title-mar"> Responsibilities of Visual Designer</h5>
             {% for  job_res in job.responsibilities %}
-              <li class="job-tab-li job-margin job-margin-2"><p class="gotham-rounded-bok vw-coll-line-height hw-contact-no hw-contact-no">{{job_res}}</p></li>
+              <li class="job-tab-li job-margin"><p class="gotham-rounded-bok vw-coll-line-height hw-contact-no hw-contact-no">{{job_res}}</p></li>
             {% endfor %}
             
 
             <h5 class="gotham-rounded-bold clr-black hw-copyright job-title-mar">Skills</h5>
             {% for  job_skill in job.skills %}
-              <li class="job-tab-li job-margin job-margin-2"><p  class="gotham-rounded-bok vw-coll-line-height hw-contact-no hw-contact-no">{{job_skill}}</p></li>
+              <li class="job-tab-li job-margin"><p  class="gotham-rounded-bok vw-coll-line-height hw-contact-no hw-contact-no">{{job_skill}}</p></li>
             {% endfor %}
             
             <button class="apply gotham-rounded-bold" data-toggle="modal" data-target="#start-project">Apply Now</button>
