@@ -1942,7 +1942,7 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
         arrows: true,
         responsive: [
           {
-            breakpoint: 1920,
+            breakpoint: 1199,
             settings: {
               slidesToShow: 3,
               slidesToScroll: 1
