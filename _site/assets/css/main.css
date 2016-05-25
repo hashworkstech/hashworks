@@ -4511,7 +4511,7 @@ option:checked:before {
         font-size: 13px;
     }
     .upskill-filter .custom-btn {
-        font-family: "gotham-rounded-book";
+        font-family: "gotham-rounded-bold";
     }
     .default-table {
         display: table;
@@ -5247,7 +5247,7 @@ option:checked:before {
     .bc-desk div#bootcamp-filter-total {
         padding-top: 0;
         margin-top: 18px;
-        margin-bottom: 18px;
+        margin-bottom: 15px;
     }
     #bootcamp-filter-controls {
         padding-top: 0;
@@ -5426,8 +5426,8 @@ option:checked:before {
     .bc-desk .hw-font-heading {
         font-family: "gotham-rounded-light"!important;
         font-size: 18px !important;
-        margin-top: 15px;
-        margin-bottom: 18px;
+        margin-top: 19px;
+        margin-bottom: 10px;
     }
     .container.bc-mob {
         margin-top: 14px;
@@ -5607,7 +5607,7 @@ option:checked:before {
         padding-top: 15px;
     }
     .bc-desk div#bootcamp-filter-total {
-        margin-top: 9px;
+        margin-top: 6px;
     }
     .bc-desk .bootcamp-filter-contents {
         display: block;
@@ -5770,8 +5770,11 @@ option:checked:before {
         font-size: 20px;
         margin-bottom: 12px;
         text-align: justify;
-        margin-top: 24px;
+        margin-top: 20px;
     }
+    .gotham-rounded-bok.hw-heading.hw-copyright.gotham-rounded-light.collaborative-apply-heading.collaborative-apply-heading-1.collaborative-apply-heading-11 {
+    margin-bottom: 20px;
+}
     .collaborative-employee-para {
         color: #000;
         font-family: "gotham-rounded-light";
@@ -5886,6 +5889,9 @@ option:checked:before {
     .carousel-padding {
         padding: 0 0 15px;
     }
+    #eng-carousel-padding .carousel-inner {
+    margin-bottom: 5px;
+}
     .collabrative-header {
         margin-top: 20px;
         margin-bottom: 10px;
@@ -5900,6 +5906,7 @@ option:checked:before {
         color: #000;
         font-family: "gotham-rounded-light";
         line-height: 16.5px;
+        margin-bottom: 26px;
     }
     .text-center.hw-heading.hr-display {
         font-size: 12px;
@@ -6362,6 +6369,12 @@ option:checked:before {
     }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
+	.mob-busval-show .carousel-inner {
+    margin-bottom: 5px;
+}
+	.bc-desk .carousel-inner {
+    margin-bottom: 9px;
+}
     .carousel-inner.container {
     padding-left: 2px;
     padding-right: 2px;
@@ -6434,6 +6447,7 @@ option:checked:before {
     }
     .es-section {
         margin-top: 15px;
+        margin-bottom: 7px;
     }
     .es-section {
         display: block;
@@ -6801,6 +6815,7 @@ h2 {
     #home3,
     #home4 {
         padding-bottom: 7px;
+        margin-bottom: 8px;
     }
     .triangle-up1,
     .triangle-up2,
@@ -6930,10 +6945,10 @@ h2 {
         font-size: 12px;
         color: #ee2b7b;
         font-family: "gotham-rounded-light";
-        padding-left: 3%;
+        padding-left: 10px;
         padding-top: 16px;
         margin-top: 0;
-        margin-bottom: 2px;
+        margin-bottom: 8px;
     }
     .mob-business-value > img {
         width: 28px;
@@ -6951,7 +6966,7 @@ h2 {
         font-size: 10px;
         color: #000;
         font-family: "gotham-rounded-light";
-        padding-left: 4%;
+        padding-left: 12px;
         padding-right: 4%;
         text-align: justify;
         line-height: 17px;
@@ -7767,7 +7782,7 @@ input[type="radio"] {
 }
 .blog-dropdown .bootcamp-hw-tab-heading,
 .bootcamp-hw-socialshare {
-    font-size: 1.25rem;
+    font-size: 12px;
     font-family: "gotham-rounded-light";
 }
 .blog-dropdown .dropdown-menu.bootcamp-dropdown-menu a {
