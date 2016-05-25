@@ -93,8 +93,7 @@
          <!-- row -->
          <div class="row">
             <!-- col -->
-            {% assign items = site.upskilling_cs %}
-            {% for cont in items %}
+            {% for cont in site.upskills %}
             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 upskill-cont-filter  all {{ cont.topic | downcase }}">
                <a href="{{cont.url}}">
                   <h2 class="gotham-rounded-bok hw-heading heading text-center bootcamp-hw-heading">{{ cont.topic }}</h2>
