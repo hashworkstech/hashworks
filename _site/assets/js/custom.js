@@ -2224,16 +2224,16 @@ if(pageName == "homepage"){
       setTimeout(logo_img,200);
     });
   function logo_img(){
-    $('#logo-img').hide('clip',{direction:"horizontal"},4000);
-    // var myDiv = document.getElementById("logo-img");
-    // var show = function(){
-    //   setTimeout(hide, 4000); 
-    // }
-    // var hide = function(){
-    //   $('#logo-img').hide('explode',{pieces:4},3000);
-    //   // $('#home-screen').css('visibility','visible');
-    // }
-    // show();
+    // $('#logo-img').hide('clip',{direction:"horizontal"},4000);
+    var myDiv = document.getElementById("logo-img");
+    var show = function(){
+      setTimeout(hide, 4000); 
+    }
+    var hide = function(){
+      $('#logo-img').hide();
+      // $('#home-screen').css('visibility','visible');
+    }
+    show();
   }
 }
 // var expanded = false;
