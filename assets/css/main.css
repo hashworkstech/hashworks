@@ -4506,6 +4506,9 @@ option:checked:before {
 /* Start : footer.css */
 
 @media screen and (max-width: 1199px) {
+	.social-icons {
+    margin-right: 16px;
+}
     .devops-container {
         padding: 0 30px !important;
     }
@@ -4513,7 +4516,7 @@ option:checked:before {
         padding-left: 15px !important;
     }
     .custom-btn {
-        font-family: "gotham-rounded-bold";
+        font-family: "gotham-rounded-book";
         font-size: 13px;
     }
     .upskill-filter .custom-btn {
@@ -4532,7 +4535,7 @@ option:checked:before {
         border-bottom: medium none;
     }
     .social-share {
-        padding: 0 10px 0 0;
+        padding: 0 44px 0 0;;
     }
     footer .hw-copyright {
         font-size: 14px;
@@ -4540,6 +4543,7 @@ option:checked:before {
     .footer {
         padding: 0;
     }
+
 }
 @media screen and (max-width: 767px) {
     .social-icons {
@@ -4982,6 +4986,100 @@ option:checked:before {
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+	.text-center.gotham-rounded-bok.heading.hw-font-heading.collabrative-header{
+		margin-top: 52px;
+		margin-bottom: 6px;
+	}
+	#cw-responsive .li-tab-mar > img {
+    margin-bottom: 7px;
+}
+#cw-responsive .c-flex-1 {
+    padding-bottom: 16px;
+}
+#cw-responsive .hw-engage-cont {
+    margin: 26px 0 7px;
+}
+.bc-desk .gotham-rounded-light.hw-heading.h2-color.text-center.hw-line-height {
+    margin-top: 25px;
+}
+.bc-desk .hw-font-heading {
+    margin-top: 53px;
+}
+.bc-desk .carousel-padding {
+    padding: 0 87px 21px !important;
+}
+#ups-devops .hw-usr-name.devops-hw-usr-name {
+    margin-top: 8px;
+}
+#ups-devops .panel-heading {
+    padding: 12px 0 8px !important;
+}
+#ups-devops .devops-cont.devops-count {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+#ups-devops .gotham-rounded-bok.hw-heading.text-center.h2-color.devops-course-heading {
+    margin-bottom: 11px;
+    margin-top: 2px;
+    padding-top: 23px;
+    }
+    #ups-devops .devops-cont.devops-count {
+    margin-top: 4px;
+}
+#ups-devops .gotham-rounded-light.text-center.devops-para > p {
+    margin-bottom: 5px;
+}
+#ups-devops .li-tab-mar > img {
+    width: 60px;
+}
+#ups-devops .devops-heading {
+    margin-top: 35px;
+}
+.bc-desk .bc-tab-container {
+    padding: 0 80px 29px;
+    }
+.bc-desk .clearfix.pull-right.clearfix-pull-right {
+    padding-bottom: 0;
+    padding-top: 14px;
+}
+#ups-devops .devops-nav-tabs {
+    margin-top: 24px;
+    }
+.bc-desk .hw-upskilling-details .row > div {
+    margin: 2px 0 -3px;
+}
+.bc-desk .hw-upskilling-details h2 {
+    padding: 15px;
+    font-size: 14px;
+}
+.bc-desk .hw-upskill-cont > h3 {
+    margin-top: 3px;
+}
+#cw-responsive .hw-engage-cont h2 {
+    margin-bottom: 17px;
+    margin-top: 27px;
+}
+#cw-responsive .apst-button.collo-apst-button {
+    bottom: 58px;
+}
+#cw-responsive .hw-copyright.gotham-rounded-light.collaborative-employee-para {
+    margin-bottom: -4px;
+}
+	#cw-responsive .carousel-padding {
+    padding: 0 55px 13px !important;
+}
+	.gotham-rounded-light.hw-heading.h2-color.colo-head {
+    margin-top: 0;
+}
+.gotham-rounded-light.hw-heading.h2-color.colo-head-1 {
+    margin-bottom: 17px;
+}
+	.col-lg-9.col-md-9.col-sm-9.col-xs-8.hw-copyright {
+    padding-left: 44px;
+}
+.hw-engage-cont.hw-margin-div.es-engage-cont.es-engage-cont-1.es-engage-cont-2 {
+    margin-top: 21px;
+}
     #testimonial .hw-usr-name {
     line-height: 18px !important;
 }
@@ -5253,7 +5351,7 @@ option:checked:before {
     .bc-desk div#bootcamp-filter-total {
         padding-top: 0;
         margin-top: 18px;
-        margin-bottom: 15px;
+        margin-bottom: 18px;
     }
     #bootcamp-filter-controls {
         padding-top: 0;
@@ -5912,6 +6010,7 @@ option:checked:before {
         color: #000;
         font-family: "gotham-rounded-light";
         line-height: 16.5px;
+        margin-bottom: 26px;
     }
     .text-center.hw-heading.hr-display {
         font-size: 12px;
@@ -6127,6 +6226,9 @@ option:checked:before {
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+	.container.ot-tab-container.ot-tab-container-1 {
+    margin-top: 2px;
+}
     .devops-head-ribbon {
         font-size: 14px;
     }
@@ -6146,7 +6248,7 @@ option:checked:before {
         padding-left: 0;
     }
     .hr-display.ot-hr-display {
-        padding: 10px 15px 14px;
+        padding: 10px 15px 16px;
     }
     .nav-tabs > li > a,
     .nav-tabs > li > a,
@@ -6264,7 +6366,7 @@ option:checked:before {
         text-align: justify;
     }
     .text-center.es-heading-text {
-        padding-bottom: 8px;
+        padding-bottom: 13px;
     }
     .container.tab-section {
         padding-bottom: 15px;
@@ -6273,7 +6375,7 @@ option:checked:before {
         margin: 30px 0px 0px;
     }
     .margin-buisness-tab1 {
-        margin-bottom: 30px;
+        margin-bottom: 26px;
     }
     .es-desktop-view {
         display: block;
@@ -6283,7 +6385,8 @@ option:checked:before {
     }
     .es-haeding {
         font-size: 32px;
-        margin-top: 48px;
+        margin-top: 52px;
+        margin-bottom: 9px;
     }
     .es-heading-text {
         font-size: 20px;
@@ -6374,10 +6477,10 @@ option:checked:before {
     }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
-    .mob-busval-show .carousel-inner {
+	.mob-busval-show .carousel-inner {
     margin-bottom: 5px;
 }
-    .bc-desk .carousel-inner {
+	.bc-desk .carousel-inner {
     margin-bottom: 9px;
 }
     .carousel-inner.container {
@@ -6620,6 +6723,22 @@ h2 {
     /*.our-thinking-responsive{
         display: none;
     }*/
+    .mob-busval-show .hw-font-heading{
+        margin-top: 52px;
+        margin-bottom: 5px;
+    }
+    .service-img-mar {
+    margin-top: 24px;
+}
+.hw-engage-cont {
+    margin: 30px 0 7px;
+}
+    .div-margin-left.container.ot-tab-container.t-tab-container-2 {
+    margin-top: -16px;
+}
+    .li-tab-mar.li-tab-mar-1 > svg {
+    margin-bottom: 31px;
+}
     .form-container > h1 {
     padding: 0;
 }
@@ -6726,7 +6845,7 @@ h2 {
         overflow: hidden;
         padding-left: 0;
         padding-right: 0;
-        padding-top: 15px;
+        padding-top: 10px;
         position: absolute;
         top: 0;
         background-color: #e8e8e8;
@@ -6795,7 +6914,7 @@ h2 {
         display: block !important;
     }
     #eng-carousel-padding .carousel-padding {
-        padding: 20px 20px 25px 20px !important;
+        padding:0 75px 13px !important;
     }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -7097,13 +7216,29 @@ h2 {
     display: none;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+	.hw-engage-cont.hw-margin-div.es-engage-cont {
+    margin-top: 50px;
+}
+.hw-engage-cont .img-outer {
+    margin-top: 0;
+}
+.hw-engage-cont.hw-margin-div.es-engage-cont.es-engage-cont-1.es-engage-cont-2 {
+    margin-bottom: 3px;
+}
+.hw-engage-cont.hw-margin-div.es-engage-cont.es-engage-cont-1 {
+    margin-top: 42px;
+}
+	.gotham-rounded-light.hw-heading.h2-color.text-center.hw-line-height.hw-line-height-1.es-heading-text {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
     .bc-desk input[type='checkbox']+.case-studies-label-text::after {
-        top: -2px;
+        top: 1px;
         height: 9px;
         width: 28px;
     }
     .bc-desk input[type='checkbox']+.case-studies-label-text::before {
-        top: -2px;
+        top: 0px;
         width: 22px;
         height: 21px;
     }
