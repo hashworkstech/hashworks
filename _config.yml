@@ -5,10 +5,8 @@ permalink: pretty
 collections:
   casestudy:
      output: true
-     permalink: /casestudy/:path/
-  _upskillingcs:
+  upskillingcs:
      output: true
-     permalink: /upskillingcs/:path
   jobboard:
 include: ["_pages"]
 prose:
