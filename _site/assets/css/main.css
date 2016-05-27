@@ -963,6 +963,9 @@ nav.navbar-default.hw-hover-header {
         padding: 0;
         width: inherit;
     }
+    .hw-work-cont-pad{
+        padding-bottom: 11px;
+    }
 }
 #ui .col-testimoni {
     margin-top: 65px;
@@ -4055,7 +4058,7 @@ option:checked:before {
     }
     .hw-font-heading {
         font-size: 18px !important;
-        margin-top: 20px;
+        margin-top: 22px;
     }
     .hw-heading {
         font-size: 12px;
@@ -5247,6 +5250,10 @@ option:checked:before {
     .carousel-inner {
         display: table-cell;
         vertical-align: middle;
+    }
+    #myCarousel .carousel-inner{
+        display: block;
+        vertical-align: unset;
     }
     .carousel-etl-left-allign {
         margin-right: 0;
@@ -6560,7 +6567,7 @@ option:checked:before {
         color: #000;
         font-family: "gotham-rounded-light";
         font-size: 18px !important;
-        margin-top: 20px;
+        margin-top: 22px;
         margin-bottom: -5px;
     }
     .es-haeding {
@@ -6714,7 +6721,7 @@ h2 {
     font-family: "gotham-rounded-light";
 }
 #accordion article p {
-    padding: 10px 8%;
+    padding: 10px 31px;
     font-family: "gotham-rounded-light";
     font-size: 12px;
     text-align: justify;
@@ -7225,7 +7232,7 @@ h2 {
     }
     .tab-mobile .tab-content {
         margin-top: 24px;
-        margin-bottom: 0px;
+        margin-bottom: 5px;
     }
     .tab-content.mob-business-content {
         margin-top: 0;
@@ -7299,6 +7306,9 @@ h2 {
     display: none;
 }
 @media screen and (max-width: 1199px) {
+    .foot-text-color{
+        color: #000;
+    }
     .tab-img-div{
         height: 100%;
         width: 100%;
@@ -8110,7 +8120,7 @@ input[type="radio"] {
         width: 25%;
         padding: 0;
     }
-    .eng-zoom-in1,.eng-zoom-out1{
+    .eng-zoom-in1,.eng-zoom-out1,.eng-zoom-in,.eng-zoom-out{
         display: none;
     }
 }
