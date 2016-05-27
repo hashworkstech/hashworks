@@ -4032,6 +4032,9 @@ option:checked:before {
     color: #000;
 }
 @media screen and (max-width: 767px) {
+    .client-backgrnd.hw-works.portfolio-client-backgrnd > h2 {
+    margin-top: 12px;
+}
     .btn.btn-danger.bootcamp-btn-danger.boot-dropdown-menu.bootcamp-dropdown-menu.bt-camp-padding {
     padding: 0 0 0 40px;
 }
@@ -4039,9 +4042,8 @@ option:checked:before {
     text-align: left;
 }
     .resp-pf .portfolio-hw-tools-list {
-        padding-top: 15px;
+        padding-top: 4px;
         padding-bottom: 0;
-        margin-bottom: 22px;
     }
     .resp-pf .portfolio-client-backgrnd {
         background-color: #ddd;
@@ -4059,6 +4061,7 @@ option:checked:before {
     .hw-font-heading {
         font-size: 18px !important;
         margin-top: 22px;
+        margin-bottom: 12px;
     }
     .hw-heading {
         font-size: 12px;
@@ -5535,6 +5538,15 @@ option:checked:before {
     }
 }
 @media screen and (max-width: 767px) {
+     .hw-tools {
+        margin-top: 20px;
+    }
+    .clearfix{
+        padding: 8px 0;
+    }
+    .clearfix.clearfix-pad{
+        padding: 12px 0;
+    }
     .bc-desk .upskill-cont-filter:hover .hw-upskill-cont {
         border-color: #0ab4c5;
     }
@@ -6030,7 +6042,7 @@ option:checked:before {
         color: #000;
         font-family: "gotham-rounded-light";
         line-height: 16.5px;
-        margin-bottom: 26px;
+        margin-bottom: 21px;
     }
     .text-center.hw-heading.hr-display {
         font-size: 12px;

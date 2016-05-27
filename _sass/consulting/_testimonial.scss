@@ -157,7 +157,7 @@ border-radius: 5px;
     .pf-vertical-data{
         margin-left: 15px;
         margin-right: 15px;
-        margin-top: 30px;
+        margin-top: 33px;
     }
     .pvd-header{
         font-size: 20px;
@@ -196,7 +196,8 @@ border-radius: 5px;
     }
     .pvd-data{
         font-size:10px;
-        font-family: "gotham-rounded-light"
+        font-family: "gotham-rounded-light";
+        margin: 15px 0 24px;
     }
     .pvh{
         width: 65px;
@@ -219,7 +220,7 @@ border-radius: 5px;
         background-position: 0 -195px;
     }
     .pvh-title{
-        padding: 10px 0 8px;
+        padding: 14px 0 11px;
     }
 }
 .navbar, .navbar-inverse {
