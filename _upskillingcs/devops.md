@@ -18,6 +18,79 @@ learning_objective:
     - Working sessions on the delivery orchestration tools
     - How the Ops teams are able to have better predictability & stability in managing organizations IT eco-system.
     - How Cost of Ops has significantly go down with the level of abstraction of these solutions.
+audience:
+ - Anyone interested in acquiring a high level knowledge about DevOps 
+ - Software developers, test engineers, managers, consultants or anyone involved in application development 
+ - IT Operations teams, management, professionals and consultants 
+ - Managed service providers 
+ - Service Management process owners, process managers and consultants 
+ - IT professionals working within, or about to enter, an Agile environment 
+ - Senior Managers who want to understand the benefits of adopting a DevOps culture 
+ - Business stakeholders interested in learning about DevOps
+Course_Details:
+   Introduction_Overview: 
+    - DevOps Evolution
+    - IT friction, Dev & Ops world problems
+    - Change is constant  
+   challenges: 
+    - Knowing is half the battle
+    - Breaking old habits
+    - Learned helplessness
+    - Combating Myth and rumours
+   methods_tools: 
+    - Systems thinking
+    - Flow thinking
+    - Visualization
+    - Feedback loops
+    - Continuous Improvement
+    
+   Prescriptive_Adaptive_process: 
+    - Overstating & Underfinishing
+    - Best of both the world Scrum & Kanban
+    - Scrum & XP
+    - Test Driven Development
+    - Actionable Metrics
+   
+   Level_of_Abstraction:
+    - Build & Test applications faster
+    - Why PaaS
+    - Few players in the market
+    - New trends
+
+   Project_Management:
+    - Introduction to a team collaboration software like Confluence
+    - Capturing requirements
+    - Create issues
+    - Track releases
+    - Enabling Agile development with a tool oriented approach
+
+   Version_Control:
+    - Git working session with multiple use cases
+    - VSS/SVN/CVS migration to Git working session with use cases
+   
+   Continuous_Integration:
+    -  CI server Working session - Jenkins
+    -   Implementing CI & CD using cloudbees
+    -     How to write an automated Build scripts
+   
+   Infrastructure_Automation:
+    -  Infrastructure as a code
+    -  Overview of Chef as a case study with working session
+    -  Automate Build, deploy and management of infrastructure using Chef - Use cases
+
+   Deployment_Automation:
+    -   Automated Release/Deploy
+    -   Automated Verification
+    -   Automated Promote
+    -   Passive monitoring
+    -    Scripted rollback
+   
+   Monitoring:
+    -  Monitor infrastructure resources
+    -  Log monitoring
+    -  Visibility into resource utilization, operational performance and overall demand patterns
+    -   Metrics, including CPU utilization, disk I/O and network traffic
+    -   Custom Metrics
 
 
 ---
