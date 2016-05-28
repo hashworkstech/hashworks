@@ -6776,6 +6776,9 @@ h2 {
     /*.our-thinking-responsive{
         display: none;
     }*/
+    .gsc-result .gs-title {
+        height: 2.2em !important;
+    }
     .social-share {
         padding: 0 44px 0 0;;
     }
