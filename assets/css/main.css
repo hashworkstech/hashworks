@@ -5720,6 +5720,7 @@ option:checked:before {
         margin-top: 0;
         font-weight: bold;
         margin-bottom: 8px;
+        text-transform: inherit;
     }
     .text-justify.bootcamp-hw-tab-para {
         font-size: 10px;
@@ -6834,6 +6835,7 @@ h2 {
     }
     .bootcamp-hw-tab-heading {
         font-size: 14px;
+        text-transform: inherit;
     }
     .hw-upskilling-details .row > div {
         margin: 28px 0;
