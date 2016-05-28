@@ -5538,6 +5538,21 @@ option:checked:before {
     }
 }
 @media screen and (max-width: 767px) {
+	.bc-desk .gotham-rounded-light.hw-main-heading.clr-white.h-approch {
+		padding: 0;
+	}
+	.btn.btn-danger.bootcamp-btn-danger.boot-dropdown-menu.bootcamp-dropdown-menu {
+    padding-left: 39px;
+}
+	.bc-desk .text-uppercase.custom-btn.heading-custom-btn.talk-to-us {
+    padding: 5px 10px;
+}
+	.hw-upskilling-details .row > div {
+        margin: 8px 0 0;
+    }
+    .bc-desk .hw-upskill-cont {
+    padding: 5px 25px 7px;
+}
      .hw-tools {
         margin-top: 20px;
     }
@@ -5719,7 +5734,7 @@ option:checked:before {
         font-size: 14px;
         margin-top: 0;
         font-weight: bold;
-        margin-bottom: 8px;
+        margin-bottom: 10px;
         text-transform: inherit;
     }
     .text-justify.bootcamp-hw-tab-para {
@@ -5755,7 +5770,7 @@ option:checked:before {
         display: none;
     }
     .bc-desk .hw-upskilling-details h2 {
-        padding: 18px 0 6px;
+        padding: 19px 0 6px;
         font-size: 14px;
     }
     .bc-desk .clearfix {
@@ -6002,6 +6017,9 @@ option:checked:before {
     }
 }
 @media screen and (max-width: 767px) {
+	#cw-responsive .li-tab-mar > img {
+    width: 65px;
+}
     #cw-responsive .slick-prev.slick-arrow {
         z-index: 1;
     }
@@ -6043,7 +6061,7 @@ option:checked:before {
         color: #000;
         font-family: "gotham-rounded-light";
         line-height: 16.5px;
-        margin-bottom: 21px;
+        margin-bottom: 19px;
     }
     .text-center.hw-heading.hr-display {
         font-size: 12px;
@@ -6164,7 +6182,7 @@ option:checked:before {
         padding: 0 0 5px;
     }
     #cw-responsive .collobo-talk-to-us {
-        padding: 3px 6px;
+        padding: 3px 6px 1px;
     }
     #cw-responsive .collobo-footer-division {
         padding: 0;
