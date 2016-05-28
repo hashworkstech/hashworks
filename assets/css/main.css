@@ -5562,8 +5562,8 @@ option:checked:before {
     .bc-desk .hw-font-heading {
         font-family: "gotham-rounded-light"!important;
         font-size: 18px !important;
-        margin-top: 19px;
-        margin-bottom: 10px;
+        margin-top: 22px;
+        margin-bottom: 12px;
     }
     .container.bc-mob {
         margin-top: 14px;
@@ -5719,7 +5719,7 @@ option:checked:before {
         font-size: 14px;
         margin-top: 0;
         font-weight: bold;
-        margin-bottom: 6px;
+        margin-bottom: 8px;
     }
     .text-justify.bootcamp-hw-tab-para {
         font-size: 10px;
@@ -5743,7 +5743,7 @@ option:checked:before {
         padding-top: 15px;
     }
     .bc-desk div#bootcamp-filter-total {
-        margin-top: 6px;
+        margin-top: 12px;
     }
     .bc-desk .bootcamp-filter-contents {
         display: block;
@@ -5754,7 +5754,7 @@ option:checked:before {
         display: none;
     }
     .bc-desk .hw-upskilling-details h2 {
-        padding: 18px 0 0;
+        padding: 18px 0 6px;
         font-size: 14px;
     }
     .bc-desk .clearfix {
@@ -5764,7 +5764,7 @@ option:checked:before {
         padding-top: 7px;
     }
     .hw-started.log-clr-backgrnd.container-fluid.bootcamp-ribbon-div {
-        margin-top: 25px;
+        margin-top: 27px;
     }
     .bc-desk .hw-upskill-cont {
         margin-left: 15px;
@@ -5775,7 +5775,7 @@ option:checked:before {
         margin-right: 15px;
     }
     .container.bc-mob {
-        margin-bottom: 20px;
+        margin-bottom: 27px;
     }
     .bc-desk .hw-copyright.gotham-rounded-light {
         font-size: 14px;
@@ -6029,8 +6029,8 @@ option:checked:before {
     margin-bottom: 5px;
 }
     .collabrative-header {
-        margin-top: 20px;
-        margin-bottom: 10px;
+        margin-top: 22px;
+        margin-bottom: 12px;
         font-size: 18px !important;
         font-weight: bold;
         color: #000;
@@ -6217,7 +6217,7 @@ option:checked:before {
     color: #fff;
     font-family: "gotham-rounded-bold";
     font-size: 0.75rem;
-    padding: 8px 25px;
+    padding: 6px 16px;
     text-transform: uppercase;
     transition: all 0.5s ease 0s;
 }
@@ -6531,7 +6531,7 @@ option:checked:before {
     margin-bottom: 5px;
 }
     .bc-desk .carousel-inner {
-    margin-bottom: 9px;
+    margin-bottom: 4px;
 }
     .carousel-inner.container {
     padding-left: 2px;
@@ -6581,12 +6581,15 @@ option:checked:before {
         font-size: 18px !important;
         margin-top: 22px;
         margin-bottom: -5px;
+        font-weight: bold;
     }
     .es-haeding {
         color: #000;
         font-family: "gotham-rounded-light";
         font-size: 18px;
         font-weight: bold;
+        margin-bottom: 12px;
+        margin-top: 22px;
     }
     .es-heading-text {
         font-size: 12px;
