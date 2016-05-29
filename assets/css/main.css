@@ -8215,6 +8215,25 @@ input[type="radio"] {
     }
 }
 @media screen and (max-width: 767px){
+	.company-para {
+    padding: 14px 0 12px;
+}
+.company-btm:last-child {
+    padding-bottom: 27px;
+}
+	.gotham-rounded-light.hw-heading.h2-color.text-center.hw-line-height.comp-head {
+    margin-bottom: 10px;
+}
+	.comp-mob .hw-font-heading{
+		margin-top: 20px;
+		margin-bottom: 15px;
+	}
+	.comp-mob .company-value {
+    margin-top: 23px !important;
+}
+.comp-mob .hw-our-thinking-head-contents {
+    margin-top: 8px;
+    }
 	.col-testimoni {
     padding-left: 0;
     padding-right: 0;
