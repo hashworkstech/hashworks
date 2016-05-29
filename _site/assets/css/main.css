@@ -6434,8 +6434,11 @@ option:checked:before {
         font-size: 14px;
         text-align: justify;
     }
-    .text-center.es-heading-text {
+    .text-center.ot-heading-text-pad {
         padding-bottom: 13px;
+    }
+    .text-center.es-heading-text-pad {
+        padding-bottom: 6px;
     }
     .container.tab-section {
         padding-bottom: 15px;
