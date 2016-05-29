@@ -7029,6 +7029,10 @@ h2 {
     .intro-wrapper.col-lg-12.col-md-12.col-sm-12.col-xs-12.bl-mrg-top{
         margin-bottom: 0px;
     }
+    .comments.col-testimoni{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
     .ms-options-wrap > .ms-options .ms-selectall {
         font-size: 14px !important;
     }
