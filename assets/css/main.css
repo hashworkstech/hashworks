@@ -7783,6 +7783,34 @@ h2 {
     margin: 2px 0 6px;
 }
 @media screen and (max-width: 1199px) {
+	.gotham-rounded-light.hw-heading.h2-color.text-center.hw-line-height.comp-head {
+    margin-top: 18px;
+}
+.comp-mob .hw-font-heading {
+    margin-bottom: 0;
+    margin-top: 54px;
+}
+.comp-carousel-padding{
+	padding-bottom: 0;
+}
+.comp-mob .hw-our-thinking-head-contents {
+    margin-bottom: 23px;
+    margin-top: 16px;
+}
+.comp-mob .company-value {
+    margin-top: 33px !important;
+}
+.container.carousel-padding.comp-carousel-padding {
+    margin-bottom: -15px;
+}
+.company-btm {
+    margin-bottom: 0;
+    padding-top: 19px;
+}
+.company-para {
+    padding: 24px 0 10px;
+}
+
     #logo-img {
         animation: anime2 3.5s  linear;
         display: table;
