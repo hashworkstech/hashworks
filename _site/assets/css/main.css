@@ -7931,18 +7931,21 @@ h2 {
     .job-hw-font-heading {
         font-size: 18px !important;
         margin-top: 20px;
-        margin-bottom: 4px;
+        margin-bottom: 14px;
     }
     .job-line {
         width: 50px;
         height: 3px;
     }
     .job-carousel-padding {
-        margin-bottom: 18px;
+        margin-bottom: 0;
     }
+    .pagination-list:first-child {
+    margin-top: 12px;
+}
     .job-table {
         display: table;
-        padding-bottom: 15px;
+        padding-bottom: 13px;
         border-bottom: 1px solid #bebebe;
         width: 100%;
         cursor: pointer;
@@ -7958,7 +7961,7 @@ h2 {
         font-size: 11px;
         font-family: "gotham-rounded-light";
         line-height: 16.5px;
-        margin-bottom: 22px;
+        margin-bottom: 14px;
         text-align: justify;
     }
     .job-table-cell {
@@ -7979,14 +7982,14 @@ h2 {
         font-size: 14px;
         font-family: "gotham-rounded-book";
         font-weight: normal;
-        margin-top: 15px;
+        margin-top: 13px;
     }
     .job-table-cell > img {
         margin-left: 31px;
         margin-right: 15px;
     }
     .pagination-list {
-        margin-top: 14px;
+        margin-top: 0px;
     }
     #jb-mob .jb-skill {
         list-style-type: initial;
@@ -8076,6 +8079,10 @@ h2 {
     .job-hr {
         border-bottom: 1px solid #bebebe;
     }
+    .job-title.job-tit {
+    margin-top: 26px;
+    margin-bottom: 2px;
+}
 }
 /*job board css ends*/
 
@@ -8349,6 +8356,10 @@ input[type="radio"] {
 .blog-grid.clearfix.blog-main {
     margin-bottom: 0;
     padding-bottom: 5px;
+}
+.job-title.job-tit.job-tit-board {
+    margin-bottom: 12px;
+    margin-top: 13px;
 }
 }
 @media screen and (max-width: 640px){
