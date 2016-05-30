@@ -6888,7 +6888,7 @@ h2 {
         margin: 28px 0;
     }
     .hw-font-heading {
-        margin-top: 55px;
+        margin-top: 52px;
         margin-bottom: 0;
     }
     .our-thinking-responsive .nav li {
@@ -7790,12 +7790,27 @@ h2 {
     margin: 2px 0 6px;
 }
 @media screen and (max-width: 1199px) {
+	.jb-desk-tab .jobs-tab-header > h1 {
+    padding-bottom: 17px;
+}
+.jb-desk-tab .jobs-tab-content > h2 {
+    margin-top: 31px;
+    margin-bottom: 47px;
+}
+.jb-desk-tab .table > thead > tr > th {
+    padding-bottom: 29px;
+    }
+.jb-desk-tab .job-list-btn {
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-bottom: 34px;
+    }
 	.gotham-rounded-light.hw-heading.h2-color.text-center.hw-line-height.comp-head {
     margin-top: 18px;
 }
 .comp-mob .hw-font-heading {
     margin-bottom: 0;
-    margin-top: 54px;
+    /*margin-top: 54px;*/
 }
 .comp-carousel-padding{
 	padding-bottom: 0;
