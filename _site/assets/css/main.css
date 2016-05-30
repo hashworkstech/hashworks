@@ -6795,9 +6795,12 @@ h2 {
     }*/
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-	.hw-font-heading {
-    margin-top: 53px;
-}
+    .hw-heading.drop-text{
+        margin-top: 5px;
+    }
+	/*.hw-font-heading {
+        margin-top: 53px;
+    }*/
 .gotham-rounded-light.hw-heading.h2-color.text-center.hw-line-height.blog-head {
     margin-top: 24px;
 }
@@ -7333,8 +7336,8 @@ h2 {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 	.banner img {
-    margin: 33px 0 20px;
-}
+        margin: 33px 0 20px;
+    }
 .container.blog-details {
     padding: 0 30px;
 }
@@ -7598,6 +7601,10 @@ h2 {
     visibility: hidden;
 }*/
 @media screen and (max-width: 767px) {
+    .hw-company-gen-txt.gotham-rounded-light.para.hw-our-thinking-head-contents-1 {
+        margin-top: 10px;
+        line-height: 16.5px;
+    }
     .col-20 {
         padding-bottom: 5px;
     }
@@ -7605,6 +7612,9 @@ h2 {
         overflow: hidden;
         width: 100%;
         height:100vh;
+    }
+    .hw-our-thinking-head-contents{
+        line-height: 16.5px;
     }
     /*#init-screen{
     overflow: hidden;
@@ -7813,7 +7823,7 @@ h2 {
     /*margin-top: 54px;*/
 }
 .comp-carousel-padding{
-	padding-bottom: 0;
+	padding-bottom: 0 !important;
 }
 .comp-mob .hw-our-thinking-head-contents {
     margin-bottom: 23px;
@@ -7822,9 +7832,9 @@ h2 {
 .comp-mob .company-value {
     margin-top: 33px !important;
 }
-.container.carousel-padding.comp-carousel-padding {
+/*.container.carousel-padding.comp-carousel-padding {
     margin-bottom: -15px;
-}
+}*/
 .company-btm {
     margin-bottom: 0;
     padding-top: 19px;
@@ -8268,16 +8278,16 @@ input[type="radio"] {
 	.company-para {
     padding: 14px 0 12px;
 }
-.company-btm:last-child {
-    padding-bottom: 27px;
-}
+/*.company-btm:last-child {
+    margin-bottom: 12px;
+}*/
 	.gotham-rounded-light.hw-heading.h2-color.text-center.hw-line-height.comp-head {
     margin-bottom: 10px;
 }
-	.comp-mob .hw-font-heading{
+	/*.comp-mob .hw-font-heading{
 		margin-top: 20px;
 		margin-bottom: 15px;
-	}
+	}*/
 	.comp-mob .company-value {
     margin-top: 23px !important;
 }
