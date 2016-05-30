@@ -1356,7 +1356,7 @@ div#bootcamp-filter-controls label {
     vertical-align: middle;
 }
 #testimonial .usr-pic {
-    width: 56px;
+    width: 125px;
     border-radius: 62.5px;
     display: inline-block;
     padding-top: 0;
@@ -6795,6 +6795,9 @@ h2 {
     }*/
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+	.clearfix.clearfix-pad {
+    padding: 11.5px 0;
+}
     .hw-heading.drop-text{
         margin-top: 5px;
     }
@@ -7616,6 +7619,7 @@ h2 {
         margin: 24px 0px 0;
     }
 }
+
 /*#home-screen{
     visibility: hidden;
 }*/
@@ -7808,7 +7812,9 @@ h2 {
 }
 /*ups devops css ends*/
 /*job board css starts*/
-
+.devops-course-heading {
+    padding-top: 20px;
+}
 .jb-desk-tab {
     display: block;
 }
@@ -7819,6 +7825,9 @@ h2 {
     margin: 2px 0 6px;
 }
 @media screen and (max-width: 1199px) {
+	#testimonial .usr-pic {
+    width: 65px;
+}
 	.jb-desk-tab .jobs-tab-header > h1 {
     padding-bottom: 17px;
 }
