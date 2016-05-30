@@ -7334,7 +7334,25 @@ h2 {
 .devopss-fa-arrow-left {
     display: none;
 }
+.job-tab-li.job-margin {
+    color: #0ab4c5;
+    list-style: initial;
+}
+.gotham-rounded-bok.vw-coll-line-height.hw-contact-no.hw-contact-no {
+    color: #343434;
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .table > thead > tr > th, .table > thead > tr > td,
+     .table > tbody > tr > th, .table > tbody > tr > td, 
+     .table > tfoot > tr > th, .table > tfoot > tr > td {
+    padding: 8px 8px 10px;
+}
+    .job-title-mar {
+        margin-left: 0;
+    }
+    .view {
+        padding-top: 11px;
+    }
 	.banner img {
         margin: 33px 0 20px;
     }
