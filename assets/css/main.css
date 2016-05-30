@@ -7562,6 +7562,7 @@ h2 {
     #ups-devops .devops-hw-test-txt1 {
         display: none;
     }
+
     #ups-devops #testimonial .hw-test-img .img-outer,
     #testimonial .hw-test-img ul {
         display: block;
@@ -8361,6 +8362,9 @@ input[type="radio"] {
     margin-bottom: 12px;
     margin-top: 13px;
 }
+}
+.gotham-rounded-light.text-center.devops-para{
+	color: #000;
 }
 @media screen and (max-width: 640px){
     .blog-grid .intro-wrapper{
