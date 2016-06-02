@@ -5306,7 +5306,7 @@ option:checked:before {
 .about-us .rbn-ftr-others {
     display: none;
 }
-.about-us .job-btn-left-0 {
+.about-us .our-heading-custom-btn {
     margin-right: 8px;
 }
 .about-us .rbn-ftr-company .our-heading-custom-btn {
@@ -6019,6 +6019,7 @@ option:checked:before {
 @media screen and (max-width: 767px) {
 	#cw-responsive .li-tab-mar > img {
     width: 65px;
+    height: 65px;
 }
     #cw-responsive .slick-prev.slick-arrow {
         z-index: 1;
