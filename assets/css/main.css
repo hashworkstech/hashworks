@@ -6182,7 +6182,7 @@ option:checked:before {
         padding: 0 0 5px;
     }
     #cw-responsive .collobo-talk-to-us {
-        padding: 3px 6px 1px;
+        padding: 3px 6px;
     }
     #cw-responsive .collobo-footer-division {
         padding: 0;
@@ -7454,7 +7454,7 @@ h2 {
     }
     .job-board-btn.job-btn.custom-btn.heading-custom-btn.hm-vertical.hm-vertical1.our-heading-custom-btn {
         margin-top: 0px;
-        padding: 2px 12px 1px;
+        padding: 3px 12px;
         vertical-align: middle;
     }
     .apst-button.collo-apst-button {
