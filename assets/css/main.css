@@ -5349,18 +5349,22 @@ option:checked:before {
     font-size: 14px;
     margin-right: 20px;
 }
-.bc-desk .text-uppercase.custom-btn.heading-custom-btn.talk-to-us {
-    font-family: "gotham-rounded-book";
-    font-size: 12px;
-    padding: 1px 10px 0;
-}
+
 .hw-started.log-clr-backgrnd.container-fluid.bootcamp-ribbon-div {
     width: 100%;
 }
 .bootcamp-devops-img > img {
     display: none;
 }
+.gotham-rounded-light.hw-main-heading.clr-white.h-approch.devops-head-ribbon,.gotham-rounded-light.hw-main-heading.clr-white.h-approch{
+    font-size: 1.313rem;
+}
 @media screen and (max-width: 1199px) {
+    .bc-desk .text-uppercase.custom-btn.heading-custom-btn.talk-to-us {
+    font-family: "gotham-rounded-book";
+    font-size: 12px;
+    padding: 1px 10px 0;
+}
     #testimonial .carousel-inner {
         padding: 0 30px;
     }
