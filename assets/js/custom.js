@@ -2206,8 +2206,8 @@ body.mozrequestFullscreen();
 } else if (body.msrequestFullscreen) {
 body.msrequestFullscreen();
 }
-window.addEventListener("load", function() { window. scrollTo(0, 0); });
-document.addEventListener("touchmove", function(e) { e.preventDefault() });
+// window.addEventListener("load", function() { window. scrollTo(0, 0); });
+// document.addEventListener("touchmove", function(e) { e.preventDefault() });
 // var expanded = false;
 //     function showCheckboxes() {
 //         var checkboxes = document.getElementById("cat");
