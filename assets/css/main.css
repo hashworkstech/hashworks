@@ -1,6 +1,9 @@
 html {
     font-size: 16px;
 }
+html.body{
+    height: 100%;
+}
 /* fonts */
 
 @font-face {
@@ -955,6 +958,9 @@ nav.navbar-default.hw-hover-header {
         display: none;
         }
 @media screen and (max-width: 1199px) {
+    .fa-stack.hw-socialshare.social-icons:hover{
+        color: #ee2b7b;
+    }
     #subject,
     #message {
         color: #6c717d;
