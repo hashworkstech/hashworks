@@ -2178,7 +2178,7 @@ function rotate(el, degs) {
 //     $(".zoomin img").css("width",h);
 //   }
 //    });
-$(".eng-zoom-out").pinchzoomer();
+// $(".eng-zoom-out").pinchzoomer();
 if(pageName == "homepage"){
   $("#logo-img img").one('load', function() {
       setTimeout(logo_img,200);
