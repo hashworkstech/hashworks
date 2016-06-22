@@ -484,6 +484,14 @@ header.hw-home .navbar-default {
     z-index: 10;
 }
 @media screen and (min-width:768px) and (max-width: 1199px){
+    #testimonial .hw-test-txt  {
+        color: #343434;
+        font-size: 14px !important;
+        font-family: "gotham-rounded-light";
+        line-height: 24px !important;
+        padding-left: 40px !important;
+       padding-right: 40px !important;
+    }
     .bootcamp-filter-contents {
     margin-bottom: 43px;
 }
@@ -4155,6 +4163,7 @@ option:checked:before {
         color: #ee2b7b;
         font-size: 24px;
         margin-top: 18px !important;
+        margin-bottom: 8px !important;
     }
     .hw-company-gen-txt {
         text-align: justify;
@@ -5030,7 +5039,7 @@ option:checked:before {
     margin-top: 8px;
 }
 #ups-devops .panel-heading {
-    padding: 12px 0 8px !important;
+    padding: 12px 0 !important;
 }
 #ups-devops .devops-cont.devops-count {
     padding-left: 16px;
@@ -6284,6 +6293,9 @@ option:checked:before {
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+    #testimonial .usr-pic {
+    width: 100px;
+}
     /*.fa.fa-facebook.fa-stack-1x {
     margin-left: 6px;
     margin-top: 1px;
@@ -7461,7 +7473,7 @@ h2 {
     }
     .job-board-btn.job-btn.custom-btn.heading-custom-btn.hm-vertical.hm-vertical1.our-heading-custom-btn {
         margin-top: 0px;
-        padding: 3px 12px;
+        padding: 3px 12px 1px;
         vertical-align: middle;
     }
     .apst-button.collo-apst-button {
@@ -7537,7 +7549,7 @@ h2 {
     }
     .gotham-rounded-light.hw-para.devops-count-para {
         color: #000;
-        font-size: 14px;
+        font-size: 16px;
         margin-bottom: 0px;
     }
     .gotham-rounded-bok.hw-heading.text-center.h2-color.devops-course-heading {
@@ -7583,8 +7595,8 @@ h2 {
     #ups-devops #testimonial {
         padding-top: 7px;
     }
-    #ups-devops .devops-hw-usr-des,
-    #ups-devops .devops-hw-test-txt {
+    #ups-devops .devops-hw-usr-des
+     {
         color: #343434;
         font-size: 18px;
         font-family: "gotham-rounded-light";
@@ -7596,8 +7608,6 @@ h2 {
     }
     #ups-devops .hw-test-txt {
         height: 0;
-        line-height: 30px;
-        margin: 0;
         padding: 0;
     }
     #ups-devops #upskill-accordion .panel-heading {
@@ -7631,6 +7641,16 @@ h2 {
     visibility: hidden;
 }*/
 @media screen and (max-width: 767px) {
+     #testimonial .hw-test-txt {      
+    color: #343434;
+        font-size: 18px;
+        font-family: "gotham-rounded-light";  
+        line-height: 27px;
+        margin: 0;
+    }
+    #testimonial .usr-pic {
+    width: 65px;
+}
     .hw-company-gen-txt.gotham-rounded-light.para.hw-our-thinking-head-contents-1 {
         margin-top: 10px;
         line-height: 16.5px;
@@ -7832,9 +7852,6 @@ h2 {
     margin: 2px 0 6px;
 }
 @media screen and (max-width: 1199px) {
-	#testimonial .usr-pic {
-    width: 65px;
-}
 	.jb-desk-tab .jobs-tab-header > h1 {
     padding-bottom: 17px;
 }
@@ -8407,4 +8424,9 @@ input[type="radio"] {
         margin: 0;
         padding: 0;
    } 
+}
+@media screen (min-width: 768px) and (max-width: 1199px){
+   #testimonial .usr-pic{
+        width: 100px !important;
+    }
 }
