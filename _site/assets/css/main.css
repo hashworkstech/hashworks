@@ -7648,6 +7648,9 @@ h2 {
     margin-top: 1px;
     padding: 3px 12px;
 }
+.devops-cont.devops-count li {
+    margin-bottom: -12px;
+}
      #testimonial .hw-test-txt {      
     color: #343434;
         font-size: 18px;
