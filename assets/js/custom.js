@@ -2265,3 +2265,7 @@ body.msrequestFullscreen();
 //         .slick('slickPlay')
 //         .slick('slickSetOption', 'pauseOnDotsHover', true);
 // });
+// $('.view-mar').click(function (e) {
+      
+//     $('html, body').animate({scrollTop: '0px'});
+//     });

@@ -4226,6 +4226,9 @@ option:checked:before {
     }
 }
 @media screen and (max-width: 767px) {
+   #cw-responsive .upskill-filter.all.c-flex.clearfix {
+    margin-left: 14px;
+}
     .hw-test-img.hr-display.clearfix > ul {
     margin-bottom: 8px;
 }
@@ -7641,6 +7644,10 @@ h2 {
     visibility: hidden;
 }*/
 @media screen and (max-width: 767px) {
+    .job-board-btn.job-btn.custom-btn.heading-custom-btn.hm-vertical.hm-vertical1.our-heading-custom-btn {
+    margin-top: 1px;
+    padding: 3px 12px;
+}
      #testimonial .hw-test-txt {      
     color: #343434;
         font-size: 18px;
@@ -7741,10 +7748,13 @@ h2 {
         font-size: 10px;
     }
     #ups-devops .text-uppercase.custom-btn.heading-custom-btn.talk-to-us {
-        font-size: 9px;
-        font-family: "gotham-rounded-bold";
-        padding: 3px 12px;
-    }
+    font-family: "gotham-rounded-book";
+    font-size: 9px;
+    padding: 2px 12px 3px;
+}
+.gotham-rounded-light.hw-main-heading.clr-white.h-approch.devops-head-ribbon{
+    padding: 0;
+}
     #ups-devops .li-tab-mar > img {
         width: 45px;
         margin-bottom: 5px;
