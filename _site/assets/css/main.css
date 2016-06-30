@@ -8272,6 +8272,9 @@ input[type="radio"] {
     text-align: left !important;
 }
 @media screen and (max-width: 767px) {
+    .hm-talk-btn {
+     padding-left: 0px; 
+}
     #file-upload {
         height: 24px;
     }
