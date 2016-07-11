@@ -5325,7 +5325,7 @@ option:checked:before {
     display: none;
 }
 .about-us .our-heading-custom-btn {
-    margin-right: 8px;
+    margin-right: 2px;
 }
 .about-us .rbn-ftr-company .our-heading-custom-btn {
     margin-left: 10px;
@@ -5335,13 +5335,11 @@ option:checked:before {
         font-size: 8px !important;
         text-align: initial !important;
         text-transform: uppercase !important;
-        vertical-align: middle !important;
+        vertical-align: baseline !important;
     }
     .about-us .our-heading-custom-btn {
         font-size: 7px !important;
-    margin-left: 0 !important;
-    padding: 3px 6px 2px !important;
-    margin-top: 0 !important
+        margin-left: 5px !important;
     }
 }
 @media screen and (max-width: 359px) {
@@ -5560,16 +5558,16 @@ option:checked:before {
 		padding: 0;
 	}
 	.btn.btn-danger.bootcamp-btn-danger.boot-dropdown-menu.bootcamp-dropdown-menu {
-    padding-left: 39px;
+        padding-left: 39px;
 }
 	.bc-desk .text-uppercase.custom-btn.heading-custom-btn.talk-to-us {
-    padding: 5px 10px;
+        padding: 3px 6px 2px;
 }
 	.hw-upskilling-details .row > div {
         margin: 8px 0 0;
     }
     .bc-desk .hw-upskill-cont {
-    padding: 5px 25px 7px;
+        padding: 5px 25px 7px;
 }
      .hw-tools {
         margin-top: 20px;
@@ -6200,9 +6198,9 @@ option:checked:before {
     #cw-responsive .clearfix {
         padding: 0 0 5px;
     }
-    #cw-responsive .collobo-talk-to-us {
+    /*#cw-responsive .collobo-talk-to-us {
         padding: 3px 6px;
-    }
+    }*/
     #cw-responsive .collobo-footer-division {
         padding: 0;
     }
@@ -6722,7 +6720,7 @@ option:checked:before {
         display: table;
     }
     .devops-height{
-        padding: 7px 0;
+        padding: 6px 0;
     }
     /*for pop up end*/
 }
@@ -7645,8 +7643,8 @@ h2 {
 }*/
 @media screen and (max-width: 767px) {
     .job-board-btn.job-btn.custom-btn.heading-custom-btn.hm-vertical.hm-vertical1.our-heading-custom-btn {
-        margin-top: 4px;
-        padding: 3px 12px;
+       margin-top: 3px;
+       padding: 3px 6px 2px;
 }
 .devops-cont.devops-count li {
     margin-bottom: -12px;
@@ -7753,7 +7751,7 @@ h2 {
     #ups-devops .text-uppercase.custom-btn.heading-custom-btn.talk-to-us {
     font-family: "gotham-rounded-book";
     font-size: 9px;
-    padding: 2px 12px 3px;
+    padding: 3px 6px 2px;
 }
 .gotham-rounded-light.hw-main-heading.clr-white.h-approch.devops-head-ribbon{
     padding: 0;
@@ -8296,6 +8294,13 @@ input[type="radio"] {
     #attach-file-id #file-upload{
         height: 29px !important;
 
+    }
+    .text-border.devops-text-border {
+        margin-bottom: 18px;
+    }
+    .sub-width1 {
+        margin-left: -6px !important;
+        padding-left: 0 !important;
     }
     i.fa.fa-paper-plane.company-fa,  i.fa.fa-map-marker.company-fa{
         font-size: 30px !important;
