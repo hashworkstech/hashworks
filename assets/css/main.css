@@ -4233,7 +4233,7 @@ option:checked:before {
     margin-bottom: 8px;
 }
     .col-padding {
-        padding: 3px 10px 4px;
+        padding: 3px 0 7px;
     }
     .company-value,
     .company-btm .hw-contact-no,
@@ -7645,8 +7645,8 @@ h2 {
 }*/
 @media screen and (max-width: 767px) {
     .job-board-btn.job-btn.custom-btn.heading-custom-btn.hm-vertical.hm-vertical1.our-heading-custom-btn {
-    margin-top: 1px;
-    padding: 3px 12px 1px;
+        margin-top: 4px;
+        padding: 3px 12px;
 }
 .devops-cont.devops-count li {
     margin-bottom: -12px;
@@ -7968,6 +7968,27 @@ h2 {
     .tagline.gotham-rounded-bold.margin-zero.hw-font-heading1 {
         margin-left: 15px;
         margin-right: 15px;
+        line-height: 20px;
+    }
+    #ups-devops .slick-track > li {
+        border-bottom: 3px solid #e4e5e1;
+    }
+    p.gotham-rounded-light.hw-para.devops-count-para{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    #ups-devops .devops-cont ul li {
+        margin-left: 30px;
+        padding-left: 0;
+    }
+    .devops-container {
+        padding: 23px 30px 0 !important;
+    }
+    #ups-devops .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+        border-bottom: 3px solid #ee2b7b;
+    }
+    #ups-devops .nav-tabs{
+        border-bottom: none;
     }
     .jb-desk-tab {
         display: none;
@@ -8272,9 +8293,28 @@ input[type="radio"] {
     text-align: left !important;
 }
 @media screen and (max-width: 767px) {
+    #attach-file-id #file-upload{
+        height: 29px !important;
+
+    }
+    i.fa.fa-paper-plane.company-fa,  i.fa.fa-map-marker.company-fa{
+        font-size: 30px !important;
+    }
+    .tab-mobile .tab-val, #cw-responsive .tab-val, #ups-devops .devops-c-flex{
+        outline: none !important;
+        outline-color: transparent !important;
+    }
+    .hw-heading.gotham-rounded-bok.h2-color.subtitle-bold{
+        font-family: "gotham-rounded-book";
+    }
+    .techImg > img {
+        height: 15px;
+        margin-right: 12px;
+        width: 25px;
+    }
     .hm-talk-btn {
      padding-left: 0px; 
-}
+    }
     #file-upload {
         height: 24px;
     }
@@ -8292,8 +8332,11 @@ input[type="radio"] {
         font-size: 12px;
     }
     .sub-width {
-        margin-left: -6px;
+        padding-left: 54px;
         text-transform: uppercase;
+    }
+    .text-border.text-border-email {
+        margin-bottom: 18px;
     }
     .attach-text {
         bottom: 28px;
@@ -8391,6 +8434,8 @@ input[type="radio"] {
 }
 .subtitle.gotham-rounded-light {
     font-size: 14px !important;
+    margin-top: 10px !important;
+    margin-bottom: 14px;
 }
     .blog-author{
         padding: 10px 0 14px;
@@ -8429,11 +8474,15 @@ input[type="radio"] {
         padding-right: 0;
     }
     .row.filters.cs-li-margin{
-        margin: 22px 25px 0;
+        margin: 20px 25px 0;
     }
     .ms-options-wrap {
         padding-left: 5px;
         padding-right: 5px;
+    }
+    .blog-grid li h3 {
+        margin-top: 15px;
+        margin-bottom: 6px;
     }
 }
 @media screen (min-width: 641px) and (max-width: 1199px){
