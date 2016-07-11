@@ -5863,7 +5863,7 @@ option:checked:before {
 }
 .collobo-talk-to-us {
     font-size: 11px;
-    padding: 3px 6px;
+    padding: 3px 6px 2px;
     margin-right: 22px;
 }
 .collobo-footer-division {
@@ -8397,9 +8397,9 @@ input[type="radio"] {
 	.company-para {
     padding: 14px 0 12px;
 }
-/*.company-btm:last-child {
-    margin-bottom: 12px;
-}*/
+.li-tab-mar.li-second > img {
+    margin-left: 5px;
+}
 	.gotham-rounded-light.hw-heading.h2-color.text-center.hw-line-height.comp-head {
     margin-bottom: 10px;
 }
