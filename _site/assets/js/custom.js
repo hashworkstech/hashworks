@@ -2122,7 +2122,7 @@ function rotate(el, degs) {
 }
 
 (function() {
-          var $section = $('#focal');
+          var $section = $('.focal');
           var $panzoom = $section.find('.panzoom').panzoom();
           $panzoom.parent().on('mousewheel.focal', function( e ) {
             e.preventDefault();
@@ -2135,7 +2135,6 @@ function rotate(el, degs) {
             });
           });
         })();
-
 // $('.eng-zoom-in').click(function () {
 //      var w1=$(".zoomin1 img").width()/$(".zoomin1 img").parent().width() * 100+"%";
 //   if(w1<130+"%"){
