@@ -3733,7 +3733,7 @@ option:checked:before {
     margin-top: 18px;
 }
 .hw-menu-list li span.menu-icon {
-    background-image: url("../img/Sprite_Icon_24.png");
+    background-image: url("../img/Sprite_Icon_24.PNG");
     height: 24px;
     width: 24px;
     background-repeat: no-repeat;
