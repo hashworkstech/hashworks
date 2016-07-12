@@ -7081,6 +7081,7 @@ h2 {
 @media screen and (min-width: 320px) and (max-width: 767px) {
     .upskill-filter{
         vertical-align: middle;
+        text-align: center;
     }
     .intro-wrapper.col-lg-12.col-md-12.col-sm-12.col-xs-12.bl-mrg-top{
         margin-bottom: 0px;
