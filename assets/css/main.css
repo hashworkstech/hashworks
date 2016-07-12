@@ -5580,9 +5580,7 @@ option:checked:before {
         padding-left: 39px;
 }
 	.bc-desk .text-uppercase.custom-btn.heading-custom-btn.talk-to-us {
-        padding: 0;
-        width: 76px;
-        height: 17px;
+        padding: 3px 6px;
         text-align: center;
         vertical-align: middle;
 }
@@ -5881,10 +5879,8 @@ option:checked:before {
 }
 .collobo-talk-to-us {
     font-size: 11px;
-    padding: 0;
     margin-right: 22px;
-    width: 54px;
-    height: 16px;
+    padding: 3px 6px;
     text-align: center;
     vertical-align: middle;
 }
@@ -7681,9 +7677,7 @@ h2 {
 }*/
 @media screen and (max-width: 767px) {
     .job-board-btn.job-btn.custom-btn.heading-custom-btn.hm-vertical.hm-vertical1.our-heading-custom-btn {
-       padding: 0;
-       width: 56px;
-       height: 16px;
+       padding: 3px 6px;
        text-align: center;
        vertical-align: middle;
 }
@@ -7732,9 +7726,7 @@ h2 {
     #ups-devops .text-uppercase.custom-btn.heading-custom-btn.talk-to-us {
     font-family: "gotham-rounded-book";
     font-size: 9px;
-    padding: 0;
-    width: 76px;
-    height: 17px;
+    padding: 3px 6px;
     text-align: center;
     vertical-align: middle;
 }
