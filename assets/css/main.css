@@ -5017,11 +5017,13 @@ option:checked:before {
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .col-md-6.col-sm-6.col-xs-6.col-xxs-12.cats{
+        margin-left: 120px;
+    }
     .hw-tools {
     margin-top: 0px;
 }
 .pf-mob.container {
-    background-color: #fff;
     padding: 0 76px 30px;
 }
     .col-lg-8.col-md-8.col-sm-8.col-xs-8.hw-copyright {
@@ -8464,7 +8466,4 @@ input[type="radio"] {
 }
 #ups-devops .carousel-div{
     width: 100%;
-}
-section.banner.section_casestudy,.blog-margin,.about-us {
-    background-color: #fff;
 }

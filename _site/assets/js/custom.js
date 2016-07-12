@@ -2269,3 +2269,8 @@ body.msrequestFullscreen();
       
 //     $('html, body').animate({scrollTop: '0px'});
 //     });
+// define([ "jquery", "plugins/jquery.panzoom" ], function( $ ) {
+//   $(document).ready(function() {
+//     $(".img-css").panzoom();
+//   });
+// });
