@@ -2192,9 +2192,16 @@ function rotate(el, degs) {
 //    });
 // $("#eng-zoom-out").pinchzoomer();
 if(pageName == "homepage"){
-  $("#logo-img img").one('load', function() {
-      setTimeout(logo_img,200);
+  $(function(){
+    $("#logo-img img").one('load', function() {      
+      setTimeout(function(){
+        logo_img();
+      },3000);
     });
+  });
+  // $("#logo-img img").one('load', function() {
+  //     setTimeout(logo_img,200);
+  //   });
   function logo_img(){
     // $('#logo-img').hide('clip',{direction:"horizontal"},4000);
     var myDiv = document.getElementById("logo-img");
