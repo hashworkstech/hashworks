@@ -7678,8 +7678,6 @@ h2 {
 @media screen and (max-width: 767px) {
     .job-board-btn.job-btn.custom-btn.heading-custom-btn.hm-vertical.hm-vertical1.our-heading-custom-btn {
        padding: 3px 6px 2px;
-       text-align: center;
-       vertical-align: middle;
        margin-top: 4px;
 }
 .devops-cont.devops-count li {
