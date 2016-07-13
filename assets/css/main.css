@@ -7681,6 +7681,7 @@ h2 {
        padding: 3px 6px;
        text-align: center;
        vertical-align: middle;
+       margin-top: 2px;
 }
 .devops-cont.devops-count li {
     margin-bottom: -12px;
