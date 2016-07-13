@@ -4233,7 +4233,7 @@ option:checked:before {
     margin-bottom: 8px;
 }
     .col-padding {
-        padding: 3px 0 7px;
+        padding: 0;
     }
     .company-value,
     .company-btm .hw-contact-no,
@@ -7168,7 +7168,7 @@ h2 {
     }
     .ribon-font {
         font-size: 10px;
-        vertical-align: middle;
+        padding-left: 22px;
     }
     .our-heading-custom-btn {
         margin-left: 6%;
@@ -7505,7 +7505,7 @@ h2 {
         border: none;
     }
     .job-board-btn.job-btn.custom-btn.heading-custom-btn.hm-vertical.hm-vertical1.our-heading-custom-btn {
-        margin-top: 0px;
+            margin-top: 8px;
         padding: 7px 15px 5px;
         vertical-align: middle;
     }
@@ -7678,7 +7678,7 @@ h2 {
 @media screen and (max-width: 767px) {
     .job-board-btn.job-btn.custom-btn.heading-custom-btn.hm-vertical.hm-vertical1.our-heading-custom-btn {
        padding: 3px 6px 2px;
-       margin-top: 4px;
+       margin-top: 8px;
 }
 .devops-cont.devops-count li {
     margin-bottom: -12px;
