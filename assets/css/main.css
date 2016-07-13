@@ -7679,6 +7679,7 @@ h2 {
     .job-board-btn.job-btn.custom-btn.heading-custom-btn.hm-vertical.hm-vertical1.our-heading-custom-btn {
        padding: 3px 6px 1px;
        margin-top: 2px;
+       vertical-align: middle;
 }
 .devops-cont.devops-count li {
     margin-bottom: -12px;
