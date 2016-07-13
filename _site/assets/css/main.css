@@ -7075,10 +7075,6 @@ h2 {
     }
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
-    .upskill-filter{
-        vertical-align: middle;
-        text-align: center;
-    }
     .intro-wrapper.col-lg-12.col-md-12.col-sm-12.col-xs-12.bl-mrg-top{
         margin-bottom: 0px;
     }
@@ -7678,7 +7674,7 @@ h2 {
 @media screen and (max-width: 767px) {
     .job-board-btn.job-btn.custom-btn.heading-custom-btn.hm-vertical.hm-vertical1.our-heading-custom-btn {
        padding: 3px 6px 1px;
-       margin-top: 2px;
+       margin-top: 3px;
        vertical-align: middle;
 }
 .devops-cont.devops-count li {
