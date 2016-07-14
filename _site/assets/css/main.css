@@ -7918,6 +7918,9 @@ h2 {
         }
 }
 @media screen and (max-width: 767px) {
+    .about-us .job-board-btn.job-btn.custom-btn.heading-custom-btn.hm-vertical.hm-vertical1.our-heading-custom-btn {
+        padding: 3px 6px 2px;
+    }
     /*.li-tab-mar > img {
     width: 62px;
 }*/
