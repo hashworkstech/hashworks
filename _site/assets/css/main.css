@@ -4226,6 +4226,9 @@ option:checked:before {
     }
 }
 @media screen and (max-width: 767px) {
+    .h-approch {
+    padding: 10px 0 9px;
+}
    #cw-responsive .upskill-filter.all.c-flex.clearfix {
     margin-left: 14px;
 }
@@ -4233,7 +4236,7 @@ option:checked:before {
     margin-bottom: 8px;
 }
     .col-padding {
-        padding: 4px 0 5px;
+        padding: 4px 0;
     }
     .company-value,
     .company-btm .hw-contact-no,
