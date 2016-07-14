@@ -5883,7 +5883,7 @@ option:checked:before {
 .collobo-talk-to-us {
     font-size: 11px;
     margin-right: 22px;
-    padding: 3px 6px;
+    padding: 4px 6px 3px;
     text-align: center;
     vertical-align: middle;
 }
@@ -6219,7 +6219,7 @@ option:checked:before {
         margin-right: 15px;
     }
     #cw-responsive .collobo-talk-to-us {
-        padding: 3px 6px;
+        padding: 4px 6px 3px;
     }
     #cw-responsive .bs-example.line-padding.collo-talent1 {
         margin-top: 15px;
@@ -7685,7 +7685,7 @@ h2 {
 }*/
 @media screen and (max-width: 767px) {
     .job-board-btn.job-btn.custom-btn.heading-custom-btn.hm-vertical.hm-vertical1.our-heading-custom-btn {
-        padding: 3px 6px;
+        padding: 4px 6px 3px;
     }
     .hw-started1.log-clr-backgrnd.container-fluid{
         padding-right: 11px;
