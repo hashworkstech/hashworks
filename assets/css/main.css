@@ -4226,8 +4226,8 @@ option:checked:before {
     }
 }
 @media screen and (max-width: 767px) {
-    .h-approch {
-    padding: 11px 0 0;
+    #hw-ribbon-our-thinking-footer .h-approch {
+    padding: 10px 0 0;
 }
    #cw-responsive .upskill-filter.all.c-flex.clearfix {
     margin-left: 14px;
