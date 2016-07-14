@@ -5583,9 +5583,7 @@ option:checked:before {
         padding-left: 39px;
 }
 	.bc-desk .text-uppercase.custom-btn.heading-custom-btn.talk-to-us {
-        padding: 3px 6px 2px;
-        text-align: center;
-        vertical-align: middle;
+        padding: 5px 10px;
 }
 	.hw-upskilling-details .row > div {
         margin: 8px 0 0;
@@ -6193,12 +6191,10 @@ option:checked:before {
     .collobo-hw-main-heading {
         font-size: 8px;
         margin-right: 0 !important;
-        margin: 0;
-        padding: 10px 0 0;
     }
     .collobo-talk-to-us {
         font-size: 7px;
-        margin-right: 6px;
+        margin-right: 8px;
     }
     .collobo-c-flex {
         justify-content: initial;
@@ -6209,7 +6205,7 @@ option:checked:before {
         float: none;
     }
     .collobo-footer-division {
-        width: 305px;
+        width: 300px;
     }
     .fa.fa-times.job-close.job-close-1 {
         display: none;
@@ -6225,9 +6221,6 @@ option:checked:before {
     /*#cw-responsive .collobo-talk-to-us {
         padding: 3px 6px;
     }*/
-    #cw-responsive .collobo-footer-division {
-        padding: 0;
-    }
     #cw-responsive .bs-example.line-padding.collo-talent1 {
         margin-top: 15px;
     }
@@ -6316,6 +6309,15 @@ option:checked:before {
     .es-popup {
         display: none;
     }
+}
+.collob-content-2,.collob-content-3,.talk-3,.bootcamp-content{
+    display: none;
+}
+.bc-desk .bootcamp-content,#ups-devops .bootcamp-content{
+    display: inline-block;
+}
+.bc-desk .bootcamp-content-others,#ups-devops .bootcamp-content-others{
+    display: none;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     #testimonial .usr-pic {
@@ -6747,7 +6749,7 @@ option:checked:before {
         display: table;
     }
     .devops-height{
-        padding: 6px 0;
+        padding: 7px 0;
     }
     /*for pop up end*/
 }
@@ -7512,7 +7514,7 @@ h2 {
     }
     .job-board-btn.job-btn.custom-btn.heading-custom-btn.hm-vertical.hm-vertical1.our-heading-custom-btn {
         margin-top: 0px;
-        padding: 7px 15px 5px;
+        padding: 2px 12px 1px;
         vertical-align: middle;
     }
     .apst-button.collo-apst-button {
@@ -7685,10 +7687,6 @@ h2 {
     .blog-btn-group{
         margin-top: 21px;
     }
-    .job-board-btn.job-btn.custom-btn.heading-custom-btn.hm-vertical.hm-vertical1.our-heading-custom-btn {
-       padding: 4px 6px 1px;
-       vertical-align: middle;
-}
 .devops-cont.devops-count li {
     margin-bottom: -12px;
 }
@@ -7734,9 +7732,7 @@ h2 {
     #ups-devops .text-uppercase.custom-btn.heading-custom-btn.talk-to-us {
     font-family: "gotham-rounded-book";
     font-size: 9px;
-    padding: 3px 6px 2px;
-    text-align: center;
-    vertical-align: middle;
+    padding: 3px 12px;
 }
 .gotham-rounded-light.hw-main-heading.clr-white.h-approch.devops-head-ribbon{
     padding: 0;
@@ -7930,9 +7926,6 @@ h2 {
 @media screen and (max-width: 767px) {
     li.bootcamp-devops-svg {
         display: none !important;
-    }
-    .about-us .job-board-btn.job-btn.custom-btn.heading-custom-btn.hm-vertical.hm-vertical1.our-heading-custom-btn {
-        padding: 3px 6px 2px;
     }
     /*.li-tab-mar > img {
     width: 62px;
