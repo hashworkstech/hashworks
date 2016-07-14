@@ -4235,9 +4235,6 @@ option:checked:before {
     .hw-test-img.hr-display.clearfix > ul {
     margin-bottom: 8px;
 }
-    .col-padding {
-        padding: 6px 0;
-    }
     .company-value,
     .company-btm .hw-contact-no,
     .company-det {
@@ -7684,6 +7681,9 @@ h2 {
     visibility: hidden;
 }*/
 @media screen and (max-width: 767px) {
+    .job-board-btn.job-btn.custom-btn.heading-custom-btn.hm-vertical.hm-vertical1.our-heading-custom-btn {
+        padding: 3px 6px;
+    }
     .blog-btn-group{
         margin-top: 21px;
     }
@@ -7930,10 +7930,6 @@ h2 {
     /*.li-tab-mar > img {
     width: 62px;
 }*/
-    .row.col-padding{
-        margin-left: 0;
-        margin-right: 0;
-    }
     .item {
     margin-top: 10px;
 }
