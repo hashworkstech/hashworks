@@ -7924,6 +7924,10 @@ h2 {
     /*.li-tab-mar > img {
     width: 62px;
 }*/
+    .row.col-padding{
+        margin-left: 0;
+        margin-right: 0;
+    }
     .item {
     margin-top: 10px;
 }
