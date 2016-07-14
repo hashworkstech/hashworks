@@ -6218,9 +6218,9 @@ option:checked:before {
         margin-left: 15px;
         margin-right: 15px;
     }
-    /*#cw-responsive .collobo-talk-to-us {
+    #cw-responsive .collobo-talk-to-us {
         padding: 3px 6px;
-    }*/
+    }
     #cw-responsive .bs-example.line-padding.collo-talent1 {
         margin-top: 15px;
     }
