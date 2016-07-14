@@ -4227,7 +4227,7 @@ option:checked:before {
 }
 @media screen and (max-width: 767px) {
     .h-approch {
-    padding: 10px 0 9px;
+    padding: 10px 0 0px;
 }
    #cw-responsive .upskill-filter.all.c-flex.clearfix {
     margin-left: 14px;
