@@ -5625,6 +5625,8 @@ option:checked:before {
     }
     .bootcamp-devops-img > img {
         margin-left: 10px;
+        width: 20px;
+        height: 20px;
     }
     .bc-desk .hw-upskill-cont svg {
         display: none;
@@ -5817,7 +5819,7 @@ option:checked:before {
         padding: 1px 0;
     }
     .bc-desk .clearfix.pull-right {
-        padding-top: 7px;
+        padding-top: 3px;
     }
     .bc-desk .hw-upskill-cont {
         margin-left: 15px;
