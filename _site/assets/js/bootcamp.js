@@ -105,6 +105,7 @@ $(".upskill-cont-filter").each(function(){
 $(".bootcamp-filter-total-no").text(no_of_total_bootcamp_item);
 
 function bootcamp_filter_function(){
+
     $(".no_of_matched_case_item").remove();
     var no_of_matched_item=0;
      if ($(".bootcamp-dataops-checkbox-1").prop('checked')==true){
@@ -203,6 +204,118 @@ function bootcamp_filter_function(){
 
   $(".bootcamp-mobility-checkbox-1,.bootcamp-client-checkbox-1,.bootcamp-dataops-checkbox-1,.bootcamp-devops-checkbox-1,.bootcamp-datascience-checkbox-1, .bootcamp-ui-ux-checkbox-1").click(function(){
 bootcamp_filter_function();
+});
+
+  function blog_filter_function(){
+  
+    $(".no_of_matched_case_item").remove();
+    var no_of_matched_item=0;
+     if ($(".blog-dataops-checkbox-1").prop('checked')==true){
+      $(".upskill-cont-filter").each(function(){
+        var s=$($(this).children('div')[1]).find('h4 span')[1];
+        if($(s).find('a').text().toLowerCase().trim()=="dataops"){
+          $(this).css({opacity: 0,display: 'block'}).animate({opacity:1},500);
+          no_of_matched_item++;
+        }
+
+      });
+      }
+      else
+      {
+        $(".upskill-cont-filter").each(function(){
+        var s=$($(this).children('div')[1]).find('h4 span')[1];
+        if($(s).find('a').text().toLowerCase().trim()=="dataops"){
+          $(this).css("display","none");
+        }
+      });
+      }
+
+     if ($(".blog-devops-checkbox-1").prop('checked')==true){
+      $(".upskill-cont-filter").each(function(){
+        var s1=$($(this).children('div')[1]).find('h4 span')[1];
+        if($(s1).find('a').text().toLowerCase().trim()=="devops"){
+          $(this).css({opacity: 0,display: 'block'}).animate({opacity:1},500);
+          no_of_matched_item++;
+        }
+
+      });
+      }
+      else
+      {
+        $(".upskill-cont-filter").each(function(){
+        var s1=$($(this).children('div')[1]).find('h4 span')[1];
+        if($(s1).find('a').text().toLowerCase().trim()=="devops"){
+          $(this).css("display","none");
+        }
+      });
+      }
+
+      if ($(".blog-datascience-checkbox-1").prop('checked')==true){
+      $(".upskill-cont-filter").each(function(){
+        var s2=$($(this).children('div')[1]).find('h4 span')[1];
+        if($(s2).find('a').text().toLowerCase().trim()=="data science"){
+          $(this).css({opacity: 0,display: 'block'}).animate({opacity:1},500);
+          no_of_matched_item++;
+        }
+
+      });
+      }
+      else
+      {
+        $(".upskill-cont-filter").each(function(){
+        var s2=$($(this).children('div')[1]).find('h4 span')[1];
+        if($(s2).find('a').text().toLowerCase().trim()=="data science"){
+          $(this).css("display","none");
+        }
+      });
+      }
+
+      if ($(".blog-ui-ux-checkbox-1").prop('checked')==true){
+      $(".upskill-cont-filter").each(function(){
+       var s3=$($(this).children('div')[1]).find('h4 span')[1];
+        if($(s3).find('a').text().toLowerCase().trim()=="ui/ux"){
+          $(this).css({opacity: 0,display: 'block'}).animate({opacity:1},500);
+          no_of_matched_item++;
+        }
+
+      });
+      }
+      else
+      {
+        $(".upskill-cont-filter").each(function(){
+        var s3=$($(this).children('div')[1]).find('h4 span')[1];
+        if($(s3).find('a').text().toLowerCase().trim()=="ui/ux"){
+          $(this).css("display","none");
+        }
+      });
+      }
+      if ($(".blog-mobility-checkbox-1").prop('checked')==true){
+      $(".upskill-cont-filter").each(function(){
+        var s4=$($(this).children('div')[1]).find('h4 span')[1];
+        if($(s4).find('a').text().toLowerCase().trim()=="mobility"){
+          $(this).css({opacity: 0,display: 'block'}).animate({opacity:1},500);
+          no_of_matched_item++;
+        }
+
+      });
+      }
+      else
+      {
+        $(".upskill-cont-filter").each(function(){
+        var s4=$($(this).children('div')[1]).find('h4 span')[1];
+        if($(s4).find('a').text().toLowerCase().trim()=="mobility"){
+          $(this).css("display","none");
+        }
+      });
+      }
+      
+      $(".bootcamp-filter-total-no").text(no_of_matched_item+"/"+no_of_total_bootcamp_item);
+      if(no_of_matched_item==0)
+      $(".hw-upskilling-details ").append('<div class="gotham-rounded-light no_of_matched_case_item text-center" style="color:#ee2b7b;margin-top:40px;margin-bottom:40px"><p>sorry, no match found</p></div>');
+}
+
+  $(".blog-mobility-checkbox-1,.blog-client-checkbox-1,.blog-dataops-checkbox-1,.blog-devops-checkbox-1,.blog-datascience-checkbox-1, .blog-ui-ux-checkbox-1").click(function(){
+blog_filter_function();
 });
 
 $('.boot-dropdown-menu').click(function(e){

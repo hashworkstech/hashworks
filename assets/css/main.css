@@ -7672,6 +7672,9 @@ h2 {
     visibility: hidden;
 }*/
 @media screen and (max-width: 767px) {
+    .blog-btn-group{
+        margin-top: 21px;
+    }
     .job-board-btn.job-btn.custom-btn.heading-custom-btn.hm-vertical.hm-vertical1.our-heading-custom-btn {
        padding: 4px 6px 1px;
        margin-top: 3px;
@@ -7936,6 +7939,7 @@ h2 {
         margin-left: 10px;
         margin-right: 10px;
         text-align: center;
+        margin-bottom: 21px;
     }
     .tagline.gotham-rounded-bold.margin-zero.hw-font-heading1 {
         margin-left: 15px;
@@ -8427,7 +8431,7 @@ input[type="radio"] {
     margin-top: 0;
 }
 .blog-grid > li, .blog-grid-new > li {
-    margin: 10px 0 20px;
+    margin: 24px 0 20px;
 }
 .blog-grid.clearfix.blog-main {
     margin-bottom: 0;
