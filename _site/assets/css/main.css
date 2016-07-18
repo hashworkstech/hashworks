@@ -6349,6 +6349,8 @@ option:checked:before {
     }
     .devops-height {
         height: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     button.text-uppercase.custom-btn.heading-custom-btn.talk-to-us {
         height: 26px;
@@ -6423,9 +6425,6 @@ option:checked:before {
         font-size: 14px;
     }
     .bootcamp-ribbon-div {
-        padding: 0px;
-    }
-    .collobo-footer-division {
         padding: 0px;
     }
     .fa.fa-times.job-close.job-close-1 {
@@ -6914,14 +6913,11 @@ h2 {
     .heading-custom-btn {
         padding: 5px 20px 5px;
     }
-    #ups-devops .heading-custom-btn {
-        padding: 5px 20px 20px;
-    }
     #cw-responsive .heading-custom-btn {
         padding: 6px 20px 5px;
     }
-    #cw-responsive .clearfix {
-        padding: 4px 0;
+    #colobo-bootcamp-ribbon .clearfix {
+        padding: 0;
     }
     .prot-col-20 {
         padding-left: 10px;
@@ -7514,7 +7510,7 @@ h2 {
     }
     .job-board-btn.job-btn.custom-btn.heading-custom-btn.hm-vertical.hm-vertical1.our-heading-custom-btn {
         margin-top: 0px;
-        padding: 2px 12px 1px;
+        padding: 6px 12px;
         vertical-align: middle;
     }
     .apst-button.collo-apst-button {
@@ -7850,6 +7846,9 @@ h2 {
     margin: 2px 0 6px;
 }
 @media screen and (max-width: 1199px) {
+    .fa.fa-paper-plane.company-fa.comp-email {
+        font-size: 30px !important;
+    }
     .techImg > img{
         width: 24px;
         margin-right: 12px;
