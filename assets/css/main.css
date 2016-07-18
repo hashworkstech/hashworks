@@ -1170,7 +1170,7 @@ div#bootcamp-filter-controls label {
 .upskill-cont-filter:hover {
     cursor: pointer;
 }
-.upskill-cont-filter:hover .hw-upskill-cont {
+.hw-upskill-cont {
     border-color: #ee2b7b;
 }
 .hw-upskill-cont h3 {
@@ -5016,9 +5016,6 @@ option:checked:before {
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-    .techImg > img{
-        width: 36px;
-    }
     .col-md-6.col-sm-6.col-xs-6.col-xxs-12.cats{
         margin-left: 120px;
     }
@@ -6854,7 +6851,7 @@ h2 {
         margin-top: 5px;
     }
 	.job-search {
-    padding: 14px;
+    padding: 15px;
 }
     #ups-devops .li-tab-mar > img {
     margin-left: 18px !important;
@@ -7853,6 +7850,10 @@ h2 {
     margin: 2px 0 6px;
 }
 @media screen and (max-width: 1199px) {
+    .techImg > img{
+        width: 24px;
+        margin-right: 12px;
+    }
 	.jb-desk-tab .jobs-tab-header > h1 {
     padding-bottom: 17px;
 }
@@ -8302,11 +8303,6 @@ input[type="radio"] {
     }
     .hw-heading.gotham-rounded-bok.h2-color.subtitle-bold{
         font-family: "gotham-rounded-book";
-    }
-    .techImg > img {
-        height: 24px;
-        margin-right: 12px;
-        width: 24px;
     }
     .hm-talk-btn {
      padding-left: 0px; 
