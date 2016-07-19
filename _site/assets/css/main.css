@@ -4534,7 +4534,34 @@ option:checked:before {
 }
 /* End : header.css */
 /* Start : footer.css */
-
+.submit-popup{
+    width: 100%;
+    margin: 100px auto 0;
+    text-align: center;
+}
+.submit-img{
+    margin-top: 50px;
+}
+.submit-heading{
+    margin-top: 25px;
+    font-size: 18px;
+    color: rgb(244, 186, 11);
+}
+.submit-paragraph{
+    margin-top: 20px;
+    font-size: 18px;
+    color: rgb(52, 52, 52);
+}
+.submit-close{
+    margin-top: 44px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: rgb(124, 123, 123);
+    cursor: pointer;
+}
+div#start-project1 {
+    z-index: 2012;
+}
 @media screen and (max-width: 1199px) {
     
     .devops-container {
