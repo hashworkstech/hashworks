@@ -4121,9 +4121,6 @@ option:checked:before {
         display: table-cell;
         font-size: 8px;
     }
-    .techImg {
-        width: 25px;
-    }
     .group {
         padding: 0 30px;
     }
@@ -5941,6 +5938,9 @@ div#start-project1 {
 #cw-responsive .c-flex.c-flex-1.tab-val {
     height: 100%;
 }
+.text-center.hw-heading.hr-display {
+        color: #000;
+        }
 @media screen and (max-width: 1199px) {
     .cw-desk {
         display: block;
@@ -5982,7 +5982,6 @@ div#start-project1 {
         padding-top: 0;
     }
     .text-center.hw-heading.hr-display {
-        color: #000;
         font-size: 20px;
     }
     .hw-engage-cont h2,
@@ -7873,16 +7872,22 @@ h2 {
 .jb-mob {
     display: none;
 }
-.techImg.techImg1 > img {
+/*.techImg.techImg1 > img {
     margin: 2px 0 6px;
+}*/
+.techImg > img{
+        width: 24px;
+        margin-right: 12px;
+    }
+@media screen and (min-width: 1200px) {
+    .log-clr-backgrnd.container {
+        padding-bottom: 15px;
+        padding-top: 15px;
+}
 }
 @media screen and (max-width: 1199px) {
     .fa.fa-paper-plane.company-fa.comp-email {
         font-size: 30px !important;
-    }
-    .techImg > img{
-        width: 24px;
-        margin-right: 12px;
     }
 	.jb-desk-tab .jobs-tab-header > h1 {
     padding-bottom: 17px;

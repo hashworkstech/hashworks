@@ -30,7 +30,7 @@ jQuery(function($)
                     "html":"A new enquiry has been submitted through contact form on your website, here are the details." + "<p>Name: "+name+"</p>" + "<p>Contact: "+phone+"</p>"+ "<p>Email: "+email+"</p>"+ "<p>Nature of enquiry: "+sub+"</p>"+ "<p>Message: "+msg+"</p>",
                     'to': [
                     {
-                        'email': 'founders@hashworks.co',
+                        'email': 'hr@hashworks.co',
                         'name': 'Hashworks',
                         'type': 'to'
                     }]

@@ -56,7 +56,7 @@ jQuery(function($)
                     }],
                     'to': [
                     {
-                        'email': 'founders@hashworks.co',
+                        'email': 'hr@hashworks.co',
                         'name': 'Hashworks',
                         'type': 'to'
                     }]
