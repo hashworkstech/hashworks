@@ -1,9 +1,6 @@
-## A New Post
----
-
-job_title:Automation Engineer - OATS
+job_title: Automation Engineer - OATS
 location: Bangalore
-date: 21-July-16
+date: 21-07-2016
 experience: 2-5yrs
 type: Full Time
 
@@ -21,7 +18,7 @@ responsibilities:
   - Work with the Test Managers and define the process & strategy associated with automation
   - Participate in reviews and provide inputs on the design, requirements, schedules or any potential issues
   - Design and create test scripts
-	
+  
    
 
 skills: 

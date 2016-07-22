@@ -1,9 +1,8 @@
-## A New Post
 ---
 
-job_title:Performance Engineer 
+job_title: Performance Engineer 
 location: Bangalore
-date: 21-July-16
+date: 21-07-2016
 experience: 2-5yrs
 type: Full Time
 
@@ -16,13 +15,13 @@ responsibilities:
    -Create of Performance test scenarios and performance test scripts
    -Support in troubleshooting performance issues
    -Participate actively and effectively on the defect tracking cycle
-   -Education: Bachelor's Degree in Computer Science, Engineering or Business Administration (on course or completed)
+   -Education Bachelor's Degree in Computer Science, Engineering or Business Administration (on course or completed)
 
    
 
 skills: 
-   - 2 years in the IT Market. Preferably in Software Development or Infrastructure support (hardware).B.E./Btech  
-   - Proactive, Good communication
+   -2 years in the IT Market. Preferably in Software Development or Infrastructure support (hardware).B.E./Btech  
+   -Proactive, Good communication
    -Need to have good knowledge and hands-on experience with any standard industry performance testing tool
    -Need to have good understanding of performance testing concepts which includes concurrency, scalability, latency, throughput etc.
    -Able to understand the available workflows or business transactions for test script generation
