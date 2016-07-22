@@ -374,7 +374,7 @@ a:hover,
 .heading-custom-btn {
     background: #f9d602;
     border: 1px solid #f9d602;
-    padding: 5px 20px;
+    padding: 5px 9px;
     color: #474e5d;
 }
 .heading-custom-btn:hover {
@@ -396,6 +396,7 @@ a:hover,
 .hr-display {
     display: table;
     margin: 0 auto;
+    width: 86%;
 }
 .p-flex {
     display: -webkit-flex;
@@ -5409,9 +5410,6 @@ div#start-project1 {
 .hw-started.log-clr-backgrnd.container-fluid.bootcamp-ribbon-div {
     width: 100%;
 }
-.bootcamp-devops-img > img {
-    display: none;
-}
 @media screen and (max-width: 1199px) {
     nav#toc ul li a:hover,
     nav#toc ul li a.active,
@@ -7884,6 +7882,16 @@ h2 {
         padding-bottom: 15px;
         padding-top: 15px;
 }
+.hw-started1.log-clr-backgrnd.container-fluid {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.dropdown-menu.bootcamp-dropdown-menu {
+    margin-top: 0;
+}
+.bootcamp-btn-group {
+    margin: 30px 175px;
+}
 }
 @media screen and (max-width: 1199px) {
     .fa.fa-paper-plane.company-fa.comp-email {
@@ -7892,7 +7900,7 @@ h2 {
 	.jb-desk-tab .jobs-tab-header > h1 {
     padding-bottom: 17px;
 }
-.jb-desk-tab .jobs-tab-content > h2 {
+.jb-desk-tab .jobs-tab-content > h2 
     margin-top: 31px;
     margin-bottom: 47px;
 }
