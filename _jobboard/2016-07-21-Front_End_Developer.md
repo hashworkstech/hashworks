@@ -1,3 +1,5 @@
+---
+
 job_title: Front End Developer
 location: Bangalore
 date: 21-07-2016
@@ -8,7 +10,7 @@ job_description:
     execution of web & mobile products.
   - We are looking for a self-starter who is passionate and excited to learn and
     improve his or her competency in the evolving medium of web.
-  - >If coding for world class web & mobile products is something that you eat,
+  - If coding for world class web & mobile products is something that you eat,
     sleep and dream – then you are definitely in good company
   - If you know how art blends with the design and development of web
     application – then you really know how we work
@@ -39,3 +41,5 @@ skills:
   - WordPress theme development
   - Website optimization + cross browser capabilities
   - 'Twitter Bootstrap, Angular JS'
+
+---
