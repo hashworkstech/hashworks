@@ -5424,10 +5424,6 @@ div#start-project1 {
     .bc-desk #Layer_1 {
         display: none;
     }
-    .bootcamp-devops-img > img {
-        display: block;
-        margin-left: 10px;
-    }
     .bc-desk div#bootcamp-filter-total {
         padding-top: 0;
         margin-top: 18px;
@@ -5724,11 +5720,6 @@ div#start-project1 {
     .container.bc-mob {
         margin-top: 14px;
     }
-    .bootcamp-devops-img > img {
-        margin-left: 10px;
-        width: 20px;
-        height: 20px;
-    }
     .bc-desk .hw-upskill-cont svg {
         display: none;
     }
@@ -5867,6 +5858,11 @@ div#start-project1 {
         padding: 0 11.5px;
     }
 }
+.bootcamp-devops-img > img {
+        margin-left: 10px;
+        width: 20px;
+        height: 20px;
+    }
 @media screen and (max-width: 420px) {
     .bc-desk .gotham-rounded-light.hw-main-heading.clr-white.h-approch {
         font-size: 10px;
@@ -7977,9 +7973,6 @@ h2 {
         }
 }
 @media screen and (max-width: 767px) {
-    li.bootcamp-devops-svg {
-        display: none !important;
-    }
     /*.li-tab-mar > img {
     width: 62px;
 }*/
