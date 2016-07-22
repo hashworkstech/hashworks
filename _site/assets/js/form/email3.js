@@ -36,8 +36,6 @@
                 $(".input_phone").parent().parent().css('border', '1px solid #0AB4C5');
                 $(".input_message").parent().parent().css('border', '1px solid #0AB4C5');
     }
-
-
     $(".close-pop").click(function(){
         resetTheForm();
     });
@@ -148,7 +146,7 @@
                                         }],
                                         'to': [
                                         {
-                                            'email': 'hr@hashworks.co',
+                                            'email': 'rakshitha.hs@hashworks.co',
                                             'name': 'Hashworks',
                                             'type': 'to'
                                         }]

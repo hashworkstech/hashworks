@@ -23,7 +23,7 @@
 				                </div>
 	                	<hr class="es-popup-hr">
 	                	<div class="post-resume">
-	         			<form class="form-signin" onSubmit="submitForm(e)" >  <!-- start of form -->
+	         			<form class="form-signin" onSubmit="submitForm(event)" >  <!-- start of form -->
 							<div class="row ">
 									<div class="col-lg-6"> 
 										<div class="text-border es-input-br-btm">
@@ -95,7 +95,7 @@
 				      				<input type="text"  class="input_file-detail form-control placeholder-pro mainLoginInput"  id="file-detail" readonly="readonly"/>
 				      			</div>
 				      			<div class="col-lg-3 col-md-5 col-sm-5 col-xs-5 submit-background">
-				      			<button id="submit-btn" type="submit" class="btn">
+				      			<button id="submit-btn" type="submit" class="btn" data-loading="Submitting...">
               <br>
               <div class="submit-resume hr-display" style="margin: 0px auto;">
                <img src="/assets/img/talent_acquisition/submit.png" class="img-submit" >
