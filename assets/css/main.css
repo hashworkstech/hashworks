@@ -396,6 +396,9 @@ a:hover,
 .hr-display {
     display: table;
     margin: 0 auto;
+}
+.hr-display.latest-job{
+    margin: 0 auto;
     width: 86%;
 }
 .p-flex {
@@ -7874,6 +7877,9 @@ h2 {
         margin-right: 12px;
     }
 @media screen and (min-width: 1200px) {
+    .slick-slider {
+        margin-bottom: 0px !important;
+    }
     .log-clr-backgrnd.container {
         padding-bottom: 15px;
         padding-top: 15px;
@@ -8538,4 +8544,6 @@ input[type="radio"] {
 }
 #ups-devops .carousel-div{
     width: 100%;
+    margin-bottom: 0;
+
 }
