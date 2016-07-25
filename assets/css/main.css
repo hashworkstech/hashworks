@@ -7895,6 +7895,9 @@ h2 {
     margin: 30px 175px;
 }
 }
+#cw-responsive .c-flex.c-flex-1.tab-val,#ups-devops .c-flex.devops-c-flex.tab-val{
+    padding-bottom: 14px;
+}
 @media screen and (max-width: 1199px) {
     .fa.fa-paper-plane.company-fa.comp-email {
         font-size: 30px !important;
