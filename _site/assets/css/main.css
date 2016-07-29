@@ -2547,14 +2547,15 @@ nav #toc a#toc-actuator {
     display: block;
     position: fixed;
     height: 4px;
-    width: 100%;
+    width: 24px;
     background: #EE2B7B;
     border-radius: 9px;
     opacity: 1;
-    left: 0;
+    float: right;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
     transform: rotate(0deg);
     /*
   -webkit-transition: .5s ease-in-out;
