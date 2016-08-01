@@ -7506,6 +7506,9 @@ h2 {
 .fa.fa-angle-right.devops-fa-angle-right {
     display: none;
 }
+div#company-anime-banner svg{
+    height: 100vh;
+}
 @media screen and (max-width: 1199px) {
     .tab-mobile .tab-val, #cw-responsive .tab-val, #ups-devops .devops-c-flex{
         outline: none !important;
