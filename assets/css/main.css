@@ -7419,7 +7419,7 @@ h2 {
 }
 .job-tab-li.job-margin {
     color: #0ab4c5;
-    list-style: initial;
+    list-style: inherit;
 }
 .gotham-rounded-bok.vw-coll-line-height.hw-contact-no.hw-contact-no {
     color: #343434;

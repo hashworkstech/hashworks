@@ -7,7 +7,7 @@ experience: 2-5yrs
 type: Full Time
 
 job_description:  
-   -The automation engineer will be responsible to design, build, test and deploy effective test automation solutions 
+   - The automation engineer will be responsible to design, build, test and deploy effective test automation solutions 
     in the supply chain domain. The intent should be to deliver the best quality system to the Dell business users by
     meeting the short and long term goals of the testing organization.
 
