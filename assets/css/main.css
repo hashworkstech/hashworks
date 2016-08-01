@@ -7906,7 +7906,7 @@ h2 {
 	.jb-desk-tab .jobs-tab-header > h1 {
     padding-bottom: 17px;
 }
-.jb-desk-tab .jobs-tab-content > h2 
+.jb-desk-tab .jobs-tab-content > h2 {
     margin-top: 31px;
     margin-bottom: 47px;
 }
@@ -8031,10 +8031,10 @@ h2 {
         border-bottom: none;
     }
     .jb-desk-tab {
-        display: none;
+        display: none !important;
     }
     .jb-mob {
-        display: block;
+        display: block !important;
     }
     .job-hw-font-heading {
         font-size: 18px !important;
