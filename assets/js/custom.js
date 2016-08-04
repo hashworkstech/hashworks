@@ -1977,7 +1977,40 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
         $('#pvd-'+pvhId_sub).addClass('pvd-active');
       });
     }
-    
+
+    $('.pf-dd a li').on('click',function(){
+  var clickid=$(this).attr('clickid');
+  console.log(clickid);
+  $('#'+clickid).trigger('click');
+});
+
+//     var myTimeline:TimelineMax = new TimelineMax({tweens:
+// [new TweenMax("#pencil-liquid1", 0, {x:"0",y:"0.05"})], 
+// [new TweenMax("#pencil-liquid1", 0.25, {x:"-0.11",y:"0.91"})], 
+// [new TweenMax("#pencil-liquid1", 0.5, {x:"-0.11",y:"0.91"})], 
+// [new TweenMax("#pencil-liquid1", 0.75, {x:"0",y:"0.05"})], 
+// [new TweenMax("#pencil-liquid1", 1, {x:"0",y:"0.05"})]});
+    // TweenMax.to("#pencil-liquid1",3, {repeat:infinite,onRepeat:onRepeat, ease:Linear.easeNone})
+    // $("#dataops").click(function() {
+    //     $("#pvd-1").addClass("pvd-active");
+    //     $("#pvh-1").addClass("pvh-active");
+    //   }
+    //    $("#devops").click(function() {
+    //     $("#pvd-2").addClass("pvd-active");
+    //     $("#pvh-2").addClass("pvh-active");
+    //   }
+    //    $("#datascience").click(function() {
+    //     $("#pvd-3").addClass("pvd-active");
+    //     $("#pvh-3").addClass("pvh-active");
+    //   }
+    //    $("#ui-ux").click(function() {
+    //     $("#pvd-4").addClass("pvd-active");
+    //     $("#pvh-4").addClass("pvh-active");
+    //   }
+    //    $("#mobility").click(function() {
+    //     $("#pvd-5").addClass("pvd-active");
+    //     $("#pvh-5").addClass("pvh-active");
+    //   }
     $('.carousel-div').slick({
         dots: false,
         infinite: false,
