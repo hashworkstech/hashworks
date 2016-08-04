@@ -1978,7 +1978,7 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
       });
     }
 
-    $('.pf-dd a li').on('click',function(){
+    $('.pf-dd a').on('click',function(){
   var clickid=$(this).attr('clickid');
   console.log(clickid);
   $('#'+clickid).trigger('click');
