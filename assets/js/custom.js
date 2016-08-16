@@ -1079,8 +1079,8 @@ var which_one_clicked1 = 0;
 }
     });
 
-   $(".collapse-button").click(function(){
-          var navtab = $(".bs-example").offset().top + 0;
+var collapseFunction = function(){
+        var navtab = $(".bs-example").offset().top + 0;
                   $('html, body').animate({
             scrollTop: navtab}, 500, 'linear');
         if(which_one_clicked1 == 4){
@@ -1127,47 +1127,15 @@ var which_one_clicked1 = 0;
       $("#div-bottom-left").animate({'width' : '50%','height' : '270px'},844); 
       $("#div-top-right").animate({'width' : '50%','height' : '270px'},844); 
       $("#div-top-left").animate({'width' : '50%','height' : '270px'},844); 
+};
+
+  $(".collapse-button").click(function(){
+        collapseFunction();
     });
-  
-   $("li.c-flex").click(function(){
-        if(which_one_clicked1 == 4){
-          which_one_clicked1 = 0;
-          $("#collapse-image-4").css("display","none");
-          $("#collapse-image-4").animate({"opacity":"0"},0);
-          $("#div-bottom-right").addClass("thinking-height");
-          $("#div-bottom-right").animate({'height' : '77.4vh'},0); 
-          $("#div-bottom-right").css("bottom","0");
-        }
-        else if(which_one_clicked1 == 3){
-          which_one_clicked1 = 0;
-          $("#collapse-image-3").css("display","none");
-          $("#collapse-image-3").animate({"opacity":"0"},0);
-          $("#div-bottom-left").addClass("thinking-height");
-          $("#div-bottom-left").animate({'height' : '77.4vh'},0); 
-          $("#div-bottom-left").css("bottom","0");
-        }
-        else if(which_one_clicked1 == 2){
-          which_one_clicked1 = 0;
-          $("#collapse-image-2").css("display","none");
-          $("#collapse-image-2").animate({"opacity":"0"},0);
-          $("#div-top-right").addClass("thinking-height");
-          $("#div-top-right").animate({'height' : '77.4vh'},0); 
-        }
-        else if(which_one_clicked1 == 1){
-          which_one_clicked1 = 0;
-          $("#collapse-image-1").css("display","none");
-          $("#collapse-image-1").animate({"opacity":"0"},0);
-          $("#div-top-left").addClass("thinking-height");
-          $("#div-top-left").animate({'height' : '77.4vh'},0); 
-        }
-      
-      $("#hw-ribbon-our-thinking-footer").css("display","block");
-      $(".main-contentt h1.text-center.gotham-rounded-light.heading.hw-copyright").animate({"margin-bottom":"29%"},0);
-      $("#div-bottom-right").animate({'width' : '50%','height' : '270px'},0);       
-      $("#div-bottom-left").animate({'width' : '50%','height' : '270px'},0); 
-      $("#div-top-right").animate({'width' : '50%','height' : '270px'},0); 
-      $("#div-top-left").animate({'width' : '50%','height' : '270px'},0); 
+   $("#our-thinking-responsive .p-flex").click(function(){
+        collapseFunction();
     });
+
 
 
 
@@ -1984,33 +1952,31 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
   $('#'+clickid).trigger('click');
 });
 
-//     var myTimeline:TimelineMax = new TimelineMax({tweens:
-// [new TweenMax("#pencil-liquid1", 0, {x:"0",y:"0.05"})], 
-// [new TweenMax("#pencil-liquid1", 0.25, {x:"-0.11",y:"0.91"})], 
-// [new TweenMax("#pencil-liquid1", 0.5, {x:"-0.11",y:"0.91"})], 
-// [new TweenMax("#pencil-liquid1", 0.75, {x:"0",y:"0.05"})], 
-// [new TweenMax("#pencil-liquid1", 1, {x:"0",y:"0.05"})]});
-    // TweenMax.to("#pencil-liquid1",3, {repeat:infinite,onRepeat:onRepeat, ease:Linear.easeNone})
-    // $("#dataops").click(function() {
-    //     $("#pvd-1").addClass("pvd-active");
-    //     $("#pvh-1").addClass("pvh-active");
-    //   }
-    //    $("#devops").click(function() {
-    //     $("#pvd-2").addClass("pvd-active");
-    //     $("#pvh-2").addClass("pvh-active");
-    //   }
-    //    $("#datascience").click(function() {
-    //     $("#pvd-3").addClass("pvd-active");
-    //     $("#pvh-3").addClass("pvh-active");
-    //   }
-    //    $("#ui-ux").click(function() {
-    //     $("#pvd-4").addClass("pvd-active");
-    //     $("#pvh-4").addClass("pvh-active");
-    //   }
-    //    $("#mobility").click(function() {
-    //     $("#pvd-5").addClass("pvd-active");
-    //     $("#pvh-5").addClass("pvh-active");
-    //   }
+    // $(window).load(function() {
+    if(window.location.href == "http://127.0.0.1:4000/portfolio/#mobility"){
+
+     }
+    // });
+// var pencilliquid1 = document.querySelector ('#pencil-liquid1');
+//     var myTimeline = new TimelineMax({tweens:
+// [new TweenMax(pencil-liquid1, 0, {x:"0",y:"5px"})], 
+// TweenMax(pencilliquid1, 25, {x:"-11px",y:"91px"}), 
+// TweenMax(pencilliquid1, 0.5, {x:"-11px",y:"91px"}), 
+// TweenMax(pencilliquid1, 0.75, {x:"0",y:"5px"}), 
+// TweenMax(pencilliquid1, 1, {x:"0",y:"5px"})});
+//     TweenMax.to(pencilliquid1, 3, {ease:Linear.easeNone});
+
+    // var timeline = new TimelineMax;
+    // timeline.to('#pencil-bubble-1', .3, {
+    // x: 240,
+    // opacity: 0,
+    // ease: Linear.easeIn
+    // });
+// timeline.to('#target2', 1.0, {
+//   x: -240,
+//   ease: Quad.easeInOut 
+// });
+    
     $('.carousel-div').slick({
         dots: false,
         infinite: false,
@@ -2018,7 +1984,7 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
         slidesToShow: 3,
         slidesToScroll: 3,
         adaptiveHeight: true,
-        arrows: true,
+        arrows: true, 
         responsive: [
           {
           breakpoint: 768,

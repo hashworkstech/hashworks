@@ -7,9 +7,7 @@ experience: 3-8yrs
 type: Full Time
 
 job_description:  
-   - Quick Learning & System Understanding Capability,
-   - Candidates should be excellent team players, yet capable of working independently
-   - Able to manage multiple projects at once. 
+   - The DevOps Engineer will build, run & manage the release engineering for the product development team. This job challenges you to deliver at all aspects of      Quality, Continuous Integration, Continuous Deployment, Infrastructure management, Policy Governance, Security, Scalability, Maintainability & Deployability 
 responsibilities: 
    - Hands on experience on various levels of testing
    - Familiar working in lab environment using oscilloscopes, in circuit emulators/target system debuggers,computer assisted test stands.
