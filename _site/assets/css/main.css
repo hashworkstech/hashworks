@@ -6,7 +6,7 @@ html.body{
 }
 /* fonts */
 
-/*@font-face {
+@font-face {
     font-family: 'gotham-rounded-bold';
     src: url(../font/gotham-rounded-bold.otf);
 }
@@ -17,7 +17,7 @@ html.body{
 @font-face {
     font-family: 'gotham-rounded-light';
     src: url(../font/gotham-rounded-light.otf);
-}*/
+}
 @font-face {
     font-family: 'gotham-rounded-book-italic';
     src: url(../font/gotham-rounded-book-italic.otf);
@@ -36,7 +36,7 @@ html.body{
 }
 
 
-@font-face {
+/*@font-face {
     font-family: 'gotham-rounded-bold';
     src: url(../font/GothamRoundedBold_21016.ttf);
 }
@@ -55,7 +55,7 @@ html.body{
 @font-face {
     font-family: 'gotham-rounded-light-italic';
     src: url(../font/PaulsSUPERFont.ttf);
-}
+}*/
 /* end of fonts */
 /* general css */
 html * {
@@ -3872,12 +3872,12 @@ i.fa.fa-chevron-down.down-arrow {
 .highlight {
     color: pink;
 }
-option:before {
-    content: "☐ "
+/*option:before {
+    content: "☐ ";
 }
 option:checked:before {
-    content: "☑ "
-}
+    content: "☑ ";
+}*/
 .hw-menu-list .gsc-input-box {
     height: 35px;
 }
@@ -6089,6 +6089,7 @@ div#start-project1 {
     font-size: 14px;
     text-align: initial;
     margin-right: 50px;
+    margin-top: 14px;
     padding: 0;
 }
 .collobo-talk-to-us {
@@ -6125,6 +6126,9 @@ div#start-project1 {
         color: #000;
         }
 @media screen and (max-width: 1199px) {
+    .collobo-hw-main-heading {
+    margin-top: 0px;
+}
     .cw-desk {
         display: block;
     }

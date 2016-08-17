@@ -318,22 +318,23 @@ bootcamp_filter_function();
 blog_filter_function();
 });
 
-$('.boot-dropdown-menu').click(function(e){
+$('.blog-btn-group').click(function(e){
   e.stopPropagation();
   $('.dropdown-toggle').dropdown('toggle');
 });
-$('.bootcamp-dropdown-toggle').click(function(e){
-  e.stopPropagation();
-  $('.dropdown-toggle').dropdown('toggle');
-});
-$('#bootcamp-dropdown-menu1').click(function(e){
-  e.stopPropagation();
-  $('#dropdown-toggle').dropdown('toggle');
-});
- $('#bootcamp-dropdown-menu2').click(function(e){
-  e.stopPropagation();
-  $('#dropdown-toggle1').dropdown('toggle');
-});
+// $('.boot-dropdown-menu1').click(function(e){
+//   e.stopPropagation();
+//   $('.dropdown-toggle').dropdown('toggle');
+// });
+
+// $('#bootcamp-dropdown-menu1').click(function(e){
+//   e.stopPropagation();
+//   $('#dropdown-toggle').dropdown('toggle');
+// });
+//  $('#bootcamp-dropdown-menu2').click(function(e){
+//   e.stopPropagation();
+//   $('#dropdown-toggle1').dropdown('toggle');
+// });
 
 /*end filtering in bootcamp*/ 
 

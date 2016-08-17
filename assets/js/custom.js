@@ -1948,7 +1948,13 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
 
     $('.pf-dd a').on('click',function(){
   var clickid=$(this).attr('clickid');
-  console.log(clickid);
+  var id = $('.pf-dd a').attr('id');
+if (id == "pvh-3-3") {
+  $('.slick-next').trigger('click');
+}
+else {
+  $('.slick-prev').trigger('click');
+}
   $('#'+clickid).trigger('click');
 });
 
