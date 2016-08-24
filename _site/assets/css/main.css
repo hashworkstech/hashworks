@@ -8063,14 +8063,19 @@ div#company-anime-banner svg{
     }
 }
 .btn.btn-danger.dropdown-toggle.bootcamp-dropdown-toggle.bootcamp-btn-danger.boot-dropdown-menu {
-    border: 1px solid #0ab4c5;
+    border: 2px solid #0ab4c5;
 }
 .btn-group.open .dropdown-toggle{
      border: 2px solid #0ab4c5 !important;
-     border-left: none !important;
 }
 .btn-group .btn + .btn, .btn-group .btn + .btn-group, .btn-group .btn-group + .btn, .btn-group .btn-group + .btn-group{
     margin-left: 0px !important;
+}
+.btn.btn-danger.bootcamp-btn-danger.boot-dropdown-menu.bootcamp-dropdown-menu{
+    border-right: none;
+}
+#blog-whole .btn-group.open .dropdown-toggle{
+     border-left: none !important;
 }
 /*ups devops css ends*/
 /*job board css starts*/
