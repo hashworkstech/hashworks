@@ -38,23 +38,42 @@ html.body{
 
 /*@font-face {
     font-family: 'gotham-rounded-bold';
-    src: url(../font/GothamRoundedBold_21016.ttf);
+    src: url(../font/gothamrnd-bold.eot?#iefix) format('opentype');
 }
 @font-face {
     font-family: 'gotham-rounded-book';
-    src: url(../font/GothamRoundedBook_21018.ttf);
+    src: url(../font/gothamrnd-book.eot#iefix) format('opentype');
 }
 @font-face {
     font-family: 'gotham-rounded-light';
-    src: url(../font/GothamRoundedLight_21020.ttf);
-}
-@font-face {
+    src: url(../font/gothamrnd-light.eot#iefix) format('opentype');
+}*/
+/*@font-face {
     font-family: 'gotham-rounded-book-italic';
-    src: url(../font/GothamRoundedMedium_21022.ttf);
+    src: url(../font/GothamRoundedMedium_21022.ttf) format('truetype');
 }
 @font-face {
     font-family: 'gotham-rounded-light-italic';
-    src: url(../font/PaulsSUPERFont.ttf);
+    src: url(../font/PaulsSUPERFont.ttf) format('truetype');
+}*/
+
+/*@font-face {
+    font-family: 'GothamBold';
+    src: url("../../fonts/gothamrnd-bold.eot"); 
+    src: url("../../fonts/gothamrnd-bold.eot?#iefix") format("embedded-opentype"), 
+         url("../../fonts/GothamBold.woff") format("woff"), 
+         url("../../fonts/GothamRoundedBold_21016.ttf") format("truetype"),
+         url("../../fonts/GothamBold.svg#GothamBold") format("svg");
+}
+
+@font-face {
+    font-family: 'GothamBook';
+    src: url("../../fonts/gothamrnd-book.eot"), 
+         url("../../fonts/GothamBook.eot?#iefix") format("embedded-opentype"), 
+         url("../../fonts/GothamBook.woff") format("woff"), 
+         url("../../fonts/GothamBook.ttf") format("truetype"),
+         url("../../fonts/GothamBook.otf") format('opentype'),
+         url("../../fonts/GothamBook.svg#GothamBook") format("svg");
 }*/
 /* end of fonts */
 /* general css */
@@ -142,6 +161,10 @@ a:hover,
 .gotham-rounded-bold {
     font-family: "gotham-rounded-bold";
 }
+[if IE 11].gotham-rounded-bold{
+    font-weight: bold;
+}
+[endif]
 .gotham-rounded-bok {
     font-family: "gotham-rounded-book";
 }
@@ -3957,7 +3980,7 @@ option:checked:before {
         background-position: -34px -5px;
     }
     .cs-icon:hover span.menu-icon {
-        background-position: -87px -5px;
+        background-position: -63px -63px;
     }
     .comp-icon:hover span.menu-icon {
         background-position: -5px -64px;
@@ -6127,7 +6150,7 @@ div#start-project1 {
         }
 @media screen and (max-width: 1199px) {
     .collobo-hw-main-heading {
-    margin-top: 0px;
+    margin-top: 6px;
 }
     .cw-desk {
         display: block;
@@ -6286,9 +6309,9 @@ div#start-project1 {
     .cw-mob {
         display: block;
     }
-    #cw-responsive .gotham-book.input_file-upload.collaborative-input_file-upload {
+    /*#cw-responsive .gotham-book.input_file-upload.collaborative-input_file-upload {
         display: none;
-    }
+    }*/
     #cw-responsive .input_file-detail.form-control.placeholder-pro.mainLoginInput {
         display: none;
     }
@@ -6367,11 +6390,7 @@ div#start-project1 {
         margin-top: 7px;
         margin-bottom: 30px;
     }
-    .collaborative-attach-file {
-        height: 50px;
-    }
     #cw-responsive #file-upload {
-        height: 50px;
         margin-left: 0px;
         width: 100%;
     }
@@ -7699,6 +7718,10 @@ div#company-anime-banner svg{
     height: 100vh;
 }
 @media screen and (max-width: 1199px) {
+    .img-responsive1{
+        height: auto;
+        max-width: 100%;
+    }
     .tab-mobile .tab-val, #cw-responsive .tab-val, #ups-devops .devops-c-flex{
         outline: none !important;
         outline-color: transparent !important;
@@ -8529,6 +8552,9 @@ input[type="radio"] {
         height: 29px !important;
 
     }
+    .collobo-hw-main-heading {
+        margin-top: 12px;
+    }
     .text-border.devops-text-border {
         margin-bottom: 18px;
     }
@@ -8587,8 +8613,8 @@ input[type="radio"] {
     input#file-detail {
         display: none;
     }
-    .div-attach-file {
-        padding-top: 28px;
+    #cw-responsive #file-upload {
+        height: 20px;
     }
     .bc-desk .div-attach-file {
         padding-top: 2px !important;
@@ -8612,6 +8638,9 @@ input[type="radio"] {
 }
 .blog-grid .intro-wrapper{
     overflow: visible;
+}
+#col-organic-c68 .discovery-col-header strong {
+    font-weight: normal !important;
 }
 @media screen and (min-width: 1200px){
     .blog-grid .intro-wrapper {
@@ -8702,6 +8731,8 @@ input[type="radio"] {
 .form-container > hr{
     float: left;
 }
+
+
 @media screen and (max-width: 640px){
     .blog-grid .intro-wrapper{
         padding: 0;

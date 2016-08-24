@@ -318,8 +318,7 @@ bootcamp_filter_function();
 blog_filter_function();
 });
 
-$('.blog-btn-group').click(function(e){
-  e.stopPropagation();
+$('.blog-btn-group').click(function(){
   $('.dropdown-toggle').dropdown('toggle');
 });
 // $('.boot-dropdown-menu1').click(function(e){

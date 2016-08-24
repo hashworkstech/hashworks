@@ -71,8 +71,8 @@ Course_Details:
    
    Continuous_Integration:
     -  CI server Working session - Jenkins
-    -   Implementing CI & CD using cloudbees
-    -     How to write an automated Build scripts
+    -  Implementing CI & CD using cloudbees
+    -  How to write an automated Build scripts
    
    Infrastructure_Automation:
     -  Infrastructure as a code
@@ -84,14 +84,14 @@ Course_Details:
     -   Automated Verification
     -   Automated Promote
     -   Passive monitoring
-    -    Scripted rollback
+    -   Scripted rollback
    
    Monitoring:
     -  Monitor infrastructure resources
     -  Log monitoring
     -  Visibility into resource utilization, operational performance and overall demand patterns
-    -   Metrics, including CPU utilization, disk I/O and network traffic
-    -   Custom Metrics
+    -  Metrics, including CPU utilization, disk I/O and network traffic
+    -  Custom Metrics
 
 
 ---

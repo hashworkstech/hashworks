@@ -101,8 +101,8 @@
 		                <a href="/portfolio">Portfolio</a></li>
 		            <li>
 		                <a  href="/engage_us">Engage&nbspUs</a></li>
-		            <li class="pointer">
-		                <a href="javascript:void(0);">Case&nbspStudy</a></li>
+		            <li>
+		                <a href="javascript:void(0);" data-toggle="tooltip" data-placement="left" title="Coming Soon">Case&nbspStudy</a></li>
 		            <li>
 		                <a href="/company">Company</a></li>
 		            <li>
@@ -143,19 +143,23 @@
 
 <!-- Work-together popup -->
 		<div id="start-project" class="modal fade">
-	        <div class="modal-dialog contact-modal">
+	        <div class="modal-dialog contact-modal es-contact-modal">
 	            <div class="modal-content">
 	            	
 	                <div class="container form-container">
-	                	<span class="hm-contact"><i class="fa fa-mobile"></i><span class="hm-num gotham-rounded-light">+7259471785</span></span>
-					<img class="close-pop" data-dismiss="modal" src="/assets/svg/close-pop.svg" alt="close">
-	                	<h1 class="gotham-rounded-bold">Let's work together</h1>
-	                	<hr>
+	                	<span class="hm-contact es-mob-contact"><i class="fa fa-mobile"></i><span class="hm-num gotham-rounded-light">+7259471785</span></span>
+					 <img class="close-pop es-mob-close-pop" data-dismiss="modal" src="/assets/svg/close-pop.svg" alt="close">
+	                	<h1 class="gotham-rounded-bold es-mob-head">Let's work together</h1>
+	                	<div class="es-popup">
+				                	<span class="gotham-rounded-bold es-pop-head">Let's Work Together
+				                	<img class="close-pop desktop-close-pop" data-dismiss="modal" src="/assets/img/engage-us-responsive/cross-img.png" alt="close"></span>
+				                </div>
+	                	<hr class="es-popup-hr">
 	                	<div class="post-resume">
 	         			<form class="form-signin" onSubmit="submitForm(event)" >  <!-- start of form -->
 							<div class="row ">
 									<div class="col-lg-6"> 
-										<div class="text-border">
+										<div class="text-border es-input-br-btm">
 											<div class="input-group">
 					      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/name-img.png"></div>
 					      						
@@ -165,7 +169,7 @@
 									</div>
 								
 								<div class="col-lg-6"> 
-									<div class="text-border">
+									<div class="text-border es-input-br-btm">
 										<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/email-img.png"></div>
 											<input type="text" class="form-control placeholder-pro mainLoginInput input_email" id="email" placeholder="EMAIL">
@@ -173,9 +177,9 @@
 									</div>
 								</div>
 							</div>
-							<div class="row ms-row-mar">
+							<div class="row ms-row-mar es-ms-row-mar">
 								<div class="col-lg-6"> 
-									<div class="text-border">
+									<div class="text-border es-input-br-btm">
 										<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
 											<select class="form-control mainLoginInput gotham-rounded-light input_subject sub-width" id="subject">
@@ -195,7 +199,7 @@
 								</div>
 								
 								<div class="col-lg-6"> 
-									<div class="text-border">
+									<div class="text-border es-input-br-btm">
 										<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/phone-img.png"></div>
 											<input type="text" class="form-control placeholder-pro mainLoginInput input_phone" id="phone" placeholder="PHONE">
@@ -204,9 +208,9 @@
 								</div>
 							</div>
 
-							<div class="row ms-row-mar">
+							<div class="row ms-row-mar es-ms-row-mar">
 								<div class="col-lg-12">
-									<div class="text-border">
+									<div class="text-border es-input-br-btm">
 									<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
 				      						
@@ -217,24 +221,25 @@
 							</div><!-- end of text-area row-->
 
 							<div class="attach-file">
-				      			<div class="col-lg-9">
+				      			<div class="col-lg-9 col-md-7 col-sm-7 col-xs-7">
 				      				<input type="file" class="gotham-book input_file-upload" id="file-upload">
 				      				<br/><br/>
-				      				<span class="attach-text"><span><img src="/assets/img/talent_acquisition/attach.png"></span><span class="gotham-rounded-bok attach-span clr-white">Attach File</span></span>
+				      				<span class="attach-text"><span><img src="/assets/img/talent_acquisition/attach.png"></span><span class="gotham-rounded-bok attach-span">Attach File</span></span>
 				      				<input type="text"  class="input_file-detail form-control placeholder-pro mainLoginInput"  id="file-detail" readonly="readonly"/>
 				      			</div>
-				      			<div class="col-lg-3 submit-background">
-				      			<button id="submit-btn" type="submit" class="btn">
+				      			<div class="col-lg-3 col-md-5 col-sm-5 col-xs-5 submit-background">
+				      			<button id="submit-btn" type="submit" class="btn" data-loading="Submitting...">
               <br>
               <div class="submit-resume hr-display" style="margin: 0px auto;">
                <img src="/assets/img/talent_acquisition/submit.png" class="img-submit" >
                <p class="gotham-rounded-bok submit-text placeholder-pro img-para">SUBMIT</p>
               </div>
+          </button>
 				      			</div>
 				      		</div><!-- end of attach-file-->
 						</form> <!-- end of form -->
 						</div><!-- end of postresume -->
-					<div class="show-as-love"><!-- hm social icon-->
+					<div class="show-as-love es-mob-like"><!-- hm social icon-->
 					<div class="row">
 						<div class=" col-lg-offset-7 col-lg-5">
 							<div class="hm-shows-love">
@@ -260,6 +265,8 @@
 	            </div>
 	        </div>
 	    </div>
+	 </div>
+	</div>
     <!-- End of work-together popup -->
 	
 			
@@ -12383,19 +12390,23 @@
 
 <!-- Work-together popup -->
 		<div id="start-project" class="modal fade">
-	        <div class="modal-dialog contact-modal">
+	        <div class="modal-dialog contact-modal es-contact-modal">
 	            <div class="modal-content">
 	            	
 	                <div class="container form-container">
-	                	<span class="hm-contact"><i class="fa fa-mobile"></i><span class="hm-num gotham-rounded-light">+7259471785</span></span>
-					<img class="close-pop" data-dismiss="modal" src="/assets/svg/close-pop.svg" alt="close">
-	                	<h1 class="gotham-rounded-bold">Let's work together</h1>
-	                	<hr>
+	                	<span class="hm-contact es-mob-contact"><i class="fa fa-mobile"></i><span class="hm-num gotham-rounded-light">+7259471785</span></span>
+					 <img class="close-pop es-mob-close-pop" data-dismiss="modal" src="/assets/svg/close-pop.svg" alt="close">
+	                	<h1 class="gotham-rounded-bold es-mob-head">Let's work together</h1>
+	                	<div class="es-popup">
+				                	<span class="gotham-rounded-bold es-pop-head">Let's Work Together
+				                	<img class="close-pop desktop-close-pop" data-dismiss="modal" src="/assets/img/engage-us-responsive/cross-img.png" alt="close"></span>
+				                </div>
+	                	<hr class="es-popup-hr">
 	                	<div class="post-resume">
 	         			<form class="form-signin" onSubmit="submitForm(event)" >  <!-- start of form -->
 							<div class="row ">
 									<div class="col-lg-6"> 
-										<div class="text-border">
+										<div class="text-border es-input-br-btm">
 											<div class="input-group">
 					      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/name-img.png"></div>
 					      						
@@ -12405,7 +12416,7 @@
 									</div>
 								
 								<div class="col-lg-6"> 
-									<div class="text-border">
+									<div class="text-border es-input-br-btm">
 										<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/email-img.png"></div>
 											<input type="text" class="form-control placeholder-pro mainLoginInput input_email" id="email" placeholder="EMAIL">
@@ -12413,9 +12424,9 @@
 									</div>
 								</div>
 							</div>
-							<div class="row ms-row-mar">
+							<div class="row ms-row-mar es-ms-row-mar">
 								<div class="col-lg-6"> 
-									<div class="text-border">
+									<div class="text-border es-input-br-btm">
 										<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
 											<select class="form-control mainLoginInput gotham-rounded-light input_subject sub-width" id="subject">
@@ -12435,7 +12446,7 @@
 								</div>
 								
 								<div class="col-lg-6"> 
-									<div class="text-border">
+									<div class="text-border es-input-br-btm">
 										<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/phone-img.png"></div>
 											<input type="text" class="form-control placeholder-pro mainLoginInput input_phone" id="phone" placeholder="PHONE">
@@ -12444,9 +12455,9 @@
 								</div>
 							</div>
 
-							<div class="row ms-row-mar">
+							<div class="row ms-row-mar es-ms-row-mar">
 								<div class="col-lg-12">
-									<div class="text-border">
+									<div class="text-border es-input-br-btm">
 									<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
 				      						
@@ -12457,39 +12468,40 @@
 							</div><!-- end of text-area row-->
 
 							<div class="attach-file">
-				      			<div class="col-lg-9">
+				      			<div class="col-lg-9 col-md-7 col-sm-7 col-xs-7">
 				      				<input type="file" class="gotham-book input_file-upload" id="file-upload">
 				      				<br/><br/>
-				      				<span class="attach-text"><span><img src="/assets/img/talent_acquisition/attach.png"></span><span class="gotham-rounded-bok attach-span clr-white">Attach File</span></span>
+				      				<span class="attach-text"><span><img src="/assets/img/talent_acquisition/attach.png"></span><span class="gotham-rounded-bok attach-span">Attach File</span></span>
 				      				<input type="text"  class="input_file-detail form-control placeholder-pro mainLoginInput"  id="file-detail" readonly="readonly"/>
 				      			</div>
-				      			<div class="col-lg-3 submit-background">
-				      			<button id="submit-btn" type="submit" class="btn">
+				      			<div class="col-lg-3 col-md-5 col-sm-5 col-xs-5 submit-background">
+				      			<button id="submit-btn" type="submit" class="btn" data-loading="Submitting...">
               <br>
               <div class="submit-resume hr-display" style="margin: 0px auto;">
                <img src="/assets/img/talent_acquisition/submit.png" class="img-submit" >
                <p class="gotham-rounded-bok submit-text placeholder-pro img-para">SUBMIT</p>
               </div>
+          </button>
 				      			</div>
 				      		</div><!-- end of attach-file-->
 						</form> <!-- end of form -->
 						</div><!-- end of postresume -->
-					<div class="show-as-love"><!-- hm social icon-->
+					<div class="show-as-love es-mob-like"><!-- hm social icon-->
 					<div class="row">
 						<div class=" col-lg-offset-7 col-lg-5">
 							<div class="hm-shows-love">
 								<h1 class="gotham-rounded-bold hm-show-text hw-heading show-text1">Show us your <i class="fa fa-heart hm-show-heart"></i> </h1>
 								<div class= "hm-icons hm-form-val">
 									
-			                    	<a href="https://www.facebook.com/hashworks/" class="fa-stack hw-socialshare social-icons">
+			                    	<a href="https://www.facebook.com/hashworks/" class="fa-stack hw-socialshare social-icons" target="new">
 					                    <i class="fa fa-circle-thin fa-stack-2x"></i>
 					                    <i class="fa fa-facebook fa-stack-1x"></i>
 					                  </a>
-					                  <a href="https://twitter.com/hashworksco" class="fa-stack hw-socialshare social-icons">
+					                  <a href="https://twitter.com/hashworksco" class="fa-stack hw-socialshare social-icons" target="new">
 					                    <i class="fa fa-circle-thin fa-stack-2x"></i>
 					                    <i class="fa fa-twitter fa-stack-1x"></i>
 					                  </a>
-					                  <a href="https://www.linkedin.com/company/9228490" class="fa-stack hw-socialshare social-icons">
+					                  <a href="https://www.linkedin.com/company/9228490" class="fa-stack hw-socialshare social-icons" target="new">
 					                    <i class="fa fa-circle-thin fa-stack-2x"></i>
 					                    <i class="fa fa-linkedin fa-stack-1x"></i>
 					                     </a>
@@ -12500,6 +12512,8 @@
 	            </div>
 	        </div>
 	    </div>
+	 </div>
+	</div>
     <!-- End of work-together popup -->
 
 
@@ -12546,8 +12560,8 @@
 		                  <a class="pf-icon" href="/portfolio"><span class="menu-icon"></span><span class="menu-text">Portfolio</span></a></li>
 		              <li>
 		                  <a class="es-icon" href="/engage_us"><span class="menu-icon"></span><span class="menu-text">Engage&nbspUs</span></a></li>
-		              <li class="pointer">
-		                  <a class="cs-icon" href="javascript:void(0);"><span class="menu-icon"></span><span class="menu-text">Case&nbspStudy</span></a></li>
+		              <li>
+		                   <a class="cs-icon" href="javascript:void(0);" ontouchstart="" data-toggle="tooltip" data-placement="right" title="Coming Soon"><span class="menu-icon"></span><span class="menu-text">Case&nbspStudy</span></a></li>
 		              <li>
 		                  <a class="comp-icon" href="/company"><span class="menu-icon"></span><span class="menu-text">Company</span></a></li>
 		              <li>
@@ -12555,7 +12569,7 @@
 		              <li>
 		                  <a class="jb-icon" href="/job_board"><span class="menu-icon"></span><span class="menu-text">Job&nbspBoard</span></a></li>
 		              <li>
-		                  <a class="news-icon" href="javascript:void(0);"><span class="menu-icon"></span><span class="menu-text">News</span></a></li>
+		                   <a class="news-icon" href="javascript:void(0);" ontouchstart="" data-toggle="tooltip" data-placement="right" title="Coming Soon"><span class="menu-icon"></span><span class="menu-text">News</span></a></li>
 	            </ul>
 	            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 social-share-menu-list">
 	              <a target="new" class="fa-stack hw-socialshare social-icons" href="https://www.facebook.com/hashworks/">
@@ -12575,10 +12589,9 @@
 	    </nav>
 	    <div class="default-table" id="logo-img">
 	    	<div class="default-table-cell" id="progressBar">
-	    		<img class="img-responsive" src = "/assets/img/LOGO-WITH-TRANSITION.gif">
+	    		<img class="img-responsive1" src = "/assets/img/LOGO-WITH-TRANSITION.gif">
 	    	</div>
 	    </div>
-	    <!-- <img id="logo-img" src="/assets/img/LOGO.gif" alt="logo"> -->
 
 	    <div id="home-screen">
 		<div class="single-item">
@@ -12768,8 +12781,8 @@
       <script type="text/javascript" src="/assets/js/slick/slick.min.js"></script>
       <script src="/assets/js/dist/jquery.panzoom.js"></script>
       <script src="/assets/js/test/libs/jquery.mousewheel.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TimelineMax.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/CSSPlugin.min.js"></script>
+      <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TimelineMax.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/plugins/CSSPlugin.min.js"></script>-->
       <script src="/assets/js/custom.js"></script>
       <script src="/assets/js/bootcamp.js"></script>
       <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
@@ -12777,29 +12790,18 @@
 
       
         <script src="/assets/js/homepage_scroll/mousewheel_scroll.js"></script>
-      <script type="text/javascript" src="/assets/js/jquery-ui.js"></script>
+      <!--<script type="text/javascript" src="/assets/js/jquery-ui.js"></script>-->
       
-
-      <script src="/assets/js/form/email.js"></script>
-      <script src="/assets/js/form/email2.js"></script>
       <script src="/assets/js/form/email3.js"></script>
-
       <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
       <script src="/assets/js/googlemap.js"></script>
       <script src="/assets/js/responsive.js"></script>
-
-      <!--<script src="/assets/js/jquery.mousewheel.min.js"></script>
-      <script src="/assets/js/jquery.hammer.min.js"></script>
-      <script src="/assets/js/TweenMax.min.js"></script>
-      <script src="/assets/js/fullscreen.min.js"></script> -->
-<!-- 
-<script src="/js/plugins/jquery.panzoom.js"></script> -->
-
     </body>
 </html>
 
 <script type="text/javascript">
 /*stopping up-down by keyboard key for mozilla */
+if (navigator.userAgent.indexOf("Firefox") != -1){
 var keys = {37: 1, 38: 1, 39: 1, 40: 1};
 
 function preventDefault(e) {
@@ -12821,5 +12823,6 @@ function preventDefaultForScrollKeys(e) {
   window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
   window.ontouchmove  = preventDefault; // mobile
   document.onkeydown  = preventDefaultForScrollKeys;
+}
 
         </script>  
