@@ -5864,7 +5864,7 @@ div#start-project1 {
         -moz-border-left-colors: none;
         -moz-border-right-colors: none;
         -moz-border-top-colors: none;
-        border-color: -moz-use-text-color #0ab4c5 #0ab4c5;
+        border-color: #0ab4c5 #0ab4c5;
         border-image: none;
         border-style: none solid solid;
         border-width: medium 2px 2px;
@@ -6311,9 +6311,6 @@ div#start-project1 {
     /*#cw-responsive .gotham-book.input_file-upload.collaborative-input_file-upload {
         display: none;
     }*/
-    #cw-responsive .input_file-detail.form-control.placeholder-pro.mainLoginInput {
-        display: none;
-    }
     #cw-responsive .slick-prev {
         left: -20px;
     }
@@ -6397,7 +6394,7 @@ div#start-project1 {
         bottom: 8%;
         font-family: "gotham-rounded-light";
         font-size: 14px;
-        left: 18%;
+        left: 8%;
     }
     .collaborative-submit-background {
         height: 50px;
@@ -8563,7 +8560,7 @@ input[type="radio"] {
     .hm-talk-btn {
      padding-left: 0px; 
     }
-    #file-upload {
+    #file-upload,#file-upload1{
         height: 24px;
     }
     .bc-mob #file-upload {
@@ -8602,8 +8599,12 @@ input[type="radio"] {
     .submit-text {
         font-size: 12px;
     }
-    input#file-detail {
+    /*input#file-detail {
         display: none;
+    }*/
+    #file-detail,#file-detail1 {
+        margin-left: 25px;
+        margin-top: -45px
     }
     #cw-responsive #file-upload {
         height: 20px;

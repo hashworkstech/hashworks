@@ -7437,7 +7437,7 @@ input:focus {
   color: #fff;
   margin-right: -141px; }
 
-#file-detail {
+#file-detail, #file-detail1 {
   background: transparent;
   position: absolute;
   margin-left: 125px;
@@ -7445,7 +7445,7 @@ input:focus {
   width: inherit;
   border: none; }
 
-.attach-text, #file-detail {
+.attach-text, #file-detail, #file-detail1 {
   cursor: pointer; }
 
 .attach-text {
@@ -7625,7 +7625,7 @@ input:read-only {
   right: 12px;
   top: 20px; }
 
-#file-upload {
+#file-upload, #file-upload1 {
   cursor: pointer;
   margin-left: -14px;
   width: 105%;

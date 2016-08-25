@@ -2237,7 +2237,7 @@ if(screen.width<1199){
 //   }
 //    });
 // $("#eng-zoom-out").pinchzoomer();
-if(pageName == "homepage"){
+// if(pageName == "homepage"){
   
   $("#logo-img img").one('load', function() {
       setTimeout(logo_img,200);
@@ -2254,11 +2254,11 @@ if(pageName == "homepage"){
     }
     show();
   }
-  $(window).load(function(){
-$("#logo-img").fadeOut(2000, function() {
-        $("#home-screen").fadeIn(1000);        
-    });
-});
+//   $(window).load(function(){
+// $("#logo-img").fadeOut(2000, function() {
+//         $("#home-screen").fadeIn(1000);        
+//     });
+// });
 
 //   $(window).ready(function(){
 //     debugger;
@@ -2272,7 +2272,7 @@ $("#logo-img").fadeOut(2000, function() {
 //     });
     
 // });
-}
+// }
 var body = document.documentElement;
 if (body.requestFullscreen) {
 body.requestFullscreen();

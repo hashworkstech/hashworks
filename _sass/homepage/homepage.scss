@@ -1048,7 +1048,7 @@ div#carousel_inner2 {
     color: #fff;
     margin-right: -141px;
 }
-#file-detail{
+#file-detail,#file-detail1{
   background: transparent;
   position: absolute;
   margin-left: 125px;
@@ -1056,7 +1056,7 @@ div#carousel_inner2 {
   width: inherit;
   border: none;
 }
- .attach-text,#file-detail{
+ .attach-text,#file-detail,#file-detail1{
   cursor: pointer;
 }
  .attach-text {
@@ -1248,7 +1248,7 @@ div#carousel_inner2 {
           right: 12px;
           top: 20px;
         }
-  #file-upload {
+  #file-upload,#file-upload1 {
     cursor: pointer;
     margin-left: -14px;
     width: 105%;
