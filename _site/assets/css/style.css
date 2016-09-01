@@ -7400,7 +7400,7 @@ input:focus {
   -webkit-box-shadow: none;
   box-shadow: none; }
 
-#submit-btn {
+#submit-btn, #submit-btn-1, #submit-btn-2, #submit-btn-3 {
   height: 76px;
   width: 100%;
   background: none;
@@ -7408,7 +7408,7 @@ input:focus {
   margin-top: -26px;
   left: -4px; }
 
-#subject, #message {
+#subject, #message, #subject-1, #message-2, #subject-2, #message-1, #subject-3, #message-3 {
   color: #000; }
 
 .placeholder-pro::-webkit-input-placeholder {
@@ -7437,7 +7437,7 @@ input:focus {
   color: #fff;
   margin-right: -141px; }
 
-#file-detail, #file-detail1 {
+#file-detail, #file-detail1, #file-detail-2, #file-detail-3 {
   background: transparent;
   position: absolute;
   margin-left: 125px;
@@ -7445,7 +7445,7 @@ input:focus {
   width: inherit;
   border: none; }
 
-.attach-text, #file-detail, #file-detail1 {
+.attach-text, #file-detail, #file-detail1, #file-detail-2, #file-detail-3 {
   cursor: pointer; }
 
 .attach-text {
@@ -7457,7 +7457,7 @@ input:focus {
 /*----------------------------------------------------------------------
 Contact us
 -----------------------------------------------------------------------*/
-#start-project .close-pop {
+#start-project .close-pop, #start-project-2 .close-pop, #start-project-3 .close-pop {
   height: 3%;
   position: absolute;
   right: 10%;
@@ -7468,8 +7468,7 @@ Contact us
 .contact-container {
   width: 100%; }
 
-#start-project,
-#start-project {
+#start-project, #start-project-2, #start-project-3 {
   z-index: 2011; }
 
 .contact-modal {
@@ -7579,7 +7578,7 @@ Contact us
   margin: 0px 19px 0;
   border: 1.5px solid #EE2B7B; }
 
-#subject {
+#subject, #subject-1, #subject-2, #subject-3 {
   border: none;
   background: transparent; }
 
@@ -7625,7 +7624,7 @@ input:read-only {
   right: 12px;
   top: 20px; }
 
-#file-upload, #file-upload1 {
+#file-upload, #file-upload1, #file-upload-2, #file-upload-3 {
   cursor: pointer;
   margin-left: -14px;
   width: 105%;
@@ -7792,65 +7791,67 @@ input:read-only {
 
 /* end of google search engine */
 @media screen and (max-width: 768px) {
-  #start-project {
+  #start-project, #start-project-2, #start-project-3 {
     margin-top: -27px;
     padding: 130px 0 115px; }
 
-  #start-project .container-fluid {
+  #start-project .container-fluid, #start-project-2 .container-fluid, #start-project-3 .container-fluid {
     margin-top: -30px; }
 
   .testimonial-padding {
     padding: 175px 0 115px !important; }
 
-  #start-project .hw-section-header-cont {
+  #start-project .hw-section-header-cont, #start-project-2 .hw-section-header-cont, #start-project-3 .hw-section-header-cont {
     padding: 0px 0 0;
     /**/ }
 
-  #start-project .contact-col {
+  #start-project .contact-col, #start-project-2 .contact-col, #start-project-3 .contact-col {
     padding: 0 15px;
     width: 100%; }
 
-  #start-project .contact-div {
+  #start-project .contact-div, #start-project-2 .contact-div, #start-project-3 .contact-div {
     padding-bottom: 0px;
     /**/ }
 
-  #start-project .contact-col {
+  #start-project .contact-col, #start-project-2 .contact-col, #start-project-3 .contact-col {
     padding: 0 15px;
     width: 100%; }
 
-  #start-project .contact-div:hover {
+  #start-project .contact-div:hover, #start-project-2 .contact-div:hover, #start-project-3 .contact-div:hover {
     background: transparent; }
 
-  #start-project .contact-div:hover span, #start-project .contact-div:hover h1 {
+  #start-project .contact-div:hover span, #start-project .contact-div:hover h1,
+  #start-project-2 .contact-div:hover span, #start-project-2 .contact-div:hover h1,
+  #start-project-3 .contact-div:hover span, #start-project-3 .contact-div:hover h1 {
     color: #000; }
 
-  .form-container > h1:first-child, #start-project h1:first-child, .form-container > h1, #start-project h1 {
+  .form-container > h1:first-child, #start-project h1:first-child, #start-project-2 h1:first-child, #start-project-3 h1:first-child .form-container > h1, #start-project h1, #start-project-2 h1, #start-project-3 h1 {
     font-size: 20px; }
 
-  .contact-modal, #start-project .modal-content {
+  .contact-modal, #start-project .modal-content, #start-project-2 .modal-content, #start-project-3 .modal-content {
     height: 116%; }
 
-  #start-project .contact-div a {
+  #start-project .contact-div a, #start-project-2 .contact-div a, #start-project-3 .contact-div a {
     color: #fff;
     border: none;
     padding: 10px; }
 
-  #start-project .contact-div:hover a {
+  #start-project .contact-div:hover a, #start-project-2 .contact-div:hover a, #start-project-3 .contact-div:hover a {
     border: none; }
 
-  #start-project .contact-margin {
+  #start-project .contact-margin, #start-project-2 .contact-margin, #start-project-3 .contact-margin {
     margin-bottom: 55px; } }
 @media screen and (max-width: 500px) {
-  #start-project .work-together hr, #start-project .join-us hr {
+  #start-project .work-together hr, #start-project .join-us hr, #start-project-2 .work-together hr, #start-project-2 .join-us hr, #start-project-3 .work-together hr, #start-project-3 .join-us hr {
     margin-top: 15px; }
 
-  #start-project .work-together h1, #start-project .join-us h1 {
+  #start-project .work-together h1, #start-project .join-us h1, #start-project-2 .work-together h1, #start-project-2 .join-us h1, #start-project-3 .work-together h1, #start-project-3 .join-us h1 {
     font-size: 14px; }
 
   .btn-index {
     font-size: 16px; } }
 @media screen and (max-width: 390px) {
-  #start-project .form-btn, #start-project .form-btn:focus, #start-project .form-btn:active {
+  #start-project .form-btn, #start-project .form-btn:focus, #start-project .form-btn:active, #start-project-2 .form-btn, #start-project-2 .form-btn:focus, #start-project-2 .form-btn:active, #start-project-3 .form-btn, #start-project-3 .form-btn:focus, #start-project-3 .form-btn:active {
     padding: 10px 8px; } }
 /*----------------------------------------------------------------------
 Contact us

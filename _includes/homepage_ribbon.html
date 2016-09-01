@@ -1,14 +1,18 @@
-<div id="hw-ribbon-our-thinking-footer">
-		<!-- blue ribbon div-->
-		    <div class=" log-clr-backgrnd container" id="hw-ribbon-our-thinking">
-		        <div class="row collobo-footer-division devops-height">						<span class="gotham-rounded-light ribon-font clr-white h-approch text-center rbn-ftr-others">We <i class="fa fa-heart  hm-heart"></i> to be your technology partners</span>
-						<span class="gotham-rounded-light ribon-font clr-white h-approch text-center rbn-ftr-company">We Advocate Elastic Workforce</span>
-						<span class="upskill-filter hm-talk-btn es-mob-talk-btn">
-						<span><button class=" job-board-btn job-btn custom-btn heading-custom-btn hm-vertical hm-vertical1 our-heading-custom-btn job-btn-left-0" data-toggle="modal" data-target="#start-project">TALK TO US</button></span>
-						<span class="rbn-ftr-company"><a href="/job_board"><button class="job-board-btn job-btn custom-btn heading-custom-btn hm-vertical hm-vertical1 our-heading-custom-btn">JOB BOARD</button></a></span>
-						</span>
-		    	</div>
-		   </div>
+
+ <div class="hw-ribbon-heading log-clr-backgrnd section-rib-part">
+        <div class="row">
+			<div class="col-lg-12 col-padding">
+				<span class="gotham-rounded-light ribon-font   clr-white h-approch text-center ribbon1">Delivering velocity & Agility for software driven business</span>
+				<span class="gotham-rounded-light ribon-font clr-white h-approch text-center ribbon2">We <i class="fa fa-heart  hm-heart"></i> to be your technology partners</span>
+				<span class="upskill-filter hm-talk-btn">
+					<span><button class=" job-board-btn job-btn custom-btn heading-custom-btn hm-vertical hm-vertical1" data-toggle="modal" data-target="#start-project">TALK TO US</button></span>
+				</span>
+			</div>
+    	</div>
+   </div>
+<!-- end of fixed tab-->
+
+<!-- Work-together popup -->
 		<div id="start-project" class="modal fade">
 	        <div class="modal-dialog contact-modal es-contact-modal">
 	            <div class="modal-content">
@@ -23,15 +27,14 @@
 				                </div>
 	                	<hr class="es-popup-hr">
 	                	<div class="post-resume">
-	         			<form class="form-signin" onSubmit="submitForm(event)">  <!-- start of form -->
-
+	         			<form class="form-signin" onSubmit="submitForm(event)" >  <!-- start of form -->
 							<div class="row ">
 									<div class="col-lg-6"> 
 										<div class="text-border es-input-br-btm">
 											<div class="input-group">
 					      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/name-img.png" alt="name"></div>
 					      						
-												<input type="text" name="name" class="form-control placeholder-pro mainLoginInput input_name" id="name" placeholder="NAME" >
+												<input type="text" class="form-control placeholder-pro mainLoginInput input_name" id="name" placeholder="NAME" >
 											</div>
 										</div>		
 									</div>
@@ -40,7 +43,7 @@
 									<div class="text-border es-input-br-btm">
 										<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/email-img.png" alt="email"></div>
-											<input type="text" name="email" class="form-control placeholder-pro mainLoginInput input_email" id="email" placeholder="EMAIL">
+											<input type="text" class="form-control placeholder-pro mainLoginInput input_email" id="email" placeholder="EMAIL">
 										</div>
 									</div>
 								</div>
@@ -50,7 +53,7 @@
 									<div class="text-border es-input-br-btm">
 										<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png" alt="subject"></div>
-											<select class="form-control mainLoginInput gotham-rounded-light input_subject sub-width" id="subject" name="subject">
+											<select class="form-control mainLoginInput gotham-rounded-light input_subject sub-width" id="subject">
 												<option value="Subject">Subject</option>
 												<option value="Marketing" class="level-0">Marketing</option>
 												<option value="Design" class="level-0">Design</option>
@@ -70,7 +73,7 @@
 									<div class="text-border es-input-br-btm">
 										<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/phone-img.png" alt="phone"></div>
-											<input type="text" name="phone" class="form-control placeholder-pro mainLoginInput input_phone" id="phone" placeholder="PHONE">
+											<input type="text" class="form-control placeholder-pro mainLoginInput input_phone" id="phone" placeholder="PHONE">
 										</div>
 									</div>	
 								</div>
@@ -82,7 +85,7 @@
 									<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png" alt="message"></div>
 				      						
-				      						<textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" name="message" class="form-control placeholder-pro mainLoginInput input_message"  id="message" rows="3"></textarea>
+				      						<textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" class="form-control placeholder-pro mainLoginInput input_message"  id="message" rows="3"></textarea>
 				      					</div>	
 									</div>
 								</div>
@@ -90,7 +93,7 @@
 
 							<div class="attach-file">
 				      			<div class="col-lg-9 col-md-7 col-sm-7 col-xs-7">
-				      				<input type="file" name="file" class="gotham-book input_file-upload" id="file-upload">
+				      				<input type="file" class="gotham-book input_file-upload" id="file-upload">
 				      				<br/><br/>
 				      				<span class="attach-text"><span><img src="/assets/img/talent_acquisition/attach.png" alt="attach"></span><span class="gotham-rounded-bok attach-span">Attach File</span></span>
 				      				<input type="text"  class="input_file-detail form-control placeholder-pro mainLoginInput"  id="file-detail" readonly="readonly"/>
@@ -99,7 +102,7 @@
 				      			<button id="submit-btn" type="submit" class="btn" data-loading="Submitting...">
               <br>
               <span class="submit-resume hr-display" style="margin: 0px auto;">
-               <img src="/assets/img/talent_acquisition/submit.png" class="img-submit" alt="imgsubmit">
+               <img src="/assets/img/talent_acquisition/submit.png" class="img-submit" alt="submit">
                <p class="gotham-rounded-bok submit-text placeholder-pro img-para">SUBMIT</p>
               </span>
           </button>
@@ -114,15 +117,15 @@
 								<h1 class="gotham-rounded-bold hm-show-text hw-heading show-text1">Show us your <i class="fa fa-heart hm-show-heart"></i> </h1>
 								<div class= "hm-icons hm-form-val">
 									
-			                    	<a href="https://www.facebook.com/hashworks/" class="fa-stack hw-socialshare social-icons" target="_blank">
+			                    	<a href="https://www.facebook.com/hashworks/" class="fa-stack hw-socialshare social-icons" target="new">
 					                    <i class="fa fa-circle-thin fa-stack-2x"></i>
 					                    <i class="fa fa-facebook fa-stack-1x"></i>
 					                  </a>
-					                  <a href="https://twitter.com/hashworksco" class="fa-stack hw-socialshare social-icons" target="_blank">
+					                  <a href="https://twitter.com/hashworksco" class="fa-stack hw-socialshare social-icons" target="new">
 					                    <i class="fa fa-circle-thin fa-stack-2x"></i>
 					                    <i class="fa fa-twitter fa-stack-1x"></i>
 					                  </a>
-					                  <a href="https://www.linkedin.com/company/9228490" class="fa-stack hw-socialshare social-icons" target="_blank">
+					                  <a href="https://www.linkedin.com/company/9228490" class="fa-stack hw-socialshare social-icons" target="new">
 					                    <i class="fa fa-circle-thin fa-stack-2x"></i>
 					                    <i class="fa fa-linkedin fa-stack-1x"></i>
 					                     </a>
@@ -135,18 +138,4 @@
 	    </div>
 	 </div>
 	</div>
-
-	<div id="start-project1" class="modal fade">
-           <div class="modal-dialog submit-popup">
-               <div class="modal-content">
-              <img src="/assets/img/success.png" class="submit-img" alt="submitimg">
-              <h6 class="submit-heading gotham-rounded-bok">Thank You!</h6>
-              <h6 class="submit-paragraph gotham-rounded-bok">We got your Profile.Will get back soon!</h6>
-              <h6 class="submit-close gotham-rounded-bok" data-dismiss="modal">Close</h6>
-           </div>
-           </div>
-       </div>
-	            	
-
-</div>
-<!-- tab ends -->
+    <!-- End of work-together popup -->

@@ -1828,62 +1828,62 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
         $(".hide-scroll").show();
     });
     if(screen.width>767 && screen.width<1199){
-      $('.hwmt #nav-icon1,.hw-others #nav-icon1').on('click', function() {
-          $('#toc').animate({
+      $('.hwmt #nav-icon2,.hw-others #nav-icon2').on('click', function() {
+          $('#toc1').animate({
               width: '300px',
               right: 0
           });
       });
-      $('.hwmt #button1,.hw-others #button1,main').on('click', function() {
+      $('.hwmt #button2,.hw-others #button2,main').on('click', function() {
           $('#toc').animate({
               width: 0,
               right: 0
           });
       });
       $('.hwmt .single-item').on('click', function() {
-          $('.hwmt #toc').animate({
+          $('.hwmt #toc1').animate({
               width: 0,
               right: 0
           });
       });
     }
     else{
-      $('.hwmt #nav-icon1,.hw-others #nav-icon1').on('click', function() {
-          $('#toc').animate({
+      $('.hwmt #nav-icon2,.hw-others #nav-icon2').on('click', function() {
+          $('#toc1').animate({
               width: '100%',
               right: 0
           });
       });
-      $('.hwmt #button1,.hw-others #button1').on('click', function() {
-          $('#toc').animate({
+      $('.hwmt #button2,.hw-others #button2').on('click', function() {
+          $('#toc1').animate({
               width: 0,
               right: 0
           });
       });
     }
     if(screen.width>767){
-      $('.hwmt #nav-icon1').on('click', function() {
-          $('.hwmt #toc').animate({
+      $('.hwmt #nav-icon2').on('click', function() {
+          $('.hwmt #toc1').animate({
               width: '300px',
               right: 0
           });
       });
-      $('.hwmt #button1').on('click', function() {
-          $('.hwmt #toc').animate({
+      $('.hwmt #button2').on('click', function() {
+          $('.hwmt #toc1').animate({
               width: 0,
               right: 0
           });
       });
     }
     else{
-      $('.hwmt #nav-icon1').on('click', function() {
-          $('.hwmt #toc').animate({
+      $('.hwmt #nav-icon2').on('click', function() {
+          $('.hwmt #toc1').animate({
               width: '100%',
               right: 0
           });
       });
-      $('.hwmt #button1').on('click', function() {
-          $('.hwmt #toc').animate({
+      $('.hwmt #button2').on('click', function() {
+          $('.hwmt #toc1').animate({
               width: 0,
               right: 0
           });
@@ -1973,6 +1973,7 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
 
     $('.pf-dd a').on('click',function(){
   var clickid=$(this).attr('clickid');
+  $('html, body').animate({scrollTop: '0px'});
 if (clickid=="pvh-3") {
   $('.slick-next').trigger('click');
 }
@@ -2239,26 +2240,26 @@ if(screen.width<1199){
 // $("#eng-zoom-out").pinchzoomer();
 // if(pageName == "homepage"){
   
-  $("#logo-img img").one('load', function() {
-      setTimeout(logo_img,200);
+  // $("#logo-img img").one('load', function() {
+  //     setTimeout(logo_img,200);
+  //   });
+  // function logo_img(){
+  //   // $('#logo-img').hide('clip',{direction:"horizontal"},4000);
+  //   var myDiv = document.getElementById("logo-img");
+  //   var show = function(){
+  //     setTimeout(hide, 3000); 
+  //   }
+  //   var hide = function(){
+  //     $('#logo-img').hide();
+  //     $('#home-screen').css('visibility','visible');
+  //   }
+  //   show();
+  // }
+  $(window).load(function(){
+$("#logo-img").fadeOut(2000, function() {
+        $("#home-screen").fadeIn(1000);        
     });
-  function logo_img(){
-    // $('#logo-img').hide('clip',{direction:"horizontal"},4000);
-    var myDiv = document.getElementById("logo-img");
-    var show = function(){
-      setTimeout(hide, 3000); 
-    }
-    var hide = function(){
-      $('#logo-img').hide();
-      $('#home-screen').css('visibility','visible');
-    }
-    show();
-  }
-//   $(window).load(function(){
-// $("#logo-img").fadeOut(2000, function() {
-//         $("#home-screen").fadeIn(1000);        
-//     });
-// });
+});
 
 //   $(window).ready(function(){
 //     debugger;

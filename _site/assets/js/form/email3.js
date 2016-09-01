@@ -15,7 +15,13 @@
     };
 
     if (window.File && window.FileReader && window.FileList && window.Blob) {
-                document.querySelector(".input_file-upload").addEventListener('change', handleFileSelect, false);
+              var fileLink=  document.querySelectorAll(".input_file-upload")
+
+for (var i = 0; i < fileLink.length; i++) {
+    fileLink[i].addEventListener('change', handleFileSelect, false);
+}
+
+
     } else {
         alert('The File APIs are not fully supported in this browser.');
     }
@@ -189,9 +195,12 @@
     });
 
     $('.input_file-upload').on('change',function(){
-        var fileName = $('.input_file-upload').val();
+        var fileName = $('#file-upload').val()||$('#file-upload1').val()||$('#file-upload-2').val()||$('#file-upload-3').val();
+        // var fileName = $('.input_file-upload').val();
         fileName = fileName.replace(/.*(\/|\\)/, '');
         $('.input_file-detail').val(fileName);
+
+
     });
 
 /* for placeholder of textbox animation*/

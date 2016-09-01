@@ -2492,7 +2492,8 @@ h5 {
 /* menu for header */
 
 nav#toc,
-nav #toc {
+nav #toc,nav#toc1,
+nav #toc1 {
     background-color: #212328;
     height: 100%;
     position: fixed;
@@ -2502,18 +2503,22 @@ nav #toc {
     z-index: 11;
 }
 nav#toc ul,
-nav #toc ul {
+nav #toc ul
+nav#toc1 ul,
+nav #toc1 ul {
     list-style: none;
     padding: 60px 40px 0;
 }
 nav#toc ul li,
-nav #toc ul li {
+nav #toc ul li,nav#toc1 ul li,
+nav #toc1 ul li {
     /*border-top: 1px solid #424650;*/
     
     padding: 10px 0 5px;
 }
 nav#toc ul li a,
-nav #toc ul li a {
+nav #toc ul li a,nav#toc1 ul li a,
+nav #toc1 ul li a {
     color: white;
     font: 300 15px/2em museo-sans, sans-serif;
     text-decoration: none;
@@ -2521,11 +2526,15 @@ nav #toc ul li a {
 nav#toc ul li a:hover,
 nav#toc ul li a.active,
 nav #toc ul li a:hover,
-nav #toc ul li a.active {
+nav #toc ul li a.active,nav#toc1 ul li a:hover,
+nav#toc1 ul li a.active,
+nav #toc1 ul li a:hover,
+nav #toc1 ul li a.active {
     color: #ee2b7b;
 }
 nav#toc ul li:first-child,
-nav #toc ul li:first-child {
+nav #toc ul li:first-child,nav#toc1 ul li:first-child,
+nav #toc1 ul li:first-child {
     border-top: none;
 }
 nav#toc a#toc-actuator,
@@ -2542,17 +2551,18 @@ nav #toc a#toc-actuator {
     z-index: 5000;
 }
 nav#toc ul,
-nav #toc ul {
+nav #toc ul,nav#toc1 ul,
+nav #toc1 ul {
     padding-top: 75px;
 }
 nav#toc a#toc-actuator,
-nav #toc a#toc-actuator {
+nav #toc a#toc-actuator, {
     left: -64px;
     top: 30px;
 }
 /* Icon 1 */
 
-#nav-icon1 {
+#nav-icon1,#nav-icon2 {
     float: right;
     right: 0px;
     z-index: 1;
@@ -2571,21 +2581,22 @@ nav #toc a#toc-actuator {
     transition: .5s ease-in-out;
     cursor: pointer;
 }
-.hwd #nav-icon1{
+.hwd #nav-icon1,.hwd #nav-icon2{
     position: fixed;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px){
-    .hw-home-nav-header #nav-icon1 {
+    .hw-home-nav-header #nav-icon1,.hw-home-nav-header #nav-icon2 {
         top: 8px;
         margin: 2px 28px;
     }
 }
 @media screen and (max-width: 767px){
-    .hw-home-nav-header #nav-icon1 {
+    .hw-home-nav-header #nav-icon1,.hw-home-nav-header #nav-icon2 {
         top: -6px;
     }
 }
 #nav-icon1 span,
+#nav-icon2 span,
 #nav-icon3 span,
 #nav-icon4 span {
     display: block;
@@ -2607,16 +2618,16 @@ nav #toc a#toc-actuator {
   -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;*/
 }
-#nav-icon1 span:nth-child(1) {
+#nav-icon1 span:nth-child(1),#nav-icon2 span:nth-child(1) {
     top: 19px;
 }
-#nav-icon1 span:nth-child(2) {
+#nav-icon1 span:nth-child(2),#nav-icon2 span:nth-child(2) {
     top: 27px;
 }
-#nav-icon1 span:nth-child(3) {
+#nav-icon1 span:nth-child(3),#nav-icon2 span:nth-child(3) {
     top: 35px;
 }
-#button1 {
+#button1,#button2 {
     text-align: right;
     padding: 10px;
     color: #EE2B7B;
@@ -2624,12 +2635,12 @@ nav #toc a#toc-actuator {
     font-size: 20px;
 }
 @media screen and (min-width: 767px) and (max-width: 1199px){
-    #button1 {
+    #button1,#button2 {
         padding: 20px 12% 10px;
     }
 }
 @media screen and (max-width: 767px){
-    #button1 {
+    #button1,#button2 {
         padding: 10px 12%;
     }
 }
@@ -3726,7 +3737,7 @@ i.fa.fa-chevron-down.down-arrow {
     .logo > a {
         background-position: 0 -31px;
     }
-    #button1 {
+    #button1,#button2 {
         color: #fff !important;
         -webkit-text-fill-color: white !important;
         font-family: "gotham-rounded-book";
@@ -3734,7 +3745,8 @@ i.fa.fa-chevron-down.down-arrow {
     #nav-hamburger-icon span,
     #nav-icon3 span,
     #nav-icon1 span,
-    #nav-icon4 span {
+    #nav-icon4 span,
+    #nav-icon2 span {
         background-color: #fff;
     }
     .hwd {
@@ -4408,7 +4420,7 @@ option:checked:before {
     .form-container > hr {
         display: none;
     }
-    #start-project .close-pop {
+    #start-project .close-pop,#start-project-2 .close-pop,#start-project-3 .close-pop {
         height: 15px;
         right: 24px;
         top: 24px;
@@ -4481,7 +4493,7 @@ option:checked:before {
         padding-bottom: 30px;
     }
     #start-project,
-    #start-project-1 {
+    #start-project-1,#start-project-2,#start-project-3 {
         margin-top: 0;
         padding: 15px 0;
     }
@@ -4528,7 +4540,7 @@ option:checked:before {
     .nav-mob .logo {
         padding: 10px 15px 10px;
     }
-    .nav-mob #nav-icon1 {
+    .nav-mob #nav-icon1,.nav-mob #nav-icon2 {
         margin: -3px 20px;
     }
     .nav-mob.hw-fixed-header {
@@ -4546,7 +4558,7 @@ option:checked:before {
         background: transparent;
         min-width: 100px;
     }
-    nav #toc ul {
+    nav #toc ul,nav #toc1 ul {
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -4596,10 +4608,10 @@ option:checked:before {
     .gsib_a {
         padding-top: 1px !important;
     }
-    nav #toc ul {
+    nav #toc ul,nav #toc1 ul {
         padding-top: 0px;
     }
-    nav #toc ul li a {
+    nav #toc ul li a,nav #toc1 ul li a {
         padding-left: 0;
     }
     .hw-menu-list {
@@ -4607,7 +4619,8 @@ option:checked:before {
         margin-bottom: 25px;
     }
     nav#toc ul li a,
-    nav #toc ul li a {
+    nav #toc ul li a,nav#toc1 ul li a,
+    nav #toc1 ul li a {
         color: white;
         font: normal 18px/40px "gotham-rounded-light";
         text-decoration: none;
@@ -4655,7 +4668,7 @@ option:checked:before {
         padding-right: 0;
         text-align: center;
     }
-    nav #toc ul li a {
+    nav #toc ul li ,nav #toc1 ul li a {
         padding-left: 0;
         padding-right: 0;
     }
@@ -4677,7 +4690,8 @@ option:checked:before {
         width: 24px;
     }
     nav#toc ul li a,
-    nav #toc ul li a {
+    nav #toc ul li a,nav#toc1 ul li a,
+    nav #toc1 ul li a {
         color: white;
         font: normal 14px/25px "gotham-rounded-light";
         text-decoration: none;
@@ -4712,7 +4726,8 @@ option:checked:before {
         margin: 0 8px;
     }
     nav#toc ul li,
-    nav #toc ul li {
+    nav #toc ul li,nav#toc1 ul li,
+    nav #toc1 ul li {
         margin: 0 auto;
         padding: 10px 0 5px;
         width: 35%;
@@ -4721,23 +4736,26 @@ option:checked:before {
         font-size: 18px;
     }
     nav#toc ul li:first-child,
-    nav #toc ul li:first-child {
+    nav #toc ul li:first-child,nav#toc1 ul li:first-child,
+    nav #toc1 ul li:first-child {
         padding-bottom: 0;
         padding-top: 0;
     }
 }
 @media screen and (max-width: 600px) {
     nav#toc ul li,
-    nav #toc ul li {
+    nav #toc ul li,nav#toc1 ul li,
+    nav #toc1 ul li {
         width: 50%;
     }
 }
 @media screen and (max-width: 420px) {
     nav#toc ul li,
-    nav #toc ul li {
+    nav #toc ul li,nav#toc1 ul li,
+    nav #toc1 ul li {
         width: 64%;
     }
-    nav#toc ul li.srch-content-menu,nav #toc ul .srch-content-menu{
+    nav#toc ul li.srch-content-menu,nav #toc ul .srch-content-menu,nav#toc1 ul li.srch-content-menu,nav #toc1 ul .srch-content-menu{
         width: 80%;
         padding-left: 22px;
     }
@@ -5627,7 +5645,13 @@ div#start-project1 {
     nav#toc ul li a.active,
     nav#toc ul li a.focus,
     nav #toc ul li a:hover,
-    nav #toc ul li a.active,nav #toc ul li a.focus {
+    nav #toc ul li a.active,nav #toc ul li a.focus,
+    nav#toc1 ul li a:hover,
+    nav#toc1 ul li a.active,
+    nav#toc1 ul li a.focus,
+    nav #toc1 ul li a:hover,
+    nav #toc1 ul li a.active,nav #toc1 ul li a.focus
+     {
         color: #ee2b7b;
     }
     #testimonial .carousel-inner {
@@ -5882,6 +5906,24 @@ div#start-project1 {
         margin-top: 30px;
         right: 1px;
     }
+   /* #section-rib-part .section-rib-part{
+        display: block;
+    }
+    #section-rib-part .section-rib-part1{
+        display: none;
+    }
+    #section-rib-part1 .section-rib-part{
+        display: none;
+    }
+    #section-rib-part1 .section-rib-part1{
+        display: block;
+    }
+    #section-rib-part2 .section-rib-part{
+        display: none;
+    }
+    #section-rib-part2 .section-rib-part1{
+        display: block;
+    }*/
 @media screen and (max-width: 767px) {
     .about-us .our-heading-custom-btn {
          margin-right: 0;
@@ -7721,7 +7763,7 @@ div#company-anime-banner svg{
         padding-bottom: 10px;
     }
     .contact-modal,
-    #start-project .modal-content {
+    #start-project .modal-content,#start-project-2 .modal-content,#start-project-3 .modal-content {
         height: initial;
     }
     .ms-options-wrap > .ms-options {
@@ -8093,6 +8135,9 @@ div#company-anime-banner svg{
         margin-right: 12px;
     }
 @media screen and (min-width: 1200px) {
+    .company-value{
+        margin-bottom: 12px;
+    }
     .slick-slider {
         margin-bottom: 0px !important;
     }
@@ -8201,6 +8246,9 @@ div#company-anime-banner svg{
     /*.li-tab-mar > img {
     width: 62px;
 }*/
+#jb-mob .collobo-hw-main-heading {
+    margin-top: 0px;
+}
     .item {
     margin-top: 10px;
 }

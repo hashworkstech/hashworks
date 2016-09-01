@@ -1,7 +1,7 @@
 <!doctype html>
-    <title></title>
+    <title>Company</title>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=11;edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
     <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <!-- <link href="/assets/css/pinchzoomer.min.css" rel="stylesheet">
@@ -104,13 +104,13 @@
                   <li>
                     <div id="credits" class=" hidden ">
 
-                        <div id="google-search-div">
+                        <span id="google-search-div">
                             <gcse:search></gcse:search>
                             <i class="fa fa-angle-right search-arrow"></i>
                             
                        
                       <!-- </span> -->
-                      </div>
+                      </span>
                    </div>
                   </li>
                   <!-- end  search bar-->
@@ -129,23 +129,23 @@
       <div class="logo">
         <a href="/"></a>
       </div>
-      <div id="nav-icon1">
+      <div id="nav-icon2">
         <span></span>
         <span></span>
         <span></span>
       </div>
-      <div id="toc" class="on menu-hide" style="right: 0px;">
-      <p id="button1"><img src="/assets/img/close.png" alt="close"></p>
+      <div id="toc1" class="on menu-hide" style="right: 0px;">
+      <p id="button2"><img src="/assets/img/close.png" alt="close"></p>
         <ul class="hw-menu-list">
               <!-- search bar-->
               <li class="srch-content-menu">
                 <div id="credits" class=" hidden ">
-                  <div id="google-search-div">
+                  <span id="google-search-div">
                     <gcse:search></gcse:search>
                       <i class="fa fa-angle-right search-arrow"></i>
-                  </div>
+                  </span>
                 </div>
-                <a href="#credits" class="toggle btn srch-btn"><img src="/assets/img/search.png"><span class="srch-txt">Search</span></a>
+                <a href="#credits" class="toggle btn srch-btn"><img src="/assets/img/search.png" alt="search"><span class="srch-txt">Search</span></a>
               </li>
               <!-- end  search bar-->  
               <li>
@@ -153,13 +153,13 @@
               <li>
                   <a class="es-icon" href="/engage_us" ontouchstart=""><span class="menu-icon"></span><span class="menu-text">Engage&nbspUs</span></a></li>
               <li>
-                  <a class="cs-icon" href="javascript:void(0);" ontouchstart="" data-toggle="tooltip" data-placement="right" title="Coming Soon"><span class="menu-icon"></span><span class="menu-text">Case&nbspStudy</span></a></li>
+                  <a class="cs-icon" href="javascript:void(0);" ontouchstart="" data-toggle="tooltip" data-placement="right" title="Coming Soon"><span class="menu-icon"></span><span class="menu-text">Case&nbsp;Study</span></a></li>
               <li>
                   <a class="comp-icon" href="/company" ontouchstart=""><span class="menu-icon"></span><span class="menu-text">Company</span></a></li>
               <li>
                   <a class="blog-icon" href="/blog" ontouchstart=""><span class="menu-icon"></span><span class="menu-text">Blog</span></a></li>
               <li>
-                  <a class="jb-icon" href="/job_board" ontouchstart=""><span class="menu-icon"></span><span class="menu-text">Job&nbspBoard</span></a></li>
+                  <a class="jb-icon" href="/job_board" ontouchstart=""><span class="menu-icon"></span><span class="menu-text">Job&nbsp;Board</span></a></li>
               <li>
                   <a class="news-icon" href="javascript:void(0);" ontouchstart="" data-toggle="tooltip" data-placement="right" title="Coming Soon"><span class="menu-icon"></span><span class="menu-text">News</span></a></li>
           </ul>
@@ -2440,7 +2440,7 @@
 
 	<div class="drop-line">
 		<div class="hr-display"><p class="hw-heading gotham-rounded-light drop-text">DROP US A LINE</p></div>
-		<div class="hr-display drop-icon"><img src="/assets/img/company/drop.png"> </div>
+		<div class="hr-display drop-icon"><img src="/assets/img/company/drop.png" alt="'drop"> </div>
 	</div>
 
 	<div class="container carousel-padding comp-carousel-padding">
@@ -2496,14 +2496,15 @@
 				                </div>
 	                	<hr class="es-popup-hr">
 	                	<div class="post-resume">
-	         			<form class="form-signin" onSubmit="submitForm(event)" >  <!-- start of form -->
+	         			<form class="form-signin" onSubmit="submitForm(event)">  <!-- start of form -->
+
 							<div class="row ">
 									<div class="col-lg-6"> 
 										<div class="text-border es-input-br-btm">
 											<div class="input-group">
-					      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/name-img.png"></div>
+					      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/name-img.png" alt="name"></div>
 					      						
-												<input type="text" class="form-control placeholder-pro mainLoginInput input_name" id="name" placeholder="NAME" >
+												<input type="text" name="name" class="form-control placeholder-pro mainLoginInput input_name" id="name" placeholder="NAME" >
 											</div>
 										</div>		
 									</div>
@@ -2511,8 +2512,8 @@
 								<div class="col-lg-6"> 
 									<div class="text-border es-input-br-btm">
 										<div class="input-group">
-				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/email-img.png"></div>
-											<input type="text" class="form-control placeholder-pro mainLoginInput input_email" id="email" placeholder="EMAIL">
+				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/email-img.png" alt="email"></div>
+											<input type="text" name="email" class="form-control placeholder-pro mainLoginInput input_email" id="email" placeholder="EMAIL">
 										</div>
 									</div>
 								</div>
@@ -2521,8 +2522,8 @@
 								<div class="col-lg-6"> 
 									<div class="text-border es-input-br-btm">
 										<div class="input-group">
-				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
-											<select class="form-control mainLoginInput gotham-rounded-light input_subject sub-width" id="subject">
+				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png" alt="subject"></div>
+											<select class="form-control mainLoginInput gotham-rounded-light input_subject sub-width" id="subject" name="subject">
 												<option value="Subject">Subject</option>
 												<option value="Marketing" class="level-0">Marketing</option>
 												<option value="Design" class="level-0">Design</option>
@@ -2541,8 +2542,8 @@
 								<div class="col-lg-6"> 
 									<div class="text-border es-input-br-btm">
 										<div class="input-group">
-				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/phone-img.png"></div>
-											<input type="text" class="form-control placeholder-pro mainLoginInput input_phone" id="phone" placeholder="PHONE">
+				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/phone-img.png" alt="phone"></div>
+											<input type="text" name="phone" class="form-control placeholder-pro mainLoginInput input_phone" id="phone" placeholder="PHONE">
 										</div>
 									</div>	
 								</div>
@@ -2552,9 +2553,9 @@
 								<div class="col-lg-12">
 									<div class="text-border es-input-br-btm">
 									<div class="input-group">
-				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png"></div>
+				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png" alt="message"></div>
 				      						
-				      						<textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" class="form-control placeholder-pro mainLoginInput input_message"  id="message" rows="3"></textarea>
+				      						<textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" name="message" class="form-control placeholder-pro mainLoginInput input_message"  id="message" rows="3"></textarea>
 				      					</div>	
 									</div>
 								</div>
@@ -2562,18 +2563,18 @@
 
 							<div class="attach-file">
 				      			<div class="col-lg-9 col-md-7 col-sm-7 col-xs-7">
-				      				<input type="file" class="gotham-book input_file-upload" id="file-upload">
+				      				<input type="file" name="file" class="gotham-book input_file-upload" id="file-upload">
 				      				<br/><br/>
-				      				<span class="attach-text"><span><img src="/assets/img/talent_acquisition/attach.png"></span><span class="gotham-rounded-bok attach-span">Attach File</span></span>
+				      				<span class="attach-text"><span><img src="/assets/img/talent_acquisition/attach.png" alt="attach"></span><span class="gotham-rounded-bok attach-span">Attach File</span></span>
 				      				<input type="text"  class="input_file-detail form-control placeholder-pro mainLoginInput"  id="file-detail" readonly="readonly"/>
 				      			</div>
 				      			<div class="col-lg-3 col-md-5 col-sm-5 col-xs-5 submit-background">
 				      			<button id="submit-btn" type="submit" class="btn" data-loading="Submitting...">
               <br>
-              <div class="submit-resume hr-display" style="margin: 0px auto;">
-               <img src="/assets/img/talent_acquisition/submit.png" class="img-submit" >
+              <span class="submit-resume hr-display" style="margin: 0px auto;">
+               <img src="/assets/img/talent_acquisition/submit.png" class="img-submit" alt="imgsubmit">
                <p class="gotham-rounded-bok submit-text placeholder-pro img-para">SUBMIT</p>
-              </div>
+              </span>
           </button>
 				      			</div>
 				      		</div><!-- end of attach-file-->
@@ -2586,15 +2587,15 @@
 								<h1 class="gotham-rounded-bold hm-show-text hw-heading show-text1">Show us your <i class="fa fa-heart hm-show-heart"></i> </h1>
 								<div class= "hm-icons hm-form-val">
 									
-			                    	<a href="https://www.facebook.com/hashworks/" class="fa-stack hw-socialshare social-icons" target="new">
+			                    	<a href="https://www.facebook.com/hashworks/" class="fa-stack hw-socialshare social-icons" target="_blank">
 					                    <i class="fa fa-circle-thin fa-stack-2x"></i>
 					                    <i class="fa fa-facebook fa-stack-1x"></i>
 					                  </a>
-					                  <a href="https://twitter.com/hashworksco" class="fa-stack hw-socialshare social-icons" target="new">
+					                  <a href="https://twitter.com/hashworksco" class="fa-stack hw-socialshare social-icons" target="_blank">
 					                    <i class="fa fa-circle-thin fa-stack-2x"></i>
 					                    <i class="fa fa-twitter fa-stack-1x"></i>
 					                  </a>
-					                  <a href="https://www.linkedin.com/company/9228490" class="fa-stack hw-socialshare social-icons" target="new">
+					                  <a href="https://www.linkedin.com/company/9228490" class="fa-stack hw-socialshare social-icons" target="_blank">
 					                    <i class="fa fa-circle-thin fa-stack-2x"></i>
 					                    <i class="fa fa-linkedin fa-stack-1x"></i>
 					                     </a>
@@ -2611,7 +2612,7 @@
 	<div id="start-project1" class="modal fade">
            <div class="modal-dialog submit-popup">
                <div class="modal-content">
-              <img src="/assets/img/success.png" class="submit-img">
+              <img src="/assets/img/success.png" class="submit-img" alt="submitimg">
               <h6 class="submit-heading gotham-rounded-bok">Thank You!</h6>
               <h6 class="submit-paragraph gotham-rounded-bok">We got your Profile.Will get back soon!</h6>
               <h6 class="submit-close gotham-rounded-bok" data-dismiss="modal">Close</h6>
@@ -2634,19 +2635,19 @@
                     <p class="gotham-rounded-light foot-text-color">© 2014 Hashworks All Rights Reserved</p>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 social-share">
-                  <a href="https://www.facebook.com/hashworks/" class="fa-stack hw-socialshare social-icons"  target="new">
+                  <a href="https://www.facebook.com/hashworks/" class="fa-stack hw-socialshare social-icons"  target="_blank">
                   <!-- <span > -->
                     <i class="fa fa-circle-thin fa-stack-2x"></i>
                     <i class="fa fa-facebook fa-stack-1x"></i>
                   <!-- </span> -->
                   </a>
-                  <a href="https://twitter.com/hashworksco" class="fa-stack hw-socialshare social-icons" target="new">
+                  <a href="https://twitter.com/hashworksco" class="fa-stack hw-socialshare social-icons" target="_blank">
                   <!-- <span > -->
                     <i class="fa fa-circle-thin fa-stack-2x"></i>
                     <i class="fa fa-twitter fa-stack-1x"></i>
                   <!-- </span> -->
                   </a>
-                  <a href="https://www.linkedin.com/company/9228490" class="fa-stack hw-socialshare social-icons" target="new">
+                  <a href="https://www.linkedin.com/company/9228490" class="fa-stack hw-socialshare social-icons" target="_blank">
                   <!-- <span > -->
                     <i class="fa fa-circle-thin fa-stack-2x"></i>
                     <i class="fa fa-linkedin fa-stack-1x"></i>
