@@ -33,11 +33,6 @@
     border: 1px solid #EC297B;
     }
 
-    #credits input {
-    box-shadow: none 
-    background: transparent;
-    }
-
     #credits .search{
     color: #ee2b7b;
     font-size: 20px;

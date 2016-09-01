@@ -484,7 +484,7 @@ a:hover,
 .filter-content.active {
     display: block;
 }
-.line-animation,
+/*.line-animation,
 .line-animation1 {
     bottom: 5px;
     display: block;
@@ -498,7 +498,7 @@ a:hover,
     -moz-transition: all 0.5s ease 0s;
     -o-transition: all 0.5s ease 0s;
     pointer-events: none;
-}
+}*/
 /* end of general css */
 /*homepage header*/
 /*.top-margin-zero {
@@ -815,7 +815,6 @@ nav.navbar-default.hw-hover-header {
 #left_scroll i,
 #right_scroll i {
     cursor: pointer;
-    cursor: hand;
 }
 #carousel_ul .hr-display {
     display: table;
@@ -1673,7 +1672,7 @@ div#bootcamp-filter-controls label {
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
-    user-select: none;
+    /*user-select: none;*/
     /*top: 20px;*/
     
     bottom: 20px;
@@ -2556,7 +2555,7 @@ nav #toc1 ul {
     padding-top: 75px;
 }
 nav#toc a#toc-actuator,
-nav #toc a#toc-actuator, {
+nav #toc a#toc-actuator {
     left: -64px;
     top: 30px;
 }
