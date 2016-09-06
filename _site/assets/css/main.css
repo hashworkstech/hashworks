@@ -1359,7 +1359,7 @@ div#bootcamp-filter-controls label {
 /*Testimonial*/
 
 #testimonial .hw-sprite {
-    background: url(../img/testimonial/sprite.png) no-repeat left top;
+    /*background: url(../img/testimonial/sprite.png) no-repeat left top;*/
     display: inline-block;
 }
 #testimonial {
@@ -2113,9 +2113,9 @@ h2.clr-white.gotham-rounded-bok.casestudy-title-init {
     right: -1px;
     top: 0;
 }
-.blog-grid a.button::after {
+/*.blog-grid a.button::after {
     background: rgba(0, 0, 0, 0) url("../img/arrow-white-right.png") no-repeat scroll 0 0;
-}
+}*/
 .blog-grid a.button::after {
     content: "";
     height: 10px;
@@ -2538,7 +2538,7 @@ nav #toc1 ul li:first-child {
 }
 nav#toc a#toc-actuator,
 nav #toc a#toc-actuator {
-    background: #f8f8f8 url(images/pfd-sprites.png) no-repeat left top;
+    /*background: #f8f8f8 url(images/pfd-sprites.png) no-repeat left top;*/
     cursor: pointer;
     display: block;
     height: 30px;

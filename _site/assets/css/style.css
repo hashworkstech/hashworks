@@ -7636,7 +7636,6 @@ input:read-only {
 /*end of join us pop up*/
 /*  google search engine */
 #google-search-div .gsc-search-box cse input.gsc-input, input.gsc-input {
-  background-image: url(ΓÇ£YOUR-IMAGE.gifΓÇ¥) !important;
   background-repeat: no-repeat;
   background-color: #fff; }
 
@@ -7888,7 +7887,6 @@ portfolio pages
   flex-direction: column; }
 
 .grey-top-port {
-  background: url(../img/grey_top.png) no-repeat;
   height: 101px;
   width: 100%;
   z-index: 2;
@@ -7967,32 +7965,18 @@ img#plax-sphere-3 {
   z-index: 1; }
 
 /*End of banner plux*/
-#port-bol-banner {
-  background: url("../img/banner_bw_bg-old.png");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -o-flex;
-  display: -ms-flex;
-  display: flex; }
-
 #port-think-and-learn-banner,
 #port-smartas-banner {
-  background: url("../img/banner_bw_bg-old.png");
   background-size: cover;
   background-position: center;
   height: 512px; }
 
 #port-ticketnew-banner {
-  background: url("../img/banner_bw_bg-old.png");
   background-size: cover;
   background-position: center;
   height: 512px; }
 
 #port-healthcare-banner {
-  background: url("../img/banner_bw_bg-old.png");
   background-size: cover;
   background-position: center;
   height: 512px; }

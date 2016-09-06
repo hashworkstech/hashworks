@@ -1984,10 +1984,22 @@ else {
 });
 
     // $(window).load(function() {
-    if(window.location.href == "http://127.0.0.1:4000/portfolio/#mobility"){
+    // if(window.location.href == "http://127.0.0.1:4000/portfolio/#mobility"){
 
-     }
+    //  }
+
     // });
+// $(window).load(function() {
+//     if(pageName == "bootcamp" || pageName == "blog" || pageName == "casestudy" || pageName == "collaborative_workforce" || pageName == "company" || pageName == "job_board" || pageName == "engage_us" || pageName == "navblog_detail" || pageName == "our_thinking"){
+//       $('.pf-dd a').on('click',function(){
+//       $("#pvh5-5").attr("href", "http://127.0.0.1:4000/portfolio/#mobility");
+//       $("#pvh1-1").attr("href", "http://127.0.0.1:4000/portfolio/#DataOps");
+//       $("#pvh2-2").attr("href", "http://127.0.0.1:4000/portfolio/#DevOps");
+//       $("#pvh3-3").attr("href", "http://127.0.0.1:4000/portfolio/#DataScience");
+//       $("#pvh4-4").attr("href", "http://127.0.0.1:4000/portfolio/#ui-ux");
+//        });
+//      }
+//     });
 // var pencilliquid1 = document.querySelector ('#pencil-liquid1');
 //     var myTimeline = new TimelineMax({tweens:
 // [new TweenMax(pencil-liquid1, 0, {x:"0",y:"5px"})], 
