@@ -17,11 +17,12 @@
 
 /*header-search*/
     #credits{
-    width: 200px;
-    margin-top: 0px;
-    padding-top: 11px;
+    height: 50px;
+    margin-top: 0;
     overflow: hidden;
+    padding-top: 1px;
     position: relative;
+    width: 200px;
     }
 
     #credits .input-group{

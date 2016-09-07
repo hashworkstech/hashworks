@@ -7637,10 +7637,8 @@ input:read-only {
 /*  google search engine */
 #google-search-div .gsc-search-box cse input.gsc-input, input.gsc-input {
   background-repeat: no-repeat;
-  background-color: #fff; }
-
-#google-search-div {
-  margin-top: -30px; }
+  background-color: #fff;
+  background-image: url("YOUR-IMAGE.gif") !important; }
 
 #google-search-div .cse .gsc-control-cse, .gsc-control-cse {
   padding: 0em;
@@ -7684,7 +7682,7 @@ input:read-only {
   width: 14%;
   height: 20px;
   /*margin-top: 9px;*/
-  margin-top: 33px;
+  margin-top: 22px;
   margin-left: -40px;
   opacity: 0;
   z-index: 1; }

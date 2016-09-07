@@ -484,7 +484,7 @@ a:hover,
 .filter-content.active {
     display: block;
 }
-/*.line-animation,
+.line-animation,
 .line-animation1 {
     bottom: 5px;
     display: block;
@@ -498,7 +498,7 @@ a:hover,
     -moz-transition: all 0.5s ease 0s;
     -o-transition: all 0.5s ease 0s;
     pointer-events: none;
-}*/
+}
 /* end of general css */
 /*homepage header*/
 /*.top-margin-zero {
@@ -2822,7 +2822,7 @@ i.fa.fa-chevron-down.down-arrow {
 }
 #color-circle-1 {
     -webkit-animation: colorAnim1 2s linear infinite;
-    deviceAnim1 -moz-animation: colorAnim1 2s linear infinite;
+    -moz-animation: colorAnim1 2s linear infinite;
     -ms-animation: colorAnim1 2s linear infinite;
     -o-animation: colorAnim1 2s linear infinite;
     animation: colorAnim1 2s linear infinite;
@@ -3635,13 +3635,13 @@ i.fa.fa-chevron-down.down-arrow {
         border: none;
         /* margin: auto; */
         
-        margin-top: -3px;
-        border-radius: 46;
+        margin-top: 0;
+        border-radius: 46px;
         overflow: auto;
         height: 100vh !important;
         border-collapse: separate;
         background: #F5F5F5;
-        padding: -1px;
+        /*padding: -1px;*/
         width: 100%;
         /* position: fixed !important; */
         
@@ -4973,9 +4973,10 @@ div#start-project1 {
         text-align: center;
     }
     .blog-grid li.intro-wrapper p {
+        margin-bottom: 25px; 
         font-size: 14px;
         line-height: 22px;
-        padding: 0 45px;
+        padding: 0;
         text-align: center;
         color: #000;
     }
@@ -5270,6 +5271,9 @@ div#start-project1 {
     }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .blog-grid li.intro-wrapper p {
+        margin-bottom: 25px;
+    }
     .col-md-6.col-sm-6.col-xs-6.col-xxs-12.cats{
         margin-left: 120px;
     }
@@ -8138,7 +8142,7 @@ div#company-anime-banner svg{
         margin-bottom: 12px;
     }
     .slick-slider {
-        margin-bottom: 0px !important;
+        margin-bottom: -2px !important;
     }
     .log-clr-backgrnd.container {
         padding-bottom: 15px;
@@ -8205,7 +8209,7 @@ div#company-anime-banner svg{
     padding: 24px 0 10px;
 }
 
-    #logo-img {
+    /*#logo-img {
         animation: anime2 3.5s  linear;
         display: table;
         background-color: #fff;
@@ -8236,7 +8240,7 @@ div#company-anime-banner svg{
             clip-path: circle(0% at 50% 50%);
         }
         
-    }
+    }*/
     .jb-desk-tab > main {
             margin-top: 20px;
         }
@@ -8694,11 +8698,9 @@ input[type="radio"] {
     .eng-zoom-in1,.eng-zoom-out1,.eng-zoom-in,.eng-zoom-out{
         display: none;
     }
-}
-@media screen (min-width: 1200px){
-#ups-devops .slick-slider {
-    margin-bottom: -2px !important;
-}
+    .gsc-input-box{
+        height: 38px !important;
+    }
 }
 @media screen and (max-width: 767px){
 	.company-para {
@@ -8797,17 +8799,10 @@ input[type="radio"] {
         margin-bottom: 6px;
     }
 }
-@media screen (min-width: 641px) and (max-width: 1199px){
-   .blog-grid li.intro-wrapper p{
-        margin: 0;
-        padding: 0;
-   } 
-}
-@media screen (min-width: 768px) and (max-width: 1199px){
+@media screen and (min-width: 768px) and (max-width: 1199px){
    #testimonial .usr-pic{
         width: 100px !important;
     }
-    
 }
 .container.devops-container {
     width: 100%;
