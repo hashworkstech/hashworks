@@ -1983,16 +1983,34 @@ else {
   $('#'+clickid).trigger('click');
 });
 
-//     $(window).load(function() {
-//        $('.pf-dd a').on('click',function(){
-//          var href = $(this).attr("href");
-//     if(href == ""){
-// var clickid=$(this).attr('clickid');
-// $('#'+clickid).trigger('click');
-//      }
-// });
-//     });
-// $(window).load(function() {
+    $(window).load(function() {
+
+      
+        var loc=$(location).attr('href');
+         var href = loc.substring(loc.indexOf('#')+1);
+    if(href == "DataOps"){
+var clickid=$('.pf-dd a').attr('clickid');
+$("#pvh-1").trigger('click');
+$('.slick-prev').trigger('click');
+     }
+    else if(href == "DevOps"){
+$("#pvh-2").trigger('click');
+$('.slick-prev').trigger('click');
+     }
+    else if(href == "DataScience"){
+$("#pvh-3").trigger('click');
+$('.slick-next').trigger('click');
+     }
+    else if(href == "ui-ux"){
+$("#pvh-4").trigger('click');
+$('.slick-prev').trigger('click');
+     }
+     else{
+$("#pvh-5").trigger('click');
+$('.slick-prev').trigger('click');
+     }
+    });
+    // $(window).load(function() {
 //     if(pageName == "bootcamp" || pageName == "blog" || pageName == "casestudy" || pageName == "collaborative_workforce" || pageName == "company" || pageName == "job_board" || pageName == "engage_us" || pageName == "navblog_detail" || pageName == "our_thinking"){
 //       $('.pf-dd a').on('click',function(){
 //       $("#pvh5-5").attr("href", "http://127.0.0.1:4000/portfolio/#mobility");
