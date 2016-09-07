@@ -1983,12 +1983,15 @@ else {
   $('#'+clickid).trigger('click');
 });
 
-    // $(window).load(function() {
-    // if(window.location.href == "http://127.0.0.1:4000/portfolio/#mobility"){
-
-    //  }
-
-    // });
+    $(window).load(function() {
+       $('.pf-dd a').on('click',function(){
+         var href = $(this).attr("href");
+    if(href == ""){
+var clickid=$(this).attr('clickid');
+$('#'+clickid).trigger('click');
+     }
+});
+    });
 // $(window).load(function() {
 //     if(pageName == "bootcamp" || pageName == "blog" || pageName == "casestudy" || pageName == "collaborative_workforce" || pageName == "company" || pageName == "job_board" || pageName == "engage_us" || pageName == "navblog_detail" || pageName == "our_thinking"){
 //       $('.pf-dd a').on('click',function(){
