@@ -7,8 +7,17 @@ $(document).ready(function(){
 
     $('.toggle').on('click',function (event) { 
         event.preventDefault();
-        var target = $(this).attr('href');
+            var length=$('#gsc-i-id1').val().length;
+    if(length != 0){
+   $('.srch-content-menu .srch-txt').removeClass('srch-txt-hide');
+   $('input.gsc-search-button.gsc-search-button-v2').trigger('click');
+   $('#gsc-i-id1').val('');
+   }
+   else{
+var target = $(this).attr('href');
         $(target).toggleClass('hidden show');
+   }
+    
     });
 
     /* scroll up */
@@ -2010,6 +2019,7 @@ $("#pvh-5").trigger('click');
 $('.slick-prev').trigger('click');
      }
     });
+    
     // $(window).load(function() {
 //     if(pageName == "bootcamp" || pageName == "blog" || pageName == "casestudy" || pageName == "collaborative_workforce" || pageName == "company" || pageName == "job_board" || pageName == "engage_us" || pageName == "navblog_detail" || pageName == "our_thinking"){
 //       $('.pf-dd a').on('click',function(){

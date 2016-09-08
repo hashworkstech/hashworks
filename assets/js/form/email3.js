@@ -127,51 +127,51 @@ for (var i = 0; i < fileLink.length; i++) {
                         }
                 }   
 
-                if(flag==0)
-                        {
-                            $.ajax(
-                            {
-                                type: "POST",
-                                url: "https://mandrillapp.com/api/1.0/messages/send.json",
-                                data: {
-                                    'key': 'fVUdEk-EJMBKTLq0gx5PRw',
-                                    'message': {
-                                        'from_email': email,
-                                        'from_name': name,
-                                        'headers': {
-                                            'Reply-To': email
-                                        },
-                                        'subject': 'Job Application',
-                                        "html":"A new job application has been submitted through contact form on your website, here are the details." + "<p>Name: "+name+"</p>" + "<p>Contact: " +contact+"</p>"+ "<p>Email: " +email+"</p>"+ "<p>Message: " +message+"</p>" ,
-                                        'text': message,
-                                        "attachments": [
-                                        {
-                                            "type": "text/plain",
-                                            "name": fileName,
-                                            "content": value
-                                        }],
-                                        'to': [
-                                        {
-                                            'email': 'rakshitha.hs@hashworks.co',
-                                            'name': 'Hashworks',
-                                            'type': 'to'
-                                        }]
-                                    }
-                                }
-                            })
-                            .done(function(response) {
-                                alert('Your message has been sent. Thank you!'); // show success message
-                                $(".input_name").val(''); // reset field after successful submission
-                                $(".input_email").val(''); // reset field after successful submission
-                                $(".input_subject").val('Subject'); // reset field after successful submission
-                                $(".input_phone").val(''); // reset field after successful submission
-                                $(".input_message").val(''); // reset field after successful submission
-                            })
-                            .fail(function(response) {
-                                alert('Error sending message.');
-                            });
-                            return false;
-                        }
+                // if(flag==0)
+                //         {
+                //             $.ajax(
+                //             {
+                //                 type: "POST",
+                //                 url: "https://mandrillapp.com/api/1.0/messages/send.json",
+                //                 data: {
+                //                     'key': 'fVUdEk-EJMBKTLq0gx5PRw',
+                //                     'message': {
+                //                         'from_email': email,
+                //                         'from_name': name,
+                //                         'headers': {
+                //                             'Reply-To': email
+                //                         },
+                //                         'subject': 'Job Application',
+                //                         "html":"A new job application has been submitted through contact form on your website, here are the details." + "<p>Name: "+name+"</p>" + "<p>Contact: " +contact+"</p>"+ "<p>Email: " +email+"</p>"+ "<p>Message: " +message+"</p>" ,
+                //                         'text': message,
+                //                         "attachments": [
+                //                         {
+                //                             "type": "text/plain",
+                //                             "name": fileName,
+                //                             "content": value
+                //                         }],
+                //                         'to': [
+                //                         {
+                //                             'email': 'rakshitha.hs@hashworks.co',
+                //                             'name': 'Hashworks',
+                //                             'type': 'to'
+                //                         }]
+                //                     }
+                //                 }
+                //             })
+                //             .done(function(response) {
+                //                 alert('Your message has been sent. Thank you!'); // show success message
+                                // $(".input_name").val(''); // reset field after successful submission
+                                // $(".input_email").val(''); // reset field after successful submission
+                                // $(".input_subject").val('Subject'); // reset field after successful submission
+                                // $(".input_phone").val(''); // reset field after successful submission
+                                // $(".input_message").val(''); // reset field after successful submission
+                        //     })
+                        //     .fail(function(response) {
+                        //         alert('Error sending message.');
+                        //     });
+                        //     return false;
+                        // }
     
     } //end of submitForm function
 

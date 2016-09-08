@@ -8799,6 +8799,9 @@ input[type="radio"] {
         margin-bottom: 6px;
     }
 }
+#google-search-div .gs-bidi-start-align.gs-snippet {
+    padding-left: 10px;
+}
 @media screen and (min-width: 768px) and (max-width: 1199px){
    #testimonial .usr-pic{
         width: 100px !important;

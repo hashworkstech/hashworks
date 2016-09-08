@@ -357,15 +357,15 @@ s.setAttribute('data-timestamp', +new Date());
 				                </div>
 	                	<hr class="es-popup-hr">
 	                	<div class="post-resume">
-	         			<form class="form-signin" onSubmit="submitForm(event)">  <!-- start of form -->
-
+	         			<form class="form-signin" action="https://getsimpleform.com/messages?form_api_token=0081d68f31d313aaa86b262fda0a1849" method="post" enctype="multipart/form-data">  <!-- start of form -->
+	         				<!-- <input type='hidden' name='redirect_to' value='http://fooey.com/thank-you.html'/> -->
 							<div class="row ">
 									<div class="col-lg-6"> 
 										<div class="text-border es-input-br-btm">
 											<div class="input-group">
 					      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/name-img.png" alt="name"></div>
 					      						
-												<input type="text" name="name" class="form-control placeholder-pro mainLoginInput input_name" id="name" placeholder="NAME" >
+												<input type="text" name="name" class="form-control placeholder-pro mainLoginInput input_name" id="name" placeholder="NAME" required>
 											</div>
 										</div>		
 									</div>
@@ -374,7 +374,7 @@ s.setAttribute('data-timestamp', +new Date());
 									<div class="text-border es-input-br-btm">
 										<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/email-img.png" alt="email"></div>
-											<input type="text" name="email" class="form-control placeholder-pro mainLoginInput input_email" id="email" placeholder="EMAIL">
+											<input type="text" name="email" class="form-control placeholder-pro mainLoginInput input_email" id="email" placeholder="EMAIL" required>
 										</div>
 									</div>
 								</div>
@@ -384,7 +384,7 @@ s.setAttribute('data-timestamp', +new Date());
 									<div class="text-border es-input-br-btm">
 										<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png" alt="subject"></div>
-											<select class="form-control mainLoginInput gotham-rounded-light input_subject sub-width" id="subject" name="subject">
+											<select class="form-control mainLoginInput gotham-rounded-light input_subject sub-width" id="subject" name="subject" required>
 												<option value="Subject">Subject</option>
 												<option value="Marketing" class="level-0">Marketing</option>
 												<option value="Design" class="level-0">Design</option>
@@ -404,7 +404,7 @@ s.setAttribute('data-timestamp', +new Date());
 									<div class="text-border es-input-br-btm">
 										<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/phone-img.png" alt="phone"></div>
-											<input type="text" name="phone" class="form-control placeholder-pro mainLoginInput input_phone" id="phone" placeholder="PHONE">
+											<input type="text" name="phone" class="form-control placeholder-pro mainLoginInput input_phone" id="phone" placeholder="PHONE" required>
 										</div>
 									</div>	
 								</div>
@@ -416,7 +416,7 @@ s.setAttribute('data-timestamp', +new Date());
 									<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png" alt="message"></div>
 				      						
-				      						<textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" name="message" class="form-control placeholder-pro mainLoginInput input_message"  id="message" rows="3"></textarea>
+				      						<textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" name="message" class="form-control placeholder-pro mainLoginInput input_message"  id="message" rows="3" required></textarea>
 				      					</div>	
 									</div>
 								</div>
@@ -427,7 +427,7 @@ s.setAttribute('data-timestamp', +new Date());
 				      				<input type="file" name="file" class="gotham-book input_file-upload" id="file-upload">
 				      				<br/><br/>
 				      				<span class="attach-text"><span><img src="/assets/img/talent_acquisition/attach.png" alt="attach"></span><span class="gotham-rounded-bok attach-span">Attach File</span></span>
-				      				<input type="text"  class="input_file-detail form-control placeholder-pro mainLoginInput"  id="file-detail" readonly="readonly"/>
+				      				<input type="text"  class="input_file-detail form-control placeholder-pro mainLoginInput"  id="file-detail" readonly="readonly" required>
 				      			</div>
 				      			<div class="col-lg-3 col-md-5 col-sm-5 col-xs-5 submit-background">
 				      			<button id="submit-btn" type="submit" class="btn" data-loading="Submitting...">
