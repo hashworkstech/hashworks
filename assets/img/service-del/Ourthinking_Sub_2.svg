@@ -5,7 +5,7 @@
 	 width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
 <path fill="#F4BA0B" d="M27.249,26.196c0,0-0.249-3.196,2.986-3.196s44.792,0,44.792,0S79,23.255,79,26.324
 	c0,3.069,0,56.631,0,56.631S78.76,87,76.271,87c-2.487,0-45.04,0-45.04,0S27,87.006,27,83.379S27.249,26.196,27.249,26.196z"/>
-<image display="none" overflow="visible" width="350" height="350" xlink:href="../../../../../Users/Vignila sweet/AppData/Roaming/Skype/live#3az3vigneshwar/media_messaging/media_cache_v2/^62E5C47A484A51B9325EB49CA3CA22BA8F680C3D900C510022^pimgpsh_fullsize_distr.jpg"  transform="matrix(0.09 0 0 0.09 -23.6665 39.167)">
+<image display="none" overflow="visible" width="350" height="350" transform="matrix(0.09 0 0 0.09 -23.6665 39.167)">
 </image>
 <path fill="none" stroke="#000000" stroke-linecap="round" stroke-miterlimit="10" d="M17.298,76.187V11.673
 	c0-2.268,0.829-4.269,3.098-4.269h65.46c2.27,0,4.019,2.001,4.019,4.269v82.538c0,2.269-1.749,4.27-4.019,4.27h-65.46"/>
