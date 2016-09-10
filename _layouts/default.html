@@ -100,14 +100,16 @@
 				                </div>
 	                	<hr class="es-popup-hr">
 	                	<div class="post-resume">
-	         			<form class="form-signin"  action="https://getsimpleform.com/messages?form_api_token=0081d68f31d313aaa86b262fda0a1849" method="post" enctype="multipart/form-data">  <!-- start of form -->
+	         			<form class="form-signin"  action="https://getsimpleform.com/messages?form_api_token=0081d68f31d313aaa86b262fda0a1849" method="post" enctype="multipart/form-data">
+	         				<input type='hidden' name='redirect_to' value='http://127.0.0.1:4000/thankyou/'/>
+	         			  <!-- start of form -->
 							<div class="row ">
 									<div class="col-lg-6"> 
 										<div class="text-border es-input-br-btm">
 											<div class="input-group">
 					      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/name-img.png" alt="name"></div>
 					      						
-												<input type="text" class="form-control placeholder-pro mainLoginInput input_name" id="name" placeholder="NAME" >
+												<input type="text" class="form-control placeholder-pro mainLoginInput input_name" id="name" placeholder="NAME" required>
 											</div>
 										</div>		
 									</div>
@@ -116,7 +118,7 @@
 									<div class="text-border es-input-br-btm">
 										<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/email-img.png" alt="email"></div>
-											<input type="text" class="form-control placeholder-pro mainLoginInput input_email" id="email" placeholder="EMAIL">
+											<input type="text" class="form-control placeholder-pro mainLoginInput input_email" id="email" placeholder="EMAIL" required>
 										</div>
 									</div>
 								</div>
@@ -126,7 +128,7 @@
 									<div class="text-border es-input-br-btm">
 										<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png" alt="subject"></div>
-											<select class="form-control mainLoginInput gotham-rounded-light input_subject sub-width" id="subject">
+											<select class="form-control mainLoginInput gotham-rounded-light input_subject sub-width" id="subject" required>
 												<option value="Subject">Subject</option>
 												<option value="Marketing" class="level-0">Marketing</option>
 												<option value="Design" class="level-0">Design</option>
@@ -146,7 +148,7 @@
 									<div class="text-border es-input-br-btm">
 										<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/phone-img.png" alt="phone"></div>
-											<input type="text" class="form-control placeholder-pro mainLoginInput input_phone" id="phone" placeholder="PHONE">
+											<input type="text" class="form-control placeholder-pro mainLoginInput input_phone" id="phone" placeholder="PHONE" required>
 										</div>
 									</div>	
 								</div>
@@ -158,7 +160,7 @@
 									<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png" alt="message"></div>
 				      						
-				      						<textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" class="form-control placeholder-pro mainLoginInput input_message"  id="message" rows="3"></textarea>
+				      						<textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" class="form-control placeholder-pro mainLoginInput input_message"  id="message" rows="3" required></textarea>
 				      					</div>	
 									</div>
 								</div>
@@ -169,7 +171,7 @@
 				      				<input type="file" class="gotham-book input_file-upload" id="file-upload">
 				      				<br/><br/>
 				      				<span class="attach-text"><span><img src="/assets/img/talent_acquisition/attach.png" alt="attach"></span><span class="gotham-rounded-bok attach-span">Attach File</span></span>
-				      				<input type="text"  class="input_file-detail form-control placeholder-pro mainLoginInput"  id="file-detail" readonly="readonly"/>
+				      				<input type="text"  class="input_file-detail form-control placeholder-pro mainLoginInput"  id="file-detail" readonly="readonly" required/>
 				      			</div>
 				      			<div class="col-lg-3 col-md-5 col-sm-5 col-xs-5 submit-background">
 				      			<button id="submit-btn" type="submit" class="btn" data-loading="Submitting...">
@@ -11671,13 +11673,14 @@
 	                	<hr>
 	                	<div class="post-resume">
 	         			<form class="form-signin"  action="https://getsimpleform.com/messages?form_api_token=0081d68f31d313aaa86b262fda0a1849" method="post" enctype="multipart/form-data">  <!-- start of form -->
+	         				<input type='hidden' name='redirect_to' value='http://127.0.0.1:4000/thankyou/'/>
 							<div class="row ">
 									<div class="col-lg-6"> 
 										<div class="text-border">
 											<div class="input-group">
 					      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/name-img.png" alt="name"></div>
 					      						
-												<input type="text" class="form-control placeholder-pro mainLoginInput input_name" id="name-1" placeholder="NAME" >
+												<input type="text" class="form-control placeholder-pro mainLoginInput input_name" id="name-1" placeholder="NAME" required>
 											</div>
 										</div>		
 									</div>
@@ -11686,7 +11689,7 @@
 									<div class="text-border">
 										<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/email-img.png" alt="email"></div>
-											<input type="text" class="form-control placeholder-pro mainLoginInput input_email" id="email-1" placeholder="EMAIL">
+											<input type="text" class="form-control placeholder-pro mainLoginInput input_email" id="email-1" placeholder="EMAIL" required>
 										</div>
 									</div>
 								</div>
@@ -11696,7 +11699,7 @@
 									<div class="text-border">
 										<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png" alt="subject"></div>
-											<select class="form-control mainLoginInput gotham-rounded-light input_subject sub-width" id="subject-1">
+											<select class="form-control mainLoginInput gotham-rounded-light input_subject sub-width" id="subject-1" required>
 												<option value="Subject">Subject</option>
 												<option value="Marketing" class="level-0">Marketing</option>
 												<option value="Design" class="level-0">Design</option>
@@ -11716,7 +11719,7 @@
 									<div class="text-border">
 										<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/phone-img.png" alt="phone"></div>
-											<input type="text" class="form-control placeholder-pro mainLoginInput input_phone" id="phone-1" placeholder="PHONE">
+											<input type="text" class="form-control placeholder-pro mainLoginInput input_phone" id="phone-1" placeholder="PHONE" required>
 										</div>
 									</div>	
 								</div>
@@ -11728,7 +11731,7 @@
 									<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png" alt="message"></div>
 				      						
-				      						<textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" class="form-control placeholder-pro mainLoginInput input_message"  id="message-1" rows="3"></textarea>
+				      						<textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" class="form-control placeholder-pro mainLoginInput input_message"  id="message-1" rows="3" required></textarea>
 				      					</div>	
 									</div>
 								</div>
@@ -11739,7 +11742,7 @@
 				      				<input type="file" class="gotham-book input_file-upload" id="file-upload-2">
 				      				<br/><br/>
 				      				<span class="attach-text"><span><img src="/assets/img/talent_acquisition/attach.png" alt="attach"></span><span class="gotham-rounded-bok attach-span clr-white">Attach File</span></span>
-				      				<input type="text"  class="input_file-detail form-control placeholder-pro mainLoginInput"  id="file-detail-2" readonly="readonly"/>
+				      				<input type="text"  class="input_file-detail form-control placeholder-pro mainLoginInput"  id="file-detail-2" readonly="readonly" required/>
 				      			</div>
 				      			<div class="col-lg-3 submit-background">
 				      			<button id="submit-btn1" type="submit" class="btn">
@@ -12329,13 +12332,14 @@
 	                	<hr class="es-popup-hr">
 	                	<div class="post-resume">
 	         			<form class="form-signin"  action="https://getsimpleform.com/messages?form_api_token=0081d68f31d313aaa86b262fda0a1849" method="post" enctype="multipart/form-data" >  <!-- start of form -->
+	         				<input type='hidden' name='redirect_to' value='http://127.0.0.1:4000/thankyou/'/>
 							<div class="row ">
 									<div class="col-lg-6"> 
 										<div class="text-border es-input-br-btm">
 											<div class="input-group">
 					      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/name-img.png" alt="name"></div>
 					      						
-												<input type="text" class="form-control placeholder-pro mainLoginInput input_name" id="name-2" placeholder="NAME" >
+												<input type="text" class="form-control placeholder-pro mainLoginInput input_name" id="name-2" placeholder="NAME" required>
 											</div>
 										</div>		
 									</div>
@@ -12344,7 +12348,7 @@
 									<div class="text-border es-input-br-btm">
 										<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/email-img.png" alt="email"></div>
-											<input type="text" class="form-control placeholder-pro mainLoginInput input_email" id="email-2" placeholder="EMAIL">
+											<input type="text" class="form-control placeholder-pro mainLoginInput input_email" id="email-2" placeholder="EMAIL" required>
 										</div>
 									</div>
 								</div>
@@ -12353,7 +12357,7 @@
 								<div class="col-lg-6"> 
 									<div class="text-border es-input-br-btm">
 										<div class="input-group">
-				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png" alt="subject"></div>
+				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png" alt="subject" required></div>
 											<select class="form-control mainLoginInput gotham-rounded-light input_subject sub-width" id="subject-2">
 												<option value="Subject">Subject</option>
 												<option value="Marketing" class="level-0">Marketing</option>
@@ -12374,7 +12378,7 @@
 									<div class="text-border es-input-br-btm">
 										<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/phone-img.png" alt="phone"></div>
-											<input type="text" class="form-control placeholder-pro mainLoginInput input_phone" id="phone-2" placeholder="PHONE">
+											<input type="text" class="form-control placeholder-pro mainLoginInput input_phone" id="phone-2" placeholder="PHONE" required>
 										</div>
 									</div>	
 								</div>
@@ -12386,7 +12390,7 @@
 									<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png" alt="message"></div>
 				      						
-				      						<textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" class="form-control placeholder-pro mainLoginInput input_message"  id="message-2" rows="3"></textarea>
+				      						<textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" class="form-control placeholder-pro mainLoginInput input_message"  id="message-2" rows="3" required></textarea>
 				      					</div>	
 									</div>
 								</div>
@@ -12397,7 +12401,7 @@
 				      				<input type="file" class="gotham-book input_file-upload" id="file-upload-3">
 				      				<br/><br/>
 				      				<span class="attach-text"><span><img src="/assets/img/talent_acquisition/attach.png" alt="attach"></span><span class="gotham-rounded-bok attach-span">Attach File</span></span>
-				      				<input type="text"  class="input_file-detail form-control placeholder-pro mainLoginInput"  id="file-detail-3" readonly="readonly"/>
+				      				<input type="text"  class="input_file-detail form-control placeholder-pro mainLoginInput"  id="file-detail-3" readonly="readonly" required/>
 				      			</div>
 				      			<div class="col-lg-3 col-md-5 col-sm-5 col-xs-5 submit-background">
 				      			<button id="submit-btn2" type="submit" class="btn" data-loading="Submitting...">
@@ -12585,13 +12589,14 @@
 	                	<hr class="es-popup-hr">
 	                	<div class="post-resume">
 	         			<form class="form-signin"  action="https://getsimpleform.com/messages?form_api_token=0081d68f31d313aaa86b262fda0a1849" method="post" enctype="multipart/form-data" >  <!-- start of form -->
+	         				<input type='hidden' name='redirect_to' value='http://127.0.0.1:4000/thankyou/'/>
 							<div class="row ">
 									<div class="col-lg-6"> 
 										<div class="text-border es-input-br-btm">
 											<div class="input-group">
 					      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/name-img.png" alt="name"></div>
 					      						
-												<input type="text" class="form-control placeholder-pro mainLoginInput input_name" id="name-3" placeholder="NAME" >
+												<input type="text" class="form-control placeholder-pro mainLoginInput input_name" id="name-3" placeholder="NAME" required>
 											</div>
 										</div>		
 									</div>
@@ -12600,7 +12605,7 @@
 									<div class="text-border es-input-br-btm">
 										<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/email-img.png" alt="email"></div>
-											<input type="text" class="form-control placeholder-pro mainLoginInput input_email" id="email-3" placeholder="EMAIL">
+											<input type="text" class="form-control placeholder-pro mainLoginInput input_email" id="email-3" placeholder="EMAIL" required>
 										</div>
 									</div>
 								</div>
@@ -12610,7 +12615,7 @@
 									<div class="text-border es-input-br-btm">
 										<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png" alt="subject"></div>
-											<select class="form-control mainLoginInput gotham-rounded-light input_subject sub-width" id="subject-3">
+											<select class="form-control mainLoginInput gotham-rounded-light input_subject sub-width" id="subject-3" required>
 												<option value="Subject">Subject</option>
 												<option value="Marketing" class="level-0">Marketing</option>
 												<option value="Design" class="level-0">Design</option>
@@ -12630,7 +12635,7 @@
 									<div class="text-border es-input-br-btm">
 										<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/phone-img.png" alt="phone"></div>
-											<input type="text" class="form-control placeholder-pro mainLoginInput input_phone" id="phone-3" placeholder="PHONE">
+											<input type="text" class="form-control placeholder-pro mainLoginInput input_phone" id="phone-3" placeholder="PHONE" required>
 										</div>
 									</div>	
 								</div>
@@ -12642,7 +12647,7 @@
 									<div class="input-group">
 				      						<div class="input-group-addon"><img src="/assets/img/talent_acquisition/sub-img.png" alt="message"></div>
 				      						
-				      						<textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" class="form-control placeholder-pro mainLoginInput input_message"  id="message-3" rows="3"></textarea>
+				      						<textarea placeholder= "MESSAGE/FEEDBACK/REQUEST" class="form-control placeholder-pro mainLoginInput input_message"  id="message-3" rows="3" required></textarea>
 				      					</div>	
 									</div>
 								</div>
@@ -12653,7 +12658,7 @@
 				      				<input type="file" class="gotham-book input_file-upload" id="file-upload1">
 				      				<br/><br/>
 				      				<span class="attach-text"><span><img src="/assets/img/talent_acquisition/attach.png" alt="attach"></span><span class="gotham-rounded-bok attach-span">Attach File</span></span>
-				      				<input type="text"  class="input_file-detail form-control placeholder-pro mainLoginInput"  id="file-detail1" readonly="readonly"/>
+				      				<input type="text"  class="input_file-detail form-control placeholder-pro mainLoginInput"  id="file-detail1" readonly="readonly" required/>
 				      			</div>
 				      			<div class="col-lg-3 col-md-5 col-sm-5 col-xs-5 submit-background">
 				      			<button id="submit-btn3" type="submit" class="btn" data-loading="Submitting...">
