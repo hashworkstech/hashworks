@@ -14,11 +14,18 @@ $(document).ready(function(){
    $('#gsc-i-id1').val('');
    }
    else{
-var target = $(this).attr('href');
+    $('.gsc-results-close-btn.gsc-results-close-btn-visible').trigger('click');
+var target = $('.toggle').attr('href');
         $(target).toggleClass('hidden show');
    }
     
     });
+    $('body').mouseleave(function() {
+    if(!$("#gsc-i-id1").val()){
+   $('.gsc-results-close-btn.gsc-results-close-btn-visible').trigger('click');
+}
+});
+
 
     /* scroll up */
 
@@ -489,7 +496,6 @@ $(".apst-wrapper").hide();
       }
       
     });
-   
 /* end google search */
 
 
@@ -2317,6 +2323,16 @@ $("#logo-img").fadeOut(2000, function() {
     
 // });
 // }
+// $("#start-project-popup").hide();
+// $("#submit-btn").click(function(){
+//   if($('.input_name').val() != "" && $('.input_email').val() != "" && $('.input_phone').val() != "" && $('.input_subject').val() != "" && $('.input_file-detail').val() && $('.input_message').val()){
+//    $("#start-project-popup").show();
+//   }
+//   else{
+// $("#start-project-popup").hide();
+//   }
+// });
+
 var body = document.documentElement;
 if (body.requestFullscreen) {
 body.requestFullscreen();

@@ -3650,7 +3650,7 @@ i.fa.fa-chevron-down.down-arrow {
         left: 0;
         opacity: 0;
         z-index: 0 !important;
-        visibility: hidden;
+        display: hidden;
         box-shadow: none;
         line-height: 1;
     }

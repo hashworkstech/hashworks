@@ -156,7 +156,7 @@
 				                </div>
 	                	<hr class="es-popup-hr">
 	                	<div class="post-resume">
-	         			<form class="form-signin" onSubmit="submitForm(event)" >  <!-- start of form -->
+	         			<form class="form-signin"  action="https://getsimpleform.com/messages?form_api_token=0081d68f31d313aaa86b262fda0a1849" method="post" enctype="multipart/form-data">  <!-- start of form -->
 							<div class="row ">
 									<div class="col-lg-6"> 
 										<div class="text-border es-input-br-btm">
@@ -11726,7 +11726,7 @@
 	                	<h1 class="gotham-rounded-bold">Let's work together</h1>
 	                	<hr>
 	                	<div class="post-resume">
-	         			<form class="form-signin" onSubmit="submitForm(event)" >  <!-- start of form -->
+	         			<form class="form-signin"  action="https://getsimpleform.com/messages?form_api_token=0081d68f31d313aaa86b262fda0a1849" method="post" enctype="multipart/form-data">  <!-- start of form -->
 							<div class="row ">
 									<div class="col-lg-6"> 
 										<div class="text-border">
@@ -12404,7 +12404,7 @@
 				                </div>
 	                	<hr class="es-popup-hr">
 	                	<div class="post-resume">
-	         			<form class="form-signin" onSubmit="submitForm(event)" >  <!-- start of form -->
+	         			<form class="form-signin"  action="https://getsimpleform.com/messages?form_api_token=0081d68f31d313aaa86b262fda0a1849" method="post" enctype="multipart/form-data" >  <!-- start of form -->
 							<div class="row ">
 									<div class="col-lg-6"> 
 										<div class="text-border es-input-br-btm">
@@ -12660,7 +12660,7 @@
 				                </div>
 	                	<hr class="es-popup-hr">
 	                	<div class="post-resume">
-	         			<form class="form-signin" onSubmit="submitForm(event)" >  <!-- start of form -->
+	         			<form class="form-signin"  action="https://getsimpleform.com/messages?form_api_token=0081d68f31d313aaa86b262fda0a1849" method="post" enctype="multipart/form-data" >  <!-- start of form -->
 							<div class="row ">
 									<div class="col-lg-6"> 
 										<div class="text-border es-input-br-btm">
@@ -12802,8 +12802,15 @@ function preventDefaultForScrollKeys(e) {
   window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
   window.ontouchmove  = preventDefault; // mobile
   document.onkeydown  = preventDefaultForScrollKeys;
+
 }
 
+
+window.addEventListener('DOMMouseScroll', mouseWheelEvent);
+
+function mouseWheelEvent(e) {
+  var delta = e.wheelDelta ? e.wheelDelta : -e.detail;
+}
         </script>  
         
           <!-- JavaScript -->
