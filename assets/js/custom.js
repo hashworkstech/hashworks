@@ -1843,6 +1843,29 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
         });
         $(".hide-scroll").show();
     });
+$(window).resize(function() {
+      if(screen.width>767 && screen.width<1199){
+      $('.hwmt #nav-icon2,.hw-others #nav-icon2').on('click', function() {
+          $('#toc1').animate({
+              width: '300px',
+              right: 0
+          });
+      });
+      $('.hwmt #button2,.hw-others #button2,main').on('click', function() {
+          $('#toc1').animate({
+              width: 0,
+              right: 0
+          });
+      });
+      $('.hwmt .single-item').on('click', function() {
+          $('.hwmt #toc1').animate({
+              width: 0,
+              right: 0
+          });
+      });
+    }
+      });
+
     if(screen.width>767 && screen.width<1199){
       $('.hwmt #nav-icon2,.hw-others #nav-icon2').on('click', function() {
           $('#toc1').animate({
@@ -1851,7 +1874,7 @@ $("#company-anime-banner path").animate({"opacity":"1"},5000);
           });
       });
       $('.hwmt #button2,.hw-others #button2,main').on('click', function() {
-          $('#toc').animate({
+          $('#toc1').animate({
               width: 0,
               right: 0
           });
@@ -2001,28 +2024,26 @@ else {
 
     $(window).load(function() {
 
-      
         var loc=$(location).attr('href');
          var href = loc.substring(loc.indexOf('#')+1);
-    if(href == "DataOps"){
-var clickid=$('.pf-dd a').attr('clickid');
-$("#pvh-1").trigger('click');
+    if(href == "mobility/"){
+$("#pvh-5").trigger('click');
 $('.slick-prev').trigger('click');
      }
-    else if(href == "DevOps"){
+    else if(href == "DevOps/"){
 $("#pvh-2").trigger('click');
 $('.slick-prev').trigger('click');
      }
-    else if(href == "DataScience"){
+    else if(href == "DataScience/"){
 $("#pvh-3").trigger('click');
 $('.slick-next').trigger('click');
      }
-    else if(href == "ui-ux"){
+    else if(href == "ui-ux/"){
 $("#pvh-4").trigger('click');
 $('.slick-prev').trigger('click');
      }
      else{
-$("#pvh-5").trigger('click');
+$("#pvh-1").trigger('click');
 $('.slick-prev').trigger('click');
      }
     });
