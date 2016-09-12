@@ -271,7 +271,7 @@ div#mb4-testimonial-first {
         line-height: 1;
         width: 175px;
         position: absolute;
-        z-index: 9;
+        z-index: 200000;
         -webkit-transition: background-color .5s ease 0s;
         -moz-transition: background-color .5s ease 0s;
         -ms-transition: background-color .5s ease 0s;

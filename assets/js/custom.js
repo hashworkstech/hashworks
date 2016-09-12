@@ -11,7 +11,8 @@ $(document).ready(function(){
     if(length != 0){
    $('.srch-content-menu .srch-txt').removeClass('srch-txt-hide');
    $('input.gsc-search-button.gsc-search-button-v2').trigger('click');
-   $('#gsc-i-id1').val('');
+   $('#credits').val('');
+
    }
    else{
     $('.gsc-results-close-btn.gsc-results-close-btn-visible').trigger('click');
@@ -2310,28 +2311,6 @@ $("#logo-img").fadeOut(2000, function() {
     });
 });
 
-//   $(window).ready(function(){
-//     debugger;
-//     $('#logo-img').removeClass('hide');
-
-//     $('#logo-img').fadeOut(3000,function(){
-//       $('#logo-img').addClass('hide');
-// $('#home-screen').removeClass('hide');
-// $('#home-screen').fadeIn(1);
-
-//     });
-    
-// });
-// }
-// $("#start-project-popup").hide();
-// $("#submit-btn").click(function(){
-//   if($('.input_name').val() != "" && $('.input_email').val() != "" && $('.input_phone').val() != "" && $('.input_subject').val() != "" && $('.input_file-detail').val() && $('.input_message').val()){
-//    $("#start-project-popup").show();
-//   }
-//   else{
-// $("#start-project-popup").hide();
-//   }
-// });
 
 var body = document.documentElement;
 if (body.requestFullscreen) {
