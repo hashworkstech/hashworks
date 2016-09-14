@@ -1347,6 +1347,7 @@ div#carousel_inner2 {
     -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=7, Direction=135, Color='#888888')";
     filter: progid:DXImageTransform.Microsoft.Shadow(Strength=7, Direction=135, Color='#888888');
     line-height: 14px;
+    -webkit-backface-visibility: hidden;
 }
 #google-search-div .gsc-modal-background-image-visible {
     display: none;

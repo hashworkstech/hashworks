@@ -12727,18 +12727,10 @@ function preventDefaultForScrollKeys(e) {
 }
       if (window.addEventListener) // older FF
       window.addEventListener('DOMMouseScroll', preventDefault, false);
-  window.onwheel = preventDefault; // modern standard
-  window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
   window.ontouchmove  = preventDefault; // mobile
   document.onkeydown  = preventDefaultForScrollKeys;
 
 }
 
-
-window.addEventListener('DOMMouseScroll', mouseWheelEvent);
-
-function mouseWheelEvent(e) {
-  var delta = e.wheelDelta ? e.wheelDelta : -e.detail;
-}
         </script>  
         {% include html-footer.html %}
