@@ -3865,7 +3865,7 @@ i.fa.fa-chevron-down.down-arrow {
     .slick-dots li button::before {
         color: #fff;
         opacity: 1;
-        font-size: 35px;
+        font-size: 12px;
     }
     .slick-dots li.slick-active button::before {
         opacity: 1;
@@ -8134,8 +8134,9 @@ div#company-anime-banner svg{
     margin: 2px 0 6px;
 }*/
 .techImg > img{
-        width: 24px;
+        width: 50px;
         margin-right: 12px;
+        height: 50px;
     }
 @media screen and (min-width: 1200px) {
     .company-value{
@@ -8249,6 +8250,11 @@ div#company-anime-banner svg{
     /*.li-tab-mar > img {
     width: 62px;
 }*/
+.techImg > img {
+    height: 25px;
+    margin-right: 12px;
+    width: 25px;
+}
 #jb-mob .collobo-hw-main-heading {
     margin-top: 0px;
 }
@@ -8806,6 +8812,11 @@ input[type="radio"] {
    #testimonial .usr-pic{
         width: 100px !important;
     }
+    .techImg > img {
+        height: 35px;
+        margin-right: 12px;
+        width: 35px;
+}
 }
 .container.devops-container {
     width: 100%;

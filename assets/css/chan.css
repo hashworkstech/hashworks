@@ -301,6 +301,7 @@ div#mb4-testimonial-first {
         visibility: visible;
         background-color: rgba(12, 200, 219, 1);
         backface-visibility: hidden;
+        color: white;
     }
 
     .hw-socialshare:hover {
