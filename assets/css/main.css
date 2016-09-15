@@ -514,11 +514,11 @@ header.hw-home {
 header .navbar-default {
     border: none;
     background: #fff;
-    -webkit-transition: all .2s linear 0s;
+   /* -webkit-transition: all .2s linear 0s;
     -moz-transition: all .2s linear 0s;
     -o-transition: all .2s linear 0s;
     -ms-transition: all .2s linear 0s;
-    transition: all .2s linear 0s;
+    transition: all .2s linear 0s;*/
 }
 header.hw-home .navbar-default {
     background: transparent none repeat scroll 0 0;
@@ -595,9 +595,9 @@ nav.navbar-default.hw-fixed-header {
 }
 .hw-fixed-header .logo > a {
     background-position: 0 -31px;
-    -webkit-transition: all .5s ease 0s;
+    /*-webkit-transition: all .5s ease 0s;
     -o-transition: all .5s ease 0s;
-    transition: all .5s ease 0s;
+    transition: all .5s ease 0s;*/
 }
 .margin-top-ten {
     margin-top: 10px;
@@ -635,9 +635,9 @@ nav.navbar-default.hw-hover-header {
 }
 .hw-hover-header .logo > a {
     background-position: 0 -31px;
-    -webkit-transition: all .5s ease 0s;
+    /*-webkit-transition: all .5s ease 0s;
     -o-transition: all .5s ease 0s;
-    transition: all .5s ease 0s;
+    transition: all .5s ease 0s;*/
 }
 .hw-hover-header .navbar-nav > li > a,
 .hw-hover-header .navbar-nav > li > a:hover,

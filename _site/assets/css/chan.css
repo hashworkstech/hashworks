@@ -256,10 +256,10 @@ div#mb4-testimonial-first {
     }
     ul li ul.dropdown li {
         color: #fff;
-        -webkit-transition: color .5s ease 0s;
+        /*-webkit-transition: color .5s ease 0s;
         -moz-transition: color .5s ease 0s;
         -o-transition: color .5s ease 0s;
-        transition: color .5s ease 0s;
+        transition: color .5s ease 0s;*/
         cursor: pointer;
         -ms-backface-visibility: hidden;
     }
@@ -271,10 +271,10 @@ div#mb4-testimonial-first {
         width: 175px;
         position: absolute;
         z-index: 300000;
-        -webkit-transition: background-color .5s ease 0s;
+        /*-webkit-transition: background-color .5s ease 0s;
         -moz-transition: background-color .5s ease 0s;
         -o-transition: background-color .5s ease 0s;
-        transition: background-color .5s ease 0s;
+        transition: background-color .5s ease 0s;*/
          backface-visibility: hidden;
     }
     #Hashworks-Nav{
@@ -301,7 +301,6 @@ div#mb4-testimonial-first {
         visibility: visible;
         background-color: rgba(12, 200, 219, 1);
         backface-visibility: hidden;
-        color: white;
     }
 
     .hw-socialshare:hover {
