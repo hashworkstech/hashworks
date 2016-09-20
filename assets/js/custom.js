@@ -2595,7 +2595,6 @@ $(document).ready(function() {
 
         } else {
             $('.hwmt #nav-icon2,.hw-others #nav-icon2').on('click', function() {
-                debugger;
                 $('#toc1').animate({
                     width: '100%',
                     right: 0
