@@ -2533,34 +2533,34 @@ $(document).ready(function() {
     });
 
     if ($(window).width() > 767 && $(window).width() < 1199) {
-        $('.hwmt #nav-icon2,.hw-others #nav-icon2').on('click', function() {
+        $('#nav-icon2').on('click', function() {
             $('#toc1').animate({
                 width: '300px',
                 right: 0
             });
         });
-        $('.hwmt #button2,.hw-others #button2,main').on('click', function() {
+        $('#button2').on('click', function() {
             $('#toc1').animate({
                 width: 0,
                 right: 0
             });
         });
-        $('.hwmt .single-item').on('click', function() {
-            $('.hwmt #toc1').animate({
-                width: 0,
-                right: 0
-            });
-        });
+        // $('.hwmt .single-item').on('click', function() {
+        //     $('.hwmt #toc1').animate({
+        //         width: 0,
+        //         right: 0
+        //     });
+        // });
     }
-    if ($(window).width() < 767) {
-        $('.hwmt #nav-icon2,.hw-others #nav-icon2').on('click', function() {
+    if ($(window).width() < 768) {
+        $('#nav-icon2').on('click', function() {
 
             $('#toc1').animate({
                 width: '100%',
                 right: 0
             });
         });
-        $('.hwmt #button2,.hw-others #button2').on('click', function() {
+        $('.#button2').on('click', function() {
             $('#toc1').animate({
                 width: 0,
                 right: 0
@@ -2573,72 +2573,45 @@ $(document).ready(function() {
     $(window).resize(function() {
 
 
-        if ($(window).width() > 767 && $(window).width() < 1199) {
-            $('.hwmt #nav-icon2,.hw-others #nav-icon2').on('click', function() {
-                $('#toc1').animate({
-                    width: '300px',
-                    right: 0
-                });
-            });
-            $('.hwmt #button2,.hw-others #button2,main').on('click', function() {
-                $('#toc1').animate({
-                    width: 0,
-                    right: 0
-                });
-            });
-            $('.hwmt .single-item').on('click', function() {
-                $('.hwmt #toc1').animate({
-                    width: 0,
-                    right: 0
-                });
-            });
-
-        } else {
-            $('.hwmt #nav-icon2,.hw-others #nav-icon2').on('click', function() {
-                $('#toc1').animate({
-                    width: '100%',
-                    right: 0
-                });
-            });
-            $('.hwmt #button2,.hw-others #button2').on('click', function() {
-                $('#toc1').animate({
-                    width: 0,
-                    right: 0
-                });
-            });
-        }
-
-
-
-
-    });
-    if (screen.width > 767) {
-        $('.hwmt #nav-icon2').on('click', function() {
-            $('.hwmt #toc1').animate({
+       if ($(window).width() > 767 && $(window).width() < 1199) {
+        $('#nav-icon2').on('click', function() {
+            $('#toc1').animate({
                 width: '300px',
                 right: 0
             });
         });
-        $('.hwmt #button2').on('click', function() {
-            $('.hwmt #toc1').animate({
+        $('#button2').on('click', function() {
+            $('#toc1').animate({
                 width: 0,
                 right: 0
             });
         });
-    } else {
-        $('.hwmt #nav-icon2').on('click', function() {
-            $('.hwmt #toc1').animate({
+        // $('.hwmt .single-item').on('click', function() {
+        //     $('.hwmt #toc1').animate({
+        //         width: 0,
+        //         right: 0
+        //     });
+        // });
+    }
+    else {
+        $('#nav-icon2').on('click', function() {
+
+            $('#toc1').animate({
                 width: '100%',
                 right: 0
             });
         });
-        $('.hwmt #button2').on('click', function() {
-            $('.hwmt #toc1').animate({
+        $('.#button2').on('click', function() {
+            $('#toc1').animate({
                 width: 0,
                 right: 0
             });
         });
     }
+
+
+
+    });
     $('.single-item').slick({
         dots: true,
         infinite: true,
