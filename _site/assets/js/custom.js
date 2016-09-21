@@ -765,7 +765,7 @@ $(document).ready(function() {
         var tabdetail = $(this).parents('.c-flex').offset().top;
         $('html, body').animate({
             scrollTop: tabdetail
-        }, 1500, 'linear');
+        }, 3000, 'linear');
     });
 
 
