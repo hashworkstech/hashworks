@@ -2534,13 +2534,13 @@ $(document).ready(function() {
 
     if ($(window).width() > 767 && $(window).width() < 1199) {
         $('.hwmt #nav-icon2,.hw-others #nav-icon2').on('click', function() {
-            $('hwmt #toc1,.hw-others #toc1').animate({
+            $('#toc1').animate({
                 width: '300px',
                 right: 0
             });
         });
-        $('.hwmt #button2,.hw-others #button2').on('click', function() {
-            $('hwmt #toc1,.hw-others #toc1').animate({
+        $('.hwmt #button2,.hw-others #button2,main').on('click', function() {
+            $('#toc1').animate({
                 width: 0,
                 right: 0
             });
@@ -2555,31 +2555,33 @@ $(document).ready(function() {
     if ($(window).width() < 767) {
         $('.hwmt #nav-icon2,.hw-others #nav-icon2').on('click', function() {
 
-            $('hwmt #toc1,.hw-others #toc1').animate({
+            $('#toc1').animate({
                 width: '100%',
                 right: 0
             });
         });
         $('.hwmt #button2,.hw-others #button2').on('click', function() {
-            $('hwmt #toc1,.hw-others #toc1').animate({
+            $('#toc1').animate({
                 width: 0,
                 right: 0
             });
         });
     }
 
+
+
     $(window).resize(function() {
 
 
         if ($(window).width() > 767 && $(window).width() < 1199) {
             $('.hwmt #nav-icon2,.hw-others #nav-icon2').on('click', function() {
-                $('hwmt #toc1,.hw-others #toc1').animate({
+                $('#toc1').animate({
                     width: '300px',
                     right: 0
                 });
             });
-            $('.hwmt #button2,.hw-others #button2').on('click', function() {
-                $('hwmt #toc1,.hw-others #toc1').animate({
+            $('.hwmt #button2,.hw-others #button2,main').on('click', function() {
+                $('#toc1').animate({
                     width: 0,
                     right: 0
                 });
@@ -2591,8 +2593,24 @@ $(document).ready(function() {
                 });
             });
 
-        }  
-      
+        } else {
+            $('.hwmt #nav-icon2,.hw-others #nav-icon2').on('click', function() {
+                $('#toc1').animate({
+                    width: '100%',
+                    right: 0
+                });
+            });
+            $('.hwmt #button2,.hw-others #button2').on('click', function() {
+                $('#toc1').animate({
+                    width: 0,
+                    right: 0
+                });
+            });
+        }
+
+
+
+
     });
     if (screen.width > 767) {
         $('.hwmt #nav-icon2').on('click', function() {
@@ -2702,6 +2720,7 @@ $(document).ready(function() {
 
     $('.pf-dd a').on('click', function() {
         var clickid = $(this).attr('clickid');
+        $('.gsc-results-close-btn.gsc-results-close-btn-visible').trigger('click');
         $('html, body').animate({
             scrollTop: '0px'
         });
@@ -2720,18 +2739,23 @@ $(document).ready(function() {
         if (href == "mobility/") {
             $("#pvh-5").trigger('click');
             $('.slick-prev').trigger('click');
+            $('.gsc-results-close-btn.gsc-results-close-btn-visible').trigger('click');
         } else if (href == "DevOps/") {
             $("#pvh-2").trigger('click');
             $('.slick-prev').trigger('click');
+            $('.gsc-results-close-btn.gsc-results-close-btn-visible').trigger('click');
         } else if (href == "DataScience/") {
             $("#pvh-3").trigger('click');
             $('.slick-next').trigger('click');
+            $('.gsc-results-close-btn.gsc-results-close-btn-visible').trigger('click');
         } else if (href == "ui-ux/") {
             $("#pvh-4").trigger('click');
             $('.slick-prev').trigger('click');
+            $('.gsc-results-close-btn.gsc-results-close-btn-visible').trigger('click');
         } else {
             $("#pvh-1").trigger('click');
             $('.slick-prev').trigger('click');
+            $('.gsc-results-close-btn.gsc-results-close-btn-visible').trigger('click');
         }
     });
 
