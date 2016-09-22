@@ -86,7 +86,19 @@ Come share our thinking; know more about our team and the work we do…</p>
          </ul>
       </div>
 		</li>
+
+<!-- <ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">aa{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+ -->
+
 	{% for post in site.posts | sort: 'date'   %}
+
+
 	
 		<li class="col-lg-4 col-md-6 col-sm-6 col-xs-6 col-xxs-12 hw-filter-li Social blog-content hw-upskilling-details upskill-cont-filter {{ post.class}} {{ post.category}} {{ post.author}}">
 			<div class="image-wrapper">
