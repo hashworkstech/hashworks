@@ -8218,6 +8218,9 @@ div#company-anime-banner svg {
     padding-bottom: 14px;
 }
 @media screen and (max-width: 1199px) {
+     #gsc-i-id2{
+        height: 30px !important;
+    }
     .fa.fa-paper-plane.company-fa.comp-email {
         font-size: 30px !important;
     }
@@ -8300,8 +8303,18 @@ div#company-anime-banner svg {
     .jb-desk-tab > main {
         margin-top: 20px;
     }
+    #google-search-div .gsc-results-wrapper-overlay{
+        top: 0;
+    }
 }
 @media screen and (max-width: 767px) {
+    .toc1{
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+    width:100%;
+    }
     /*.li-tab-mar > img {
     width: 62px;
 }*/
@@ -8880,6 +8893,15 @@ input[type="radio"] {
         height: 35px;
         margin-right: 12px;
         width: 35px;
+    }
+    .main-contentt.ourthinking-main-contentt{
+        margin-bottom: 30px;
+    }
+    .gsc-results-close-btn{
+        background-image: url("../img/engage-us-responsive/cross-img.png") !important;
+        background-position: 0 0 !important;
+        height: 15px !important;
+        width: 15px !important;
     }
 }
 .container.devops-container {
