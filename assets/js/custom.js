@@ -3236,7 +3236,7 @@ $('.hw-upskill-cont').on('click', function() {
 
 
 
-        $(".nav-dropDown").hide();
+$(".nav-dropDown").hide();
 $( ".commonMenu__icon" ).click(function() {
     $(this).hide();
     $(".nav-dropDown").show().addClass('animated fadeInRight');
