@@ -3250,20 +3250,19 @@ $("#submit-home-data").submit(function (e) {
     e.preventDefault();
     var userName = $('#user-name').val();
     var userMail = $('#user-mail').val();
-    window.open("");
+    // window.open("http://www.hashworks.co");
     $.ajax({
-        url: "",
+        url: "https://docs.google.com/a/hashworks.co/forms/d/e/1FAIpQLScYkB0OOdS3ZmTiXgnX0m2Cb-BupViWKdyWzNzVgupIbnp7Bg/formResponse",
         data: {
-            "": userName,
-            "": userMob,
-            "": userMail
+            "entry.1413621584": userName,
+            "entry.932947263": userMail
         },
         type: "POST",
         dataType: "xml",
         statusCode: {
             0: function () {
 
-                window.location = "/";
+                window.location = "http://www.hashworks.co";
             }
         }
     });
