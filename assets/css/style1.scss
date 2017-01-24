@@ -56,8 +56,8 @@ header {
 
 
   .banner {
-    height: 60vh;
-    background-image: url('../img/Header-Image.jpg') ;
+    height: 600px;
+    background-image: url('../images/Header-Image.jpg') ;
     background-size: 100%;
      @media only screen and (min-width:768px) and (max-width:1024px) {
         width: 100%;
@@ -72,7 +72,7 @@ header {
 
   .bannerRight {
  position: relative;
-    height: 60vh;
+    height: 600px;
     width: 40%;
     background: #E6F7F9;
     border-left-width: 0px;
@@ -82,7 +82,7 @@ header {
     content: '';
    
     top: 0;
-    height: 60vh;
+    height: 600px;
     width: 100%;
     background: #E6F7F9;
     -webkit-transform: skew(-4deg);
@@ -95,7 +95,7 @@ header {
     height: 200px;
     background: #EA2B7B;
     position: absolute;
-    left: -117px;
+    left: -116px;
     z-index: 1;
     top: 35%;
     transform: skew(-20deg);
