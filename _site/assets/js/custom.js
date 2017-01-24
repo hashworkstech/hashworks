@@ -3231,3 +3231,50 @@ $('.hw-upskill-cont').on('click', function() {
 //     $(".img-css").panzoom();
 //   });
 // });
+
+
+
+
+
+
+        $(".nav-dropDown").hide();
+$( ".commonMenu__icon" ).click(function() {
+    $(this).hide();
+    $(".nav-dropDown").show().addClass('animated fadeInRight');
+});
+$( ".MenuContent__close").click(function() {
+    $(".nav-dropDown").hide();
+    $(".commonMenu__icon").show();
+});
+$("#submit-home-data").submit(function (e) {
+    e.preventDefault();
+    var userName = $('#user-name').val();
+    var userMail = $('#user-mail').val();
+    window.open("");
+    $.ajax({
+        url: "",
+        data: {
+            "": userName,
+            "": userMob,
+            "": userMail
+        },
+        type: "POST",
+        dataType: "xml",
+        statusCode: {
+            0: function () {
+
+                window.location = "/";
+            }
+        }
+    });
+    return false;
+});
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/588707794025667c4ca56d4d/default';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
