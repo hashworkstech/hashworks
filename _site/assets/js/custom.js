@@ -3236,16 +3236,16 @@ $('.hw-upskill-cont').on('click', function() {
 
 
 
-
-        $(".nav-dropDown").hide();
+$(".nav-dropDown").hide();
 $( ".commonMenu__icon" ).click(function() {
     $(this).hide();
     $(".nav-dropDown").show().addClass('animated fadeInRight');
 });
 $( ".MenuContent__close").click(function() {
-    $(".nav-dropDown").hide();
-    $(".commonMenu__icon").show();
+    $(".nav-dropDown").addClass('animated fadeInRight').hide();
+    $(".commonMenu__icon").show(); 
 });
+
 $("#submit-home-data").submit(function (e) {
     e.preventDefault();
     var userName = $('#user-name').val();
@@ -3268,6 +3268,7 @@ $("#submit-home-data").submit(function (e) {
     });
     return false;
 });
+
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];

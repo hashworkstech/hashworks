@@ -218,7 +218,8 @@ header .headerLeft img {
 header .headerRight {
   text-align: right; }
   header .headerRight--social {
-    margin: 0; }
+    margin: 0;
+    border: none; }
     header .headerRight--social li {
       margin-left: 2rem;
       display: inline-block;
@@ -230,7 +231,7 @@ header .headerRight {
         color: deeppink; }
 
 .hero .banner {
-  height: 60vh;
+  height: 600px;
   background-image: url("../img/Header-Image.jpg");
   background-size: 100%; }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -243,7 +244,7 @@ header .headerRight {
       height: 100%; } }
 .hero .bannerRight {
   position: relative;
-  height: 60vh;
+  height: 600px;
   width: 40%;
   background: #E6F7F9;
   border-left-width: 0px;
@@ -252,7 +253,7 @@ header .headerRight {
     position: absolute;
     content: '';
     top: 0;
-    height: 60vh;
+    height: 600px;
     width: 100%;
     background: #E6F7F9;
     -webkit-transform: skew(-4deg);
@@ -264,7 +265,7 @@ header .headerRight {
     height: 200px;
     background: #EA2B7B;
     position: absolute;
-    left: -117px;
+    left: -116px;
     z-index: 1;
     top: 35%;
     transform: skew(-20deg);
