@@ -428,7 +428,8 @@ header .headerRight {
       font-size: 18px;
       line-height: 30px;
       width: 95%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      padding-bottom: 1rem; }
     .clientTalk__content--text h2 {
       line-height: 30px;
       color: #EA2B7B;
