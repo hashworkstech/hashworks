@@ -3242,7 +3242,7 @@ $( ".commonMenu__icon" ).click(function() {
     $(".nav-dropDown").show().addClass('animated fadeInRight');
 });
 $( ".MenuContent__close").click(function() {
-    $(".nav-dropDown").addClass('animated fadeInRight').hide();
+    $(".nav-dropDown").hide("slow");
     $(".commonMenu__icon").show(); 
 });
 

@@ -91,34 +91,9 @@
       width: 140px; } }
 
 .biliboard:hover {
-  background: #fff;
+  background: #EA2B7B;
   cursor: pointer;
-  color: #EA2B7B; }
-  .biliboard:hover::before {
-    content: '';
-    display: block;
-    height: 100%;
-    width: 100%;
-    border-radius: 3px;
-    transform: scale(1.02, 1.08);
-    position: absolute;
-    background: #f00;
-    background: linear-gradient(90deg, #fafafa, #fafafa, #EA2B7B, #fafafa, #fafafa);
-    background-position: 55px 0;
-    top: 0;
-    animation: linear 1s infinite linear;
-    left: 0;
-    z-index: -1; }
-  .biliboard:hover .biliboard.radial:before {
-    background: radial-gradient(#fafafa, #fafafa, #F2A61A, #fafafa, #fafafa);
-    animation: radial 1s infinite linear; }
-  .biliboard:hover .biliboard.repeating:before {
-    background: repeating-linear-gradient(-45deg, #fafafa, #fafafa 30px, #5FC914 30px, #5FC914 60px) fixed;
-    animation: repeating 1s infinite linear; }
-  .biliboard:hover .biliboard.electronic:before {
-    background: radial-gradient(#EA238D, #EA238D, #EA238D, #EA238D, #fafafa, #fafafa) no-repeat;
-    background-size: 150px 50px;
-    animation: electronic 2s infinite linear; }
+  color: #fff; }
 
 .ion-social-facebook:hover {
   color: #3b5998; }
@@ -202,6 +177,7 @@ a {
       text-align: right;
       position: relative;
       top: 6px;
+      cursor: pointer;
       color: #EA2B7B; }
   .nav-dropDown ul {
     list-style: none;
@@ -212,15 +188,16 @@ a {
     padding: 0;
     border-bottom: 1px solid rgba(209, 209, 209, 0.42); }
     .nav-dropDown ul li {
-      text-align: left;
-      height: 50px;
-      line-height: 50px;
-      cursor: pointer;
-      color: #05B3C4;
-      font-family: 'g-book';
-      font-size: 20px; }
-    .nav-dropDown ul li:hover {
-      color: #EA2B7B; }
+      text-align: left; }
+      .nav-dropDown ul li a {
+        height: 50px;
+        line-height: 50px;
+        cursor: pointer;
+        color: #05B3C4;
+        font-family: 'g-book';
+        font-size: 20px; }
+        .nav-dropDown ul li a:hover {
+          color: #EA2B7B; }
 
 body {
   margin: 0;
@@ -248,10 +225,29 @@ header .headerRight {
       cursor: pointer; }
       header .headerRight--social li i {
         font-size: 20px;
-        color: #9FA3A5; }
+        color: #9FA3A5;
+        cursor: pointer; }
       header .headerRight--social li .ion-navicon-round {
         color: deeppink; }
 
+.hero .commingsoon {
+  padding: 5rem;
+  background: #fff; }
+  .hero .commingsoon h1 {
+    font-family: 'g-book';
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem; }
+  .hero .commingsoon h2 {
+    width: 100%;
+    font-family: 'g-book';
+    text-align: center;
+    font-size: 40px; }
+    .hero .commingsoon h2 span {
+      font-size: 40px;
+      font-family: 'g-bold';
+      color: #EA2B7B; }
 .hero .banner {
   height: 600px;
   background-image: url("../img/Header-Image.jpg");
@@ -644,6 +640,9 @@ header .headerRight {
   color: #FFFFFF;
   margin-bottom: 70px;
   text-align: center; }
+.technologyContainer__box:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.1); }
 .technologyContainer__box--iconData {
   margin-bottom: 15px; }
   .technologyContainer__box--iconData img {
@@ -848,6 +847,11 @@ footer .footerList {
       font-size: 18px;
       font-family: 'g-book';
       color: #FFFFFF; }
+      footer .footerList ul li a {
+        display: inline-block;
+        font-size: 18px;
+        font-family: 'g-book';
+        color: #FFFFFF; }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     footer .footerList ul li {
       margin-right: 3rem;

@@ -72,7 +72,8 @@ a {
 }
 
 .nav-dropDown {
-  position: fixed;
+   
+     position: fixed;
   top:0;
   right: 0;
   width: 300px;
@@ -96,7 +97,6 @@ img {
       text-align: right; 
       position: relative;
       top: 6px;
-      cursor:pointer;
       color: $primarycolor;
   }
   }
@@ -108,10 +108,8 @@ img {
   border-radius: 4px;
   padding: 0;
    border-bottom: 1px solid rgba(209, 209, 209, 0.42); 
-
   li {
-    text-align: left; 
-    a {
+      text-align: left; 
       height: 50px;
     line-height: 50px;
    
@@ -122,12 +120,10 @@ img {
     // text-transform: uppercase;
     font-family: 'g-book';
     font-size: 20px;
-    &:hover {
-      color: $primarycolor;
-    } 
-    }
   } 
-  
+  li:hover {
+      color: $primarycolor;
+  }
     }
 }
 

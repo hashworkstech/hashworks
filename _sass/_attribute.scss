@@ -158,40 +158,9 @@ $primaryparafont : 16px;
     }
 }
 .biliboard:hover {
-    background: #fff;
-    cursor: pointer;
-    color: $primarycolor;
-    &::before {
-content: '';
-	display: block;
-	height: 100%;
-	width: 100%;
-	border-radius: 3px;
-	transform: scale( 1.02, 1.08 );
-	position: absolute;
-	background: #f00;
-	background: linear-gradient( 90deg, #fafafa, #fafafa, #EA2B7B, #fafafa, #fafafa ); 
-	background-position: 55px 0;
-	top: 0;
-	animation: linear 1s infinite linear;
-	left: 0;
-	z-index: -1;
-    }
-    .biliboard.radial:before {
-	background: radial-gradient( #fafafa, #fafafa, #F2A61A, #fafafa, #fafafa );
-	animation: radial 1s infinite linear;
-}
-
-.biliboard.repeating:before {
-	background: repeating-linear-gradient( -45deg, #fafafa, #fafafa 30px, #5FC914 30px, #5FC914 60px ) fixed;
-	animation: repeating 1s infinite linear;
-}
-
-.biliboard.electronic:before {
-	background: radial-gradient( #EA238D, #EA238D, #EA238D, #EA238D, #fafafa, #fafafa ) no-repeat;
-	background-size: 150px 50px;
-	animation: electronic 2s infinite linear;
-}
+   background: $primarybgcolor;
+   cursor: pointer;
+   color: #fff;
 }
 
 

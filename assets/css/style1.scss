@@ -38,6 +38,7 @@ header {
          i {
             font-size: 20px; 
             color: #9FA3A5;
+            cursor: pointer;
          }
          .ion-navicon-round {
            color: deeppink;
@@ -51,7 +52,30 @@ header {
 
 .hero {
 
- 
+ .commingsoon {
+ padding: 5rem;
+  background: #fff;
+  h1 {
+    font-family: 'g-book';
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    margin-bottom:1rem;
+  }
+   h2 {
+     width: 100%;
+    font-family: 'g-book';
+    text-align: center;
+    font-size: 40px;
+    span  {
+      font-size: 40px;
+       font-family: 'g-bold';
+       color: $primarycolor;
+
+    }
+  }
+}
+
 
 
 
@@ -638,6 +662,11 @@ color: deeppink;
 
     }
     &__box {
+      &:hover {
+           
+          transition: all .2s ease-in-out;
+          transform: scale(1.1);
+         }
       &--iconData {
         margin-bottom: 15px;
         img {
@@ -953,6 +982,12 @@ footer {
         font-size: 18px;
         font-family: 'g-book';
         color:$secondarytextcolor;
+        a {
+         display: inline-block;
+        font-size: 18px;
+        font-family: 'g-book';
+        color:$secondarytextcolor;
+        }
       } 
     }
     @media only screen and (min-width:768px) and (max-width:1024px) {
